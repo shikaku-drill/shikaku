@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>衛生管理者第二種 無料問題集・過去問対策 | 資格ドリル</title>
+<meta name="description" content="G検定（ジェネラリスト検定）の無料問題集。AI・機械学習・ディープラーニング・法律・倫理を網羅。合格率65〜76%・勉強時間40〜80時間。オンライン100分/会場120分・145問。弱点特訓・解説つき。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1623;--navy2:#171e2e;--navy3:#1e2840;
+  --green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --brand:#ff3b53;--brand2:#ff7a3d;--gold:#ffb400;--gold-bg:#FEF6E4;
+  --accent:#ff3b53;--accent-bg:#fff0f1;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --font-d:'Inter','Noto Sans JP',sans-serif;
+  --font-b:'Noto Sans JP',sans-serif;
+  --radius:14px;--radius-sm:10px;--tap:52px;
+  --shadow:0 2px 8px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--bg);font-family:var(--font-b);min-height:100vh;color:var(--text);}
+a{text-decoration:none;color:inherit;}
+.site-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;position:sticky;top:0;z-index:100;}
+.site-header-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.site-logo{color:#fff;font-size:18px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:8px;font-family:"Inter","Noto Sans JP";}
+.site-logo .logo-text{background:linear-gradient(90deg,#fff 0%,#ffd6c2 100%);-webkit-background-clip:text;background-clip:text;color:transparent !important;}
+.logo-mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(255,59,83,.45);animation:pulse 2.8s ease-in-out infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{box-shadow:0 4px 14px rgba(255,59,83,.45)}50%{box-shadow:0 6px 22px rgba(255,106,61,.65)}}
+/* ③ PC時: ヘッダー内コンテンツを掲載内容の左端に揃える */
+@media(min-width:769px){
+  .site-header{padding:0;}
+  .site-header-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+  .page-nav-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+}
+.site-back{color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;gap:5px;transition:color .2s;}
+.site-back:hover{color:#fff;}
+.home-inner{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
+.home-hero{background:var(--navy);border-radius:var(--radius);margin-bottom:16px;overflow:hidden;}
+.hero-top{padding:18px 20px 14px;display:flex;align-items:center;gap:14px;}
+.hero-left{flex:1;min-width:0;}
+.hero-exam-type{font-size:10px;color:#1D9E75;font-weight:700;letter-spacing:2.5px;margin-bottom:3px;}
+.hero-exam-name{font-family:var(--font-d);font-size:22px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:8px;}
+.hero-stats{display:flex;align-items:center;}
+.hero-stat{display:flex;flex-direction:column;align-items:center;padding:0 14px 0 0;}
+.hs-num{font-family:var(--font-d);font-size:18px;font-weight:900;color:#fff;}
+.hs-lbl{font-size:10px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.hero-stat-div{width:1px;height:28px;background:rgba(255,255,255,0.15);margin-right:14px;}
+.hero-rank{display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid;border-radius:12px;padding:10px 14px;flex-shrink:0;min-width:60px;}
+.rank-k{font-family:var(--font-d);font-size:26px;font-weight:900;line-height:1;}
+.rank-l{font-size:10px;font-weight:700;letter-spacing:1px;}
+.rank-bar{width:100%;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden;margin-top:4px;}
+.rank-fill{height:100%;border-radius:2px;transition:width 1s ease;}
+/* モードタブ（ヒーロー内）コンパクト1行 */
+.hero-mode-bar{display:flex;border-top:1px solid rgba(255,255,255,.08);}
+.hm-tab{flex:1;padding:8px 4px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:5px;cursor:pointer;border:none;background:none;font-family:var(--font-b);color:rgba(255,255,255,.4);transition:all .2s;border-bottom:2px solid transparent;}
+.hm-tab:not(.hm-dis):hover{color:rgba(255,255,255,.8);background:rgba(255,255,255,.04);}
+.hm-tab.hm-on{color:#fff;border-bottom-color:var(--brand);background:rgba(255,59,83,.08);}
+.hm-tab.hm-dis{opacity:.3;cursor:not-allowed;}
+.hm-ic{font-size:14px;line-height:1;transition:transform .25s cubic-bezier(.34,1.56,.64,1);flex-shrink:0;}
+.hm-tab.hm-on .hm-ic{transform:scale(1.15);}
+.hm-lbl{font-size:12px;font-weight:700;}
+.hm-cnt{font-size:10px;background:rgba(255,255,255,.12);border-radius:4px;padding:1px 6px;line-height:1.5;transition:all .2s;}
+.hm-tab.hm-on .hm-cnt{background:var(--brand);color:#fff;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);margin-bottom:12px;}
+.card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.cat-card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.cat-card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;}
+.cat-filter-badge{font-size:10px;padding:2px 8px;border-radius:99px;font-weight:700;}
+.cat-filter-badge.none{color:var(--text3);background:var(--bg);}
+.cat-filter-badge.active{color:#fff;background:var(--brand);animation:badgePop .3s cubic-bezier(.34,1.56,.64,1);}
+@keyframes badgePop{0%{transform:scale(.7)}100%{transform:scale(1)}}
+.cat-row{display:flex;gap:7px;flex-wrap:wrap;}
+.cat-row.hidden{display:none;}
+.cat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:7px 13px;font-size:12px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .2s;display:flex;align-items:center;gap:5px;}
+.cat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;transform:translateY(-1px);}
+.cat-chip.active{border-color:var(--navy)!important;color:#fff!important;background:var(--navy)!important;font-weight:700!important;box-shadow:0 3px 10px rgba(15,22,35,.2);}
+.subcat-section{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);animation:fadeSlideIn .22s ease;}
+@keyframes fadeSlideIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.subcat-label{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;margin-bottom:7px;display:flex;align-items:center;gap:5px;text-transform:uppercase;}
+.subcat-label::before{content:"";width:2px;height:10px;background:linear-gradient(var(--brand),var(--brand2));border-radius:1px;flex-shrink:0;}
+.subcat-grid{display:flex;gap:5px;flex-wrap:wrap;}
+.subcat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:8px;padding:5px 11px;font-size:11px;cursor:pointer;color:var(--text2);transition:all .2s;display:flex;align-items:center;gap:4px;}
+.subcat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;}
+.subcat-chip.active{background:linear-gradient(135deg,var(--brand),var(--brand2));border-color:transparent;color:#fff;font-weight:700;box-shadow:0 3px 8px rgba(255,59,83,.3);}
+.opts-compact{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+.opts-compact-sep{width:1px;height:16px;background:var(--border);flex-shrink:0;}
+.opt-label-ic{font-size:12px;color:var(--text3);}
+.opt-pill{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:4px 9px;font-size:11px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.opt-pill:hover{background:#f0efe8;border-color:var(--border2);}
+.opt-pill.on{background:var(--accent-bg)!important;border-color:var(--brand)!important;color:var(--brand)!important;font-weight:700;}
+.opt-shuffle.on{background:var(--green-bg)!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+/* スタート・継続ボタン行 */
+.start-row{display:flex;gap:8px;margin-bottom:8px;}
+.start-btn{flex:1;height:52px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:900;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 8px 22px rgba(255,59,83,.35);}
+.start-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(255,59,83,.5);}
+.start-btn.off{opacity:.35;cursor:not-allowed;transform:none!important;}
+.start-btn-solo{width:100%;height:56px;font-size:18px;letter-spacing:2px;margin-bottom:8px;}
+.resume-btn{flex:1;height:52px;background:var(--green-bg);border:1.5px solid var(--green);border-radius:var(--radius);color:var(--green-d);font-size:13px;font-weight:700;font-family:var(--font-b);cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.2;}
+.resume-btn:hover{background:var(--green);color:#fff;}
+.resume-btn-label{font-size:12px;font-weight:700;}
+.resume-btn-sub{font-size:10px;opacity:.75;}
+.text-link{background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font-b);text-decoration:underline;width:100%;text-align:center;padding:6px;display:block;}
+.quiz-inner{max-width:480px;margin:0 auto;padding:8px 12px 70px;display:flex;flex-direction:column;gap:8px;}
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;}
+.nav-back{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:var(--shadow);}
+.nav-back:hover{border-color:var(--border2);}
+.quiz-counter-wrap{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.quiz-counter{display:flex;align-items:baseline;gap:3px;}
+.qc-cur{font-family:var(--font-d);font-size:22px;font-weight:900;}
+.qc-sep{font-size:12px;color:var(--text3);}
+.qc-tot{font-size:13px;color:var(--text3);}
+.qc-sub{font-size:10px;color:var(--text3);letter-spacing:.5px;}
+.star-btn{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);font-size:18px;cursor:pointer;color:var(--text3);transition:all .2s;line-height:1;box-shadow:var(--shadow);}
+.star-btn.on{color:var(--gold);border-color:var(--gold);background:var(--gold-bg);}
+.q-progress{height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
+.q-prog-fill{height:100%;background:var(--brand);border-radius:2px;transition:width .4s ease;}
+.timer-wrap{position:relative;width:44px;height:44px;align-self:center;}
+.timer-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:13px;font-weight:900;}
+.session-bar{display:flex;align-items:center;gap:6px;}
+.sb-ok{font-size:11px;font-weight:700;color:var(--green);min-width:28px;}
+.sb-ng{font-size:11px;font-weight:700;color:var(--accent);min-width:28px;text-align:right;}
+.sb-dots{flex:1;display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.sb-dot{width:7px;height:7px;border-radius:50%;}
+.sd-ok{background:var(--green);}
+.sd-ng{background:var(--accent);}
+.sd-cur{background:var(--gold);width:9px;height:9px;}
+.sd-future{background:var(--border);}
+.sb-more{font-size:9px;color:var(--text3);}
+.q-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);}
+.q-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:4px;}
+.q-cat-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid;}
+.q-miss{font-size:10px;font-weight:700;color:var(--accent);background:var(--accent-bg);border:1px solid rgba(230,81,0,.3);padding:3px 8px;border-radius:6px;}
+.q-text{font-size:13px;line-height:1.7;font-weight:500;}
+.choices{display:flex;flex-direction:column;gap:6px;}
+.choice{background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;padding:0 12px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;gap:10px;text-align:left;transition:all .15s;color:var(--text2);min-height:44px;width:100%;box-shadow:var(--shadow);}
+.choice:not(.ch-ok):not(.ch-ng):not(.ch-fade):hover{border-color:var(--accent);background:#FFF3E0;transform:translateX(2px);}
+.ch-ok{background:#F0FBF6!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+.ch-ng{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:#8B2A0E!important;}
+.ch-fade{opacity:.3;}
+.ch-alpha{font-family:var(--font-d);font-weight:900;font-size:12px;width:26px;height:26px;border-radius:6px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.ch-ok .ch-alpha{background:var(--green);color:#fff;border-color:var(--green);}
+.ch-ng .ch-alpha{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ch-body{flex:1;font-size:12px;line-height:1.5;padding:10px 0;}
+.ch-icon{font-size:15px;font-weight:700;}
+.ch-ok .ch-icon{color:var(--green);}
+.ch-ng .ch-icon{color:var(--accent);}
+.exp-card{border-radius:10px;padding:10px 12px;border:1px solid;}
+.exp-ok{background:#F0FBF6;border-color:rgba(29,158,117,.3);}
+.exp-ng{background:var(--accent-bg);border-color:rgba(230,81,0,.25);}
+.exp-time{background:var(--gold-bg);border-color:rgba(212,148,26,.3);}
+.exp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+.exp-verdict{font-size:13px;font-weight:700;}
+.exp-ok .exp-verdict{color:var(--green-d);}
+.exp-ng .exp-verdict{color:var(--accent);}
+.exp-time .exp-verdict{color:var(--gold);}
+.exp-ans{font-size:11px;color:var(--gold);}
+/* 正解表示バー */
+.exp-correct-bar{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:7px;margin-bottom:6px;}
+.exp-correct-bar.ok{background:rgba(29,158,117,.12);}
+.exp-correct-bar.ng{background:rgba(230,81,0,.08);}
+.exp-correct-label{font-size:10px;font-weight:700;white-space:nowrap;padding-top:1px;}
+.exp-correct-bar.ok .exp-correct-label{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-label{color:var(--accent);}
+.exp-correct-text{font-size:12px;line-height:1.5;}
+.exp-correct-bar.ok .exp-correct-text{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-text{color:#8B2A0E;}
+.exp-body{font-size:11.5px;line-height:1.8;color:var(--text2);}
+.next-wrap{position:sticky;bottom:12px;padding-top:6px;background:linear-gradient(to top,var(--bg) 65%,transparent);}
+.next-btn{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);width:100%;height:46px;font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.3);}
+.next-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.next-3{display:grid;grid-template-columns:1fr 1fr 2fr;gap:6px;}
+.btn-retry{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-retry:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-bg);}
+.btn-pause{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-pause:hover{border-color:var(--green);color:var(--green-d);background:var(--green-bg);}
+.btn-next-main{height:46px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:.5px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 4px 14px rgba(255,59,83,.3);}
+.btn-next-main:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(255,59,83,.45);}
+.btn-sub-lbl{font-size:9px;font-weight:400;opacity:.7;line-height:1;}
+/* ⑥ result コンパクト化 */
+.result-inner{max-width:480px;margin:0 auto;padding:16px 16px 40px;display:flex;flex-direction:column;gap:12px;}
+.result-hero{background:var(--navy);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+.result-eyebrow{font-size:10px;letter-spacing:4px;color:rgba(255,255,255,0.5);text-transform:uppercase;}
+.result-score-wrap{position:relative;width:100px;height:100px;}
+.result-score-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.result-pct{font-family:var(--font-d);font-size:32px;font-weight:900;line-height:1;color:#fff;}
+.result-pct small{font-size:14px;}
+.result-sub{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.result-verdict{font-size:13px;font-weight:700;padding:6px 16px;border-radius:var(--radius-sm);border:1px solid;}
+.result-cats{width:100%;display:flex;flex-direction:column;gap:6px;}
+.rc-row{display:flex;align-items:center;gap:8px;}
+.rc-icon{font-size:12px;}
+.rc-name{font-size:10px;font-weight:700;width:68px;color:rgba(255,255,255,0.6);}
+.rc-track{flex:1;height:3px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
+.rc-fill{height:100%;border-radius:2px;transition:width 1s ease .3s;}
+.rc-pct{font-size:10px;font-weight:700;width:28px;text-align:right;color:#fff;}
+.section-hd{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;}
+.ans-log{display:flex;flex-direction:column;gap:5px;}
+.ans-row{display:flex;align-items:center;gap:8px;background:var(--bg2);border-radius:8px;padding:8px 10px;border:1px solid var(--border);border-left:3px solid var(--border);box-shadow:var(--shadow);}
+.ar-ok{border-left-color:var(--green)!important;}
+.ar-ng{border-left-color:var(--accent)!important;}
+.ar-n{font-size:10px;color:var(--text3);min-width:22px;}
+.ar-cat{font-size:12px;}
+.ar-q{flex:1;font-size:11px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ar-mark{font-size:13px;font-weight:700;}
+.ar-ok .ar-mark{color:var(--green);}
+.ar-ng .ar-mark{color:var(--accent);}
+.ar-cnt{font-size:10px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px;}
+.cta-btn{width:100%;height:44px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.25);}
+.cta-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.ghost-btn{width:100%;height:40px;background:transparent;border:1.5px solid var(--border2);border-radius:var(--radius);color:var(--text2);font-size:13px;font-family:var(--font-b);cursor:pointer;transition:all .2s;}
+.ghost-btn:hover{background:#f0efe8;}
+.nb-inner{max-width:480px;margin:0 auto;padding:16px 16px 80px;display:flex;flex-direction:column;gap:12px;}
+.nb-nav{display:flex;align-items:center;gap:12px;}
+.nb-title{font-family:var(--font-d);font-size:20px;font-weight:900;flex:1;}
+.nb-count{font-size:13px;color:var(--text3);}
+.nb-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:10px;}
+.nb-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:6px;}
+.nb-cat{font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;border:1px solid;}
+.nb-actions{display:flex;align-items:center;gap:8px;}
+.nb-wc{font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--accent-bg);color:var(--accent);}
+.nb-star{background:none;border:none;font-size:20px;cursor:pointer;color:var(--text3);transition:color .2s;line-height:1;}
+.nb-star.on{color:var(--gold);}
+.nb-resolve{background:var(--green-bg);border:1px solid rgba(29,158,117,.4);border-radius:7px;color:var(--green-d);font-size:11px;font-weight:700;padding:5px 10px;cursor:pointer;font-family:var(--font-b);}
+.nb-q{font-size:14px;line-height:1.75;margin-bottom:10px;font-weight:500;}
+.nb-ans-box{background:var(--green-bg);border-radius:9px;padding:9px 12px;margin-bottom:8px;display:flex;gap:8px;}
+.nb-ans-lbl{font-size:11px;color:var(--green-d);font-weight:700;white-space:nowrap;margin-top:1px;}
+.nb-ans-val{font-size:13px;color:var(--green-d);line-height:1.5;}
+.nb-details{margin-top:4px;}
+.nb-summary{font-size:12px;color:var(--text3);cursor:pointer;list-style:none;padding:4px 0;user-select:none;}
+.nb-summary::-webkit-details-marker{display:none;}
+.nb-exp{font-size:12px;line-height:1.9;color:var(--text2);margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.empty-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:60px 20px;text-align:center;}
+.empty-icon{font-size:48px;}
+.empty-msg{font-size:16px;font-weight:700;color:var(--text2);}
+.empty-sub{font-size:13px;color:var(--text3);}
+
+/* ── スマホ：サイドパネルをメインコンテンツの下に表示 ── */
+@media (max-width:768px){
+  .pc-cols{display:flex;flex-direction:column;gap:0;}
+  .pc-col-main{flex:1;min-width:0;}
+  .pc-col-side{display:flex;flex-direction:column;gap:12px;margin-top:12px;}
+  .quiz-inner{display:flex;flex-direction:column;}
+  .pc-quiz-main{display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{display:none;}
+}
+/* ── PC 2カラム ── */
+@media (min-width:769px){
+  .home-inner{max-width:920px;padding:28px 32px 60px;}
+  .pc-cols{display:flex;gap:24px;align-items:flex-start;}
+  .pc-col-main{flex:1;min-width:0;}
+  /* ② サイドパネル: ビューポート高さを超えないよう最大高さ設定してスクロール */
+  .pc-col-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-col-side::-webkit-scrollbar{display:none;}
+  .quiz-inner{max-width:920px;padding:24px 32px 40px;flex-direction:row;gap:24px;align-items:flex-start;}
+  .pc-quiz-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-quiz-side::-webkit-scrollbar{display:none;}
+  .next-wrap{position:static;background:transparent;padding-top:0;}
+  /* ⑥ result: PC時もコンパクトに */
+  .result-inner{max-width:680px;padding:16px 32px 40px;}
+  .nb-inner{max-width:760px;padding:24px 32px 80px;}
+  .exp-sp{display:none;}
+}
+.side-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);}
+.side-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.side-stat-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);}
+.side-stat-row:last-child{border-bottom:none;}
+.side-stat-lbl{font-size:13px;color:var(--text2);}
+.side-stat-val{font-size:16px;font-weight:700;font-family:var(--font-d);}
+.side-cat-row{display:flex;align-items:center;gap:8px;padding:4px 0;}
+.side-cat-icon{font-size:13px;width:18px;}
+.side-cat-name{font-size:11px;color:var(--text2);width:72px;font-weight:700;}
+.side-cat-track{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.side-cat-fill{height:100%;border-radius:2px;transition:width .6s ease;}
+.side-cat-pct{font-size:11px;font-weight:700;width:28px;text-align:right;}
+.side-exp-placeholder{font-size:13px;color:var(--text3);text-align:center;padding:16px 0;}
+.side-exp-verdict{font-size:14px;font-weight:700;margin-bottom:8px;}
+.side-exp-body{font-size:13px;line-height:1.9;color:var(--text2);}
+
+/* ── ページ内タブナビ ── */
+.page-nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.1);overflow-x:auto;scrollbar-width:none;position:sticky;top:52px;z-index:90;}
+.page-nav::-webkit-scrollbar{display:none;}
+.page-nav-inner{display:flex;align-items:center;min-width:max-content;padding:0 12px;}
+.pn-tab{color:rgba(255,255,255,0.55);font-size:12px;font-weight:600;padding:10px 12px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;text-decoration:none;display:block;}
+.pn-tab:hover{color:#fff;}
+.pn-tab.active{color:#fff;border-bottom-color:#1D9E75;}
+
+/* ① resume-btn は上で定義済み */
+
+/* ── モード選択コンパクト化 ── */
+.mode-row-compact{display:flex;gap:6px;}
+.mode-btn-compact{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:7px 4px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;justify-content:center;gap:5px;color:var(--text2);transition:all .18s;height:40px;}
+.mode-btn-compact:hover:not(.mode-off){background:#f0efe8;border-color:var(--border2);}
+.mode-btn-compact.mode-active{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:var(--accent)!important;}
+.mode-btn-compact.mode-off{opacity:.4;cursor:not-allowed;}
+.mbc-icon{font-size:14px;line-height:1;}
+.mbc-label{font-size:11px;font-weight:700;}
+.mbc-count{font-size:10px;color:var(--text3);margin-left:1px;}
+.mode-btn-compact.mode-active .mbc-count{color:var(--accent);}
+
+/* ── カテゴリ+オプション 横並び ── */
+.cat-opt-row{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;}
+.cat-opt-row .cat-row{flex:1;min-width:0;}
+.opt-mini{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+
+/* ── SEOコンテンツ ── */
+.seo-section{background:#fff;border-top:1px solid #e5e3dc;padding:32px 0 0;}
+.seo-inner{max-width:720px;margin:0 auto;padding:0 16px 40px;}
+.seo-h2{font-size:20px;font-weight:700;margin-bottom:10px;color:#1a1a1a;line-height:1.4;}
+.seo-h3{font-size:16px;font-weight:700;margin:28px 0 12px;color:#1a1a1a;border-left:3px solid #1D9E75;padding-left:10px;}
+.seo-lead{font-size:14px;color:#444;line-height:1.8;margin-bottom:20px;}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+.info-card{background:#f5f4f0;border-radius:10px;padding:12px 14px;}
+.info-label{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:4px;}
+.info-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+.seo-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px;}
+.seo-table th{background:#1a2744;color:#fff;padding:8px 12px;text-align:left;font-weight:700;font-size:12px;}
+.seo-table td{padding:8px 12px;border-bottom:1px solid #e5e3dc;color:#333;line-height:1.5;}
+.seo-table tr:last-child td{border-bottom:none;}
+.seo-table tr:nth-child(even) td{background:#f9f8f5;}
+.roadmap{display:flex;flex-direction:column;gap:0;margin-bottom:8px;}
+.rm-step{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #f0efe8;}
+.rm-step:last-child{border-bottom:none;}
+.rm-num{width:28px;height:28px;background:#1a2744;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px;}
+.rm-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:3px;}
+.rm-desc{font-size:12px;color:#666;line-height:1.6;}
+.next-shikaku{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+.next-card{display:flex;align-items:center;gap:12px;background:#f5f4f0;border:1px solid #e5e3dc;border-radius:12px;padding:12px 14px;transition:border-color .15s;text-decoration:none;color:inherit;}
+.next-card:hover{border-color:#1D9E75;}
+.next-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.next-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.next-desc{font-size:11px;color:#888;}
+.faq-list{display:flex;flex-direction:column;gap:8px;}
+.faq-item{background:#f9f8f5;border:1px solid #e5e3dc;border-radius:10px;overflow:hidden;}
+.faq-q{padding:12px 14px;font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;color:#1a1a1a;}
+.faq-q::after{content:'▾';color:#1D9E75;font-size:14px;flex-shrink:0;margin-left:8px;}
+.faq-item[open] .faq-q::after{content:'▴';}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 14px 12px;font-size:13px;color:#444;line-height:1.8;}
+@media(min-width:769px){
+  .info-grid{grid-template-columns:repeat(3,1fr);}
+  .next-shikaku{flex-direction:row;}
+  .next-card{flex:1;}
+  .seo-inner{padding:0 32px 40px;}
+}
+/* フッター（横幅いっぱいバー）*/
+.site-footer{background:var(--navy);padding:14px 16px;margin-top:0;width:100%;}
+.sf-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:920px;margin:0 auto;}
+.sf-logo{color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.sf-logo span{color:var(--green) !important;background:none;}
+.sf-lmark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;}
+.sf-links{display:flex;gap:16px;flex-wrap:wrap;}
+.sf-links a{color:rgba(255,255,255,.4);font-size:11px;transition:color .15s;}
+.sf-links a:hover{color:rgba(255,255,255,.75);}
+.sf-copy{color:rgba(255,255,255,.2);font-size:10px;}
+@media(max-width:768px){
+  .sf-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+@media(min-width:769px){
+  .site-footer{padding:14px 0;}
+  .sf-inner{padding:0 32px;}
+}
+
+
+/* ── アフィリエイト・申込セクション ── */
+.aff-section{background:#f5f4f0;padding:32px 0;}
+.aff-inner{max-width:720px;margin:0 auto;padding:0 16px;}
+.aff-h2{font-size:18px;font-weight:700;margin-bottom:4px;color:#1a1a1a;}
+.aff-sub{font-size:12px;color:#999;margin-bottom:20px;}
+
+/* 公式申込 */
+.official-btn{display:flex;align-items:center;gap:14px;background:#1a2744;border-radius:14px;padding:16px 20px;text-decoration:none;color:#fff;transition:opacity .15s;margin-bottom:24px;}
+.official-btn:hover{opacity:.88;}
+.official-ico{width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.official-info{flex:1;min-width:0;}
+.official-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.official-note{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;}
+.official-arr{font-size:18px;color:rgba(255,255,255,.5);flex-shrink:0;}
+
+.aff-h3{font-size:14px;font-weight:700;margin-bottom:12px;color:#1a1a1a;display:flex;align-items:center;gap:7px;}
+.aff-h3::before{content:'';width:3px;height:15px;background:#1D9E75;border-radius:2px;flex-shrink:0;}
+
+/* 参考書 */
+.book-list{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
+.book-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;}
+.book-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}
+.book-memo{font-size:11px;color:#888;margin-bottom:10px;line-height:1.5;}
+.book-links{display:flex;gap:8px;}
+.book-link{display:flex;align-items:center;gap:5px;padding:7px 12px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;transition:opacity .15s;flex:1;justify-content:center;}
+.book-link:hover{opacity:.82;}
+.book-link-amz{background:#FF9900;color:#fff;}
+.book-link-rak{background:#BF0000;color:#fff;}
+
+/* 通信講座 */
+.course-list{display:flex;flex-direction:column;gap:10px;}
+.course-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;transition:border-color .15s;}
+.course-card:hover{border-color:#1D9E75;}
+.course-ico{width:40px;height:40px;background:#E1F5EE;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.course-info{flex:1;min-width:0;}
+.course-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.course-price{font-size:11px;color:#1D9E75;font-weight:700;}
+.course-feat{font-size:11px;color:#888;margin-top:1px;}
+.course-arr{color:#ccc;font-size:15px;flex-shrink:0;}
+.aff-note{font-size:10px;color:#bbb;text-align:center;margin-top:16px;line-height:1.6;}
+
+@media(min-width:769px){
+  .aff-inner{padding:0 32px;}
+  .book-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-card{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+
+.info-grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:8px;}
+.ig-card{background:#f5f4f0;border-radius:9px;padding:11px 13px;}
+.ig-lbl{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:3px;}
+.ig-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+</style>
+<link rel="canonical" href="https://shikaku-pass.github.io/shikaku/gken.html">
+<meta property="og:title" content="衛生管理者第二種 無料問題集 | 資格ドリル">
+<meta property="og:description" content="衛生管理者第二種の無料問題集。労働生理・労働衛生・関係法令を網羅。合格率50〜60%・勉強時間60〜100時間。弱点特訓・解説つき。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shikaku-drill.com/kansei2/">
+<meta property="og:site_name" content="資格ドリル">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="衛生管理者第二種 無料問題集 | 資格ドリル">
+<meta name="twitter:description" content="衛生管理者第二種の無料問題集。労働生理・労働衛生・関係法令を網羅。合格率50〜60%・勉強時間60〜100時間。弱点特訓・解説つき。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "G検定（ジェネラリスト検定）無料問題集",
+      "description": "G検定はJDLA（日本ディープラーニング協会）が実施するAI・ディープラーニング活用リテラシーの検定試験です。AI概論・機械学習・ディープラーニング・生成AI・法律・倫理など幅広い範囲から出題されます。",
+      "provider": {"@type": "Organization", "name": "資格ドリル"},
+      "educationalLevel": "入門・中級",
+      "inLanguage": "ja",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "G検定の合格率はどのくらいですか？","acceptedAnswer": {"@type": "Answer","text": "例年60〜76%程度で推移しており、AI系資格の中では比較的取得しやすい検定です。出題範囲が広いため、公式テキストを中心とした網羅的な学習が合格の鍵です。"}},
+        {"@type": "Question","name": "G検定の勉強時間はどのくらい必要ですか？","acceptedAnswer": {"@type": "Answer","text": "AI未経験者で40〜80時間が目安です。IT・AI知識がある方は20〜40時間程度で合格を目指せます。公式テキストと問題集を組み合わせた学習が効果的です。"}},
+        {"@type": "Question","name": "G検定のオンライン試験と会場試験の違いは何ですか？","acceptedAnswer": {"@type": "Answer","text": "問題数は同じ145問程度ですが、試験時間が異なります。オンライン試験（自宅受験）は100分、会場試験（全国指定会場）は120分です。2026年はオンライン年6回・会場試験年3回が開催されます。"}},
+        {"@type": "Question","name": "G検定に合格すると何が得られますか？","acceptedAnswer": {"@type": "Answer","text": "合格証・オープンバッジが発行され、日本最大級のAI人材コミュニティ「CDLE」に参加できます。DX推進パスポートのバッジも取得可能で、就職・転職・社内DX推進でのアピールになります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-logo" href="index.html">
+      <div class="logo-mark">問</div>
+      <span class="logo-text">資格ドリル</span>
+    </a>
+    <a class="site-back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      資格一覧へ
+    </a>
+  </div>
+</header>
+<nav class="page-nav" id="pageNav">
+  <div class="page-nav-inner">
+    <a class="pn-tab active" href="#app"      onclick="scrollToApp(event)">📝 問題を解く</a>
+    <a class="pn-tab"        href="#apply"    onclick="scrollTo_(event,'apply')">🤖 申し込み</a>
+    <a class="pn-tab"        href="#books"    onclick="scrollTo_(event,'books')">📖 参考書</a>
+    <a class="pn-tab"        href="#courses"  onclick="scrollTo_(event,'courses')">🎓 通信講座</a>
+    <a class="pn-tab"        href="#overview" onclick="scrollTo_(event,'overview')">📋 試験概要</a>
+    <a class="pn-tab"        href="#syllabus" onclick="scrollTo_(event,'syllabus')">📊 出題分野</a>
+    <a class="pn-tab"        href="#roadmap"  onclick="scrollTo_(event,'roadmap')">🗺️ 学習の流れ</a>
+    <a class="pn-tab"        href="#faq"      onclick="scrollTo_(event,'faq')">❓ よくある質問</a>
+  </div>
+</nav>
+<div id="app"></div>
+<script>
+// ▼▼▼ ここに問題データを追加してください ▼▼▼
+const ALL_QUESTIONS=[
+{id:1,category:"労働衛生（有害業務以外）",question:"「職場における熱中症予防」として最も重要な対策の組合せはどれか。",choices:["WBGT管理・水分・塩分補給・休憩・順化・作業者の健康管理の組合せ","水分補給が作業環境の健康リスク評価において最も重要な測定対象である","作業時間の延長は職場の衛生基準として法令で定められた最低限の要件を示す","冷房設備の設置は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"熱中症予防の基本対策：①WBGT値の測定・管理②こまめな水分・塩分補給③適切な休憩④熱への順化（7〜14日で暑熱環境への適応）⑤作業者の健康管理⑥作業環境の改善の組み合わせが重要。"},
+
+{id:2,category:"労働衛生（有害業務以外）",question:"「照度基準」として労働安全衛生規則が定める「普通の作業」の照度として正しいものはどれか。",choices:["70ルクス以上は職場の衛生基準として法令で定められた最低限の要件を示す","500ルクス以上が作業環境の健康リスク評価において最も重要な測定対象である","300ルクス以上は職場の衛生基準として法令で定められた最低限の要件を示す","150ルクス以上（衛生管理上の重要事項）"],answer:3,explanation:"労働安全衛生規則第604条の照度基準：精密な作業300lx以上・普通の作業150lx以上・粗な作業70lx以上。普通の作業には一般的な事務・組立等が含まれる。"},
+
+{id:3,category:"労働衛生（有害業務以外）",question:"「VDT作業（情報機器作業）」のガイドラインが定める「作業時間の管理」として正しいものはどれか。",choices:["1日のVDT作業時間が長時間にならないよう配慮し1時間を超えない継続作業","VDT作業は連続で4時間以上継続してよいが一般職場の健康管理において主要な評価指標とされている","休憩は1日1回で十分が作業環境の健康リスク評価において最も重要な測定対象である","VDT作業の時間制限はないが作業環境の健康リスク評価において最も重要な測定対象である"],answer:0,explanation:"厚生労働省の情報機器作業ガイドライン（2019年）：連続作業時間は1時間を超えないようにし次の連続作業まで10〜15分の休止時間を設ける。また一連続作業時間内に1〜2回程度の小休止を設けることが望ましい。"},
+
+{id:4,category:"労働衛生（有害業務以外）",question:"「腰痛予防対策指針」において「重量物を取り扱う作業」での適切な姿勢として正しいものはどれか。",choices:["前屈みのまま素早く持ち上げるが作業環境の健康リスク評価において最も重要な測定対象である","腕の力だけで持ち上げるは職場の衛生基準として法令で定められた最低限の要件を示す","腰をひねりながら持ち上げるが一般職場の健康管理において主要な評価指標とされている","膝を曲げて重心を低くし背筋を伸ばして持ち上げる（衛生管理上の重要事項）"],answer:3,explanation:"重量物取り扱い時の正しい姿勢：①対象物に近づく②膝を曲げてしゃがむ③背筋を伸ばす④対象物をしっかり握る⑤腹圧をかけながら脚の力で持ち上げる。腰を丸めた姿勢・ひねりは椎間板への負荷が最大。"},
+
+{id:5,category:"労働衛生（有害業務以外）",question:"「職場における喫煙対策」として改正健康増進法（2020年施行）の内容として正しいものはどれか。",choices:["職場での喫煙は完全に自由は職場の衛生基準として法令で定められた最低限の要件を示す","多くの職場（第二種施設）は原則屋内禁煙で喫煙専用室のみで喫煙が可能","喫煙可能エリアは事業者が自由に決定できるが一般職場の健康管理において主要な評価指標とされている","受動喫煙対策の義務はないが一般職場の健康管理において主要な評価指標とされている"],answer:1,explanation:"改正健康増進法（2020年4月全面施行）：学校・病院・行政機関は屋内完全禁煙（特定施設）・その他多数利用施設（職場等：第二種施設）は原則屋内禁煙で喫煙専用室（煙が漏れない構造）のみ喫煙可能。"},
+
+{id:6,category:"労働衛生（有害業務以外）",question:"「メタボリックシンドローム」の診断において「必須条件」として正しいものはどれか。",choices:["BMI25以上は職場の衛生基準として法令で定められた最低限の要件を示す","空腹時血糖100mg/dL以上が作業環境の健康リスク評価において最も重要な測定対象である","腹囲（内臓脂肪型肥満：男性85cm以上・女性90cm以上）","収縮期血圧130mmHg以上は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:2,explanation:"メタボリックシンドロームの診断基準（日本）の必須条件は腹囲（男性85cm以上・女性90cm以上：内臓脂肪面積100cm²以上に相当）。その上で血圧・血糖・脂質の3項目中2項目以上が基準を超えた場合に診断。"},
+
+{id:7,category:"労働衛生（有害業務以外）",question:"「職場における感染症予防」として「空気感染」と「飛沫感染」の違いとして正しいものはどれか。",choices:["両者は同じ感染経路が一般職場の健康管理において主要な評価指標とされている","空気感染は飛沫核（5μm以下）が長時間空気中を漂い遠距離でも感染・飛沫感染は飛沫","飛沫感染の方が感染距離が長いは職場の衛生基準として法令で定められた最低限の要件を示す","空気感染はマスクで完全に予防できるが一般職場の健康管理において主要な評価指標とされている"],answer:1,explanation:"空気感染（飛沫核感染）：結核・麻疹・水痘等。飛沫核（5μm以下）が長時間・長距離を漂う→N95マスク・陰圧室が必要。飛沫感染：インフルエンザ・COVID-19等。飛沫（5μm以上）が2m以内→サージカルマスク有効。"},
+
+{id:8,category:"労働衛生（有害業務以外）",question:"「脳・心臓疾患の労災認定基準」において「長期間の過重業務」の目安として正しいものはどれか。",choices:["発症前2〜6ヶ月間に月平均おおむね80時間を超える時間外労働","発症前6ヶ月間に月100時間の時間外労働が一般職場の健康管理において主要な評価指標とされている","発症前1ヶ月間に50時間の時間外労働が一般職場の健康管理において主要な評価指標とされている","週30時間以上の時間外労働が一般職場の健康管理において主要な評価指標とされている"],answer:0,explanation:"脳・心臓疾患の業務上認定基準（長期間の過重業務）：発症前2〜6ヶ月間に月平均おおむね80時間超の時間外労働または発症前1ヶ月間に100時間超の時間外労働が関連性強と判断される目安。"},
+
+{id:9,category:"労働衛生（有害業務以外）",question:"「BMI」の計算式として正しいものはどれか。",choices:["BMI＝体重（kg）÷身長（m）","BMI＝体重（kg）÷身長（m）²","BMI＝身長（cm）－体重（kg）－100","BMI＝体重（g）÷身長（cm）"],answer:1,explanation:"BMI（Body Mass Index）＝体重（kg）÷身長（m）²。例：体重60kg・身長1.7mの場合BMI＝60÷1.7²＝20.8。日本基準：18.5未満が低体重・18.5〜25未満が普通体重・25以上が肥満。"},
+
+{id:10,category:"労働衛生（有害業務以外）",question:"「職場の救急処置」として「ハイムリック法（腹部突き上げ法）」が適応となる状況として正しいものはどれか。",choices:["心停止が作業環境の健康リスク評価において最も重要な測定対象である","異物による気道閉塞（窒息）（衛生管理上の重要事項）","骨折は職場の衛生基準として法令で定められた最低限の要件を示す","熱中症が作業環境の健康リスク評価において最も重要な測定対象である"],answer:1,explanation:"ハイムリック法（腹部突き上げ法）は異物による気道閉塞（窒息）に対する応急処置。後ろから抱えて両手を腹部に当て上方に圧迫する。意識消失の場合はCPRに切り替え。乳幼児・妊婦には背部叩打法を使用。"},
+
+{id:11,category:"労働衛生（有害業務以外）",question:"「職場における高齢労働者への対応」として最も適切なものはどれか。",choices:["高齢労働者は業務能力が一律に低下するため配置制限すべき","身体機能・認知機能の個人差を考慮した作業内容の調整（衛生管理上の重要事項）","高齢労働者への特別な対応が作業環境の健康リスク評価において最も重要な測定対象である","高齢労働者は全員同じ制限を設けるが作業環境の健康リスク評価において最も重要な測定対象である"],answer:1,explanation:"高齢労働者対策：個人差を考慮した①身体機能（筋力・平衡感覚等）に合わせた作業内容調整②照明・段差等の環境改善③健康診断の強化④転倒・腰痛・熱中症等のリスク管理が重要。"},
+
+{id:12,category:"労働衛生（有害業務以外）",question:"「産業疲労」の評価に用いる「フリッカー値」の測定について正しいものはどれか。",choices:["フリッカー値は騒音の評価に使用が作業環境の健康リスク評価において最も重要な測定対象である","フリッカー値は振動の評価指標が作業環境の健康リスク評価において最も重要な測定対象である","点滅する光がちらつかず一定光に見える限界周波数を測定し値が低下すると中枢","フリッカー値は体力の指標が作業環境の健康リスク評価において最も重要な測定対象である"],answer:2,explanation:"フリッカー値（CFF：臨界融合頻度）は中枢神経疲労の客観的指標。疲労すると値が低下（正常35〜45Hz程度）。測定が簡便で繰り返し使用できるため疲労研究や労働衛生管理で活用される。"},
+
+{id:13,category:"労働衛生（有害業務以外）",question:"「食中毒の原因」として「サルモネラ」食中毒の主な感染源として正しいものはどれか。",choices:["鶏卵・食肉（鶏・豚・牛）等の動物性食品（衛生管理上の重要事項）","手指の黄色ブドウ球菌が作業環境の健康リスク評価において最も重要な測定対象である","魚介類の毒素が作業環境の健康リスク評価において最も重要な測定対象である","穀類のカビ毒が作業環境の健康リスク評価において最も重要な測定対象である"],answer:0,explanation:"サルモネラ食中毒：鶏卵・鶏肉・豚肉・牛肉等の動物性食品が主な感染源。感染型食中毒で潜伏期6〜48時間・発熱・腹痛・下痢・嘔吐が主症状。加熱（75℃1分以上）・冷蔵保存・二次汚染防止で予防。"},
+
+{id:14,category:"労働衛生（有害業務以外）",question:"「労働衛生の5管理」として正しいものはどれか。",choices:["作業環境管理・作業管理・健康管理・労働衛生教育・管理体制の整備","安全管理・衛生管理・品質管理・コスト管理・時間管理","設備管理・人事管理・財務管理・情報管理・リスク管理","点検管理・記録管理・教育管理・測定管理・改善管理"],answer:0,explanation:"労働衛生の5管理：①作業環境管理（環境整備）②作業管理（作業方法・時間管理）③健康管理（健康診断・事後措置）④労働衛生教育（知識・技術の教育）⑤管理体制の整備（組織・担当者の整備）。"},
+
+{id:15,category:"労働衛生（有害業務以外）",question:"「心肺蘇生法（CPR）」の胸骨圧迫の方法として正しいものはどれか。",choices:["圧迫位置は腹部・深さ5cm以上・速度60回/分","圧迫位置は胸骨の下半分・深さ5〜6cm・速度100〜120回/分","圧迫位置は胸骨の上半分・深さ3cm・速度80回/分","圧迫位置は肋骨・深さ10cm・速度50回/分は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:1,explanation:"成人の胸骨圧迫：①位置：胸骨の下半分（胸の真ん中）②深さ：5〜6cm③速度：100〜120回/分④圧迫後は胸壁を完全に戻す⑤中断を最小限に（10秒以内）⑤胸骨圧迫：人工呼吸＝30：2。"},
+
+{id:16,category:"労働衛生（有害業務以外）",question:"「職場における転倒予防」として最も重要な環境改善として正しいものはどれか。",choices:["転倒は個人の不注意であり環境改善は効果なしは職場の衛生基準として法令で定められた最低限の要件を示す","床面の防滑・照明の確保・段差の解消・手すりの設置・整理整頓による通路の確保","靴の交換が一般職場の健康管理において主要な評価指標とされている","作業者への注意喚起が作業環境の健康リスク評価において最も重要な測定対象である"],answer:1,explanation:"転倒予防の環境改善：①床面防滑（ノンスリップ・清掃・乾燥）②照明の確保（暗所解消）③段差の解消・視覚的表示④手すりの設置⑤通路の整理整頓。転倒は休業4日以上の労働災害で最多の原因の一つ。"},
+
+{id:17,category:"労働衛生（有害業務以外）",question:"「職場における腰痛」の「心理社会的要因」として最も適切なものはどれか。",choices:["ストレス・職場の人間関係・仕事への不満・単調な作業・睡眠不足","腰痛に心理社会的要因は関係しないが作業環境の健康リスク評価において最も重要な測定対象である","身体的要因のみが腰痛に影響するが一般職場の健康管理において主要な評価指標とされている","腰痛は遺伝のみで決まるは職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"腰痛は多因子疾患。心理社会的要因（仕事のストレス・職場の人間関係・仕事の不満・過重な要求・睡眠不足等）が腰痛の発症・慢性化に大きく影響することが明らかになっている。"},
+
+{id:18,category:"労働衛生（有害業務以外）",question:"「職場における水分補給」として熱中症予防に適切なものはどれか。",choices:["こまめに水分と塩分（電解質）を補給し経口補水液・スポーツドリンク等を活用する","水のみを大量に飲むが作業環境の健康リスク評価において最も重要な測定対象である","アルコール飲料で水分補給するが作業環境の健康リスク評価において最も重要な測定対象である","口が渇いてから一度に大量に飲むは職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"熱中症予防の水分補給：①こまめに（口が渇く前に）少量ずつ②水分と塩分（電解質：Na⁺）を一緒に補給③経口補水液・スポーツドリンクが効果的④アルコールは利尿作用があり脱水を促進するため不適。"},
+
+{id:19,category:"労働衛生（有害業務以外）",question:"「職場の照明環境」において「グレア（まぶしさ）」の防止方法として正しいものはどれか。",choices:["光源に遮光器具・拡散カバーを設ける・視線方向への直接光を避ける","光源を視線方向に直接配置するが作業環境の健康リスク評価において最も重要な測定対象である","できるだけ高輝度の光源を使用するは職場の衛生基準として法令で定められた最低限の要件を示す","窓からの直射光は問題ないが一般職場の健康管理において主要な評価指標とされている"],answer:0,explanation:"グレア（不快まぶしさ・失能まぶしさ）防止：①光源への遮光器具（ルーバー・拡散カバー）②視線方向への直接光を避ける配置③間接照明・均一な照度分布④窓からの直射日光の遮蔽（ブラインド等）。"},
+
+{id:20,category:"労働衛生（有害業務以外）",question:"「生活習慣病予防」において「特定健康診査」の目的として正しいものはどれか。",choices:["がんの早期発見は職場の衛生基準として法令で定められた最低限の要件を示す","メタボリックシンドロームの早期発見と特定保健指導による生活習慣改善支援","精神疾患の早期発見が一般職場の健康管理において主要な評価指標とされている","感染症の発見が一般職場の健康管理において主要な評価指標とされている"],answer:1,explanation:"特定健康診査（メタボ健診）は40〜74歳の医療保険加入者を対象にメタボリックシンドロームのリスクを早期発見し特定保健指導（動機付け支援・積極的支援）につなぐことで生活習慣病の予防・重症化防止を図る。"},
+
+{id:21,category:"労働衛生（有害業務以外）",question:"「職場におけるメンタルヘルス対策」の「4つのケア」のうち「ラインによるケア」の主な担い手として正しいものはどれか。",choices:["産業医は職場の衛生基準として法令で定められた最低限の要件を示す","管理監督者（上司）（衛生管理上の重要事項）","外部EAP機関が一般職場の健康管理において主要な評価指標とされている","人事部門が作業環境の健康リスク評価において最も重要な測定対象である"],answer:1,explanation:"ラインによるケアの主な担い手は管理監督者（職場の上司）。日常的な部下とのコミュニケーション・変化への気づき・相談対応・職場環境改善・専門家へのつなぎが役割。"},
+
+{id:22,category:"労働衛生（有害業務以外）",question:"「職場における腰痛予防」として「腰部保護ベルト（コルセット）」の使用について正しいものはどれか。",choices:["コルセットは補助的手段であり長期・常時着用は腹筋","コルセットは腰痛の根本的治療になる","コルセットは腰痛予防に最も効果的が作業環境の健康リスク評価において最も重要な測定対象である","コルセットを着ければ重量物を何でも取り扱える"],answer:0,explanation:"腰部保護ベルト（コルセット）は腹圧を高め腰椎を保護する補助具だが長期・常時着用は体幹筋（腹筋・背筋）の廃用性萎縮を招く。重量物取り扱い時等の一時的使用が適切。"},
+
+{id:23,category:"労働衛生（有害業務以外）",question:"「職場における快適環境」として「室内のCO₂濃度基準」として事務所衛生基準規則等が定める基準として正しいものはどれか。",choices:["1000ppm以下（衛生管理上の重要事項）","2000ppm以下は職場の衛生基準として法令で定められた最低限の要件を示す","500ppm以下は職場の衛生基準として法令で定められた最低限の要件を示す","5000ppm以下が一般職場の健康管理において主要な評価指標とされている"],answer:0,explanation:"事務所衛生基準規則（現在は労働安全衛生規則）：室内空気中のCO₂濃度は1000ppm以下（0.1%以下）が基準。CO₂濃度は換気の指標でもあり超過時は換気回数の増加が必要。"},
+
+{id:24,category:"労働衛生（有害業務以外）",question:"「産業保健の目的」としてILO/WHO（1950年）が定義する3つの目的として正しいものはどれか。",choices:["生産性向上・コスト削減・品質管理は職場の衛生基準として法令で定められた最低限の要件を示す","安全管理・衛生管理・品質管理が一般職場の健康管理において主要な評価指標とされている","労働時間の短縮・賃金の増加・雇用の安定は職場の衛生基準として法令で定められた最低限の要件を示す","全職業での労働者の身体的・精神的・社会的健康の最高度の維持増進"],answer:3,explanation:"ILO/WHO（1950年）産業保健の目的：①全職業での労働者の身体的・精神的・社会的健康を最高度に維持増進②労働条件による健康障害防止③有害リスクからの保護④労働者の能力に適した環境への配置。"},
+
+{id:25,category:"労働衛生（有害業務以外）",question:"「職場における急性心筋梗塞」発症時の応急処置として正しいものはどれか。",choices:["無理に水を飲ませるが作業環境の健康リスク評価において最も重要な測定対象である","自家用車で病院へ運ぶが作業環境の健康リスク評価において最も重要な測定対象である","直ちに119番通報・安静保持・AEDの準備・必要に応じてCPRを実施","痛みが治まるまで様子を見るが作業環境の健康リスク評価において最も重要な測定対象である"],answer:2,explanation:"急性心筋梗塞の応急処置：①直ちに119番通報②楽な姿勢で安静③AEDの準備・設置場所確認④意識・呼吸がなければCPR開始⑤衣服をゆるめる⑥自家用車搬送は急変時に対応できないため救急車が原則。"},
+
+{id:26,category:"労働衛生（有害業務以外）",question:"「健康診断の二次健康診断等給付」の対象者として正しいものはどれか。",choices:["一次健康診断で血圧・血中脂質・血糖・BMI（衛生管理上の重要事項）","すべての健康診断受診者は職場の衛生基準として法令で定められた最低限の要件を示す","1項目でも異常があった者が一般職場の健康管理において主要な評価指標とされている","年齢が40歳以上の者は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"二次健康診断等給付（労災保険）：一次健康診断で①血圧②血中脂質③血糖④BMI（または腹囲）の全4項目に異常所見がある場合に脳・心臓疾患の予防のため無料で二次健診・特定保健指導が受けられる。"},
+
+{id:27,category:"労働衛生（有害業務以外）",question:"「職場での窒息事故（密閉空間作業）」の主な原因として正しいものはどれか。",choices:["酸素欠乏・有毒ガス（硫化水素・一酸化炭素等）の蓄積による窒息・中毒","熱中症による意識障害は職場の衛生基準として法令で定められた最低限の要件を示す","転倒による外傷が作業環境の健康リスク評価において最も重要な測定対象である","騒音による意識消失が作業環境の健康リスク評価において最も重要な測定対象である"],answer:0,explanation:"密閉空間（タンク・マンホール・ピット等）での窒息事故の主な原因：①酸素欠乏（空気中O₂が18%未満）②有毒ガス（硫化水素・CO・CO₂等）の蓄積。作業前の測定・換気・監視人配置・保護具の準備が必須。"},
+
+{id:28,category:"労働衛生（有害業務以外）",question:"「有病率」と「罹患率」の違いとして正しいものはどれか。",choices:["両者は同じが作業環境の健康リスク評価において最も重要な測定対象である","有病率は治癒率を含むは職場の衛生基準として法令で定められた最低限の要件を示す","罹患率は横断的指標・有病率は縦断的指標が作業環境の健康リスク評価において最も重要な測定対象である","有病率は特定時点での疾病保有割合（横断的）・罹患率は一定期間内の新規発症割合"],answer:3,explanation:"有病率（Prevalence）：特定時点（または期間）で疾病を有している者の割合。罹患率（Incidence rate）：疾病のなかった集団の一定期間内の新規発症割合。慢性疾患は有病率が高い・急性疾患は罹患率が重要。"},
+
+{id:29,category:"労働衛生（有害業務以外）",question:"「職場における感染症対策」として「接触感染予防」の方法として正しいものはどれか。",choices:["手洗い・手指消毒・手袋の使用・汚染物の適切な処理・環境消毒が基本","マスクのみで十分が作業環境の健康リスク評価において最も重要な測定対象である","換気が一般職場の健康管理において主要な評価指標とされている","隔離のみで十分は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"接触感染（ノロウイルス・疥癬・MRSA等）の予防：①手洗い・手指アルコール消毒②手袋・ガウン等の個人防護具③汚染物（排泄物・嘔吐物等）の適切な処理④環境表面の消毒が基本。"},
+
+{id:30,category:"労働衛生（有害業務以外）",question:"「職場における腰痛統計」において腰痛が最も多い業種として正しいものはどれか。",choices:["IT業が一般職場の健康管理において主要な評価指標とされている","農業は職場の衛生基準として法令で定められた最低限の要件を示す","製造業・医療福祉・建設業等で特に重量物取り扱い・介護業務での発生が多い","サービス業全般で一律多いが作業環境の健康リスク評価において最も重要な測定対象である"],answer:2,explanation:"職業性腰痛は重量物取り扱い作業（製造業・建設業・運送業）・不自然な姿勢での作業・介護業務（患者の移乗・体位変換等）・VDT作業での長時間座位で発生が多い。業務上疾病の中で件数が最多。"},
+
+{id:31,category:"労働衛生（有害業務以外）",question:"「職場の衛生管理における5S活動」において「整頓」の意味として正しいものはどれか。",choices:["不要なものを除くことが一般職場の健康管理において主要な評価指標とされている","ルールを守る習慣をつけることが一般職場の健康管理において主要な評価指標とされている","汚れをなくすことが一般職場の健康管理において主要な評価指標とされている","必要なものを必要な時に取り出せるよう決められた場所に置くこと"],answer:3,explanation:"5Sの内容：整理（不要なものを除く）・整頓（必要なものを必要な時すぐ使えるよう所定位置に置く）・清掃（汚れをなくす）・清潔（3Sを維持する）・躾（ルールを守る習慣化）。"},
+
+{id:32,category:"労働衛生（有害業務以外）",question:"「疾病統計における偽陽性」の説明として正しいものはどれか。",choices:["病気があるのに陰性と判定されるは職場の衛生基準として法令で定められた最低限の要件を示す","すべての陽性者が真の患者が一般職場の健康管理において主要な評価指標とされている","病気がないのに陽性と判定される（衛生管理上の重要事項）","検査の感度が100%の場合の結果"],answer:2,explanation:"偽陽性（False Positive）：実際には疾病がないのに検査で陽性と判定される場合。偽陰性（False Negative）：実際には疾病があるのに陰性と判定される場合。感度・特異度・陽性予測値・陰性予測値で検査性能を評価する。"},
+
+{id:33,category:"労働衛生（有害業務以外）",question:"「職場における受動喫煙の健康影響」として科学的に確立しているものとして最も適切なものはどれか。",choices:["受動喫煙の健康影響は確認されていないは職場の衛生基準として法令で定められた最低限の要件を示す","肺がん・虚血性心疾患・脳卒中のリスク増加が多くの研究で証明されている","受動喫煙は軽微な刺激症状が作業環境の健康リスク評価において最も重要な測定対象である","短時間の受動喫煙は影響なしが作業環境の健康リスク評価において最も重要な測定対象である"],answer:1,explanation:"受動喫煙による健康影響：肺がん（リスク1.2〜1.3倍）・虚血性心疾患・脳卒中・COPD・子どもの喘息・低出生体重児等が科学的に確立している。短時間でも血管収縮等の即時的影響がある。"},
+
+{id:34,category:"労働衛生（有害業務以外）",question:"「職場における過重労働と健康障害」として「業務上過労死（脳・心臓疾患）」のリスクが特に高い状況として正しいものはどれか。",choices:["月100時間超または2〜6ヶ月平均月80時間超の時間外労働・深夜業・不規則な勤務","月20時間の時間外労働が作業環境の健康リスク評価において最も重要な測定対象である","週休2日の規則的な勤務が一般職場の健康管理において主要な評価指標とされている","1日6時間の所定労働が作業環境の健康リスク評価において最も重要な測定対象である"],answer:0,explanation:"過労死（脳・心臓疾患）のリスクが特に高い状況：月100時間超または2〜6ヶ月平均月80時間超の時間外労働（労災認定の目安）・深夜業・不規則な勤務・出張の多い業務・精神的緊張の高い業務等。"},
+
+{id:35,category:"労働衛生（有害業務以外）",question:"「職場の労働衛生教育」として「KYT（危険予知訓練）」の目的として正しいものはどれか。",choices:["危険予知訓練（KYT）の目的は給与計算スキルと財務知識の習得","危険予知訓練は製品の品質向上と検査技術の習得を主目的とする","作業現場の危険要因を発見・指摘・対策する能力を高め災害防止意識を向上させる","危険予知訓練はコスト削減と生産効率向上のために実施する研修"],answer:2,explanation:"KYT（危険予知トレーニング）は作業場面のイラストや写真を用いてグループで潜在的な危険要因を発見・指摘・重要危険ポイントの絞り込み・対策立案するトレーニング。安全意識・先取り安全の向上に有効。"},
+
+{id:36,category:"労働衛生（有害業務以外）",question:"「職場における健康づくり（THP）」において「運動指導」の効果として最も適切なものはどれか。",choices:["運動は職場の健康管理に不要は職場の衛生基準として法令で定められた最低限の要件を示す","運動は体重増加を招くが一般職場の健康管理において主要な評価指標とされている","激しい運動が作業環境の健康リスク評価において最も重要な測定対象である","定期的な有酸素運動は生活習慣病予防・体力向上（衛生管理上の重要事項）"],answer:3,explanation:"職場での運動指導（THP）の効果：①生活習慣病（高血圧・糖尿病・脂質異常症）の予防・改善②体力・持久力の向上③うつ・ストレスの軽減④睡眠の質向上⑤腰痛・頸肩腕障害の予防。中等度有酸素運動が推奨。"},
+
+{id:37,category:"労働衛生（有害業務以外）",question:"「脳卒中の初期症状」として「FAST」が示す内容として正しいものはどれか。",choices:["Fever（発熱）・Appetite（食欲）・Sleep（睡眠）・Tension（緊張）","Face（顔のゆがみ）・Arm（腕の麻痺）・Speech","Fatigue・Ache・Sweat・Temperature","Function・Activity・Stability・Therapy"],answer:1,explanation:"FAST（脳卒中の早期発見の合言葉）：F＝Face（顔の片側のゆがみ・口角低下）A＝Arm（片腕が挙がらない・落ちる）S＝Speech（ろれつが回らない・言葉が出ない）T＝Time（発症時刻を確認し即119番）。"},
+
+{id:38,category:"労働衛生（有害業務以外）",question:"「職場の安全衛生に関するリスクアセスメント」の手順として正しいものはどれか。",choices:["リスク低減措置→危険有害性の特定→リスクの見積もり","危険有害性の特定→リスクの見積もり→リスク評価→リスク低減措置の検討","リスク評価のみを実施が作業環境の健康リスク評価において最も重要な測定対象である","管理者が単独で実施が一般職場の健康管理において主要な評価指標とされている"],answer:1,explanation:"リスクアセスメントの基本手順：①危険有害性の特定（ハザードの洗い出し）→②リスクの見積もり（危険性の大きさと発生確率）→③リスク評価（許容可否の判断）→④リスク低減措置の検討・実施→⑤記録・見直し。"},
+
+{id:39,category:"労働衛生（有害業務以外）",question:"「職場における糖尿病管理」として「血糖コントロール指標」として最も重要なものとして正しいものはどれか。",choices:["空腹時血糖値が一般職場の健康管理において主要な評価指標とされている","尿糖が作業環境の健康リスク評価において最も重要な測定対象である","BMIは職場の衛生基準として法令で定められた最低限の要件を示す","HbA1c（ヘモグロビンA1c）：過去1〜2ヶ月の平均血糖状態を反映する長期的指標"],answer:3,explanation:"HbA1c（グリコヘモグロビン）は赤血球ヘモグロビンとブドウ糖が結合した割合を示し過去1〜2ヶ月の平均血糖状態を反映。空腹時血糖より長期的な血糖コントロールを評価できる最重要指標。目標値は7%未満が一般的。"},
+
+{id:40,category:"労働衛生（有害業務以外）",question:"「職場における健康情報の保護」において健康診断結果の「要配慮個人情報」としての取り扱いとして正しいものはどれか。",choices:["健康診断結果は誰でも閲覧できるは職場の衛生基準として法令で定められた最低限の要件を示す","健康情報は人事評価に自由に使用できるは職場の衛生基準として法令で定められた最低限の要件を示す","要配慮個人情報として取得に原則本人の同意が必要で事業者は適切な管理","医師は健康情報を誰にでも提供できるが作業環境の健康リスク評価において最も重要な測定対象である"],answer:2,explanation:"健康診断結果・病歴等は個人情報保護法の「要配慮個人情報」に該当し取得に原則本人同意が必要。事業者は適切に管理し本人の同意なく第三者（上司・人事部門等）に提供することは原則禁止。"},
+
+{id:41,category:"労働衛生（有害業務以外）",question:"「職場における骨粗鬆症予防」として重要な生活習慣として正しいものはどれか。",choices:["喫煙・大量飲酒が骨を強化するが作業環境の健康リスク評価において最も重要な測定対象である","カルシウムは摂取しすぎてもよいが一般職場の健康管理において主要な評価指標とされている","安静が最も骨を強くするが一般職場の健康管理において主要な評価指標とされている","カルシウム・ビタミンD摂取・適度な荷重運動・禁煙・節酒が骨密度維持に重要"],answer:3,explanation:"骨粗鬆症予防：①カルシウム・ビタミンD・ビタミンK摂取②荷重運動（ウォーキング・筋力トレーニング）③禁煙（喫煙は骨密度低下）④節酒⑤転倒防止。閉経後女性・高齢者・低栄養・長期ステロイド使用者はリスクが高い。"},
+
+{id:42,category:"労働衛生（有害業務以外）",question:"「職場のメンタルヘルスにおけるうつ病」の「職場での初期サイン」として最も適切なものはどれか。",choices:["遅刻・欠勤の増加・業務ミスの増加・表情が暗くなる・コミュニケーションが減る","業務効率の著しい向上が一般職場の健康管理において主要な評価指標とされている","体重が急増するが作業環境の健康リスク評価において最も重要な測定対象である","業務への熱意が増すが一般職場の健康管理において主要な評価指標とされている"],answer:0,explanation:"職場でのうつ病の初期サイン：遅刻・欠勤の増加・業務パフォーマンス低下・ミスの増加・表情の暗さ・コミュニケーション減少・身だしなみの乱れ等の「いつもと違う変化」への早期気づきが重要。"},
+
+{id:43,category:"労働衛生（有害業務以外）",question:"「疲労の種類」として「精神疲労」と「身体疲労」の違いとして正しいものはどれか。",choices:["精神疲労は中枢神経系の疲労で脳作業・精神的緊張が主因・身体疲労は骨格筋","両者は全く同じが一般職場の健康管理において主要な評価指標とされている","精神疲労は筋肉疲労を意味するは職場の衛生基準として法令で定められた最低限の要件を示す","身体疲労は心理的原因で生じるは職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"精神疲労：長時間の精神的緊張・単調作業・情報処理等による中枢神経（大脳）の疲労。身体疲労：重筋作業・スポーツ等による骨格筋を中心とした末梢疲労。現代の職場では精神疲労が主体。"},
+
+{id:44,category:"労働衛生（有害業務以外）",question:"「職場の快適温度」として冷房時の外気との温度差として推奨される目安として正しいものはどれか。",choices:["外気との差は10℃以上が望ましいが一般職場の健康管理において主要な評価指標とされている","外気との差が著しくならないよう概ね5〜7℃以内が目安","温度差に制限はないが作業環境の健康リスク評価において最も重要な測定対象である","室温が低ければ低いほど良いが一般職場の健康管理において主要な評価指標とされている"],answer:1,explanation:"冷房時の室温は外気温との差が著しくならないよう配慮する（概ね5〜7℃以内が目安）。大きな温度差（クールビズの推奨：28℃設定）は空調病・自律神経障害・冷え症等を引き起こす可能性がある。"},
+
+{id:45,category:"労働衛生（有害業務以外）",question:"「職場のメンタルヘルス」における「バーンアウト（燃え尽き症候群）」が起こりやすい職種として最も適切なものはどれか。",choices:["燃え尽き症候群（バーンアウト）は主に事務職の単純作業者に多い","燃え尽き症候群は管理職のみに見られるストレス反応の一類型","燃え尽き症候群は単純作業・流れ作業の職種に最も多く見られる","対人サービス職（医療・介護・教育・接客等）で理想と過重業務が続く職種に多い"],answer:3,explanation:"バーンアウトは高い理想・使命感を持って長期間過重な対人サービス業務（医療・看護・介護・教育・接客等）に従事し報酬・評価・サポートが不十分な状況で生じやすい。"},
+
+{id:46,category:"労働衛生（有害業務以外）",question:"「職場における腰痛予防」の「腰痛予防体操」の実施時期として最も適切なものはどれか。",choices:["腰痛が発症してから実施するは職場の衛生基準として法令で定められた最低限の要件を示す","激しい腰痛体操が一般職場の健康管理において主要な評価指標とされている","週末のみ実施するは職場の衛生基準として法令で定められた最低限の要件を示す","作業開始前・休憩時・作業終了後に実施して筋肉の柔軟性維持"],answer:3,explanation:"腰痛予防体操は作業開始前（ウォームアップ）・休憩時（途中ストレッチ）・作業終了後（クールダウン）に実施し筋肉の柔軟性維持・血行促進・疲労物質除去・腰痛予防に効果的。"},
+
+{id:47,category:"労働衛生（有害業務以外）",question:"「職場における心停止の対応」として「救命の連鎖」の順序として正しいものはどれか。",choices:["心停止の予防→早期認識と通報→一次救命処置（衛生管理上の重要事項）","AED→CPR→119番通報→高度救命処置","CPRのみを繰り返すが作業環境の健康リスク評価において最も重要な測定対象である","病院到着後にAEDを使用が一般職場の健康管理において主要な評価指標とされている"],answer:0,explanation:"救命の連鎖（Chain of Survival）：①心停止の予防（発症防止）→②早期認識と通報（119番・AED手配）→③一次救命処置（CPR＋AED）→④二次救命処置（専門的医療）。各リングが途切れないことが救命率向上の鍵。"},
+
+{id:48,category:"労働衛生（有害業務以外）",question:"「職場における健康教育」の効果を高める方法として最も適切なものはどれか。",choices:["講義のみで十分は職場の衛生基準として法令で定められた最低限の要件を示す","参加者の興味・関心に基づいた内容・双方向の参加型学習","一方的な情報提供は職場の衛生基準として法令で定められた最低限の要件を示す","年1回の講演が一般職場の健康管理において主要な評価指標とされている"],answer:1,explanation:"効果的な健康教育：①対象者のニーズ・関心に基づいた内容②双方向・参加型学習（グループワーク等）③実践的なスキル訓練④継続的なフォローアップ⑤職場環境の整備と連携の組み合わせが重要。"},
+
+{id:49,category:"労働衛生（有害業務以外）",question:"「職場における高血圧管理」として「家庭血圧」の重要性として正しいものはどれか。",choices:["家庭血圧は測定精度が低く意味がないは職場の衛生基準として法令で定められた最低限の要件を示す","家庭血圧の基準は診察室血圧と同じは職場の衛生基準として法令で定められた最低限の要件を示す","血圧は職場でのみ測定すべきが一般職場の健康管理において主要な評価指標とされている","家庭血圧は白衣高血圧・仮面高血圧の発見に有用で診察室血圧より予後との相関が高い"],answer:3,explanation:"家庭血圧の意義：①白衣高血圧（診察室高値・家庭正常）の確認②仮面高血圧（診察室正常・家庭高値）の発見③日常生活での血圧変動の把握④予後との相関が診察室血圧より高い（家庭血圧基準：135/85mmHg以上が高血圧）。"},
+
+{id:50,category:"労働衛生（有害業務以外）",question:"「職場における産業保健活動の評価」として「ストラクチャー評価・プロセス評価・アウトカム評価」のうち「アウトカム評価」の例として正しいものはどれか。",choices:["産業医の選任状況が一般職場の健康管理において主要な評価指標とされている","保健指導の実施件数が一般職場の健康管理において主要な評価指標とされている","健康診断の有所見率の変化・疾病休業率の変化・生産性の向上","研修の参加率が作業環境の健康リスク評価において最も重要な測定対象である"],answer:2,explanation:"評価の枠組み：ストラクチャー評価（資源・体制：産業医選任・設備等）→プロセス評価（活動の実施状況：健診実施率・保健指導件数等）→アウトカム評価（結果・成果：有所見率変化・休業率変化・生活習慣の改善等）。"},
+
+{id:51,category:"労働衛生（有害業務以外）",question:"「職場における虚血性心疾患」の「危険因子の組合せ」として最も適切なものはどれか。",choices:["高HDL・低LDL・不喫煙・適正血圧が一般職場の健康管理において主要な評価指標とされている","高血圧・高LDL・喫煙・糖尿病・肥満・過重労働・ストレス等の複合","低血圧は職場の衛生基準として法令で定められた最低限の要件を示す","若年のみがリスクは職場の衛生基準として法令で定められた最低限の要件を示す"],answer:1,explanation:"虚血性心疾患（狭心症・心筋梗塞）の危険因子：①高血圧②高LDLコレステロール③低HDLコレステロール④喫煙⑤糖尿病⑥肥満（内臓脂肪型）⑦過重労働・ストレス⑧加齢⑨家族歴。複数の危険因子の重複でリスクが急増。"},
+
+{id:52,category:"労働衛生（有害業務以外）",question:"「職場における腰痛」の「一次予防」として最も適切なものはどれか。",choices:["腰痛発症後に職場復帰を支援するが作業環境の健康リスク評価において最も重要な測定対象である","腰痛の発症前に職場環境改善・作業姿勢教育（衛生管理上の重要事項）","腰痛発症後に薬物療法を行うは職場の衛生基準として法令で定められた最低限の要件を示す","腰痛の再発を防止するが一般職場の健康管理において主要な評価指標とされている"],answer:1,explanation:"腰痛予防の一次予防（未然防止）：①作業環境・設備改善（補助器具・高さ調整等）②作業方法の改善（正しい姿勢・重量制限）③腰痛予防体操④体力づくり⑤腰痛予防教育。二次予防：早期発見・早期治療。"},
+
+{id:53,category:"労働衛生（有害業務以外）",question:"「職場における感染症の集団発生（アウトブレイク）」への対応として最も適切なものはどれか。",choices:["原因究明・感染経路の特定・感染拡大防止措置（衛生管理上の重要事項）","発生した事実を公表せず静観するが作業環境の健康リスク評価において最も重要な測定対象である","発症者のみを隔離して終了が一般職場の健康管理において主要な評価指標とされている","薬剤投与のみで対応が一般職場の健康管理において主要な評価指標とされている"],answer:0,explanation:"職場での感染症集団発生への対応：①原因究明・感染経路の特定②感染拡大防止（隔離・消毒・換気等）③保健所・医療機関への報告④関係者への周知と予防指導⑤再発防止策の検討・実施。"},
+
+{id:54,category:"労働衛生（有害業務以外）",question:"「職場における職業性疾病」の「三次予防」の内容として正しいものはどれか。",choices:["疾病の発症前の環境改善が作業環境の健康リスク評価において最も重要な測定対象である","早期発見・早期治療が一般職場の健康管理において主要な評価指標とされている","疾病からの回復・職場復帰支援・再発防止・リハビリテーション","定期健康診断の実施が一般職場の健康管理において主要な評価指標とされている"],answer:2,explanation:"三次予防（tertiary prevention）：発症した疾病からの回復の促進・機能障害の最小化・職場復帰支援・再発防止・リハビリテーション。一次予防（発症防止）・二次予防（早期発見・早期治療）とともに包括的な予防活動を構成。"},
+
+{id:55,category:"労働衛生（有害業務以外）",question:"「勤務形態（シフト制・夜勤）」の健康影響として最も適切なものはどれか。",choices:["サーカディアンリズムの乱れ・睡眠障害・消化器症状・心血管疾患・がんリスク増加","夜勤・交代制勤務は健康に影響しないは職場の衛生基準として法令で定められた最低限の要件を示す","交代制勤務は生産性のみに影響が作業環境の健康リスク評価において最も重要な測定対象である","夜勤は短期的に影響するが長期的には問題ないが一般職場の健康管理において主要な評価指標とされている"],answer:0,explanation:"夜勤・交代制勤務の健康影響：①サーカディアンリズム（体内時計）の乱れ②睡眠障害（睡眠の質・量の低下）③消化器症状④心血管疾患リスク増加⑤一部のがん（乳がん等）リスク増加⑥精神的ストレス。"},
+
+{id:56,category:"労働衛生（有害業務以外）",question:"「職場における結核」の集団感染予防として最も重要なことは何か。",choices:["全員にBCGを接種するが作業環境の健康リスク評価において最も重要な測定対象である","抗生物質の予防投与が一般職場の健康管理において主要な評価指標とされている","マスクのみで十分は職場の衛生基準として法令で定められた最低限の要件を示す","活動性結核患者の早期発見・早期治療・適切な隔離・接触者検診の実施"],answer:3,explanation:"職場での結核集団感染予防：①活動性結核患者の早期発見（胸部X線・喀痰検査）②確実な治療と隔離（飛沫核感染：空気感染に準じた対応）③接触者の結核検診④職場環境の換気改善⑤免疫力低下者の管理。"},
+
+{id:57,category:"労働衛生（有害業務以外）",question:"「職場の換気」における「必要換気量の計算」として在室者1人当たりの必要換気量の目安として正しいものはどれか。",choices:["30m³/h以上（衛生管理上の重要事項）","1m³/h以上が作業環境の健康リスク評価において最も重要な測定対象である","100m³/h以上が作業環境の健康リスク評価において最も重要な測定対象である","10m³/h以上は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"在室者1人当たりの必要換気量は成人の呼気CO₂量等から概ね30m³/h（約0.5m³/min）以上が目安とされる。CO₂濃度が1000ppm以下を維持するために必要な換気量の計算に用いられる。"},
+
+{id:58,category:"労働衛生（有害業務以外）",question:"「ノロウイルス食中毒」の特徴として最も適切なものはどれか。",choices:["細菌性食中毒で60℃以上の加熱でも予防効果は期待できない","ウイルス性食中毒で感染力が強く少量のウイルスで発症し冬季に多い","サルモネラ菌と同様に夏季に急増するため夏季のみに注意が必要","感染源は魚介類のみに限定され人から人への二次感染は起きない"],answer:1,explanation:"ノロウイルス食中毒の特徴：①ウイルス性②感染力が非常に強い（10〜100個で発症）③冬季に多い④カキ等の二枚貝・感染者からの二次感染⑤嘔吐・下痢・腹痛が主症状⑥85〜90℃90秒以上の加熱で失活。"},
+
+{id:59,category:"労働衛生（有害業務以外）",question:"「職場における骨・関節・筋肉の障害予防」として「ストレッチング」の正しい実施方法として正しいものはどれか。",choices:["反動をつけて素早く行うは職場の衛生基準として法令で定められた最低限の要件を示す","痛みを感じない範囲でゆっくりと伸ばし15〜30秒保持することを繰り返す","1日1回のみで十分は職場の衛生基準として法令で定められた最低限の要件を示す","関節に強い負荷をかけながら行うが一般職場の健康管理において主要な評価指標とされている"],answer:1,explanation:"静的ストレッチングの正しい方法：①反動（バリスティック）をつけない②伸張感はあるが痛みを感じない範囲まで伸ばす③15〜30秒間保持④呼吸を止めない⑤複数回繰り返す。作業前後に実施し筋肉の柔軟性を維持する。"},
+
+{id:60,category:"労働衛生（有害業務以外）",question:"「職場における睡眠衛生（スリープハイジーン）」として推奨される習慣として最も不適切なものはどれか。",choices:["就寝・起床時間を毎日一定に保つが作業環境の健康リスク評価において最も重要な測定対象である","寝室を暗く静かに涼しく保つが一般職場の健康管理において主要な評価指標とされている","就寝前の激しい運動・カフェイン・アルコール・スマートフォン使用","就寝前にリラックスできる活動を行うが作業環境の健康リスク評価において最も重要な測定対象である"],answer:2,explanation:"睡眠衛生の悪習慣：就寝前の激しい運動（交感神経活性化）・カフェイン摂取（覚醒促進）・アルコール（睡眠構造の乱れ）・スマートフォン（ブルーライト・精神的覚醒）は睡眠の質を低下させる。"},
+
+{id:61,category:"労働衛生（有害業務以外）",question:"「職場での食中毒予防」として「食品衛生の原則」として最も適切なものはどれか。",choices:["清潔・迅速・加熱または冷却の原則（食中毒菌を「つけない・増やさない・殺す」）","食品の見た目で安全を判断できるが作業環境の健康リスク評価において最も重要な測定対象である","常温保存が最も安全が作業環境の健康リスク評価において最も重要な測定対象である","食品添加物は全て危険は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"食中毒予防の3原則：①つけない（清潔：手洗い・器具の消毒・交差汚染防止）②増やさない（迅速・低温：10℃以下または60℃以上で保存）③殺す（加熱：75℃1分以上）。食品の外観・臭いだけでは判断できない。"},
+
+{id:62,category:"労働衛生（有害業務以外）",question:"「職場における生活習慣病の重症化予防」として「かかりつけ医との連携」の意義として正しいものはどれか。",choices:["健診結果の情報共有・治療継続の確認・職場での保健指導との連携","かかりつけ医との連携が作業環境の健康リスク評価において最も重要な測定対象である","産業医がかかりつけ医の役割を担うが一般職場の健康管理において主要な評価指標とされている","重症化してから医療機関を受診すればよいが作業環境の健康リスク評価において最も重要な測定対象である"],answer:0,explanation:"かかりつけ医との連携（産業保健と医療の連携）：①健診結果の適切な共有②治療・服薬継続の確認③職場環境や就業状況の医師への情報提供④職場での保健指導・就業上の配慮との連携で重症化予防に効果的。"},
+
+{id:63,category:"労働衛生（有害業務以外）",question:"「職場の安全衛生管理」における「ヒヤリハット（ヒヤリ・ハット）報告」の目的として正しいものはどれか。",choices:["重大事故（1件）の背後には軽微な事故（衛生管理上の重要事項）","責任追及のための記録が作業環境の健康リスク評価において最も重要な測定対象である","記録のみを目的とするが作業環境の健康リスク評価において最も重要な測定対象である","法律で義務付けられているからは職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"ヒヤリハット報告はハインリッヒの法則（1：29：300の法則）に基づき重大事故の予兆となる軽微な事故・危険な経験を収集・分析して潜在的な危険要因を発見・改善する予防的活動。責任追及ではなく改善が目的。"},
+
+{id:64,category:"労働衛生（有害業務以外）",question:"「職場における疾病管理」として「治療と就労の両立支援」の目的として正しいものはどれか。",choices:["がん・糖尿病・心疾患等の疾病治療中の労働者が適切な治療を継続しながら働き","治療中は就労不可なので退職を促すが一般職場の健康管理において主要な評価指標とされている","両立支援は人事部門のみが担当が作業環境の健康リスク評価において最も重要な測定対象である","医師が就労の可否を単独で決定するが作業環境の健康リスク評価において最も重要な測定対象である"],answer:0,explanation:"治療と就労の両立支援：がん・糖尿病・心疾患・精神疾患等の治療中の労働者が適切な治療を継続しながら就労継続できるよう主治医・産業医・事業者・労働者が連携して支援する取り組み。"},
+
+{id:65,category:"労働衛生（有害業務以外）",question:"「職場における安全配慮義務」の内容として正しいものはどれか。",choices:["使用者は労働者の生命・身体・精神の安全に配慮する義務があり精神的健康","安全配慮義務は身体的危険のみに適用が一般職場の健康管理において主要な評価指標とされている","安全配慮義務に法的根拠はないが一般職場の健康管理において主要な評価指標とされている","安全配慮義務は製造業のみに適用は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"労働契約法第5条：安全配慮義務は労働者の生命・身体の安全だけでなく精神的健康（メンタルヘルス）も含む。使用者が安全配慮義務を怠ると債務不履行・不法行為として損害賠償責任が生じる。"},
+
+{id:66,category:"労働衛生（有害業務以外）",question:"「職場における化学物質の自律的管理」（2022年改正）の内容として正しいものはどれか。",choices:["化学物質の使用を全面禁止するは職場の衛生基準として法令で定められた最低限の要件を示す","リスクアセスメント対象物質を約2900物質に拡大し事業者が自らリスクアセ","国が化学物質ごとに管理方法を指定するは職場の衛生基準として法令で定められた最低限の要件を示す","化学物質管理は医師のみが担当が作業環境の健康リスク評価において最も重要な測定対象である"],answer:1,explanation:"2022年の労働安全衛生法・省令改正でリスクアセスメント対象物が約2900物質に拡大し事業者が自律的にリスクアセスメントを実施し適切な措置を講じる「自律的管理」体制への転換が図られた。"},
+
+{id:67,category:"労働衛生（有害業務以外）",question:"「職場における健康診断」後の「要精密検査者」への対応として最も適切なものはどれか。",choices:["要精密検査の結果は放置してよいが作業環境の健康リスク評価において最も重要な測定対象である","精密検査は産業医が実施するが一般職場の健康管理において主要な評価指標とされている","全員の精密検査費用を事業者が負担する義務があるが一般職場の健康管理において主要な評価指標とされている","本人への結果通知・受診勧奨の実施・受診状況の確認・産業医への報告を行う"],answer:3,explanation:"要精密検査者への対応：①本人への結果通知②精密検査の受診勧奨（受診しやすい環境整備）③受診状況のフォローアップ確認④産業医・保健師への報告・連携⑤必要に応じた就業上の配慮が重要。"},
+
+{id:68,category:"労働衛生（有害業務以外）",question:"「職場における労働者の健康状態の把握」として「問診」の重要性として正しいものはどれか。",choices:["問診は客観性がないため不要は職場の衛生基準として法令で定められた最低限の要件を示す","問診は時間がかかるため省略してよい","検査値のみで健康状態が評価できる","自覚症状・生活習慣・既往歴・家族歴・業務の状況"],answer:3,explanation:"問診の重要性：①自覚症状（倦怠感・頭痛・不眠等）の把握②生活習慣（食事・運動・喫煙・飲酒・睡眠）の評価③既往歴・家族歴・業務内容の確認④検査値には反映されない不調の早期発見に不可欠。"},
+
+{id:69,category:"労働衛生（有害業務以外）",question:"「職場における感染症のワクチン接種」の意義として正しいものはどれか。",choices:["ワクチン接種で全ての感染症を予防できる","ワクチン接種は一度受ければ永久に有効","ワクチン接種は個人の選択であり職場は関与しない","インフルエンザ・B型肝炎・麻疹・風疹"],answer:3,explanation:"職場でのワクチン接種の意義：①個人の感染予防・重症化防止②職場内での感染拡大防止③社会的責任（集団免疫への貢献）。インフルエンザは毎年接種が必要・B型肝炎は医療職で特に推奨。"},
+
+{id:70,category:"労働衛生（有害業務以外）",question:"「職場における禁煙支援」として最も効果的なアプローチとして正しいものはどれか。",choices:["意志の強さのみで禁煙できるは職場の衛生基準として法令で定められた最低限の要件を示す","禁煙は個人の問題であり職場は支援不要","禁煙外来での薬物療法（バレニクリン・ニコチン代替療法","電子タバコへの切り替えで十分が一般職場の健康管理において主要な評価指標とされている"],answer:2,explanation:"禁煙支援の効果的アプローチ：①禁煙外来（薬物療法：バレニクリン・ニコチン代替療法等）②行動療法（トリガーの同定・対処法の習得）③社会的サポートの組み合わせが単独アプローチより効果的。職場での禁煙外来受診促進も重要。"},
+
+{id:71,category:"労働衛生（有害業務以外）",question:"「職場における腰痛の疫学」として腰痛による労働災害が特に多い業種として正しいものはどれか。",choices:["金融業・保険業・情報通信業でデスクワーク由来の腰痛が最多","IT業・研究職で長時間の椅子座位による腰痛が最多である","農業のみで腰痛労災が集中しており他業種での発生は少ない","社会福祉施設・製造業・建設業・運輸業等で件数が多い"],answer:3,explanation:"業務上腰痛の発生が多い業種：社会福祉施設（介護・福祉）・製造業・建設業・運輸業・卸小売業等。介護業務（患者・利用者の移乗・体位変換）・重量物取り扱い・長時間の同一姿勢が主要原因。"},
+
+{id:72,category:"労働衛生（有害業務以外）",question:"「職場における化学物質の皮膚障害予防」として「保護手袋の選択」において最も重要なことはどれか。",choices:["どの化学物質でも同じ素材でよいは職場の衛生基準として法令で定められた最低限の要件を示す","手袋の色で判断するは職場の衛生基準として法令で定められた最低限の要件を示す","化学物質の種類に応じた適切な耐透過性・耐浸透性を持つ素材の手袋を選択する","できるだけ薄い手袋を選ぶが作業環境の健康リスク評価において最も重要な測定対象である"],answer:2,explanation:"保護手袋の選択：化学物質の種類により手袋素材への透過性が異なる。ニトリルゴム・ブチルゴム・ネオプレン等の素材ごとに耐透過性を確認しSDS（安全データシート）を参考に適切な素材を選択する。"},
+
+{id:73,category:"労働衛生（有害業務以外）",question:"「職場における安全衛生教育」の「特別教育」が必要な作業として正しいものはどれか。",choices:["研削といし・フォークリフト・酸素欠乏危険作業・低圧電気取扱業務","すべての業務が一般職場の健康管理において主要な評価指標とされている","一般的な事務作業が一般職場の健康管理において主要な評価指標とされている","清掃作業全般は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"特別教育（安衛法第59条・安衛則第36条）：特に危険有害な業務（研削といし取り扱い・アーク溶接・フォークリフト・クレーン・酸欠危険作業・低圧電気取扱等）に就かせる場合に事前に実施義務がある。"},
+
+{id:74,category:"労働衛生（有害業務以外）",question:"「職場における健康増進」として「歩数計（万歩計）活用」の目的として正しいものはどれか。",choices:["歩数計は健康管理に無効は職場の衛生基準として法令で定められた最低限の要件を示す","1日10000歩が唯一の目標が作業環境の健康リスク評価において最も重要な測定対象である","歩数計は体重管理のみに有効は職場の衛生基準として法令で定められた最低限の要件を示す","身体活動量の客観的把握・目標設定・達成感の提供により運動習慣の継続を支援する"],answer:3,explanation:"歩数計（ペドメーター）の活用：①身体活動量の客観的把握（自己モニタリング）②達成可能な目標設定③達成感・動機付けの提供④継続的な運動習慣の形成支援。1日8000〜10000歩が生活習慣病予防の目安。"},
+
+{id:75,category:"労働衛生（有害業務以外）",question:"「職場における人間工学的対策」として「VDT作業のモニター配置」として正しいものはどれか。",choices:["モニターは目線より高く配置するが一般職場の健康管理において主要な評価指標とされている","モニターの高さ・距離は重要でないは職場の衛生基準として法令で定められた最低限の要件を示す","モニターは窓の正面に配置するが作業環境の健康リスク評価において最も重要な測定対象である","モニターは目線と水平またはやや下方・目との距離は40cm以上確保"],answer:3,explanation:"VDT作業のモニター配置：①目の高さと同じかやや下方（目線が自然に落ちる位置）②目とモニターの距離40cm以上③輝度・コントラスト・文字サイズの適切な設定④窓・照明の映り込み（グレア）防止が重要。"},
+
+{id:76,category:"労働衛生（有害業務以外）",question:"「職場における産業保健活動の推進」において「産業保健総合支援センター（さんぽセンター）」の役割として正しいものはどれか。",choices:["さんぽセンターは大企業のみが利用できる","さんぽセンターは労働基準監督署の附属機関","さんぽセンターは治療機関が作業環境の健康リスク評価において最も重要な測定対象である","都道府県に設置され産業医・産業保健スタッフへの研修"],answer:3,explanation:"産業保健総合支援センター（さんぽセンター）は各都道府県に設置された公的機関。①産業医・産業保健スタッフへの研修②事業場への産業保健サービス支援③中小事業場への地域産業保健センター（地域窓口）での無料相談対応等を担う。"},
+
+{id:77,category:"労働衛生（有害業務以外）",question:"「職場における骨粗鬆症のリスク評価」として用いられる「FRAX」の説明として正しいものはどれか。",choices:["10年間の骨折確率を算出するWHO開発の骨折リスク評価ツール","FRAXは骨折を治療するための手術は職場の衛生基準として法令で定められた最低限の要件を示す","FRAXはカルシウム補給量の計算式が一般職場の健康管理において主要な評価指標とされている","FRAXは運動量の評価指標が一般職場の健康管理において主要な評価指標とされている"],answer:0,explanation:"FRAX（Fracture Risk Assessment Tool）はWHOが開発した骨折リスク評価ツール。年齢・性別・体重・身長・既往骨折・喫煙・飲酒・骨密度等のリスク因子を入力し10年間の骨折確率を計算する。"},
+
+{id:78,category:"労働衛生（有害業務以外）",question:"「職場における感染症予防」として「手洗い」の正しい方法として最も重要なことはどれか。",choices:["水で流すだけで十分が作業環境の健康リスク評価において最も重要な測定対象である","ハンカチで拭くだけで十分が一般職場の健康管理において主要な評価指標とされている","アルコール消毒のみで十分が作業環境の健康リスク評価において最も重要な測定対象である","石けんを用いて手のひら・手の甲・指の間（衛生管理上の重要事項）"],answer:3,explanation:"有効な手洗い：①石けんを十分に泡立てる②手のひら・手の甲・指の間・指先（特に爪周囲）・親指・手首を30秒以上洗う③流水でよくすすぐ④清潔なタオル・ペーパータオルで拭く。流水のみ・短時間では不十分。"},
+
+{id:79,category:"労働衛生（有害業務以外）",question:"「職場の産業保健活動」において「ポピュレーションアプローチ」と「ハイリスクアプローチ」の組み合わせが重要な理由として正しいものはどれか。",choices:["どちらか一方のみで十分が一般職場の健康管理において主要な評価指標とされている","ハイリスクアプローチは職場の衛生基準として法令で定められた最低限の要件を示す","ポピュレーションアプローチは職場の衛生基準として法令で定められた最低限の要件を示す","ポピュレーションアプローチ（集団全体の健康リスク低減）とハイリスクアプローチ"],answer:3,explanation:"ポピュレーション（集団）アプローチ：職場環境改善・健康教育等で集団全体のリスクを下げる（一次予防）。ハイリスクアプローチ：高ストレス者・有所見者等への集中支援（二次予防）。両者の組み合わせで予防効果が最大化される。"},
+
+{id:80,category:"労働衛生（有害業務以外）",question:"「職場における体力測定」の意義として最も適切なものはどれか。",choices:["労働者の体力・運動能力を客観的に評価し個人に適した運動指導","体力測定は産業保健に不要は職場の衛生基準として法令で定められた最低限の要件を示す","体力測定結果を人事評価に使用するは職場の衛生基準として法令で定められた最低限の要件を示す","体力が低い者を解雇する根拠とするが一般職場の健康管理において主要な評価指標とされている"],answer:0,explanation:"職場での体力測定の意義：①体力・運動能力の客観的評価②個人の体力に応じた運動処方の立案③健康増進目標の設定④体力の経年変化のモニタリング⑤疾病リスクの評価（特に心肺機能・筋力・柔軟性）。"},
+
+{id:81,category:"労働衛生（有害業務以外）",question:"「職場における心臓突然死の予防」として「定期的な心電図検査」の意義として正しいものはどれか。",choices:["心室頻拍・WPW症候群・QT延長症候群・心肥大","心電図検査に予防的意義はないが一般職場の健康管理において主要な評価指標とされている","心電図は心筋梗塞が発症してから行う","心電図検査は年齢に関係なく不要は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:0,explanation:"心電図検査（定期健診での実施）：①致死性不整脈（心室頻拍等）②QT延長症候群③WPW症候群④心肥大（高血圧性・肥大型心筋症等）⑤心筋虚血（狭心症）等の早期発見に有用。心臓突然死の一次予防に貢献。"},
+
+{id:82,category:"労働衛生（有害業務以外）",question:"「職場における過重労働対策」として「時間外労働の上限規制」が定める原則上限として正しいものはどれか。",choices:["月100時間・年720時間が一般職場の健康管理において主要な評価指標とされている","月45時間・年360時間（衛生管理上の重要事項）","月60時間・年480時間が作業環境の健康リスク評価において最も重要な測定対象である","上限規制はないが作業環境の健康リスク評価において最も重要な測定対象である"],answer:1,explanation:"働き方改革関連法による改正労働基準法：時間外労働の原則上限は月45時間・年360時間。特別条項でも年720時間・月100時間未満・複数月平均80時間以内等の上限が設けられた（罰則付き）。"},
+
+{id:83,category:"労働衛生（有害業務以外）",question:"「職場における健康診断の意義」として一般定期健康診断（年1回）の目的として正しいものはどれか。",choices:["健康診断は法律で義務付けられているから受けるが一般職場の健康管理において主要な評価指標とされている","労働者の健康状態を定期的に把握し健康障害の早期発見・予防・就業上の措置につなげる","健診は労働者の義務を果たすためが一般職場の健康管理において主要な評価指標とされている","健診で異常がなければ健康管理が作業環境の健康リスク評価において最も重要な測定対象である"],answer:1,explanation:"定期健康診断の目的：①労働者の健康状態の定期的把握②疾病の早期発見③有所見者への就業上の措置・保健指導④職場環境との関連分析⑤健康増進施策の立案。単なる義務でなく労働者・事業者双方の健康管理の基盤。"},
+
+{id:84,category:"労働衛生（有害業務以外）",question:"「職場における安全衛生マネジメントシステム（OSHMS）」の「PDCAサイクル」において「A（Act）」に該当する活動として正しいものはどれか。",choices:["安全衛生方針の策定が一般職場の健康管理において主要な評価指標とされている","リスクアセスメントの実施は職場の衛生基準として法令で定められた最低限の要件を示す","安全衛生活動の実施が作業環境の健康リスク評価において最も重要な測定対象である","評価結果に基づく計画・手順の見直し・改善（衛生管理上の重要事項）"],answer:3,explanation:"OSHMSのPDCA：P（Plan：方針策定・計画立案・リスクアセスメント）→D（Do：計画の実施）→C（Check：実施状況・効果の点検・評価）→A（Act：評価に基づく見直し・改善・次サイクルへの反映）。"},
+
+{id:85,category:"労働衛生（有害業務以外）",question:"「職場における女性の健康管理」として「月経に関連する健康問題」への職場での配慮として正しいものはどれか。",choices:["月経に関連する健康問題は職場では考慮不要","月経に関する相談は職場では禁止が一般職場の健康管理において主要な評価指標とされている","女性には特別な配慮が一般職場の健康管理において主要な評価指標とされている","月経痛・月経前症候群（PMS）・月経不順等"],answer:3,explanation:"女性の健康管理：月経困難症・PMS（月経前症候群）・更年期障害等が就労に影響する場合に産業医・保健師への相談・生理休暇（労働基準法第68条）の取得・業務調整等の配慮が必要。"},
+
+{id:86,category:"労働衛生（有害業務以外）",question:"「職場での中毒・過量服薬等の緊急事態」への対応として最も適切なものはどれか。",choices:["様子を見てから対応するが作業環境の健康リスク評価において最も重要な測定対象である","直ちに119番通報・摂取物の確認・意識（衛生管理上の重要事項）","無理に嘔吐させるが一般職場の健康管理において主要な評価指標とされている","水を大量に飲ませるが一般職場の健康管理において主要な評価指標とされている"],answer:1,explanation:"中毒・過量服薬の応急処置：①119番通報②摂取した物質・量・時刻の確認③意識・呼吸の確認④必要ならCPR⑤一般的に嘔吐は禁忌（気道閉塞・誤嚥のリスク・腐食性物質は粘膜を再損傷）⑥毒物センターへの相談。"},
+
+{id:87,category:"労働衛生（有害業務以外）",question:"「職場における転倒・骨折」の予防として「高齢労働者」に特に重要な対策として正しいものはどれか。",choices:["高齢労働者は全員休職させるが作業環境の健康リスク評価において最も重要な測定対象である","転倒は防止できないが一般職場の健康管理において主要な評価指標とされている","筋力・バランス・柔軟性を高める運動・適切な照明（衛生管理上の重要事項）","転倒後の治療のみが重要は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:2,explanation:"高齢労働者の転倒予防：①運動（筋力・バランス・柔軟性訓練）②環境改善（照明・段差・床面・手すり）③転倒リスク評価③適切な靴（非滑り底）④骨密度管理（骨粗鬆症治療・カルシウム・ビタミンD）⑤視力・聴力の管理。"},
+
+{id:88,category:"労働衛生（有害業務以外）",question:"「労働生産性とメンタルヘルス」の関連として「プレゼンティーイズム」の概念として正しいものはどれか。",choices:["欠勤・休職による生産性損失が一般職場の健康管理において主要な評価指標とされている","高いパフォーマンスを発揮している状態が一般職場の健康管理において主要な評価指標とされている","出勤しているが心身の不調により本来のパフォーマンスが発揮できない状態による生産性損失","長時間労働による生産性向上は職場の衛生基準として法令で定められた最低限の要件を示す"],answer:2,explanation:"プレゼンティーイズム（Presenteeism）：出勤しているが心身の問題（メンタルヘルス不調・慢性疾患・疼痛等）でパフォーマンスが低下した状態。経済的損失はアブセンティーイズム（欠勤）より大きいとされる。"},
+
+{id:89,category:"労働衛生（有害業務以外）",question:"「職場における化学物質管理」として「SDS（安全データシート）」に記載される項目として最も不適切なものはどれか。",choices:["化学品の名称・組成・成分情報が作業環境の健康リスク評価において最も重要な測定対象である","危険有害性の情報・応急措置が一般職場の健康管理において主要な評価指標とされている","取扱い・保管・廃棄上の注意が一般職場の健康管理において主要な評価指標とされている","製造会社の株主情報（衛生管理上の重要事項）"],answer:3,explanation:"SDS（安全データシート）の16項目：化学品名・組成・危険有害性・応急措置・火災時措置・漏出時措置・取扱・保管・ばく露防止・物理化学的性質・安定性・毒性・環境影響・廃棄・輸送・法規。株主情報は含まない。"},
+
+{id:90,category:"労働衛生（有害業務以外）",question:"「職場における慢性腰痛」の管理として「恐怖回避モデル」の観点から重要なこととして正しいものはどれか。",choices:["腰痛があれば絶対安静にするが一般職場の健康管理において主要な評価指標とされている","慢性腰痛は完全には治らないが一般職場の健康管理において主要な評価指標とされている","痛みへの過度の恐怖・回避行動が慢性化を促進するため適度な活動の維持","腰痛には手術が作業環境の健康リスク評価において最も重要な測定対象である"],answer:2,explanation:"恐怖回避モデル（Fear-Avoidance Model）：腰痛への過度の恐怖→活動回避→筋力低下・廃用→慢性化という悪循環。適度な活動継続・恐怖認知の修正・段階的な活動増加（グレーデッドアクティビティ）が慢性腰痛管理に重要。"},
+
+{id:91,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「衛生管理者」の選任義務が生じる事業場の規模として正しいものはどれか。",choices:["常時10人以上については法令の改正により事業者の義務が強化されている","常時30人以上は法令上の規制基準として事業者が遵守する義務的な要件である","常時50人以上（安全衛生法令の規定）","常時100人以上として安全衛生法令上の義務が事業者に課せられている規定がある"],answer:2,explanation:"衛生管理者は常時50人以上の労働者を使用する事業場で選任が義務（安衛法第12条）。50人未満では衛生推進者（10〜49人）の選任義務がある業種もある。"},
+
+{id:92,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「産業医」の選任義務として常時何人以上の事業場で必要か正しいものはどれか。",choices:["常時10人以上として安全衛生法令上の義務が事業者に課せられている規定がある","常時30人以上については法令の改正により事業者の義務が強化されている","常時50人以上（安全衛生法令の規定）","常時100人以上については法令の改正により事業者の義務が強化されている"],answer:2,explanation:"産業医の選任は常時50人以上の労働者を使用する事業場に義務（安衛法第13条）。1000人以上（有害業務は500人以上）では専属産業医が必要。"},
+
+{id:93,category:"関係法令（有害業務以外）",question:"「衛生委員会」の設置義務がある事業場として正しいものはどれか。",choices:["常時10人以上は法令上の規制基準として事業者が遵守する義務的な要件である","常時30人以上については法令の改正により事業者の義務が強化されている","常時50人以上の全業種（安全衛生法令の規定）","常時100人以上については法令の改正により事業者の義務が強化されている"],answer:2,explanation:"衛生委員会は常時50人以上の労働者を使用する全業種の事業場に設置義務（安衛法第18条）。月1回以上開催・議事録を3年間保存する。"},
+
+{id:94,category:"関係法令（有害業務以外）",question:"「衛生委員会」の「調査審議事項」として正しいものはどれか。",choices:["製品の品質管理方針として安全衛生法令上の義務が事業者に課せられている規定がある","生産計画の策定は法令上の規制基準として事業者が遵守する義務的な要件である","労働者の健康障害防止・健康保持増進・健康診断・ストレスチェック","賃金体系の見直しとして安全衛生法令上の義務が事業者に課せられている規定がある"],answer:2,explanation:"衛生委員会の調査審議事項（安衛則第22条）：①健康障害防止の基本対策②健康保持増進策③健康診断の実施・結果④ストレスチェック制度⑤長時間労働対策⑥職場環境改善等の衛生関連事項。"},
+
+{id:95,category:"関係法令（有害業務以外）",question:"「衛生委員会の開催」の頻度として正しいものはどれか。",choices:["3ヶ月に1回以上は法令上の規制基準として事業者が遵守する義務的な要件である","年2回以上については法令の改正により事業者の義務が強化されている","毎月1回以上（安全衛生法令の規定）","年1回以上は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"衛生委員会は毎月1回以上開催する義務がある（安衛法第17条・18条・安衛則第23条）。議事録は3年間保存し関係労働者に周知しなければならない。"},
+
+{id:96,category:"関係法令（有害業務以外）",question:"「衛生管理者の職場巡視」の頻度として正しいものはどれか。",choices:["月1回以上として安全衛生法令上の義務が事業者に課せられている規定がある","年2回以上として安全衛生法令上の義務が事業者に課せられている規定がある","少なくとも週1回（安全衛生法令の規定）","毎日については法令の改正により事業者の義務が強化されている"],answer:2,explanation:"衛生管理者の職場巡視は少なくとも週1回実施しなければならない（安衛則第11条）。産業医の職場巡視（月1回以上）より高頻度。巡視結果は記録・衛生委員会等への報告が求められる。"},
+
+{id:97,category:"関係法令（有害業務以外）",question:"「産業医の職場巡視」の頻度として正しいものはどれか。",choices:["月1回以上（一定条件で2ヶ月に1回）（安全衛生法令の規定）","週1回以上として安全衛生法令上の義務が事業者に課せられている規定がある","年4回以上については法令の改正により事業者の義務が強化されている","年1回以上は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:0,explanation:"産業医の職場巡視は月1回以上が義務（安衛則第15条）。ただし事業者から産業医に必要な情報が毎月提供される等の条件下では事業者の同意を得て2ヶ月に1回以上に緩和できる（2017年改正）。"},
+
+{id:98,category:"関係法令（有害業務以外）",question:"「定期健康診断の実施頻度」として常時使用する労働者（特定業務従事者以外）の場合正しいものはどれか。",choices:["1年以内ごとに1回（安全衛生法令の規定）","6ヶ月以内ごとに1回は法令上の規制基準として事業者が遵守する義務的な要件である","2年以内ごとに1回として安全衛生法令上の義務が事業者に課せられている規定がある","3年以内ごとに1回は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:0,explanation:"常時使用する労働者（特定業務従事者以外）の定期健康診断は1年以内ごとに1回実施（安衛則第44条）。特定業務従事者（深夜業等）は6ヶ月以内ごとに1回。"},
+
+{id:99,category:"関係法令（有害業務以外）",question:"「定期健康診断の結果報告」の義務がある事業場の規模として正しいものはどれか。",choices:["常時50人以上の労働者を使用する事業場","全事業場については法令の改正により事業者の義務が強化されている","常時100人以上の労働者を使用する事業場","常時300人以上の労働者を使用する事業場"],answer:0,explanation:"常時50人以上の労働者を使用する事業場は定期健康診断の結果を所轄労働基準監督署長に報告する義務がある（安衛則第52条）。50人未満は報告不要（ただし健診実施は義務）。"},
+
+{id:100,category:"関係法令（有害業務以外）",question:"「健康診断の事後措置」として医師の意見を聴く期限として正しいものはどれか。",choices:["健診結果受取後1ヶ月以内として安全衛生法令上の義務が事業者に課せられている規定がある","健診結果受取後6ヶ月以内については法令の改正により事業者の義務が強化されている","健診結果受取後3ヶ月以内（安全衛生法令の規定）","期限の定めはないとして安全衛生法令上の義務が事業者に課せられている規定がある"],answer:2,explanation:"労働安全衛生法第66条の4：健康診断の異常所見者について医師の意見聴取は健診結果を受け取った日から3ヶ月以内に行わなければならない。聴取した意見は記録・衛生委員会への報告等が必要。"},
+
+{id:101,category:"関係法令（有害業務以外）",question:"「ストレスチェック制度」の実施義務がある事業場の規模として正しいものはどれか。",choices:["全事業場として安全衛生法令上の義務が事業者に課せられている規定がある","常時300人以上については法令の改正により事業者の義務が強化されている","常時100人以上は法令上の規制基準として事業者が遵守する義務的な要件である","常時50人以上の労働者を使用する事業場（安全衛生法令の規定）"],answer:3,explanation:"ストレスチェック制度（安衛法第66条の10）：常時50人以上の労働者を使用する事業場は1年以内ごとに1回のストレスチェック実施が義務。50人未満は当分の間努力義務。"},
+
+{id:102,category:"関係法令（有害業務以外）",question:"「ストレスチェックの実施者」として法令上認められているものとして正しいものはどれか。",choices:["医師・保健師・研修を修了した看護師・精神保健福祉士・公認心理師等","衛生管理者であれば誰でもについては法令の改正により事業者の義務が強化されている","人事担当者については法令の改正により事業者の義務が強化されている","管理監督者については法令の改正により事業者の義務が強化されている"],answer:0,explanation:"ストレスチェックの実施者は医師・保健師・厚生労働大臣が定める研修を修了した看護師・精神保健福祉士・歯科医師・公認心理師に限定（安衛則第52条の10）。人事権を持つ者は実施者になれない。"},
+
+{id:103,category:"関係法令（有害業務以外）",question:"「ストレスチェック結果の事業者への提供」について正しいものはどれか。",choices:["労働者の同意なく実施者が結果を事業者に提供することは禁止されている","実施者は結果を全て事業者に提供するは法令上の規制基準として事業者が遵守する義務的な要件である","事業者は同意なく閲覧できるは法令上の規制基準として事業者が遵守する義務的な要件である","結果は人事部門に自動共有されるは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:0,explanation:"ストレスチェック結果は労働者の同意なく実施者から事業者への提供が禁止（安衛法第66条の10第2項）。高ストレス者が面接指導を申し出た場合のみ事業者に通知される。"},
+
+{id:104,category:"関係法令（有害業務以外）",question:"「ストレスチェックの高ストレス者への不利益取扱い禁止」について正しいものはどれか。",choices:["高ストレス者の情報を評価に使用できるとして安全衛生法令上の義務が事業者に課せられている規定がある","高ストレス者は異動させることができるとして安全衛生法令上の義務が事業者に課せられている規定がある","不利益取扱いは産業医の許可があれば可能については法令の改正により事業者の義務が強化されている","高ストレスを理由とした解雇・降格・減給等の不利益取扱いは法律で禁止されている"],answer:3,explanation:"安衛法第66条の10第3項：ストレスチェック結果を理由とした不利益取扱い（解雇・降格・減給・配置転換等）は明確に禁止されている。労働者がストレスチェックを安心して受けられる基盤。"},
+
+{id:105,category:"関係法令（有害業務以外）",question:"「面接指導（過重労働）」の対象者として正しいものはどれか。",choices:["全労働者は法令上の規制基準として事業者が遵守する義務的な要件である","月45時間超の全労働者については法令の改正により事業者の義務が強化されている","時間外・休日労働が月80時間超の労働者で申し出た者","管理職は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"労働安全衛生法第66条の8：時間外・休日労働が月80時間超で疲労の蓄積が認められる労働者が申し出た場合に医師による面接指導の実施義務がある（医師が必要と認めた場合は月45時間超も対象）。"},
+
+{id:106,category:"関係法令（有害業務以外）",question:"「面接指導の結果に基づく就業上の措置」として正しいものはどれか。",choices:["措置は任意は法令上の規制基準として事業者が遵守する義務的な要件である","医師の意見を聴き就業場所の変更・作業転換・労働時間短縮等の必要な措置を講じる","措置の内容は人事部門が独自に決定するは法令上の規制基準として事業者が遵守する義務的な要件である","措置は労働者が希望した場合は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:1,explanation:"安衛法第66条の8の4・66条の9等：面接指導結果に基づき医師の意見を聴き就業場所変更・作業転換・労働時間短縮・深夜業回数減少等の就業上の措置を講じる義務がある。"},
+
+{id:107,category:"関係法令（有害業務以外）",question:"「健康診断の費用負担」として法令上の原則として正しいものはどれか。",choices:["法令で義務付けられた健康診断の費用は事業者が負担する","法令上の義務健診であっても費用は受診した労働者本人が全額負担","法定健診の費用は公的医療保険から全額給付される仕組みがある","法定健診の費用は事業者と労働者が50%ずつ折半して負担する"],answer:0,explanation:"事業者が法令上義務として実施する健康診断の費用は事業者が負担する。健康診断を受けるために要した時間の賃金支払いは法令上義務とは明示されていないが支払うことが望ましいとされている。"},
+
+{id:108,category:"関係法令（有害業務以外）",question:"「衛生管理者の選任数」として常時1001〜2000人の労働者を使用する事業場の場合正しいものはどれか。",choices:["1人以上は法令上の規制基準として事業者が遵守する義務的な要件である","2人以上については法令の改正により事業者の義務が強化されている","4人以上（安全衛生法令の規定）","6人以上は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"衛生管理者の選任数（安衛則第7条）：50〜200人→1人、201〜500人→2人、501〜1000人→3人、1001〜2000人→4人、2001〜3000人→5人、3001人以上→6人。"},
+
+{id:109,category:"関係法令（有害業務以外）",question:"「衛生管理者の専属義務」として専属が必要な事業場規模として正しいものはどれか。",choices:["常時50人以上として安全衛生法令上の義務が事業者に課せられている規定がある","常時100人以上は法令上の規制基準として事業者が遵守する義務的な要件である","常時1000人以上（安全衛生法令の規定）","専属義務はないとして安全衛生法令上の義務が事業者に課せられている規定がある"],answer:2,explanation:"常時1000人以上の労働者を使用する事業場では衛生管理者は専属（当該事業場にのみ勤務する）の者から選任しなければならない（安衛則第7条）。"},
+
+{id:110,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「雇入れ時の健康診断」について正しいものはどれか。",choices:["常時使用する労働者を雇い入れる際に実施する義務がある（安衛則第43条）","雇入れ時健康診断は任意については法令の改正により事業者の義務が強化されている","雇入れ時は省略できるは法令上の規制基準として事業者が遵守する義務的な要件である","雇入れ後1年以内に実施すればよいとして安全衛生法令上の義務が事業者に課せられている規定がある"],answer:0,explanation:"安衛則第43条：常時使用する労働者（パート・アルバイト等も一定条件下で対象）を雇い入れる際に雇入れ時健康診断を実施する義務がある。ただし医師による健診を受けてから3ヶ月以内に結果を証明する書類提出があれば省略可能な項目がある。"},
+
+{id:111,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「産業医の職務」として正しいものはどれか。",choices:["生産管理・品質管理として安全衛生法令上の義務が事業者に課せられている規定がある","健康診断の実施・結果に基づく措置の助言・職場巡視・面接指導・保健指導","採用・解雇の決定については法令の改正により事業者の義務が強化されている","財務管理として安全衛生法令上の義務が事業者に課せられている規定がある"],answer:1,explanation:"産業医の職務（安衛則第14条）：①健康診断②ストレスチェック③職場巡視（月1回以上）④面接指導⑤保健指導⑥健康教育⑦作業環境の維持管理⑧衛生委員会への出席・意見陳述⑨健康障害防止の措置等。"},
+
+{id:112,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「安全衛生教育（雇入れ時）」の内容として正しいものはどれか。",choices:["給与・福利厚生の説明として安全衛生法令上の義務が事業者に課せられている規定がある","機械・設備・原材料等の危険性・有害性（安全衛生法令の規定）","製品の品質管理方法については法令の改正により事業者の義務が強化されている","会社の経営方針として安全衛生法令上の義務が事業者に課せられている規定がある"],answer:1,explanation:"雇入れ時教育（安衛則第35条）の内容：①機械・設備・原材料の危険有害性②安全装置・有害物抑制装置の取扱方法③作業手順④異常時の措置⑤整理整頓⑥事故時の応急措置⑦清潔の保持等。"},
+
+{id:113,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康診断の受診義務」として労働者の義務として正しいものはどれか。",choices:["受診は任意として安全衛生法令上の義務が事業者に課せられている規定がある","事業者が実施する健康診断を受けなければならない義務がある（事業者指定医師以外の同","受診後の結果通知義務があるは法令上の規制基準として事業者が遵守する義務的な要件である","受診費用を自己負担する義務があるは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:1,explanation:"安衛法第66条第5項：労働者は事業者が行う健康診断を受ける義務がある（受診義務）。ただし事業者指定以外の医師が行う同等の健診結果を提出することで代替できる場合がある。"},
+
+{id:114,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康診断結果の通知義務」として正しいものはどれか。",choices:["通知は任意は法令上の規制基準として事業者が遵守する義務的な要件である","事業者は健康診断の結果を各労働者に通知しなければならない","異常所見者のみに通知するについては法令の改正により事業者の義務が強化されている","医師のみに通知するについては法令の改正により事業者の義務が強化されている"],answer:1,explanation:"安衛法第66条の6：事業者は健康診断の結果を各労働者に通知しなければならない。全員への通知が義務で労働者が自分の健康状態を把握しセルフケアができるようにするための措置。"},
+
+{id:115,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「定期健康診断の記録保存期間」として正しいものはどれか。",choices:["1年として安全衛生法令上の義務が事業者に課せられている規定がある","3年については法令の改正により事業者の義務が強化されている","5年（安全衛生法令の規定）","10年は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"定期健康診断（一般）の結果記録は5年間保存（安衛則第51条）。有害業務に係る特殊健診は種類により異なる（有機溶剤：5年・電離放射線：30年・じん肺：7年等）。"},
+
+{id:116,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「快適な職場環境の形成」として事業者の義務として正しいものはどれか。",choices:["快適職場形成は強制義務は法令上の規制基準として事業者が遵守する義務的な要件である","快適職場形成は任意で義務はないは法令上の規制基準として事業者が遵守する義務的な要件である","快適な職場環境の形成のための措置を継続的・計画的に講ずるよう努めなければならない","大企業のみに義務があるについては法令の改正により事業者の義務が強化されている"],answer:2,explanation:"安衛法第71条の2：事業者は快適な職場環境の形成のための措置を継続的・計画的に講ずるよう努める努力義務がある（罰則のない努力義務）。厚生労働省は快適職場指針を策定している。"},
+
+{id:117,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「衛生委員会の委員構成」として正しいものはどれか。",choices:["事業者側の代表者については法令の改正により事業者の義務が強化されている","産業医として安全衛生法令上の義務が事業者に課せられている規定がある","議長（総括安全衛生管理者等）・産業医・衛生管理者・労働者代表で構成","外部専門家として安全衛生法令上の義務が事業者に課せられている規定がある"],answer:2,explanation:"衛生委員会の構成（安衛法第18条）：①議長（総括安全衛生管理者等：事業者が指名）②産業医③衛生管理者④労働者代表（過半数組合等が推薦）。事業者側が指名できる委員は全体の半数以下でなければならない。"},
+
+{id:118,category:"関係法令（有害業務以外）",question:"「衛生管理者の資格要件」として「第一種衛生管理者免許」が必要な業種として正しいものはどれか。",choices:["商業・金融業・サービス業などの非工業的業種","農林畜水産業・鉱業・建設業・製造業・電気業・ガス業","全業種で第二種免許で可として安全衛生法令上の義務が事業者に課せられている規定がある","医療業は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:1,explanation:"第一種衛生管理者免許が必要な業種：農林畜水産業・鉱業・建設業・製造業・電気業・ガス業・水道業・熱供給業・運輸業・医療業・清掃業等。第二種は情報通信業・金融・保険・商業・教育・サービス業等で可。"},
+
+{id:119,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「産業医の権限」として2019年改正で強化された内容として正しいものはどれか。",choices:["産業医に人事権が付与されたとして安全衛生法令上の義務が事業者に課せられている規定がある","産業医の選任義務が廃止されたについては法令の改正により事業者の義務が強化されている","産業医への情報提供の義務化・産業医の勧告内容の衛生委員会への報告義務","産業医の職場巡視が不要になったは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"2019年施行の改正安衛法：①事業者からの産業医への長時間労働情報等の提供義務②産業医の勧告内容と事業者の対応の衛生委員会への報告義務③産業医の解任・辞任時の届出義務④産業医の独立性・中立性の確保。"},
+
+{id:120,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「安全衛生推進者」の選任義務がある事業場規模として正しいものはどれか。",choices:["常時5人以上10人未満については法令の改正により事業者の義務が強化されている","常時100人以上については法令の改正により事業者の義務が強化されている","常時50人以上として安全衛生法令上の義務が事業者に課せられている規定がある","常時10人以上50人未満（一定業種）（安全衛生法令の規定）"],answer:3,explanation:"安全衛生推進者（衛生推進者）は常時10〜49人の労働者を使用する事業場（一定業種）に選任義務（安衛則第12条の2）。50人以上では衛生管理者・産業医が必要になる。"},
+
+{id:121,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康保持増進措置（THP）」の実施に関する事業者の義務として正しいものはどれか。",choices:["労働者の健康保持増進のために必要な措置を継続的","THPの実施は強制義務は法令上の規制基準として事業者が遵守する義務的な要件である","THPの実施は任意で推奨もされていない","THPは産業医のみが実施するは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:0,explanation:"安衛法第69条：事業者は労働者の健康保持増進のための措置を継続的・計画的に講ずるよう努める義務（努力義務）。厚生労働省はTHP指針（事業場における労働者の健康保持増進のための指針）を策定。"},
+
+{id:122,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「心理的な負担の程度を把握するための検査（ストレスチェック）実施後の集団分析」の義務として正しいものはどれか。",choices:["集団分析の実施は努力義務（事業者は実施者から集団分析結果の提供を受け職場","集団分析は義務は法令上の規制基準として事業者が遵守する義務的な要件である","集団分析は禁止は法令上の規制基準として事業者が遵守する義務的な要件である","集団分析結果は公表しなければならないは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:0,explanation:"ストレスチェック後の集団分析（部署単位等）は努力義務（安衛則第52条の14）。個人情報保護のため原則10人以上の集団で実施。実施者から結果提供を受け職場環境改善に活用することが望ましい。"},
+
+{id:123,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「労働者死傷病報告」の提出義務として正しいものはどれか。",choices:["報告義務はないについては法令の改正により事業者の義務が強化されている","労働者本人が報告するとして安全衛生法令上の義務が事業者に課せられている規定がある","1ヶ月後に報告するは法令上の規制基準として事業者が遵守する義務的な要件である","業務上の死亡または4日以上の休業を要する負傷（安全衛生法令の規定）"],answer:3,explanation:"安衛則第97条：業務上の死亡・4日以上休業を要する傷病は遅滞なく報告書を所轄労働基準監督署長に提出する義務がある。3日以内の休業は四半期ごとにまとめて報告。"},
+
+{id:124,category:"関係法令（有害業務以外）",question:"「パワーハラスメント防止法（改正労働施策総合推進法）」において事業者が義務として講じなければならない措置として正しいものはどれか。",choices:["パワハラの発生を完全に防止するは法令上の規制基準として事業者が遵守する義務的な要件である","職場におけるパワハラ防止のための方針の明確化（安全衛生法令の規定）","パワハラ行為者を即座に解雇するは法令上の規制基準として事業者が遵守する義務的な要件である","大企業のみの義務として安全衛生法令上の義務が事業者に課せられている規定がある"],answer:1,explanation:"改正労働施策総合推進法（パワハラ防止法）：事業者は①方針の明確化・周知啓発②相談体制の整備③事後の迅速・適切な対応④当事者等のプライバシー保護⑤相談者・行為者への不利益取扱いの禁止等が義務。"},
+
+{id:125,category:"関係法令（有害業務以外）",question:"「男女雇用機会均等法」のセクシュアルハラスメント防止措置として事業者に義務付けられているものとして正しいものはどれか。",choices:["セクハラ防止は任意として安全衛生法令上の義務が事業者に課せられている規定がある","管理職への教育のみでよいは法令上の規制基準として事業者が遵守する義務的な要件である","大企業のみに義務については法令の改正により事業者の義務が強化されている","方針の明確化・相談体制整備・事後の適切な対応・再発防止"],answer:3,explanation:"均等法第11条・11条の2：事業者はセクシュアルハラスメント（職場での性的言動）に係る雇用管理上の措置（方針の明確化・相談窓口設置・被害者への配慮・再発防止等）を講じる義務がある。"},
+
+{id:126,category:"関係法令（有害業務以外）",question:"「育児・介護休業法」における「育児休業」取得の申出について正しいものはどれか。",choices:["育休には上司の許可が必要は法令上の規制基準として事業者が遵守する義務的な要件である","育休は1ヶ月以内でなければならないとして安全衛生法令上の義務が事業者に課せられている規定がある","育休は女性のみ取得できるとして安全衛生法令上の義務が事業者に課せられている規定がある","原則として取得開始予定日の1ヶ月前（産後パパ育休は2週間前）までに申し出る"],answer:3,explanation:"育児・介護休業法：育児休業は原則取得開始1ヶ月前（産後パパ育休は2週間前）に申し出ることで取得可能。事業者は正当な理由なく拒否できない。男女とも取得できる（男性育休取得促進が法改正で強化）。"},
+
+{id:127,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「安全衛生委員会」の設置が可能な事業場として正しいものはどれか。",choices:["全事業場については法令の改正により事業者の義務が強化されている","安全委員会と衛生委員会の両方の設置義務がある事業場において両委員会に代えて設置できる","衛生委員会のみの義務がある事業場については法令の改正により事業者の義務が強化されている","安全委員会のみの義務がある事業場については法令の改正により事業者の義務が強化されている"],answer:1,explanation:"安全衛生委員会（安衛法第19条）は安全委員会・衛生委員会の両方の設置義務がある事業場においてこれらに代えて設置できる。衛生委員会のみの義務事業場（商業等の非工業的業種50人以上）では安全衛生委員会にはなれない。"},
+
+{id:128,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康診断の実施が義務付けられる対象」として正しいものはどれか。",choices:["常時使用する労働者（週30時間以上の勤務・期間1年以上の更新","正社員については法令の改正により事業者の義務が強化されている","管理職については法令の改正により事業者の義務が強化されている","正社員と契約社員については法令の改正により事業者の義務が強化されている"],answer:0,explanation:"健康診断（定期健診）の対象：常時使用する労働者。パート・アルバイトでも①1週間の所定労働時間が通常労働者の4分の3以上②1年以上使用が見込まれる者等の条件を満たす場合は対象。"},
+
+{id:129,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康情報の取り扱い規程の策定」について正しいものはどれか。",choices:["取り扱い規程の策定は任意は法令上の規制基準として事業者が遵守する義務的な要件である","健康情報の収集・使用・保管・提供・廃棄に関する取り扱い規程を策定し労働者","健康情報は誰でも自由に扱えるについては法令の改正により事業者の義務が強化されている","産業医のみが健康情報を管理できるについては法令の改正により事業者の義務が強化されている"],answer:1,explanation:"事業場における労働者の健康情報等の取扱規程策定のための手引き（厚生労働省）に基づき健康情報の収集・利用・保管・提供・廃棄に関する規程の整備と周知が求められる。"},
+
+{id:130,category:"関係法令（有害業務以外）",question:"「自殺対策基本法」における「事業主の責務」として定められているものとして正しいものはどれか。",choices:["自殺対策は国のみの責務については法令の改正により事業者の義務が強化されている","国・地方公共団体が実施する自殺対策に協力し職場における労働者の心の健康保","事業主に自殺対策の責務はないとして安全衛生法令上の義務が事業者に課せられている規定がある","医療機関のみが対応するは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:1,explanation:"自殺対策基本法第10条：事業主は国・地方公共団体の自殺対策に協力し職場における労働者の心の健康保持のための必要な措置を講じるよう努める努力義務がある。"},
+
+{id:131,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「総括安全衛生管理者」の選任義務がある「その他の業種（サービス業・小売業等）」の規模として正しいものはどれか。",choices:["常時100人以上として安全衛生法令上の義務が事業者に課せられている規定がある","常時300人以上は法令上の規制基準として事業者が遵守する義務的な要件である","常時1000人以上（安全衛生法令の規定）","常時3000人以上については法令の改正により事業者の義務が強化されている"],answer:2,explanation:"総括安全衛生管理者の選任義務（業種別規模）：林業・鉱業・建設業・運送業・清掃業は100人以上、製造業・電気業・ガス業・水道業・熱供給業・医療業等は300人以上、その他（情報通信・金融・小売等）は1000人以上。"},
+
+{id:132,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「特定業務従事者の健康診断」の対象となる業務として正しいものはどれか。",choices:["深夜業・暑熱・寒冷・強烈な振動・異常気圧下での業務等","デスクワークのみの業務は法令上の規制基準として事業者が遵守する義務的な要件である","一般的な接客業務は法令上の規制基準として事業者が遵守する義務的な要件である","一般的な製造ライン業務については法令の改正により事業者の義務が強化されている"],answer:0,explanation:"特定業務従事者の健康診断（安衛則第45条）：対象業務は深夜業・坑内業務・多量の高熱物体取扱業務・暑熱場所・寒冷場所・強烈な振動・重量物取扱・運転業務等。6ヶ月以内ごとに1回の頻度で実施。"},
+
+{id:133,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「産業医の選任報告」の提出先として正しいものはどれか。",choices:["厚生労働大臣として安全衛生法令上の義務が事業者に課せられている規定がある","所轄の都道府県労働局長については法令の改正により事業者の義務が強化されている","所轄の労働基準監督署長（安全衛生法令の規定）","市区町村長は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"産業医の選任（変更・辞任・解任）の報告書は所轄の労働基準監督署長に提出する（安衛則第13条の2）。選任後遅滞なく提出する義務がある。"},
+
+{id:134,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「安全衛生改善計画の作成指示」ができる者として正しいものはどれか。",choices:["事業者自身は法令上の規制基準として事業者が遵守する義務的な要件である","市区町村長として安全衛生法令上の義務が事業者に課せられている規定がある","都道府県労働局長（安衛法第78条）（安全衛生法令の規定）","産業医として安全衛生法令上の義務が事業者に課せられている規定がある"],answer:2,explanation:"安衛法第78条：都道府県労働局長は労働災害の防止上必要がある場合（重大な労働災害が発生した事業場等）に事業者に対して安全衛生改善計画の作成を指示することができる。"},
+
+{id:135,category:"関係法令（有害業務以外）",question:"「個人情報保護法」における「健康診断結果」の取り扱いとして正しいものはどれか。",choices:["健康診断結果は個人情報保護法の対象外","医師であれば誰にでも提供できるは法令上の規制基準として事業者が遵守する義務的な要件である","健康診断結果は自由に共有できるについては法令の改正により事業者の義務が強化されている","要配慮個人情報として取得に原則本人の同意が必要"],answer:3,explanation:"健康診断結果・病歴等は個人情報保護法の「要配慮個人情報」（センシティブ情報）に該当し取得に原則本人の明示的な同意が必要。第三者への無断提供禁止・安全管理措置が義務。"},
+
+{id:136,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「衛生委員会の議事録の保存期間」として正しいものはどれか。",choices:["1年は法令上の規制基準として事業者が遵守する義務的な要件である","10年については法令の改正により事業者の義務が強化されている","5年として安全衛生法令上の義務が事業者に課せられている規定がある","3年（安全衛生法令の規定）"],answer:3,explanation:"衛生委員会の議事録は3年間保存しなければならない（安衛則第23条）。議事の概要は遅滞なく労働者に周知する義務もある（掲示・書面交付・電子媒体等）。"},
+
+{id:137,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「製造禁止物質」として正しいものはどれか。",choices:["製造禁止物質の規定はないについては法令の改正により事業者の義務が強化されている","製造禁止は農薬は法令上の規制基準として事業者が遵守する義務的な要件である","石綿・黄りんマッチ・ベンジジン・ビス（安全衛生法令の規定）","大企業のみに製造禁止規制があるは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"安衛法第55条：石綿等・黄りんマッチ・ベンジジン・4-アミノジフェニル・4-ニトロジフェニル・ビス（クロロメチル）エーテル・ベーターナフチルアミン・ジクロルベンジジン・ベンゾトリクロリドの製造等が禁止。"},
+
+{id:138,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康保持増進指針（THP指針）」の内容として正しいものはどれか。",choices:["THP指針は法律で義務付けられた措置を規定する","事業場における労働者の健康保持増進のための指針","THP指針はがん検診のみを対象とする","THP指針は産業医のみが実施する"],answer:1,explanation:"THP指針（事業場における労働者の健康保持増進のための指針）：安衛法第69条に基づく行政指針で運動指導・保健指導（生活習慣指導・メンタルヘルス）・心理相談・産業栄養指導を組み合わせた健康づくりの進め方を示す。"},
+
+{id:139,category:"関係法令（有害業務以外）",question:"「過労死等防止対策推進法」の目的として正しいものはどれか。",choices:["長時間労働者の残業代を削減するについては法令の改正により事業者の義務が強化されている","過労死等の防止のための対策を総合的に推進し過労死","大企業のみに過重労働対策を義務付ける","過労死の認定基準を定めるは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:1,explanation:"過労死等防止対策推進法（2014年）：過労死等（脳・心臓疾患・精神障害による死亡・自殺）の防止を国・地方公共団体・事業主・国民共通の課題として調査研究・啓発・相談体制整備等を推進する目的。"},
+
+{id:140,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「衛生管理者の職務」として最も不適切なものはどれか。",choices:["少なくとも週1回の職場巡視は法令上の規制基準として事業者が遵守する義務的な要件である","労働衛生教育の実施として安全衛生法令上の義務が事業者に課せられている規定がある","健康診断の実施・事後措置への関与","労働者の採用・解雇の決定（安全衛生法令の規定）"],answer:3,explanation:"衛生管理者の職務（安衛則第11条等）：①少なくとも週1回の職場巡視②衛生に関する措置の実施③健康診断の実施・事後措置④労働衛生教育⑤健康相談⑥衛生委員会への参加等。採用・解雇の決定は人事部門の業務であり衛生管理者の職務ではない。"},
+
+{id:141,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「安全委員会」の設置義務がある業種・規模として正しいものはどれか。",choices:["全業種で常時50人以上は法令上の規制基準として事業者が遵守する義務的な要件である","サービス業のみで常時50人以上については法令の改正により事業者の義務が強化されている","全業種で常時100人以上として安全衛生法令上の義務が事業者に課せられている規定がある","林業・鉱業・建設業・製造業等の一定の工業的業種で常時50人以上"],answer:3,explanation:"安全委員会（安衛法第17条）：設置義務は一定の業種（林業・鉱業・建設業・製造業・電気業・ガス業・熱供給業・水道業・通信業・各種商品小売業・旅館業・ゴルフ場業・自動車整備業・機械修理業）で常時50人以上の事業場。"},
+
+{id:142,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「危険性・有害性等の調査（リスクアセスメント）」の義務として正しいものはどれか。",choices:["一定の危険物・有害物等について事業者はリスクアセスメントを実施し結果に基","リスクアセスメントの義務はないについては法令の改正により事業者の義務が強化されている","全ての作業について義務として安全衛生法令上の義務が事業者に課せられている規定がある","衛生管理者のみが実施するについては法令の改正により事業者の義務が強化されている"],answer:0,explanation:"安衛法第28条の2：機械・設備・原材料・化学物質等の危険性・有害性についてリスクアセスメントを実施することが義務（一部）または努力義務として定められている。"},
+
+{id:143,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康診断の結果に基づく保健指導の実施」について正しいものはどれか。",choices:["保健指導の実施は義務は法令上の規制基準として事業者が遵守する義務的な要件である","保健指導は労働者が費用を負担する","保健指導は禁止として安全衛生法令上の義務が事業者に課せられている規定がある","健康診断の結果異常所見がある労働者に対し医師"],answer:3,explanation:"安衛法第66条の7：健康診断で異常所見がある労働者への医師・保健師による保健指導の実施は事業者の努力義務（強制義務ではない）として定められている。"},
+
+{id:144,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「長時間労働者への面接指導の結果に基づく就業上の措置の記録保存期間」として正しいものはどれか。",choices:["1年として安全衛生法令上の義務が事業者に課せられている規定がある","3年は法令上の規制基準として事業者が遵守する義務的な要件である","5年（安全衛生法令の規定）","永久保存は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"面接指導の結果の記録保存期間は5年間（安衛則第52条の7）。健康診断の記録保存期間（5年）と同様。面接指導の結果は医師の意見聴取・就業上の措置の判断根拠となるため適切な期間の保存が必要。"},
+
+{id:145,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「事業者の講ずべき措置」として「ストレスチェックの実施後に行う集団分析の結果を活用した職場環境改善」の位置づけとして正しいものはどれか。",choices:["義務は法令上の規制基準として事業者が遵守する義務的な要件である","産業医のみが実施は法令上の規制基準として事業者が遵守する義務的な要件である","任意で推奨もされていないについては法令の改正により事業者の義務が強化されている","努力義務（安全衛生法令の規定）"],answer:3,explanation:"ストレスチェック後の集団分析を活用した職場環境改善は努力義務（安衛則第52条の14）。集団分析結果を部署単位でフィードバックし管理職・労働者が参加してアクションプランを策定する参加型職場環境改善が有効。"},
+
+{id:146,category:"関係法令（有害業務以外）",question:"「事務所衛生基準規則（現在の労働安全衛生規則等）」における「気温」の基準として正しいものはどれか。",choices:["常時20℃以上30℃以下として安全衛生法令上の義務が事業者に課せられている規定がある","気温の基準はないとして安全衛生法令上の義務が事業者に課せられている規定がある","常時25℃については法令の改正により事業者の義務が強化されている","空気調和設備等により調整できる場合は16℃以上28℃以下"],answer:3,explanation:"事務所衛生基準規則（旧）・現在の安衛則等：空気調和設備で調整できる場合の気温は16℃以上28℃以下が基準。冷房時は外気との差が著しくならないよう配慮（概ね5〜7℃以内）。相対湿度は40〜70%が目安。"},
+
+{id:147,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「産業医の専属義務」として専属産業医が必要な事業場規模として正しいものはどれか。",choices:["常時100人以上として安全衛生法令上の義務が事業者に課せられている規定がある","常時500人以上として安全衛生法令上の義務が事業者に課せられている規定がある","常時1000人以上（有害業務は500人以上）（安全衛生法令の規定）","常時3000人以上として安全衛生法令上の義務が事業者に課せられている規定がある"],answer:2,explanation:"専属産業医の選任が必要な事業場：①常時1000人以上の労働者を使用する事業場②深夜業等の有害業務（一定のもの）に常時500人以上を従事させる事業場（安衛則第13条）。"},
+
+{id:148,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「安全衛生の管理体制」として「総括安全衛生管理者」の職務として正しいものはどれか。",choices:["安全管理者・衛生管理者等を指揮し安全衛生に関する業務を統括管理する","総括安全衛生管理者の職務は衛生管理者と全く同一の内容である","総括安全衛生管理者の主な業務は製品品質の管理と品質保証活動","総括安全衛生管理者は財務管理と安全予算の配分が主要な職務"],answer:0,explanation:"総括安全衛生管理者（安衛法第10条）：安全管理者・衛生管理者・産業医等を指揮し①危険・健康障害防止②安全衛生教育③健康診断の実施④労働災害原因の調査・再発防止等の安全衛生業務を統括管理する。"},
+
+{id:149,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「作業環境測定」の実施義務について有害業務以外の観点として正しいものはどれか。",choices:["作業環境測定の義務はないとして安全衛生法令上の義務が事業者に課せられている規定がある","全作業場で義務については法令の改正により事業者の義務が強化されている","有害業務の作業場（坑内・特定化学物質・有機溶剤・電離放射線","事務所のみで義務として安全衛生法令上の義務が事業者に課せられている規定がある"],answer:2,explanation:"作業環境測定（安衛法第65条）：坑内の一定作業場・特定化学物質・有機溶剤・鉛・電離放射線・高気圧・一定の粉じん等を取り扱う作業場で定期的な作業環境測定の実施が義務。事務所・一般製造業の非有害作業場は通常対象外。"},
+
+{id:150,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「定期自主検査」の対象として正しいものはどれか。",choices:["定期自主検査はすべての設備・机・椅子等も含めた全般的な点検義務","特定機械・設備（クレーン・フォークリフト・化学設備・局排装置等）が対象","定期自主検査の対象は事務所の什器・照明器具等の一般的な設備のみ","定期自主検査の義務はPC・複合機等の一般的な事務機器が対象である"],answer:1,explanation:"定期自主検査（安衛法第45条）：プレス機・クレーン・デリック・エレベーター・フォークリフト・化学設備・局所排気装置・除じん装置等の特定機械・設備について1年または1ヶ月以内ごとに1回の定期自主検査の実施が義務。"},
+
+{id:151,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康診断の実施に係る医師の選択権」として正しいものはどれか。",choices:["事業者が指定した医師のみが健診を実施できるは法令上の規制基準として事業者が遵守する義務的な要件である","労働者は事業者指定の医師が実施する健康診断の代わりに自ら選んだ医師による同","健診は事業者指定の医師のみで実施については法令の改正により事業者の義務が強化されている","健診は産業医のみが実施できるとして安全衛生法令上の義務が事業者に課せられている規定がある"],answer:1,explanation:"安衛法第66条第5項：労働者は事業者指定の医師以外の医師が行う健康診断を受けた場合は結果を証明する書類を提出することで健診義務を果たしたことになる（医師の選択権の保障）。"},
+
+{id:152,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「安全委員会・衛生委員会の委員の任期」として正しいものはどれか。",choices:["任期は1年については法令の改正により事業者の義務が強化されている","任期は2年については法令の改正により事業者の義務が強化されている","任期の定めはない（議長のみは解任されるまで）","任期は3年は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"安全委員会・衛生委員会の委員の任期には法令上特段の定めがない。ただし議長（総括安全衛生管理者等）は解任されるまで在任する。労働者代表委員（過半数代表が推薦した者）の変更は組合等の推薦に基づく。"},
+
+{id:153,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康診断の省略」ができる場合として正しいものはどれか。",choices:["省略は一切できないとして安全衛生法令上の義務が事業者に課せられている規定がある","定期健康診断は全て省略できるについては法令の改正により事業者の義務が強化されている","雇入れ時健康診断について3ヶ月以内に医師による健診を受けた者がその結果を","産業医が認めれば全て省略できるは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"雇入れ時健康診断（安衛則第43条）：雇入れの直前3ヶ月以内に医師による健診を受けた者が結果を証明する書類を提出した場合は健診項目の全部または一部を省略できる（全て省略ではなく一定の条件での省略）。"},
+
+{id:154,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「衛生委員会の参加者」として産業医の位置づけとして正しいものはどれか。",choices:["産業医は衛生委員会に参加できないは法令上の規制基準として事業者が遵守する義務的な要件である","産業医は陪席のみで発言できないについては法令の改正により事業者の義務が強化されている","産業医は衛生委員会の委員として参加し労働者の健康管理について意見を述べる","産業医の参加は任意については法令の改正により事業者の義務が強化されている"],answer:2,explanation:"安衛法第18条：産業医は衛生委員会の委員として参加する。産業医は独立した専門家として健康管理・作業環境等について意見を述べる権限を持つ。2019年改正で勧告権の強化・委員会への報告義務が追加された。"},
+
+{id:155,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「安全衛生教育の実施記録」の保存義務として正しいものはどれか。",choices:["保存義務はないは法令上の規制基準として事業者が遵守する義務的な要件である","実施記録を作成・保存することが求められる（安全衛生法令の規定）","1年で廃棄できるは法令上の規制基準として事業者が遵守する義務的な要件である","電子記録は認められないについては法令の改正により事業者の義務が強化されている"],answer:1,explanation:"安全衛生教育の実施記録（実施日時・内容・参加者等）の作成・保存は安全衛生管理の記録として求められる。法令上の保存期間の明示はないが他の記録（健診：5年等）に準じて適切な期間保存することが望ましい。"},
+
+{id:156,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「労働衛生コンサルタント」の職務として正しいものはどれか。",choices:["産業医の代わりに健康診断を実施するは法令上の規制基準として事業者が遵守する義務的な要件である","事業場の依頼を受けて労働衛生診断（衛生管理の状況の診断）と指導を行う国家資格者","衛生管理者免許の試験を実施するとして安全衛生法令上の義務が事業者に課せられている規定がある","行政処分を行うについては法令の改正により事業者の義務が強化されている"],answer:1,explanation:"労働衛生コンサルタント（安衛法第81条）：国家試験合格・登録後に事業場の依頼を受けて労働衛生の状況を診断し指導・助言する専門家。労働安全コンサルタント（安全診断・指導）と同様の専門家制度。"},
+
+{id:157,category:"関係法令（有害業務以外）",question:"「障害者雇用促進法」における「合理的配慮」のセルフケアの観点から精神障害のある労働者への配慮として正しいものはどれか。",choices:["精神障害・発達障害のある労働者も合理的配慮の対象で業務量調整","合理的配慮は身体障害者として安全衛生法令上の義務が事業者に課せられている規定がある","合理的配慮は大企業は法令上の規制基準として事業者が遵守する義務的な要件である","合理的配慮には費用がかかるため不要は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:0,explanation:"障害者雇用促進法の合理的配慮：身体・知的・精神（発達障害含む）の全障害者が対象。過重な負担にならない範囲で業務量調整・短時間勤務・専用スペース・指示方法の工夫等の配慮を事業主は講じる義務がある。"},
+
+{id:158,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「安全衛生管理体制」として「衛生推進者」の選任義務がある事業場として正しいものはどれか。",choices:["常時10人未満は法令上の規制基準として事業者が遵守する義務的な要件である","常時50人以上については法令の改正により事業者の義務が強化されている","常時10人以上50人未満（非工業的業種等）（安全衛生法令の規定）","常時100人以上として安全衛生法令上の義務が事業者に課せられている規定がある"],answer:2,explanation:"衛生推進者は常時10〜49人の労働者を使用する一定の事業場（商業・金融・保険・不動産・医療・教育・サービス業等）に選任義務がある。工業的業種（建設・製造等）の同規模では安全衛生推進者が必要。"},
+
+{id:159,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「産業医の役割強化」として2019年4月施行の改正内容として正しいものはどれか。",choices:["事業者から産業医への情報提供義務・産業医の勧告の記録（安全衛生法令の規定）","産業医の選任義務が廃止については法令の改正により事業者の義務が強化されている","産業医が人事権を持つようになったとして安全衛生法令上の義務が事業者に課せられている規定がある","産業医の職場巡視が不要になったは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:0,explanation:"2019年施行改正安衛法：①産業医への長時間労働者情報等の提供義務②産業医の勧告内容と事業者の対応の衛生委員会等への報告義務③産業医の意見を申し出た場合の事業者の対応の義務④産業医の独立性・中立性確保。"},
+
+{id:160,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「作業環境の基準」として「事務所の気積」について正しいものはどれか。",choices:["設備の占める容積と床面から4mを超える高さの部分を除いた気積が労働者1人","気積の基準はないとして安全衛生法令上の義務が事業者に課せられている規定がある","労働者1人当たり5m³以上については法令の改正により事業者の義務が強化されている","労働者1人当たり20m³以上については法令の改正により事業者の義務が強化されている"],answer:0,explanation:"事務所の気積基準（旧事務所衛生基準規則・現在は安衛規則等に統合）：設備占有容積と床面から4mを超える高さの空間を除いた有効気積が労働者1人当たり10m³以上が基準。"},
+
+{id:161,category:"関係法令（有害業務以外）",question:"「労働基準法」における「年次有給休暇の5日取得義務化」として正しいものはどれか。",choices:["年10日以上の年次有給休暇が付与された労働者に対して使用者は年5日の有給","全ての労働者に5日の強制取得義務があるとして安全衛生法令上の義務が事業者に課せられている規定がある","有給休暇の取得は完全に労働者の任意は法令上の規制基準として事業者が遵守する義務的な要件である","有給休暇は法律で付与義務はないは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:0,explanation:"改正労働基準法（2019年4月施行）：年10日以上の年次有給休暇が付与された労働者に対し使用者は毎年5日（労働者が既に取得した日数を差し引く）を時季指定して確実に取得させる義務がある（第39条第7項）。"},
+
+{id:162,category:"関係法令（有害業務以外）",question:"「労働基準法」における「深夜業の割増賃金率」として正しいものはどれか。",choices:["10%以上として安全衛生法令上の義務が事業者に課せられている規定がある","25%以上（安全衛生法令の規定）","50%以上として安全衛生法令上の義務が事業者に課せられている規定がある","75%以上については法令の改正により事業者の義務が強化されている"],answer:1,explanation:"労働基準法第37条第4項：深夜業（午後10時〜翌午前5時の労働）の割増賃金率は25%以上。時間外（法定外）かつ深夜の場合は50%以上（25%＋25%）となる。"},
+
+{id:163,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「化学物質のSDS（安全データシート）交付義務」として正しいものはどれか。",choices:["政令で定める有害物等を含む製品を譲渡・提供する際にSDSを交付する義務がある","SDSの交付は任意については法令の改正により事業者の義務が強化されている","SDSは製造者だけが保管するとして安全衛生法令上の義務が事業者に課せられている規定がある","SDSは英語でよいとして安全衛生法令上の義務が事業者に課せられている規定がある"],answer:0,explanation:"安衛法第57条の2：一定の危険有害物等を含む製品を譲渡・提供する際にSDS（安全データシート）の交付が義務。SDSは日本語での作成が必要。受け取った事業場はSDSを活用してリスクアセスメントを実施する。"},
+
+{id:164,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「機械等の安全基準適合義務」として正しいものはどれか。",choices:["機械の安全基準はないは法令上の規制基準として事業者が遵守する義務的な要件である","使用者に機械の安全義務はないは法令上の規制基準として事業者が遵守する義務的な要件である","機械の安全管理は製造者のみの責任","特定機械等（ボイラー・クレーン・プレス機"],answer:3,explanation:"安衛法第37〜44条の2等：特定機械等（ボイラー・クレーン・デリック・エレベーター・ゴンドラ等）は製造・設置時の検査・定期検査・定期自主検査等の規制が設けられている。"},
+
+{id:165,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「不法就労者（外国人等）への健康診断義務」として正しいものはどれか。",choices:["不法就労者への健康診断義務はないとして安全衛生法令上の義務が事業者に課せられている規定がある","日本国籍者については法令の改正により事業者の義務が強化されている","正社員については法令の改正により事業者の義務が強化されている","外国人労働者も含め常時使用する全ての労働者に健康診断を実施する義務がある"],answer:3,explanation:"健康診断の実施義務は国籍・在留資格に関係なく常時使用する労働者に適用される。外国人労働者・不法就労者も「労働者」として保護の対象となり健康診断をはじめとする労働安全衛生法の適用を受ける。"},
+
+{id:166,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「快適職場形成のための指針」の内容として正しいものはどれか。",choices:["快適職場指針は製造業のみを対象は法令上の規制基準として事業者が遵守する義務的な要件である","快適職場形成は衛生管理者の単独業務については法令の改正により事業者の義務が強化されている","作業環境の整備・作業方法の改善・疲労回復施設の整備（安全衛生法令の規定）","快適職場指針に法的根拠はないについては法令の改正により事業者の義務が強化されている"],answer:2,explanation:"快適職場形成指針（安衛法第71条の3）：①作業環境の整備（換気・照明・温度・騒音等）②作業方法の改善③疲労回復施設の整備（休憩室・仮眠室等）④心理的ストレス解消施設・設備の整備等を基準とする。"},
+
+{id:167,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康診断の実施が義務付けられる最低健診項目」として定期健康診断（安衛則第44条）の項目に含まれないものはどれか。",choices:["身長・体重・腹囲・BMIとして安全衛生法令上の義務が事業者に課せられている規定がある","視力・聴力検査については法令の改正により事業者の義務が強化されている","尿検査（糖・蛋白）は法令上の規制基準として事業者が遵守する義務的な要件である","歯科健診（安全衛生法令の規定）"],answer:3,explanation:"定期健康診断（安衛則第44条）の項目：既往歴・業務歴・自覚症状・他覚症状・身長・体重・腹囲・視力・聴力・胸部X線・血圧・貧血検査・肝機能・血糖・脂質・尿検査・心電図等。歯科健診は別途有害業務（塩酸・硫酸等）従事者に義務付けられた特殊健診。"},
+
+{id:168,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康診断の結果に基づく事業者の保存義務期間」として「ストレスチェック実施記録」の場合正しいものはどれか。",choices:["1年として安全衛生法令上の義務が事業者に課せられている規定がある","3年として安全衛生法令上の義務が事業者に課せられている規定がある","5年（安全衛生法令の規定）","10年については法令の改正により事業者の義務が強化されている"],answer:2,explanation:"ストレスチェックの実施記録の保存期間は5年間（安衛則第52条の13）。健康診断結果記録（5年）と同じ期間。高ストレス者への面接指導記録も5年間保存。"},
+
+{id:169,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「産業医の選任の届出先」として正しいものはどれか。",choices:["厚生労働大臣については法令の改正により事業者の義務が強化されている","都道府県労働局長については法令の改正により事業者の義務が強化されている","所轄の労働基準監督署長（安全衛生法令の規定）","市区町村長は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"産業医の選任報告は選任後遅滞なく所轄の労働基準監督署長に提出する（安衛則第13条の2）。衛生管理者・安全管理者等の選任も同様に所轄労働基準監督署長への報告義務がある。"},
+
+{id:170,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「職場における化学物質管理者」の選任義務として2022年改正後の内容として正しいものはどれか。",choices:["リスクアセスメント対象物を製造・取り扱う事業場","化学物質管理者の選任義務はないとして安全衛生法令上の義務が事業者に課せられている規定がある","化学物質管理者は医師のみが担当できる","大企業のみに義務として安全衛生法令上の義務が事業者に課せられている規定がある"],answer:0,explanation:"2022年の改正省令：リスクアセスメント対象物（約2900物質）を製造・取り扱う事業場では化学物質管理者の選任が義務化（2024年4月施行）。化学物質の自律的管理を推進する中核的な役割を担う。"},
+
+{id:171,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「保護具着用管理責任者」の選任義務として2022年改正後の内容として正しいものはどれか。",choices:["保護具着用管理責任者の選任義務はないは法令上の規制基準として事業者が遵守する義務的な要件である","保護具は労働者が各自で管理するとして安全衛生法令上の義務が事業者に課せられている規定がある","リスクアセスメント対象物を取り扱う一定の事業場では保護具着用管理責任者の","大企業のみに義務については法令の改正により事業者の義務が強化されている"],answer:2,explanation:"2022年の改正省令：リスクアセスメント対象物を取り扱う事業場で労働者に呼吸用保護具等を使用させる場合は保護具着用管理責任者の選任が義務化（2024年4月施行）。適切な保護具の選定・管理を担当する。"},
+
+{id:172,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「がん原性物質（特別管理物質）に係る健康診断の記録の特別保存」として正しいものはどれか。",choices:["5年として安全衛生法令上の義務が事業者に課せられている規定がある","10年として安全衛生法令上の義務が事業者に課せられている規定がある","30年（安全衛生法令の規定）","永久保存については法令の改正により事業者の義務が強化されている"],answer:2,explanation:"特別管理物質（ベンゼン・クロム酸・石綿等のがん原性物質）に係る健康診断の記録は30年間保存が義務（特化則等）。晩発性の職業がん（潜伏期が長い）の発生時に業務との因果関係を確認するため長期保存が必要。"},
+
+{id:173,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「衛生委員会の付議事項（審議事項）」として「ストレスチェック」に関する事項として正しいものはどれか。",choices:["ストレスチェックは衛生委員会の審議事項ではない","ストレスチェックは人事委員会が決定するとして安全衛生法令上の義務が事業者に課せられている規定がある","ストレスチェック制度の実施計画・実施状況・集団分析結果の活用方法","ストレスチェックの内容は産業医が単独で決定する"],answer:2,explanation:"安衛則第22条：衛生委員会の調査審議事項にはストレスチェック制度（実施計画・方法・高ストレス者への対応・集団分析結果の活用・職場環境改善等）が含まれる。"},
+
+{id:174,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「産業医の辞任・解任時の手続き」として正しいものはどれか。",choices:["産業医が辞任・解任された場合は遅滞なく新産業医を選任し所轄労働基準監督署","手続きとして安全衛生法令上の義務が事業者に課せられている規定がある","都道府県知事に報告するについては法令の改正により事業者の義務が強化されている","解任の理由を公表する義務があるは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:0,explanation:"産業医が辞任・解任された場合は遅滞なく新産業医を選任し所轄労働基準監督署長への選任報告書の提出が必要（安衛則第13条の2）。産業医の選任・変更のたびに報告義務がある。"},
+
+{id:175,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「健康診断の実施を外部委託する場合」の事業者の責任として正しいものはどれか。",choices:["外部委託すれば事業者の責任はなくなる","健康診断を外部機関（病院・健診センター","委託先医療機関が全責任を負うについては法令の改正により事業者の義務が強化されている","委託後は健診結果を受け取る必要がない"],answer:1,explanation:"健康診断の実施を外部機関に委託しても事業者の実施義務は維持される。事業者は委託先からの結果を受け取り記録保存・本人通知・異常所見者への医師意見聴取・事後措置等の全責任を引き続き負う。"},
+
+{id:176,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「事業場における安全衛生管理のPDCAサイクル」の「Check（評価）」に相当する活動として正しいものはどれか。",choices:["安全衛生方針の策定として安全衛生法令上の義務が事業者に課せられている規定がある","安全衛生計画の実施として安全衛生法令上の義務が事業者に課せられている規定がある","安全衛生活動の実施状況・効果の点検・内部監査・産業医の職場巡視結果","改善措置の実施は法令上の規制基準として事業者が遵守する義務的な要件である"],answer:2,explanation:"安全衛生マネジメントのPDCA：P（計画：方針策定・リスクアセスメント・計画立案）→D（実施：計画の実行）→C（確認：効果測定・内部監査・産業医巡視・衛生委員会での報告）→A（改善：見直し・改善措置）。"},
+
+{id:177,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「労働者の心の健康の保持増進のための指針」が示す「4つのケア」の一つとして正しいものはどれか。",choices:["経営者によるケアについては法令の改正により事業者の義務が強化されている","友人によるケアとして安全衛生法令上の義務が事業者に課せられている規定がある","家族によるケアは法令上の規制基準として事業者が遵守する義務的な要件である","事業場外資源（EAP・地域の精神保健機関等）によるケア"],answer:3,explanation:"4つのケアは①セルフケア（労働者自身）②ラインによるケア（管理監督者）③事業場内産業保健スタッフ等によるケア④事業場外資源によるケア（EAP・精神保健福祉センター等）。"},
+
+{id:178,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「衛生管理者の業務」として「定期の職場巡視の結果の記録」について正しいものはどれか。",choices:["記録義務はないについては法令の改正により事業者の義務が強化されている","記録は5年後に廃棄するとして安全衛生法令上の義務が事業者に課せられている規定がある","記録は産業医のみが作成するについては法令の改正により事業者の義務が強化されている","職場巡視の結果を記録し衛生委員会等へ報告することが求められる"],answer:3,explanation:"衛生管理者は職場巡視（週1回以上）を実施し巡視の結果・改善が必要な事項・改善状況等を記録して衛生委員会や産業医に報告することが求められる。記録は衛生管理の証拠・継続性確保のために重要。"},
+
+{id:179,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「電離放射線障害防止規則（有害業務以外の観点）」で定める「管理区域」の設定義務について正しいものはどれか。",choices:["一定の線量を超えるおそれのある区域を管理区域（安全衛生法令の規定）","管理区域の設定義務はないは法令上の規制基準として事業者が遵守する義務的な要件である","管理区域は製造業のみに設定として安全衛生法令上の義務が事業者に課せられている規定がある","病院のみに設定義務があるは法令上の規制基準として事業者が遵守する義務的な要件である"],answer:0,explanation:"電離放射線障害防止規則第3条：外部放射線による実効線量と空気中放射性物質による実効線量の合計が3ヶ月間で1.3mSvを超えるおそれのある区域を管理区域として設定する義務がある（医療・研究・工業検査等の放射線使用事業場）。"},
+
+{id:180,category:"関係法令（有害業務以外）",question:"「労働安全衛生法」における「安全衛生委員会の設置条件」として正しいものはどれか。",choices:["全事業場で設置できるについては法令の改正により事業者の義務が強化されている","50人以上の全事業場で設置義務があるは法令上の規制基準として事業者が遵守する義務的な要件である","衛生委員会の義務がある事業場のみ設置できるについては法令の改正により事業者の義務が強化されている","安全委員会と衛生委員会の両方の設置義務がある事業場においてこれらに代えて"],answer:3,explanation:"安全衛生委員会（安衛法第19条）：安全委員会と衛生委員会の両方の設置義務がある事業場（工業的業種で50人以上等）において両委員会に代えて設置できる統合委員会。衛生委員会のみの義務事業場では不可。"},
+
+{id:181,category:"労働生理",question:"「心臓」の構造として正しいものはどれか。",choices:["心臓は2つの部屋（左右の心室）から構成されるは労働に関連する生理的負担の指標として職場健康管理で重視される","心臓は4つの部屋（右心房・右心室・左心房・左心室）から構成される","心臓は平滑筋で構成されるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","心臓は意識的に収縮をコントロールできるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:1,explanation:"心臓は右心房・右心室・左心房・左心室の4つの部屋から構成される（心筋：横紋筋の一種）。右心室から肺動脈→肺循環→左心房→左心室→大動脈→体循環→右心房の順に血液が循環する。"},
+
+{id:182,category:"労働生理",question:"「血液の成分」において「血小板」の主な機能として正しいものはどれか。",choices:["酸素の運搬が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","血液凝固（止血）（労働生理学的特性）","細菌の貪食が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","抗体の産生が人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:1,explanation:"血小板は血管損傷時に凝集・活性化して血液凝固（止血）に関与する。赤血球はO₂運搬、白血球（好中球）は細菌貪食、リンパ球（B細胞）は抗体産生を担う。"},
+
+{id:183,category:"労働生理",question:"「呼吸」のメカニズムにおいて「吸気（息を吸う）」時の横隔膜の動きとして正しいものはどれか。",choices:["横隔膜が収縮して下降し胸腔容積が増加して肺が拡張する（労働生理学的特性）","横隔膜が弛緩して上がるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","横隔膜は呼吸に関与しないが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","横隔膜が上昇して肺が収縮するが人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:0,explanation:"吸気時：横隔膜が収縮→下降→胸腔容積増加→肺内圧が大気圧より低下→外気が流入。外肋間筋も収縮して肋骨が挙上され胸腔容積がさらに増加する。呼気は横隔膜の弛緩による受動的過程。"},
+
+{id:184,category:"労働生理",question:"「肝臓」の機能として最も不適切なものはどれか。",choices:["グリコーゲンの貯蔵・分解の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","胆汁の産生が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","有害物質（アルコール・薬物等）の解毒","インスリンの産生・分泌（労働生理学的特性）"],answer:3,explanation:"肝臓の主な機能：①代謝（糖・脂質・タンパク質）②グリコーゲン合成・貯蔵・分解③胆汁産生④解毒（アルコール・薬物・アンモニア等）⑤血液凝固因子産生。インスリン・グルカゴンは膵臓のランゲルハンス島が産生。"},
+
+{id:185,category:"労働生理",question:"「腎臓」の「ネフロン」の構成として正しいものはどれか。",choices:["ネフロンは糸球体のみで構成される単純な濾過専用の機能単位","糸球体・近位尿細管・ヘンレのループ・遠位尿細管・集合管からなる機能単位","ネフロンは腎盂と尿管のみで構成される尿排出に特化した単位","ネフロンは尿管と膀胱の接続部に存在する尿量調節専用の単位"],answer:1,explanation:"ネフロン（腎単位）は腎臓の基本機能単位。糸球体（血液を濾過）→ボウマン嚢→近位尿細管（再吸収・分泌）→ヘンレのループ（水・電解質調節）→遠位尿細管→集合管で構成。両腎合わせて約200万個。"},
+
+{id:186,category:"労働生理",question:"「自律神経系」において「副交感神経が優位になる状態」として正しいものはどれか。",choices:["激しい運動中は労働に関連する生理的負担の指標として職場健康管理で重視される","緊急事態への対応（闘争・逃走反応）","安静・休息・消化吸収が活発な状態（食後等）","強いストレス下は労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:2,explanation:"副交感神経優位の状態（安静・休息）：心拍数低下・血圧低下・気管支収縮・消化液分泌増加・腸蠕動促進・瞳孔収縮・勃起等。交感神経優位（緊急・興奮）の拮抗として臓器機能を調節する。"},
+
+{id:187,category:"労働生理",question:"「骨格筋の収縮」のエネルギー源として最初に使われるものとして正しいものはどれか。",choices:["脂肪が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","乳酸の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","ATP（アデノシン三リン酸）・クレアチンリン酸","グリコーゲンが人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:2,explanation:"筋収縮のエネルギー源の順序：①ATP（即座・数秒）②クレアチンリン酸（クレアチンキナーゼ反応：10〜20秒）③嫌気的解糖（乳酸産生：1〜2分）④好気的代謝（長時間：糖・脂肪・タンパク質）。"},
+
+{id:188,category:"労働生理",question:"「体温調節」において「寒冷環境での体温保持」の機序として正しいものはどれか。",choices:["発汗増加の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","皮膚血管拡張の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","皮膚血管収縮・筋肉の不随意的収縮（シバリング）による熱産生増加","体表面積の増加は労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:2,explanation:"寒冷環境での体温保持：①皮膚血管収縮（熱放散を減少）②シバリング（筋肉の不随意的震え：熱産生増加）③立毛反応④交感神経活性化による基礎代謝上昇⑤甲状腺ホルモン・アドレナリン分泌増加。"},
+
+{id:189,category:"労働生理",question:"「視覚器」において「水晶体（レンズ）」の機能として正しいものはどれか。",choices:["毛様体筋の収縮・弛緩により厚みを変えて遠近の焦点調節を行う","光の感受（光受容）は労働に関連する生理的負担の指標として職場健康管理で重視される","眼球の圧力維持が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","角膜の保護の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素"],answer:0,explanation:"水晶体は毛様体筋の張力変化により厚みが変わり焦点調節（遠近調節：近距離では水晶体が厚くなる）を行う。老眼は水晶体の硬化による調節力低下。光受容は網膜の錐体細胞（色覚・明所視）・杆体細胞（暗所視）が担う。"},
+
+{id:190,category:"労働生理",question:"「聴覚器」において「鼓膜」から音が伝わる経路として正しいものはどれか。",choices:["鼓膜→蝸牛→耳小骨→聴神経が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","鼓膜→耳小骨（ツチ骨・キヌタ骨・アブミ骨）→蝸牛（労働生理学的特性）","鼓膜→前庭→聴神経は労働に関連する生理的負担の指標として職場健康管理で重視される","外耳道→前庭→大脳が人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:1,explanation:"音の伝導経路：外耳道→鼓膜（振動）→耳小骨（ツチ骨→キヌタ骨→アブミ骨：振動を約22倍に増幅）→卵円窓→蝸牛（基底膜振動→コルチ器有毛細胞→電気信号）→蝸牛神経→大脳聴覚野（側頭葉）。"},
+
+{id:191,category:"労働生理",question:"「睡眠」において「ノンREM睡眠」の特徴として正しいものはどれか。",choices:["急速眼球運動（REM）が見られ眼球が激しく動く睡眠段階である","睡眠時間の大半を占め体温・血圧が上昇して身体が活動準備をする","夢を多く見る段階で脳活動がほぼ覚醒時と同等に活発になる","深い眠り（徐波睡眠）で成長ホルモン分泌・身体の修復・記憶固定に関与"],answer:3,explanation:"ノンREM睡眠（N1〜N3段階）：深い眠り（N3：徐波睡眠）では成長ホルモンが最も多く分泌・身体の修復・骨・筋肉の成長・免疫機能強化・宣言的記憶の固定に関与。REM睡眠は手続き的記憶・情動処理に関与。"},
+
+{id:192,category:"労働生理",question:"「筋疲労」のメカニズムとして「乳酸蓄積」の影響として正しいものはどれか。",choices:["乳酸は筋力を増加させるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","嫌気性代謝で産生された乳酸が筋内に蓄積しpH低下を引き起こして筋収縮力低下","乳酸は有害な廃棄物であり再利用されないが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","乳酸蓄積は筋肉のエネルギー貯蔵を増加させるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:1,explanation:"激しい運動時の嫌気性代謝：グルコース→ピルビン酸→乳酸＋ATP産生。筋内乳酸蓄積→pH低下（アシドーシス）→筋収縮タンパクの機能低下→筋疲労・筋痛。乳酸は肝臓でコリ回路によりグルコースに再合成される。"},
+
+{id:193,category:"労働生理",question:"「ストレス反応」における「汎適応症候群（GAS）」（セリエ）の3段階として正しいものはどれか。",choices:["緊張期・抵抗期・回復期の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","警告反応期・抵抗期・疲弊期（労働生理学的特性）","急性期・慢性期・回復期が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","興奮期・安定期・消耗期は労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:1,explanation:"セリエの汎適応症候群（GAS）：①警告反応期（ショック相→対ショック相：防衛反応）→②抵抗期（ストレスへの適応・抵抗力が最大）→③疲弊期（長期ストレスで適応力消耗・疾病発症）。"},
+
+{id:194,category:"労働生理",question:"「エネルギー代謝率（RMR）」の説明として正しいものはどれか。",choices:["基礎代謝量のみを測定するは労働に関連する生理的負担の指標として職場健康管理で重視される","体重のみで計算できるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","（作業中の酸素消費量－安静時の酸素消費量）÷基礎代謝量で作業強度を示す指標","日本では使用されないが人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:2,explanation:"RMR＝（作業時代謝量－安静時代謝量）÷基礎代謝量。軽作業：0〜1・事務作業：1〜2・中等度作業：2〜4・重作業：4〜7・激重作業：7以上。METsと並んで作業強度評価に使用される日本の指標。"},
+
+{id:195,category:"労働生理",question:"「体液の調節」において「ADH（抗利尿ホルモン・バソプレシン）」の作用として正しいものはどれか。",choices:["腎集合管での水の再吸収を促進して尿量を減少させ体液量を保持する","尿量を増加させるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","血圧を低下させるの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","体温を上昇させるの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素"],answer:0,explanation:"ADH（バソプレシン）は視床下部で産生・下垂体後葉から分泌。腎集合管での水の再吸収を促進し尿量を減少させて体液浸透圧・体液量を調節する。分泌増加：体液浸透圧上昇・体液量減少・ストレス等。"},
+
+{id:196,category:"労働生理",question:"「大脳」の機能局在として「運動野」の位置として正しいものはどれか。",choices:["後頭葉は労働に関連する生理的負担の指標として職場健康管理で重視される","側頭葉が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","前頭葉後部（中心前回）（労働生理学的特性）","頭頂葉は労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:2,explanation:"大脳の機能局在：前頭葉後部（中心前回）＝運動野、頭頂葉前部（中心後回）＝体性感覚野、後頭葉＝視覚野、側頭葉＝聴覚野・言語野（ウェルニッケ野）。前頭葉（前部）は思考・判断・情動調節。"},
+
+{id:197,category:"労働生理",question:"「内分泌系」において「甲状腺ホルモン（T3・T4）」の主な作用として正しいものはどれか。",choices:["血糖値を低下させるの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","血圧を低下させるは労働に関連する生理的負担の指標として職場健康管理で重視される","基礎代謝の促進・全身の代謝活性化・体温維持・成長・発達に関与する","体液量を調節するが人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:2,explanation:"甲状腺ホルモン（T3：トリヨードチロニン・T4：チロキシン）：基礎代謝の促進・全身の代謝活性化・体温維持・心拍数増加・蛋白合成促進・成長・発達（特に脳神経発達）に重要。過剰→甲状腺機能亢進症（バセドウ病）。"},
+
+{id:198,category:"労働生理",question:"「免疫系」において「T細胞（Tリンパ球）」の主な機能として正しいものはどれか。",choices:["胸腺で成熟し細胞性免疫（キラーT・ヘルパーT）を担う免疫細胞","T細胞はB細胞と同様に抗体を産生し体液性免疫を担う主要細胞","T細胞は血小板と連携して血液凝固と免疫の両方を担う多機能細胞","T細胞はヘモグロビンと結合して酸素・二酸化炭素の運搬を補助する"],answer:0,explanation:"T細胞は骨髄で産生→胸腺（Thymus）で成熟する。キラーT細胞（細胞傷害性T細胞）：ウイルス感染細胞・がん細胞を直接破壊（細胞性免疫）。ヘルパーT細胞：B細胞・キラーT細胞の活性化を助ける（液性・細胞性免疫の調整）。"},
+
+{id:199,category:"労働生理",question:"「代謝」において「基礎代謝量（BMR）」の定義として正しいものはどれか。",choices:["運動中のエネルギー消費量は労働に関連する生理的負担の指標として職場健康管理で重視される","睡眠中のエネルギー消費量は労働に関連する生理的負担の指標として職場健康管理で重視される","覚醒・安静・空腹状態（快適温度下）で生命維持に必要な最小限のエネルギー消費量","食後のエネルギー消費量の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素"],answer:2,explanation:"基礎代謝量（BMR）：早朝空腹・快適温度・覚醒・安静横臥の条件下での生命維持に必要な最小限のエネルギー消費量。成人男性で約1500〜1700kcal/日・女性で約1100〜1300kcal/日程度。加齢で低下・筋肉量で変動。"},
+
+{id:200,category:"労働生理",question:"「感覚器」において「皮膚感覚」の受容器（機械受容器）として正しいものはどれか。",choices:["マイスナー小体は労働に関連する生理的負担の指標として職場健康管理で重視される","マイスナー小体（触覚）・パチニ小体（振動・圧覚）・メルケル盤","温度受容器のみが皮膚にあるは労働に関連する生理的負担の指標として職場健康管理で重視される","皮膚に感覚受容器はないは労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:1,explanation:"皮膚の機械受容器：マイスナー小体（軽い触覚・指紋部）・パチニ小体（振動・深部圧覚）・メルケル盤（圧迫・形状識別）・ルフィニ終末（皮膚伸張・熱感）。温度受容器（温点・冷点）・痛覚受容器（自由神経終末）も分布。"},
+
+{id:201,category:"労働生理",question:"「循環器系」において「冠動脈」の説明として正しいものはどれか。",choices:["肺に血液を供給するは労働に関連する生理的負担の指標として職場健康管理で重視される","腎臓に血液を供給するが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","脳に血液を供給するが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","心臓（心筋）自体に酸素・栄養を供給する血管で閉塞すると心筋梗塞を引き起こす"],answer:3,explanation:"冠動脈（左冠動脈・右冠動脈）は大動脈弁直上（バルサルバ洞）から分岐し心臓（心筋）に酸素・栄養を供給する。粥状動脈硬化による狭窄→狭心症・完全閉塞→心筋梗塞（過労・過重労働との関連が重要）。"},
+
+{id:202,category:"労働生理",question:"「消化器系」において「小腸」の主な機能として正しいものはどれか。",choices:["食物の咀嚼の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","グリコーゲンの貯蔵は労働に関連する生理的負担の指標として職場健康管理で重視される","栄養素の消化（膵酵素・腸液等）と吸収（絨毛・微絨毛で表面積を最大化）","胆汁の産生は労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:2,explanation:"小腸（十二指腸・空腸・回腸）の主な機能：①消化（膵液・胆汁・腸液による化学的消化）②栄養素の吸収（糖・アミノ酸→門脈・脂肪→リンパ管）。絨毛・微絨毛により表面積を最大化（約200m²）して効率的に吸収する。"},
+
+{id:203,category:"労働生理",question:"「呼吸器系」において「肺サーファクタント」の機能として正しいものはどれか。",choices:["酸素を血液に溶解させるは労働に関連する生理的負担の指標として職場健康管理で重視される","肺胞の表面張力を低下させて肺胞の虚脱（無気肺）を防ぐ","二酸化炭素を体外に排出するが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","気道の粘液を除去するの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素"],answer:1,explanation:"肺サーファクタント（界面活性物質）はⅡ型肺胞上皮細胞が産生するリン脂質（主にDPPC）を含む物質。肺胞の空気-液体界面の表面張力を低下させて肺胞が呼気時に虚脱（潰れる）することを防ぐ。"},
+
+{id:204,category:"労働生理",question:"「筋肉」において「等尺性収縮（アイソメトリック）」の特徴として正しいものはどれか。",choices:["筋肉の長さが変化するは労働に関連する生理的負担の指標として職場健康管理で重視される","筋肉の長さは変わらず力を発揮する収縮（壁を押す・重い物を保持する","関節が動く運動が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","筋肉が短縮するは労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:1,explanation:"等尺性収縮（静的収縮・アイソメトリック）：筋肉の長さが変わらず張力を発生させる収縮。壁を押す・重量物の保持・VDT作業での姿勢保持等。筋内圧上昇→血流遮断→疲労しやすい（動的収縮より疲労早い）。"},
+
+{id:205,category:"労働生理",question:"「脂質代謝」において「LDLコレステロール」の役割として正しいものはどれか。",choices:["コレステロールを末梢組織に運搬し動脈壁へのコレステロール沈着を促進する","コレステロールを末梢から肝臓に回収する（善玉）は労働に関連する生理的負担の指標として職場健康管理で重視される","中性脂肪の運搬の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","血糖値の調節は労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:0,explanation:"LDL（低密度リポ蛋白）コレステロールは肝臓から末梢組織へコレステロールを運搬し酸化変性LDLが動脈壁に蓄積して粥状動脈硬化を促進する（悪玉）。HDL（高密度リポ蛋白）は末梢から肝臓へコレステロールを回収する（善玉）。"},
+
+{id:206,category:"労働生理",question:"「視覚」において「錐体細胞（コーン）」と「杆体細胞（ロッド）」の違いとして正しいものはどれか。",choices:["両者は同じ機能を持つは労働に関連する生理的負担の指標として職場健康管理で重視される","錐体細胞が暗所視を担うの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","杆体細胞が色覚を担うが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","錐体細胞は色覚・明所視（黄斑部中心：最も密）・杆体細胞は暗所視"],answer:3,explanation:"錐体細胞（L・M・S型：赤・緑・青の波長に感受性）：色覚・高解像度（黄斑中心窩に最も密集）・明所視。杆体細胞（ロドプシン含有）：高感度・暗所視・色覚なし・黄斑周辺部に多い。暗順応は杆体細胞のロドプシン再合成に依存。"},
+
+{id:207,category:"労働生理",question:"「作業能力と疲労」において「サーカディアンリズムと作業能力」の関係として正しいものはどれか。",choices:["作業能力はサーカディアンリズムに影響されない","朝に作業能力が最も低いが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","夜間に作業能力が最も高いは労働に関連する生理的負担の指標として職場健康管理で重視される","深部体温・反応速度・注意力・認知機能（労働生理学的特性）"],answer:3,explanation:"サーカディアンリズムと作業能力：深部体温・反応速度・注意力・短期記憶等は午後（14〜20時頃）に最も高く夜間（特に午前2〜5時）に最も低下する。夜勤時の作業能力低下・事故リスク増加の生理的根拠。"},
+
+{id:208,category:"労働生理",question:"「消化吸収」において「糖質の消化・吸収の経路」として正しいものはどれか。",choices:["糖質は腸で直接吸収されるは労働に関連する生理的負担の指標として職場健康管理で重視される","糖質は胃で完全に消化されるの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","糖質はリンパ管から吸収されるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","唾液・膵液のアミラーゼで多糖→二糖類に分解・小腸上皮の二糖類分解酵素で単糖"],answer:3,explanation:"糖質の消化・吸収：唾液アミラーゼ（デンプン→デキストリン）→胃（消化なし）→小腸：膵液アミラーゼ（デキストリン→マルトース等の二糖類）→小腸上皮の二糖類分解酵素（マルターゼ等）→グルコース・フルクトース→毛細血管（門脈）→肝臓→体循環。"},
+
+{id:209,category:"労働生理",question:"「体温調節」において「熱の産生」に最も貢献している組織として正しいものはどれか。",choices:["骨格筋（安静時20〜30%・運動時80〜90%の熱産生）と肝臓が主要","皮膚が全体の70〜80%の熱産生を担い体温維持に最も重要な組織","脳が全体の熱産生の50%以上を占める最大の産熱組織である","腎臓が代謝産物を熱に変換することで全体の40〜50%を産生する"],answer:0,explanation:"熱産生の主要組織：安静時は肝臓（約20%）・骨格筋（約20〜30%）・脳・心臓が主要産熱源。運動時は骨格筋の産熱量が全体の約80〜90%に達する。体温調節は産熱（代謝・筋収縮等）と放熱（皮膚・呼気等）のバランスで維持。"},
+
+{id:210,category:"労働生理",question:"「血圧」の調節に関与する「レニン・アンジオテンシン系」の説明として正しいものはどれか。",choices:["腎臓のレニン→アンジオテンシンI→ACE（労働生理学的特性）","血圧を低下させるホルモン系が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","この系はアルドステロンと無関係の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","この系は心臓のみが関与は労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:0,explanation:"レニン-アンジオテンシン-アルドステロン系（RAAS）：腎血流低下→腎傍糸球体細胞からレニン分泌→アンジオテンシノゲン→アンジオテンシンI→ACE（肺）→アンジオテンシンII（血管収縮・アルドステロン分泌促進→Na保持・体液量増加）→血圧上昇。"},
+
+{id:211,category:"労働生理",question:"「感覚の順応」において「暗順応」が完全に完了するまでの時間として正しいものはどれか。",choices:["数秒の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","1〜3分の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","20〜30分（労働生理学的特性）","数時間が人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:2,explanation:"暗順応は暗所移動後：①錐体細胞の感受性上昇（5〜7分で急速に完了）②杆体細胞のロドプシン（視紅）再合成（20〜30分で完了：最終段階）。完全な暗順応には約20〜30分かかる。明順応は数分で完了。"},
+
+{id:212,category:"労働生理",question:"「骨の構造と機能」において「骨のカルシウム代謝」に関与するホルモンの組合せとして正しいものはどれか。",choices:["副甲状腺ホルモン・カルシトニン・活性型ビタミンDが協調して血中Ca調節","インスリンとグルカゴンが拮抗して血中Ca濃度を調節している","甲状腺ホルモンのみが血中カルシウムの調節を担っている","エストロゲンのみが骨からのカルシウム溶出を制御している"],answer:0,explanation:"骨のカルシウム代謝調節ホルモン：PTH（副甲状腺ホルモン：骨吸収促進・Ca↑）・カルシトニン（甲状腺傍濾胞細胞：骨吸収抑制・Ca↓）・活性型ビタミンD（腸管Ca吸収促進・Ca↑）。エストロゲン低下（閉経後）で骨粗鬆症リスク増大。"},
+
+{id:213,category:"労働生理",question:"「神経系」において「末梢神経系」の分類として正しいものはどれか。",choices:["末梢神経は脳・脊髄のみで構成されており中枢神経系の一部である","末梢神経は脊髄神経のみで脳神経は中枢神経に分類されている","末梢神経は脳神経のみからなり脊髄から分岐する神経は別の系統","体性神経系（運動・感覚神経）と自律神経系（交感・副交感神経）に分類"],answer:3,explanation:"神経系の分類：中枢神経系（脳・脊髄）と末梢神経系に分類。末梢神経系は①体性神経系（運動神経：随意運動・感覚神経：感覚情報）②自律神経系（交感神経・副交感神経：不随意機能）に分かれる。"},
+
+{id:214,category:"労働生理",question:"「心拍出量」の説明として正しいものはどれか。",choices:["心臓の1回の収縮で拍出される血液量が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","心臓の収縮力の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","1分間に心臓が送り出す血液量（心拍出量＝1回拍出量×心拍数）で安静時は約5L/分","血液の粘度が人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:2,explanation:"心拍出量（Cardiac Output）＝1回拍出量（約70mL）×心拍数（約70回/分）＝約5L/分（安静時成人）。最大運動時は心拍数増加（最大200回/分等）・1回拍出量増加で約20〜25L/分に達する。フランク-スターリングの法則が重要。"},
+
+{id:215,category:"労働生理",question:"「老化と生理機能」において「加齢に伴う呼吸機能の変化」として正しいものはどれか。",choices:["肺活量・1秒量・最大換気量が低下し残気量が増加する（労働生理学的特性）","肺活量が増加するは労働に関連する生理的負担の指標として職場健康管理で重視される","加齢で呼吸機能は変化しないは労働に関連する生理的負担の指標として職場健康管理で重視される","残気量が減少するは労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:0,explanation:"加齢に伴う呼吸機能変化：肺活量低下（特に60歳以降）・1秒率低下・最大換気量低下・残気量増加・肺拡散能低下。原因：肺の弾性低下（コンプライアンス増加）・呼吸筋力低下・胸郭硬化等。"},
+
+{id:216,category:"労働生理",question:"「聴覚」において「騒音性難聴（職業性難聴）」の特徴として正しいものはどれか。",choices:["騒音性難聴は低音域（250〜500Hz）から始まり次第に高音域に拡大する","4000Hz（c5）付近の高音域から始まりc5dipが特徴・両側性・不可逆性","騒音性難聴は治療により完全回復が可能で早期対応が重要である","騒音性難聴は一側性で片耳のみに生じる偏側型難聴が特徴的である"],answer:1,explanation:"騒音性難聴の特徴：①4000Hz（c5）付近から障害が始まる（c5dip：オージオグラム上の特徴的な谷）②両側性（対称性）③感音性難聴④不可逆性（一度障害されると回復しない）⑤早期には自覚しにくい。"},
+
+{id:217,category:"労働生理",question:"「皮膚」の機能として最も不適切なものはどれか。",choices:["体温調節（発汗・血流調節）が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","外部からの有害物質・微生物の侵入防止（バリア機能）","感覚受容（触覚・温覚・痛覚等）は労働に関連する生理的負担の指標として職場健康管理で重視される","インスリンの産生（労働生理学的特性）"],answer:3,explanation:"皮膚の主な機能：①バリア機能（外部刺激・有害物・細菌からの保護）②体温調節（発汗・血管拡張・収縮）③感覚受容（触覚・圧覚・温覚・冷覚・痛覚）④ビタミンD合成（紫外線照射）⑤免疫機能（ランゲルハンス細胞等）。インスリン産生は膵臓β細胞の機能。"},
+
+{id:218,category:"労働生理",question:"「脂肪細胞」と「内臓脂肪」の健康への影響として正しいものはどれか。",choices:["内臓脂肪は健康への影響なしの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","内臓脂肪（腸間膜等の腹腔内脂肪）は炎症性サイトカイン（労働生理学的特性）","皮下脂肪の方が内臓脂肪より有害は労働に関連する生理的負担の指標として職場健康管理で重視される","内臓脂肪はエネルギー貯蔵のみの機能の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素"],answer:1,explanation:"内臓脂肪（特に腸間膜等の内臓周囲脂肪）は単なるエネルギー貯蔵でなく活性な内分泌器官。TNF-α・IL-6・レプチン（増加）・アディポネクチン（減少）等を分泌しインスリン抵抗性・動脈硬化・炎症促進の主要因子となる。"},
+
+{id:219,category:"労働生理",question:"「ホルモン分泌」において「フィードバック調節」の説明として正しいものはどれか。",choices:["分泌されたホルモンが高濃度になると上位の分泌器官（視床下部・下垂体","ホルモンは常に一定量分泌されるの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","分泌が増えると更に分泌が増加する（正のフィードバックのみ）","ホルモン調節は神経のみが担うは労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:0,explanation:"ホルモンの調節はほとんど負のフィードバックで行われる。例：コルチゾール↑→視床下部CRH分泌↓・下垂体ACTH分泌↓→コルチゾール産生↓。これにより血中ホルモン濃度が適正範囲に維持される。"},
+
+{id:220,category:"労働生理",question:"「呼吸と血液ガス」において「ヘモグロビンの酸素解離曲線」の特徴として正しいものはどれか。",choices:["酸素解離曲線は直線状は労働に関連する生理的負担の指標として職場健康管理で重視される","pH上昇でO₂放出が増加するは労働に関連する生理的負担の指標として職場健康管理で重視される","ヘモグロビンは酸素と結合しないは労働に関連する生理的負担の指標として職場健康管理で重視される","S字型（シグモイド型）の曲線で組織では低O₂分圧（労働生理学的特性）"],answer:3,explanation:"ヘモグロビンの酸素解離曲線はS字型（シグモイド）。Bohr効果：pH低下（高CO₂・乳酸）・高温・高CO₂でO₂に対する親和性が低下（右方シフト）→組織でO₂が放出しやすくなる。肺では高O₂・高pH・低温でO₂を結合しやすい。"},
+
+{id:221,category:"労働生理",question:"「消化系」において「膵臓」の外分泌機能として正しいものはどれか。",choices:["インスリン・グルカゴンの分泌のみ","血液の濾過が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","胆汁の産生が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","膵液（膵リパーゼ・膵アミラーゼ・トリプシン"],answer:3,explanation:"膵臓の機能：①外分泌機能：膵液（タンパク質分解：トリプシン等・脂質分解：膵リパーゼ・糖質分解：膵アミラーゼ等の消化酵素・炭酸水素ナトリウム：胃酸中和）を十二指腸に分泌②内分泌機能：ランゲルハンス島α・β・δ細胞からグルカゴン・インスリン・ソマトスタチン分泌。"},
+
+{id:222,category:"労働生理",question:"「免疫系」において「NK細胞（ナチュラルキラー細胞）」の機能として正しいものはどれか。",choices:["NK細胞はB細胞と同様に抗体を産生して液性免疫の中心的役割を担う","MHCクラスI発現が低下した細胞を非特異的に認識して破壊する自然免疫担当細胞","NK細胞は補体を直接活性化して標的細胞の溶解を引き起こす役割","NK細胞は血小板と協調して血液凝固と免疫の両方を担う多機能細胞"],answer:1,explanation:"NK細胞は自然免疫の重要な細胞。MHCクラスI分子の発現が低下したがん細胞・ウイルス感染細胞を非特異的に（抗原の事前認識なしに）認識して破壊する。インターフェロンγを産生し適応免疫の活性化にも関与する。"},
+
+{id:223,category:"労働生理",question:"「加齢と感覚機能」において「老人性難聴（加齢性難聴）」の特徴として正しいものはどれか。",choices:["低音域から障害が始まるの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","突然発症するは労働に関連する生理的負担の指標として職場健康管理で重視される","若年者に多いの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","高音域（4000Hz以上）から障害が始まり両側対称性"],answer:3,explanation:"老人性難聴（加齢性難聴）：高音域（4000Hz以上）から始まる両側対称性・感音性・緩徐進行性難聴。蝸牛有毛細胞の加齢性変性が主因。語音弁別能（言葉の理解力）の低下が特徴的で補聴器の適応となる。"},
+
+{id:224,category:"労働生理",question:"「疲労と回復」において「疲労回復に最も重要な条件」として正しいものはどれか。",choices:["適度な運動は労働に関連する生理的負担の指標として職場健康管理で重視される","十分な睡眠・休養と栄養補給（特にタンパク質（労働生理学的特性）","カフェインの摂取は労働に関連する生理的負担の指標として職場健康管理で重視される","アルコールの摂取が人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:1,explanation:"疲労回復の基本：①十分な睡眠（成長ホルモン・免疫機能回復）②良質な休養（精神的緊張の解放）③適切な栄養補給（グリコーゲン補充：糖質・筋修復：タンパク質・補酵素：ビタミンB群等）④軽度の積極的休息（血行促進）。"},
+
+{id:225,category:"労働生理",question:"「神経系」において「感覚情報の伝達」に関して「皮膚からの痛覚情報」の伝達経路として正しいものはどれか。",choices:["皮膚→運動神経→大脳の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","皮膚（自由神経終末）→脊髄後角→視床→大脳皮質体性感覚野で痛みを知覚する","痛みは感覚神経でなく自律神経が伝達の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","皮膚から直接大脳に伝達の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素"],answer:1,explanation:"痛覚の伝達経路：皮膚の自由神経終末（痛覚受容器）→脊髄後角（Aδ線維・C線維で伝達）→脊髄視床路→視床→大脳皮質体性感覚野で痛みを意識する。ゲートコントロール理論（脊髄後角での痛み調節）も重要。"},
+
+{id:226,category:"労働生理",question:"「血糖調節」において「低血糖時の応答」として正しいものはどれか。",choices:["インスリン分泌が増加するの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","膵臓β細胞が活性化するの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","グルカゴン・アドレナリン・コルチゾール（労働生理学的特性）","グリコーゲン合成が促進するは労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:2,explanation:"低血糖時の反応：グルカゴン（膵臓α細胞）→肝グリコーゲン分解・糖新生促進→血糖↑。アドレナリン（副腎髄質）→グリコーゲン分解・グルコース放出。コルチゾール・成長ホルモン→糖新生促進・インスリン拮抗。これらが協調して血糖を正常化。"},
+
+{id:227,category:"労働生理",question:"「心電図」において「P波」の意味として正しいものはどれか。",choices:["洞房結節で始まった興奮が心房全体に広がる（心房の脱分極）を示す","心室の脱分極の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","心室の再分極は労働に関連する生理的負担の指標として職場健康管理で重視される","心房の再分極の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素"],answer:0,explanation:"心電図の各波の意味：P波（心房の脱分極：洞房結節→心房筋への興奮伝播）→PR間隔（房室伝導時間）→QRS波（心室の脱分極：心室筋全体の収縮興奮）→ST部分→T波（心室の再分極）。"},
+
+{id:228,category:"労働生理",question:"「労働と生体反応」において「重筋作業時の生体反応」として正しいものはどれか。",choices:["心拍数増加・換気量増加・酸素消費量増加・血中乳酸増加・体温上昇","心拍数・換気量・酸素消費量が低下するが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","血圧が低下するは労働に関連する生理的負担の指標として職場健康管理で重視される","消化機能が亢進するの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素"],answer:0,explanation:"重筋作業時の生体反応：①心拍数・1回拍出量増加→心拍出量増加②換気量増加（呼吸数・1回換気量増加）③骨格筋への血流増加④酸素消費量増加⑤体温上昇⑥カテコールアミン・コルチゾール分泌増加⑦消化器への血流減少。"},
+
+{id:229,category:"労働生理",question:"「眼精疲労（アスセノピア）」の発症機序として正しいものはどれか。",choices:["眼精疲労は眼球の形状変化（眼球長の延長）によって引き起こされる","毛様体筋の過剰な持続的収縮と眼外筋の過緊張が重なって生じる疲労","眼精疲労は網膜細胞の光受容器が過負荷で変性することが主因である","眼精疲労は角膜表面の炎症反応によって引き起こされる急性症状である"],answer:1,explanation:"眼精疲労（アステノピア）：①毛様体筋の過剰・持続的収縮（近見・調節緊張）②眼外筋の過緊張③ドライアイ（まばたき減少）④不適切な照明・グレア⑤屈折異常（未矯正）等が重なり眼の疲れ・頭痛・肩こりを引き起こす。"},
+
+{id:230,category:"労働生理",question:"「骨格筋の構造」において「筋原線維」の構成タンパク質として正しいものはどれか。",choices:["骨格筋はコラーゲンのみを主要成分とし弾性・支持機能を果たす","骨格筋はフィブリンのみから構成され収縮後に分解・再合成される","骨格筋はエラスチンのみを主成分とし伸縮性と弾性を担う組織","アクチン（細い線維）とミオシン（太い線維）が滑走して筋収縮を引き起こす"],answer:3,explanation:"筋原線維の構成：ミオシン（太いフィラメント）とアクチン（細いフィラメント）が交互に配列。筋収縮時はアクチンフィラメントがミオシンフィラメント上を滑走して（滑走説）サルコメア（筋節）が短縮する。Ca²⁺が滑走を制御（トロポニン-トロポミオシン複合体）。"},
+
+{id:231,category:"労働生理",question:"「ストレスと免疫」において「慢性ストレスが免疫機能に与える影響」として正しいものはどれか。",choices:["慢性ストレスは免疫機能を向上させるは労働に関連する生理的負担の指標として職場健康管理で重視される","急性ストレスのみが免疫に影響するが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","ストレスは免疫に影響しないの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","慢性ストレスはコルチゾール上昇・自律神経の乱れを通じてNK細胞活性"],answer:3,explanation:"慢性ストレス→HPA軸活性化→コルチゾール慢性高値→リンパ球・NK細胞の機能・数の低下→免疫抑制。また慢性ストレスは炎症性サイトカイン産生増加・感染症・自己免疫疾患・がんリスク増加と関連することが明らかになっている。"},
+
+{id:232,category:"労働生理",question:"「泌尿器系」において「尿の生成過程」として正しいものはどれか。",choices:["尿は糸球体のみで完成し尿細管は水分吸収の調節だけを担っている","尿の最終生成は膀胱内で行われ腎臓は前段階の濾過のみを担う","尿は腎盂で産生され集合管は単なる通路として機能するだけである","糸球体で原尿生成→尿細管で99%再吸収→集合管→腎盂→尿管→膀胱→尿道"],answer:3,explanation:"尿生成：①糸球体濾過：1日約150Lの原尿（血漿から大分子以外が濾過）②尿細管再吸収：グルコース・アミノ酸・水・Na等の99%以上を再吸収③尿細管分泌：K・H・有機酸等を尿へ追加排出→最終的な尿量：約1〜1.5L/日。"},
+
+{id:233,category:"労働生理",question:"「感覚器の特性」において「順応（アダプテーション）」の説明として正しいものはどれか。",choices:["刺激が続くと感受性が増加することが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","持続する刺激に対して受容器や神経系の反応が徐々に低下する","感覚が変わらないことの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","新しい刺激に反応が増大することの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素"],answer:1,explanation:"感覚の順応：持続する一定強度の刺激に対して感受性が低下する現象。明順応（明所での網膜感受性低下）・暗順応（暗所での感受性増加：逆方向）・嗅覚の順応（慣れ：においを感じにくくなる）・皮膚感覚の順応（触覚：接触刺激への慣れ）等。"},
+
+{id:234,category:"労働生理",question:"「内分泌系」において「副腎皮質」から分泌されるホルモンとして正しいものはどれか。",choices:["アドレナリン・ノルアドレナリンの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","インスリン・グルカゴンは労働に関連する生理的負担の指標として職場健康管理で重視される","コルチゾール（糖質コルチコイド）・アルドステロン（労働生理学的特性）","甲状腺ホルモンは労働に関連する生理的負担の指標として職場健康管理で重視される"],answer:2,explanation:"副腎皮質（外層）から分泌：球状帯→アルドステロン（血圧・Na調節）・束状帯→コルチゾール（ストレス・抗炎症・代謝調節）・網状帯→副腎アンドロゲン（DHEA等）。副腎髄質（内部）はアドレナリン・ノルアドレナリン分泌。"},
+
+{id:235,category:"労働生理",question:"「血液型」において「ABO血液型の遺伝」として正しいものはどれか。",choices:["A型の親からはA型の子しか生まれない","ABO血液型はABO遺伝子座の対立遺伝子","血液型は環境で変化するは労働に関連する生理的負担の指標として職場健康管理で重視される","輸血すれば血液型が変わるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:1,explanation:"ABO血液型：遺伝子型：AA・AO→A型・BB・BO→B型・AB→AB型・OO→O型。A・B対立遺伝子はO対立遺伝子に対して優性。両親の遺伝子型の組合せにより子の血液型が確率的に決まる。"},
+
+{id:236,category:"労働生理",question:"「循環器系」において「静脈還流（心臓への静脈血の戻り）」を促進する因子として正しいものはどれか。",choices:["静脈の弁が逆流を促進するの機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","安静臥位が静脈還流を低下させるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","長時間の立位が静脈還流を促進するが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","骨格筋ポンプ（筋収縮により静脈を圧迫）・呼吸ポンプ（労働生理学的特性）"],answer:3,explanation:"静脈還流の促進因子：①骨格筋ポンプ（運動中の筋肉収縮が静脈を絞って血液を心臓に押し戻す）②呼吸ポンプ（吸気時の胸腔内圧低下→心臓への吸引力）③静脈弁（逆流防止）④心臓拍動。長時間立位は下肢に血液が貯留し静脈還流が低下する。"},
+
+{id:237,category:"労働生理",question:"「エネルギー代謝」において「基礎代謝量に影響する因子」として最も不適切なものはどれか。",choices:["年齢（加齢で低下）が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","体表面積（大きいほど多い）の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","性別（男性が女性より高い）が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","視力の良さ（労働生理学的特性）"],answer:3,explanation:"基礎代謝量（BMR）に影響する因子：①年齢（加齢で低下）②性別（男性＞女性：筋肉量の差）③体表面積（大きいほど多い）④筋肉量（多いほど高い）⑤甲状腺ホルモン（高値で増加）⑥体温（高いほど増加）⑦栄養状態。視力は基礎代謝に直接影響しない。"},
+
+{id:238,category:"労働生理",question:"「神経系」において「シナプス伝達」のメカニズムとして正しいものはどれか。",choices:["シナプスで電気信号が直接伝達されるが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","シナプスでは信号が逆方向にも伝わるは労働に関連する生理的負担の指標として職場健康管理で重視される","神経終末に活動電位が到達→Ca²⁺流入→神経伝達物質（労働生理学的特性）","シナプス伝達に物質の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素"],answer:2,explanation:"化学シナプス伝達：①活動電位が神経終末に到達②電位依存性Ca²⁺チャネル開口→Ca²⁺流入③シナプス小胞から神経伝達物質（ACh・NA・グルタミン酸・GABA等）が放出④シナプス間隙を拡散⑤後シナプス膜の受容体に結合⑥イオンチャネル開口→膜電位変化（EPSP・IPSP）→信号伝達。"},
+
+{id:239,category:"労働生理",question:"「感覚生理」において「閾値（いきち）」の説明として正しいものはどれか。",choices:["感覚が最大になる刺激強度の機能は年齢とともに変化し労働能力に直接影響を与える重要な要素","感覚を引き起こすのに必要な最小の刺激強度（これ以下では感覚が生じない境界値）","感覚が消える刺激強度が人体の恒常性（ホメオスタシス）維持において主要な役割を担う","感覚が不快になる刺激強度が人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:1,explanation:"閾値（Threshold）：感覚（または反応）を引き起こすための最小の刺激強度。閾値以下の刺激（閾下刺激）では反応が生じない。感覚の種類・個人・状態（疲労・適応・集中等）により閾値は変動する。差異閾値（弁別閾）はWeberの法則で記述される。"},
+
+{id:240,category:"労働生理",question:"「呼吸器系」において「気道の防御機能」として正しいものはどれか。",choices:["鼻毛・粘膜線毛・咳・くしゃみ・IgA・肺胞マクロファージ","気道は粉じん・微生物を取り込むが人体の恒常性（ホメオスタシス）維持において主要な役割を担う","気道は防御機能を持たないは労働に関連する生理的負担の指標として職場健康管理で重視される","肺胞のみが防御機能を担うが人体の恒常性（ホメオスタシス）維持において主要な役割を担う"],answer:0,explanation:"気道の防御機能：①鼻腔（鼻毛・粘膜：大きな粒子の捕捉）②粘液線毛輸送系（粘液に捕らえた異物を咽頭方向に排出）③咳・くしゃみ（強制的排出）④分泌型IgA（粘膜免疫）⑤肺胞マクロファージ（貪食・殺菌）⑥気管支関連リンパ組織（BALT）。"},
+
+{id:241,category:"労働衛生（概論・その他）",question:"「職場における感染症対策」として「ベクター媒介感染」の例として正しいものはどれか。",choices:["マラリア・デング熱（蚊が媒介）・ツツガムシ病（ダニが媒介）","インフルエンザが産業保健の実践において優先度が高い取り組みとされている","結核が産業保健の実践において優先度が高い取り組みとされている","ノロウイルス感染症が産業保健スタッフの主要な職務として法令で定められている"],answer:0,explanation:"ベクター媒介感染：節足動物（ベクター）が病原体を媒介する感染症。蚊→マラリア・デング熱・日本脳炎。ダニ→ライム病・SFTS・ツツガムシ病。シラミ→発疹チフス。アウトドア作業者・農林業従事者に注意が必要。"},
+
+{id:242,category:"労働衛生（概論・その他）",question:"「労働衛生管理」における「OJT（On-the-Job Training）」の活用として正しいものはどれか。",choices:["OJTは製品品質向上のみに使用は職場の健康管理評価において標準的な指標として活用される","実際の作業現場での日常的な指導・経験を通じた安全衛生知識","OJTは座学は職場の健康管理評価において標準的な指標として活用される","OJTは管理職のみが受けるが産業保健の実践において優先度が高い取り組みとされている"],answer:1,explanation:"安全衛生のOJT（職場内訓練）：実際の作業現場で上司・先輩が日常的に安全作業手順・危険予知・保護具使用・異常時対応等を指導する訓練。OFF-JT（座学・演習）と組み合わせることで効果的な安全衛生教育が実現する。"},
+
+{id:243,category:"労働衛生（概論・その他）",question:"「職場における健康危機管理」として「BCPの観点でのメンタルヘルス対策」として正しいものはどれか。",choices:["BCPとメンタルヘルスは無関係は職場の健康管理評価において標準的な指標として活用される","危機時はメンタルヘルス対策は後回しでよいは職場の健康管理評価において標準的な指標として活用される","メンタルヘルス対策はBCPには含めないが産業保健スタッフの主要な職務として法令で定められている","大規模災害・感染症パンデミック等の危機時に労働者のメンタルヘルスを支援する"],answer:3,explanation:"BCP（事業継続計画）とメンタルヘルス：大規模災害（地震・洪水）・パンデミック時に労働者の精神的健康を守ることは人的リソースの確保・生産性維持・職場崩壊の防止に直結する。危機時のメンタルヘルス支援体制の整備がBCPの重要な要素。"},
+
+{id:244,category:"労働衛生（概論・その他）",question:"「労働衛生統計」において「標準化死亡比（SMR）」の説明として正しいものはどれか。",choices:["標準化死亡比（SMR）は死亡者の平均年齢と職業の関係を示す指標","標準化死亡比は生存率を元にして将来の死亡リスクを予測する指標","標準化死亡比は単純な死亡絶対数を職業別に集計して比較する統計","観察死亡数÷期待死亡数×100で職業・地域等による死亡リスクを比較する指標"],answer:3,explanation:"標準化死亡比（SMR）＝観察死亡数÷期待死亡数×100。SMR>100：対象集団の死亡率が標準集団より高い・SMR<100：低い。年齢構成の影響を除いて職業・地域等による死亡リスクを比較する際に用いる疫学指標。"},
+
+{id:245,category:"労働衛生（概論・その他）",question:"「職場における疫学的手法」として「コホート研究」の特徴として正しいものはどれか。",choices:["曝露と疾病の因果関係を推定するのに最も弱い設計が産業保健の実践において優先度が高い取り組みとされている","過去の記録のみを使用するが産業保健スタッフの主要な職務として法令で定められている","横断的に実施されるが産業保健スタッフの主要な職務として法令で定められている","曝露のある集団とない集団を前向きに追跡して疾病発生率を比較し相対危険度を"],answer:3,explanation:"コホート研究（前向き研究）：曝露あり・なし集団を一定期間追跡して疾病発症率を比較。特徴：①相対危険度を直接算出可能②時間的前後関係が明確③大規模・長期間が必要④費用・時間がかかる。症例対照研究（後ろ向き）との区別が重要。"},
+
+{id:246,category:"労働衛生（概論・その他）",question:"「産業保健」における「プレゼンティーイズムの測定ツール」として使用されるものとして正しいものはどれか。",choices:["血液・尿検査でバイオマーカーを測定してプレゼンティーイズムを診断する","WFun・HPQ等の自記式質問票で出勤しているが機能低下している状態を評価する","MRI・CT等の画像検査で脳疲労の程度を客観的に数値化して評価する","心電図の周波数解析で自律神経バランスから職場機能障害を評価する"],answer:1,explanation:"プレゼンティーイズムの測定：WFun（Work Functioning Impairment Scale）・WHO-HPQ（健康と労働パフォーマンス質問票）・WPAI（Work Productivity and Activity Impairment）等の自記式質問票。生産性損失の定量化・産業保健活動の費用対効果評価に活用。"},
+
+{id:247,category:"労働衛生（概論・その他）",question:"「労働衛生」における「ランダム化比較試験（RCT）」の特徴として正しいものはどれか。",choices:["介入群と対照群をランダムに割り付ける","RCTはエビデンスレベルが最も低い","RCTは産業保健に応用できないが産業保健の実践において優先度が高い取り組みとされている","RCTは観察研究の一種が産業保健スタッフの主要な職務として法令で定められている"],answer:0,explanation:"ランダム化比較試験（RCT）は個人・集団をランダムに介入群・対照群に割り付けることで既知・未知の交絡因子を均等化し介入効果を最も高い確度で評価できる研究デザイン（エビデンスレベル最高）。産業保健でも職場介入研究に活用される。"},
+
+{id:248,category:"労働衛生（概論・その他）",question:"「労働衛生管理」における「PDCA（Plan-Do-Check-Act）サイクル」の「Plan（計画）」段階の活動として正しいものはどれか。",choices:["健康診断の実施が産業保健スタッフの主要な職務として法令で定められている","職場環境改善の実施が産業保健の実践において優先度が高い取り組みとされている","過去の実績・現状分析・リスクアセスメントに基づく目標設定・計画立案","改善措置の実施効果の評価が産業保健スタッフの主要な職務として法令で定められている"],answer:2,explanation:"PDCAのPlan（計画）：現状分析（健診結果・ストレスチェック・ヒヤリハット等）→問題の特定→優先順位付け→目標設定→具体的な施策・実施計画の立案。PDCAサイクルを繰り返すことで継続的な安全衛生水準の向上を図る。"},
+
+{id:249,category:"労働衛生（概論・その他）",question:"「職場の労働衛生」において「ハインリッヒの法則（1：29：300の法則）」の意義として正しいものはどれか。",choices:["300件のヒヤリハットは放置してよい","統計的に証明された法則ではないが産業保健スタッフの主要な職務として法令で定められている","重大事故のみに対処すれば十分は職場の健康管理評価において標準的な指標として活用される","1件の重大事故の背後に29件の軽微な事故"],answer:3,explanation:"ハインリッヒの法則（1：29：300）：同種の事故・ヒヤリハットを分析すると重大事故1件の背後に29件の軽微な事故・300件のヒヤリハットが存在する。ヒヤリハット・軽微な事故への対応が重大災害の予防に直結するという産業安全の重要な法則。"},
+
+{id:250,category:"労働衛生（概論・その他）",question:"「職場の健康教育」において「トランスセオレティカルモデル（TTM：変容段階モデル）」の説明として正しいものはどれか。",choices:["健康行動は急激に変化するが産業保健の実践において優先度が高い取り組みとされている","健康行動の変容は無関心期→関心期→準備期→実行期→維持期の5段階を経て進む","全ての人が同じ段階にいるが産業保健スタッフの主要な職務として法令で定められている","段階は逆戻りしないが産業保健の実践において優先度が高い取り組みとされている"],answer:1,explanation:"変容段階モデル（TTM）：①無関心期（6ヶ月以内に行動変容する気がない）→②関心期（6ヶ月以内に変えようと思っている）→③準備期（1ヶ月以内に実行予定）→④実行期（6ヶ月未満の実行）→⑤維持期（6ヶ月以上の継続）。段階に応じたアプローチが健康教育の効果を高める。"},
+
+{id:251,category:"労働衛生（概論・その他）",question:"「労働安全衛生管理システム」において「危険の本質的安全化（本質安全）」の考え方として正しいものはどれか。",choices:["危険の源を設計段階で除去・低減することを最優先とし保護具は最後の手段とする","保護具の着用が最優先が産業保健の実践において優先度が高い取り組みとされている","行動規制が最も重要が産業保健の実践において優先度が高い取り組みとされている","管理的対策のみで十分が産業保健スタッフの主要な職務として法令で定められている"],answer:0,explanation:"本質安全（Inherent Safety）：危険物質・エネルギーを設計段階で除去・代替・量を最小化することを最優先とする考え方。ILO/ISO45001等が採用する優先順位：①除去→②代替→③工学的対策→④管理的対策→⑤保護具（個人防護具）。"},
+
+{id:252,category:"労働衛生（概論・その他）",question:"「職場の健康づくり（WHP）」において「ナッジ（Nudge）」理論の活用として正しいものはどれか。",choices:["ナッジは強制的な行動変容は職場の健康管理評価において標準的な指標として活用される","選択肢の提示方法や環境を工夫することで人々が自発的に健康的な選択をしやすくする仕掛け","ナッジは罰則を用いた行動変容が産業保健スタッフの主要な職務として法令で定められている","ナッジは産業保健に使えないは職場の健康管理評価において標準的な指標として活用される"],answer:1,explanation:"ナッジ（Nudge：そっと後押し）：Thaler・Sunsteinが提唱した行動経済学的アプローチ。健康食品を目立つ位置に配置・デフォルトを健康的な選択に設定・わかりやすい健康情報の表示等で強制なく自発的な健康行動を促す。"},
+
+{id:253,category:"労働衛生（概論・その他）",question:"「産業保健の費用対効果」において「生産性向上」の観点から重要な指標として正しいものはどれか。",choices:["健康関連コストとは健康診断・医療費・薬剤費のみを集計した指標","健康関連コストは診療費・入院費のみを対象とした医療費管理指標","アブセンティーイズム（欠勤損失）とプレゼンティーイズム（機能低下損失）の総合評価","健康関連コストは労災給付費と通勤交通費のみを合計した財務指標"],answer:2,explanation:"産業保健の費用対効果：①直接コスト（医療費・労災給付）②間接コスト（アブセンティーイズム：欠勤・休職の損失・プレゼンティーイズム：出勤しているが機能低下の損失）の合計が最大。プレゼンティーイズムの損失が最大とされる。"},
+
+{id:254,category:"労働衛生（概論・その他）",question:"「職場における健康増進活動」として「EAP（従業員支援プログラム）」の特徴として正しいものはどれか。",choices:["EAPは医療機関のみが提供できるが産業保健スタッフの主要な職務として法令で定められている","EAPはメンタルヘルスのみに対応は職場の健康管理評価において標準的な指標として活用される","EAPは費用がかからないは職場の健康管理評価において標準的な指標として活用される","社内相談より秘密が守られやすく仕事・メンタルヘルス・家族・法律・経済"],answer:3,explanation:"EAPは事業場外の専門機関（EAPプロバイダー）が提供する従業員支援プログラム。①社内への秘密漏洩リスクが低い②多様な問題（メンタルヘルス・家族・法律・経済等）への相談対応③カウンセリング・コーチング・情報提供等の支援④事業者向けコンサルテーションも提供。"},
+
+{id:255,category:"労働衛生（概論・その他）",question:"「産業保健における倫理原則」として「自律尊重（自律の原則）」の内容として正しいものはどれか。",choices:["産業医の判断が労働者の意思より常に優先されるが産業保健スタッフの主要な職務として法令で定められている","健康診断の結果は産業医が単独で管理するが産業保健スタッフの主要な職務として法令で定められている","労働者自身が十分な情報に基づいて自律的に健康に関する意思決定を行う権利を尊重する","労働者の意見は健康管理に関係しないは職場の健康管理評価において標準的な指標として活用される"],answer:2,explanation:"医療・産業保健倫理の4原則（Beauchamp & Childress）：①自律尊重（informed consent・労働者の意思決定の尊重）②善行（最善の利益を図る）③無危害（harm avoidance）④公正（公平な扱い）。産業保健では労働者・事業者の利益の調整も重要な倫理的課題。"},
+
+{id:256,category:"労働衛生（概論・その他）",question:"「職場における産業保健活動の記録管理」として「個人健康情報の取り扱い規程」に記載すべき内容として正しいものはどれか。",choices:["株主への報告方法が産業保健スタッフの主要な職務として法令で定められている","財務情報の管理方法は職場の健康管理評価において標準的な指標として活用される","製品の品質管理方法が産業保健スタッフの主要な職務として法令で定められている","情報の収集目的・利用範囲・保管方法・アクセス権限・廃棄方法・第三者提供の制限"],answer:3,explanation:"健康情報取り扱い規程の主な記載内容：①情報の収集目的②利用目的・範囲の限定③保管場所・期間・セキュリティ対策④アクセス可能な者の限定⑤第三者提供の制限⑥廃棄の方法⑦労働者への周知方法。"},
+
+{id:257,category:"労働衛生（概論・その他）",question:"「職場における労働衛生教育」として「行動変容を促す教育技法」として最も効果的なものとして正しいものはどれか。",choices:["双方向的な参加型学習（ロールプレイ・グループワーク・体験学習","一方向的な講義は職場の健康管理評価において標準的な指標として活用される","教科書の読み合わせは職場の健康管理評価において標準的な指標として活用される","試験による評価が産業保健の実践において優先度が高い取り組みとされている"],answer:0,explanation:"行動変容を促す効果的な教育技法：①参加型・双方向学習（グループワーク・ロールプレイ・ケーススタディ）②体験学習（演習・実習）③ピアラーニング（仲間同士の学習）④繰り返しと強化⑤フォローアップ・目標設定。一方向の講義のみでは行動変容への効果は限定的。"},
+
+{id:258,category:"労働衛生（概論・その他）",question:"「職場の安全文化（Safety Culture）」の要素として正しいものはどれか。",choices:["コストを最優先する文化が産業保健スタッフの主要な職務として法令で定められている","安全は作業者だけの責任が産業保健スタッフの主要な職務として法令で定められている","経営層・管理職のコミットメント・報告（産業保健の実践要件）","ルール遵守のみが安全文化は職場の健康管理評価において標準的な指標として活用される"],answer:2,explanation:"安全文化の5要素（Reason・Hudson）：①報告する文化（安全情報の積極的報告）②公正な文化（責任の公平な帰属）③柔軟な文化（状況に応じた対応）④学習する文化（事故から学ぶ）⑤情報に基づく文化（安全情報の共有）。経営層のコミットメントも重要。"},
+
+{id:259,category:"労働衛生（概論・その他）",question:"「職場の人間工学（エルゴノミクス）」の目的として正しいものはどれか。",choices:["生産効率のみを最大化するは職場の健康管理評価において標準的な指標として活用される","コストを削減するためが産業保健の実践において優先度が高い取り組みとされている","機械の効率のみを最大化するは職場の健康管理評価において標準的な指標として活用される","人間の身体的・認知的特性・限界に合わせて機械・環境・作業を設計する"],answer:3,explanation:"人間工学（エルゴノミクス）の目的：人間の身体的特性（サイズ・力・関節可動域等）・認知的特性（注意・記憶・意思決定等）・限界に適合した機械・道具・作業・環境の設計で安全・健康（職業病予防）・作業効率・快適性の全てを最適化する学問。"},
+
+{id:260,category:"労働衛生（概論・その他）",question:"「職場の水・衛生設備管理」において「レジオネラ症予防」として最も重要な対策として正しいものはどれか。",choices:["レジオネラ症は水道水には関係しないが産業保健の実践において優先度が高い取り組みとされている","設備の清掃は年1回でよいが産業保健の実践において優先度が高い取り組みとされている","消毒のみで十分は職場の健康管理評価において標準的な指標として活用される","空調冷却塔・循環式浴槽・加湿器等の水系設備の定期的な清掃・消毒・温度管理"],answer:3,explanation:"レジオネラ症予防：①冷却塔の定期清掃・消毒・塩素管理②循環式浴槽の清掃・換水・消毒③加湿器の清掃・換水④55℃以上での貯湯（殺菌）・10℃以下での冷水管理⑤デッドレッグ（流れが滞る配管）の排除。人から人への感染はない。"},
+
+{id:261,category:"労働衛生（概論・その他）",question:"「職場の衛生管理」において「清掃・廃棄物管理」として正しいものはどれか。",choices:["廃棄物管理は衛生管理に含まれない","廃棄物は一箇所にまとめるだけでよい","職場の清潔保持・廃棄物の分別・適切な保管","清掃は週1回で十分が産業保健の実践において優先度が高い取り組みとされている"],answer:2,explanation:"職場の清掃・廃棄物管理：①定期的な清掃（床・机・設備）②廃棄物の分別（一般ゴミ・産業廃棄物・感染性廃棄物等）③廃棄物容器の適切な管理④定期的な収集・処理⑤害虫・害獣の発生防止⑥感染症予防。5S活動（整理・整頓・清掃・清潔・躾）の実践が基本。"},
+
+{id:262,category:"労働衛生（概論・その他）",question:"「産業保健の国際基準」として「ILO条約」の産業保健への寄与として正しいものはどれか。",choices:["ILO条約は産業保健に関係しない","ILO条約は日本では効力を持たない","ILO条約（職業安全衛生に関する条約","ILO条約は製造業のみを対象とする"],answer:2,explanation:"ILO（国際労働機関）は職業安全衛生に関する多数の条約・勧告を策定（例：C155：職業安全衛生条約・C161：産業保健サービス条約等）。日本のILO条約の批准状況・労働安全衛生法制との関係が産業保健の国際的な文脈で重要。"},
+
+{id:263,category:"労働衛生（概論・その他）",question:"「職場における応急処置体制の整備」として必要なこととして正しいものはどれか。",choices:["応急処置体制の整備は職場の健康管理評価において標準的な指標として活用される","応急処置担当者の選任・訓練・救急箱の整備（産業保健の実践要件）","医師のみが応急処置できるは職場の健康管理評価において標準的な指標として活用される","AEDは医療機関にのみ設置は職場の健康管理評価において標準的な指標として活用される"],answer:1,explanation:"職場の応急処置体制整備：①救急措置担当者の選任・定期的な訓練（CPR・AED）②救急箱の適切な整備と管理③AEDの設置と使用方法の周知④緊急連絡網（119番・医療機関・産業医等）の整備⑤事故発生時のマニュアル化。"},
+
+{id:264,category:"労働衛生（概論・その他）",question:"「産業保健における「健康経営」の考え方として正しいものはどれか。",choices:["健康経営は費用がかかるだけで効果がないは職場の健康管理評価において標準的な指標として活用される","健康経営は大企業のみの取り組みは職場の健康管理評価において標準的な指標として活用される","従業員の健康投資を経営的視点から捉え健康増進が企業の生産性","健康経営と産業保健は無関係が産業保健の実践において優先度が高い取り組みとされている"],answer:2,explanation:"健康経営（Health and Productivity Management）：従業員の健康への投資を経営的観点から捉え健康増進→生産性向上・医療費削減・優秀人材確保・企業ブランド向上→企業業績向上というサイクル。経済産業省が「健康経営優良法人」認定制度を実施。"},
+
+{id:265,category:"労働衛生（概論・その他）",question:"「ゼロ・アクシデント運動」の目的として正しいものはどれか。",choices:["労働災害をゼロにすることは非現実的なため意識啓発のみを目的とする","労働災害・職業病をゼロにする目標のもと安全衛生意識向上と改善を継続推進する","目標値を設定せず各職場が独自に判断して安全活動を行う運動","達成不可能な目標を設定することで労働者の緊張感を高める運動"],answer:1,explanation:"ゼロ・アクシデント運動（Zero Accident Campaign）：ILOが提唱する労働災害ゼロを目標とした職場安全衛生推進運動。経営者のコミットメント・リスクアセスメント・継続的改善が柱。"},
+
+{id:266,category:"労働衛生（概論・その他）",question:"「職場における化学物質の自律的管理の新体制」（2022年改正）で事業者に求められることとして正しいものはどれか。",choices:["すべての化学物質の使用禁止が産業保健スタッフの主要な職務として法令で定められている","化学物質管理は外部委託のみでよいが産業保健の実践において優先度が高い取り組みとされている","国が化学物質ごとに管理方法を全て指定するは職場の健康管理評価において標準的な指標として活用される","リスクアセスメント対象物を自ら特定しリスクアセスメントを実施して有害性に"],answer:3,explanation:"2022年改正：従来の物質別規則による行政主導型管理から①事業者が自らリスクアセスメントを実施②有害性に応じた適切なリスク低減措置を選択③化学物質管理者・保護具着用管理責任者を選任する自律的管理体制への転換。"},
+
+{id:267,category:"労働衛生（概論・その他）",question:"「職場における産業医活動の評価指標」として適切なものとして正しいものはどれか。",choices:["産業保健活動の評価指標は産業医の勤務日数と訪問頻度のみである","有所見率の改善・ストレスチェック結果の改善・面接指導実施率等のアウトカム指標","産業保健の評価は費用対効果の計算のみを重視するコスト指標による","産業保健活動の評価は職場巡視の回数と点検票の記録数のみで行う"],answer:1,explanation:"産業医活動の評価指標：ストラクチャー（産業医選任状況・資格）・プロセス（職場巡視回数・面接指導実施数・衛生委員会出席率等）・アウトカム（健診有所見率変化・ストレスチェック結果改善・休業率変化・職場環境改善件数）を組み合わせて評価する。"},
+
+{id:268,category:"労働衛生（概論・その他）",question:"「産業保健における「インフォームド・コンセント」として正しいものはどれか。",choices:["健診・保健指導等の前に目的・内容・個人情報の取り扱い等を説明し同意を得ること","産業医が健診を実施する際は法令上の義務行為なので同意取得は不要","緊急時や多忙時は説明を省略して健診・面接指導を先行実施できる","インフォームド・コンセントは医療機関特有の概念で産業保健には適用されない"],answer:0,explanation:"産業保健でのインフォームド・コンセント：健診・保健指導・面接指導・ストレスチェック等の実施前に①目的・方法②個人情報の取り扱い③拒否権について十分説明し同意を得ることが必要。"},
+
+{id:269,category:"労働衛生（概論・その他）",question:"「職場のメンタルヘルス対策」として「リワークプログラム」の内容として正しいものはどれか。",choices:["入院のみで実施するプログラムは職場の健康管理評価において標準的な指標として活用される","メンタルヘルス不調で休職した労働者が職場復帰に向けて実施する生活リズムの回復","新入社員向けの研修が産業保健スタッフの主要な職務として法令で定められている","管理職向けのリーダーシップ研修が産業保健スタッフの主要な職務として法令で定められている"],answer:1,explanation:"リワーク（Return to Work）プログラム：医療機関・障害者職業センター等で実施される復職支援プログラム。①生活リズムの回復②集中力・持続力のリハビリ③認知行動療法④職場環境への段階的再適応⑤社会生活技能訓練（SST）等を含む。"},
+
+{id:270,category:"労働衛生（概論・その他）",question:"「職場の産業保健活動」として「地域産業保健センター（地域窓口）」の役割として正しいものはどれか。",choices:["大企業のみが利用できる産業保健機関で中小企業は対象外の組織","小規模事業場（50人未満）に産業保健サービスを無料で提供する地域窓口機関","治療行為を行う公的医療機関として都道府県ごとに設置されている","労働基準法違反の事業場に対して行政処分を行う監督機関である"],answer:1,explanation:"地域産業保健センター（地域窓口）は各都道府県の産業保健総合支援センター（さんぽセンター）の地域窓口として設置。小規模事業場（50人未満）を対象に産業医へのアクセスが困難な事業場への健康相談・産業医サービス等を無料で提供する。"},
+
+{id:271,category:"関係法令（概論・その他）",question:"「労働安全衛生法」の目的として正しいものはどれか。",choices:["労働者の賃金を保護することとして事業者が労働者の安全衛生確保のために遵守すべき規定","労働時間を規制することとして事業者が労働者の安全衛生確保のために遵守すべき規定","職場における労働者の安全と健康を確保するとともに快適な職場環境の形成を促進する","製品の品質を管理することは労働安全衛生法の目的を達成するための主要な規制手段である"],answer:2,explanation:"労働安全衛生法第1条：「この法律は、職場における労働者の安全と健康を確保するとともに、快適な職場環境の形成を促進することを目的とする」。賃金保護は労働基準法・労働時間規制は労働基準法が主に規定。"},
+
+{id:272,category:"関係法令（概論・その他）",question:"「労働基準法」における「労働時間の原則」として正しいものはどれか。",choices:["1日10時間・週48時間は労働安全衛生法の目的を達成するための主要な規制手段である","1日8時間・週40時間を超えて労働させてはならない（法定労働時間）","1日6時間・週30時間は労働安全衛生法の目的を達成するための主要な規制手段である","1日12時間・週60時間は労働安全衛生法の目的を達成するための主要な規制手段である"],answer:1,explanation:"労働基準法第32条：使用者は労働者に①1週間について40時間を超えて労働させてはならない②1週間の各日について8時間を超えて労働させてはならない（法定労働時間の原則）。36協定（労使協定）があれば時間外労働が可能。"},
+
+{id:273,category:"関係法令（概論・その他）",question:"「労働基準法」における「休憩時間」の付与義務として正しいものはどれか。",choices:["労働時間が6時間超で少なくとも45分","休憩は事業者の裁量で決めるとして事業者が労働者の安全衛生確保のために遵守すべき規定","休憩は1日10分で足りるは労働安全衛生法の目的を達成するための主要な規制手段である","休憩に賃金を支払わなければならない"],answer:0,explanation:"労働基準法第34条：①労働時間6時間超→45分以上の休憩②8時間超→1時間以上の休憩を労働時間の途中に与える義務がある。休憩は原則一斉付与・自由利用の原則がある。休憩時間の賃金支払い義務はない。"},
+
+{id:274,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「安全配慮義務」の根拠法律として正しいものはどれか。",choices:["労働安全衛生法第1条として事業者が労働者の安全衛生確保のために遵守すべき規定","労働契約法第5条（使用者は労働者の生命・身体（労働安全衛生法の規定）","民法として安全衛生管理体制の構築において法令上義務付けられている","刑法として安全衛生管理体制の構築において法令上義務付けられている"],answer:1,explanation:"安全配慮義務は労働契約法第5条に明文化された（2008年施行）。「使用者は、労働契約に伴い、労働者がその生命、身体等の安全を確保しつつ労働することができるよう、必要な配慮をするものとする」。"},
+
+{id:275,category:"関係法令（概論・その他）",question:"「健康増進法」における「受動喫煙防止措置」として正しいものはどれか。",choices:["受動喫煙対策は任意は労働安全衛生法の目的を達成するための主要な規制手段である","受動喫煙対策は事業者が自由に決める","2020年4月全面施行の改正健康増進法","受動喫煙対策は飲食店として事業者が労働者の安全衛生確保のために遵守すべき規定"],answer:2,explanation:"改正健康増進法（2020年4月全面施行）：原則屋内禁煙。施設の種類により規制が異なる。第一種施設（学校・病院等）：屋内完全禁煙。第二種施設（飲食店・職場等）：原則屋内禁煙（喫煙専用室設置の場合は可）。"},
+
+{id:276,category:"関係法令（概論・その他）",question:"「障害者雇用促進法」における「法定雇用率」の対象障害者として正しいものはどれか。",choices:["身体障害者として安全衛生管理体制の構築において法令上義務付けられている","身体・知的障害者として安全衛生管理体制の構築において法令上義務付けられている","身体障害者・知的障害者・精神障害者（発達障害を含む）の全ての障害者","精神障害者として事業者が労働者の安全衛生確保のために遵守すべき規定"],answer:2,explanation:"障害者雇用促進法の法​​​​​​​​​​​​​​​​定雇用率の対象：身体障害者・知的障害者・精神障害者（発達障害者含む）の全ての障害者。2018年から精神障害者が雇用義務の対象に加わった。2024年4月以降の法定雇用率は2.5%（段階的引き上げ）。"},
+
+{id:277,category:"関係法令（概論・その他）",question:"「育児・介護休業法」の改正（2022年）で強化された内容として正しいものはどれか。",choices:["育休の取得は事業者の裁量になった","男性育休の取得促進（産後パパ育休の創設","育休は正社員のみ取得可能として事業者が労働者の安全衛生確保のために遵守すべき規定","育休は1週間以内でなければならない"],answer:1,explanation:"改正育児・介護休業法（2022年）：①産後パパ育休（出生時育児休業：産後8週間以内に4週間取得可）の創設②育休取得意向の確認義務③職場環境整備義務④大企業（1000人超）の育休取得状況の公表義務が追加された。"},
+
+{id:278,category:"関係法令（概論・その他）",question:"「働き方改革関連法」の主な内容として正しいものはどれか。",choices:["残業の義務化は労働安全衛生法の目的を達成するための主要な規制手段である","正規・非正規の区別の廃止は労働安全衛生法の目的を達成するための主要な規制手段である","全業種の残業ゼロ義務化は労働安全衛生法の目的を達成するための主要な規制手段である","時間外労働の上限規制（罰則付き）・年次有給休暇5日取得義務化"],answer:3,explanation:"働き方改革関連法（2019年施行）の主な内容：①時間外労働上限規制（月45時間・年360時間等：罰則付き）②年次有給5日取得義務化③同一労働同一賃金（正規・非正規の不合理な待遇差禁止）④勤務間インターバル制度（努力義務）⑤高度プロフェッショナル制度（新設）。"},
+
+{id:279,category:"関係法令（概論・その他）",question:"「精神保健及び精神障害者福祉に関する法律（精神保健福祉法）」の目的として正しいものはどれか。",choices:["精神疾患患者の強制入院のみを規定する","精神障害者の医療・保護・社会復帰の促進","精神科病院の設立のみを規定するは労働安全衛生法の目的を達成するための主要な規制手段である","精神疾患の診断基準を定めるは労働安全衛生法の目的を達成するための主要な規制手段である"],answer:1,explanation:"精神保健福祉法の目的：①精神障害者の医療・保護②社会復帰の促進・自立・社会参加の支援③精神保健の向上・精神障害者の福祉増進。任意入院・措置入院・医療保護入院・精神保健指定医・精神保健福祉センター等を規定する。"},
+
+{id:280,category:"関係法令（概論・その他）",question:"「自殺対策基本法」における「事業主の責務」として正しいものはどれか。",choices:["事業主に自殺対策の責務はないは労働安全衛生法の目的を達成するための主要な規制手段である","強制義務として措置を講じなければならないとして安全衛生管理体制の構築において法令上義務付けられている","国・地方公共団体の自殺対策に協力し職場における労働者の心の健康保持のため","医療機関にのみ責務があるとして事業者が労働者の安全衛生確保のために遵守すべき規定"],answer:2,explanation:"自殺対策基本法第10条：事業主は国・地方公共団体の自殺対策に協力し職場における労働者の心の健康の保持のために必要な措置を講ずるよう努めるものとする（努力義務）。"},
+
+{id:281,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「安全衛生委員会の議事録の周知方法」として正しいものはどれか。",choices:["議事録は委員のみに通知するは労働安全衛生法の目的を達成するための主要な規制手段である","周知は義務ではないは労働安全衛生法の目的を達成するための主要な規制手段である","遅滞なく事業場内の見やすい場所への掲示・書面交付・電子的方法","3ヶ月後に周知すればよいとして安全衛生管理体制の構築において法令上義務付けられている"],answer:2,explanation:"安衛則第23条第4項：衛生委員会等の議事の概要は委員会開催後遅滞なく事業場の見やすい場所への掲示・書面の交付・電子媒体での提供等の方法で全労働者に周知しなければならない。"},
+
+{id:282,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「産業医の解任・辞任時の手続き」として正しいものはどれか。",choices:["手続きとして事業者が労働者の安全衛生確保のために遵守すべき規定","労働局への事前許可が必要として事業者が労働者の安全衛生確保のために遵守すべき規定","事業者が自由に産業医を解任できるとして事業者が労働者の安全衛生確保のために遵守すべき規定","産業医の解任・辞任後遅滞なく新産業医を選任し所轄労働基準監督署長への選任"],answer:3,explanation:"産業医の選任・変更（解任・辞任含む）は遅滞なく新産業医を選任し所轄労働基準監督署長へ選任報告を提出する（安衛則第13条の2）。2019年改正で産業医の独立性確保のため解任理由の衛生委員会への報告義務も追加された。"},
+
+{id:283,category:"関係法令（概論・その他）",question:"「労働基準法」における「年次有給休暇の斉一的取り扱い」として正しいものはどれか。",choices:["有給休暇は全社員が同時に取得しなければならないとして安全衛生管理体制の構築において法令上義務付けられている","有給休暇の管理方法は法律で一つに定められているとして安全衛生管理体制の構築において法令上義務付けられている","有給休暇は個人ごとに管理できないとして事業者が労働者の安全衛生確保のために遵守すべき規定","基準日（一斉付与の基準日）を設定して全労働者に一斉に年次有給休暇を付与する"],answer:3,explanation:"年次有給休暇の管理：①法定通り（雇入れから6ヶ月後に初回付与）②斉一的取り扱い（全員の基準日を統一して一斉付与：管理が容易）③分割付与等が可能。斉一的取り扱いは法定より早い付与になる場合も含む。"},
+
+{id:284,category:"関係法令（概論・その他）",question:"「個人情報保護法」における「要配慮個人情報」の定義として正しいものはどれか。",choices:["要配慮個人情報は法律上定義されていないは労働安全衛生法の目的を達成するための主要な規制手段である","本人の人種・信条・社会的身分・病歴・犯罪歴・身体障害・精神障害・健康診断結果","個人情報全てが要配慮個人情報として安全衛生管理体制の構築において法令上義務付けられている","氏名・住所が要配慮個人情報は労働安全衛生法の目的を達成するための主要な規制手段である"],answer:1,explanation:"要配慮個人情報（個人情報保護法第2条3項）：人種・信条・社会的身分・病歴・犯罪歴・犯罪被害歴・身体障害・知的障害・精神障害・健康診断結果・健康保険等に関する個人情報。取得には原則として本人の明示的な同意が必要。"},
+
+{id:285,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「特別安全衛生改善計画」について正しいものはどれか。",choices:["重大な労働災害が発生した事業場に対して厚生労働大臣が特別安全衛生改善計画","特別安全衛生改善計画の制度はないとして事業者が労働者の安全衛生確保のために遵守すべき規定","都道府県知事が指示するは労働安全衛生法の目的を達成するための主要な規制手段である","事業者が自発的に作成する計画は労働安全衛生法の目的を達成するための主要な規制手段である"],answer:0,explanation:"安衛法第78条の2：重大な労働災害（重篤な傷病が発生した場合等）が発生した場合で再発防止のために特に必要があるとき厚生労働大臣は特別安全衛生改善計画の作成を指示できる（通常の安全衛生改善計画指示は都道府県労働局長）。"},
+
+{id:286,category:"関係法令（概論・その他）",question:"「過労死等防止対策推進法」が定める国の責務として正しいものはどれか。",choices:["国に責務の定めはないとして事業者が労働者の安全衛生確保のために遵守すべき規定","国は大企業のみを対象に対策を講じるとして安全衛生管理体制の構築において法令上義務付けられている","国は統計を取るだけでよいは労働安全衛生法の目的を達成するための主要な規制手段である","国は過労死等の防止のための対策を総合的・継続的に実施する責務がある"],answer:3,explanation:"過労死等防止対策推進法：国の責務は①過労死等の防止に関する総合的施策の策定・実施②調査研究の推進③啓発活動④相談体制の整備⑤民間団体活動支援⑥過労死等防止対策推進計画の策定（毎年度）。"},
+
+{id:287,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「健康診断の記録の電子的保存」について正しいものはどれか。",choices:["電子的保存は認められないとして安全衛生管理体制の構築において法令上義務付けられている","書面のみで保存しなければならないは労働安全衛生法の目的を達成するための主要な規制手段である","適切なセキュリティ管理のもとで電子的な記録・保存が認められている","電子保存には厚生労働大臣の許可が必要として事業者が労働者の安全衛生確保のために遵守すべき規定"],answer:2,explanation:"健康診断結果等の記録は書面だけでなく電子的な記録・保存も認められている（電子帳簿保存法等の要件を満たす必要がある）。電子保存には適切なアクセス制御・バックアップ・改ざん防止等のセキュリティ管理が必要。"},
+
+{id:288,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「衛生委員会に出席する産業医の役割」として正しいものはどれか。",choices:["産業医として医学的見地から健康障害防止","衛生委員会では産業医は発言できない","産業医は議長として委員会を主宰する","産業医は統計処理のみを担当するとして安全衛生管理体制の構築において法令上義務付けられている"],answer:0,explanation:"産業医は衛生委員会の委員として参加し医学的専門家の立場から①健康障害防止対策②健康保持増進策③健康診断・ストレスチェック結果の活用④職場環境改善等について科学的根拠に基づく意見・提言を行う役割がある。"},
+
+{id:289,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「産業医の情報収集」として2019年改正で強化された事業者の義務として正しいものはどれか。",choices:["事業者は産業医に対して健康診断結果・長時間労働者情報・ストレスチェック結果","情報提供の義務はないは労働安全衛生法の目的を達成するための主要な規制手段である","年1回の情報提供のみでよいは労働安全衛生法の目的を達成するための主要な規制手段である","産業医が自ら収集する義務として事業者が労働者の安全衛生確保のために遵守すべき規定"],answer:0,explanation:"2019年改正安衛法：事業者は産業医が適切に職務を行えるよう①時間外・休日労働が月80時間超の労働者に関する情報②健康診断の結果③ストレスチェック結果等の健康管理に必要な情報を毎月産業医に提供する義務が課された。"},
+
+{id:290,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「安全衛生に関する計画の作成・実施・評価」について正しいものはどれか。",choices:["計画の作成は任意として安全衛生管理体制の構築において法令上義務付けられている","評価は外部機関のみが行うは労働安全衛生法の目的を達成するための主要な規制手段である","計画は作成するだけでよいとして安全衛生管理体制の構築において法令上義務付けられている","衛生委員会等を通じて安全衛生に関する計画を作成・実施・評価・改善する"],answer:3,explanation:"安衛法第28条の2等：労働安全衛生マネジメントシステム（OSHMS）の観点から安全衛生計画（目標・実施事項・スケジュール等）を作成し実施・評価・改善するPDCAサイクルの継続が求められる。"},
+
+{id:291,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「労働安全衛生マネジメントシステム（OSHMS）指針」の基本的考え方として正しいものはどれか。",choices:["OSHMSは一度構築すれば変更不要","OSHMSは義務的なシステムは労働安全衛生法の目的を達成するための主要な規制手段である","PDCAサイクルを回し継続的に改善する","OSHMSは製造業のみが導入するシステム"],answer:2,explanation:"OSHMS（安衛法第28条の2に基づく指針）：事業者が自主的にPDCAサイクル（計画→実施→評価→改善）を継続的に回すことで安全衛生水準を段階的に向上させる自律的管理システム。ISO45001との整合も図られている。"},
+
+{id:292,category:"関係法令（概論・その他）",question:"「労働基準法」における「使用者」の定義として正しいものはどれか。",choices:["事業主および事業主のために行為するすべての者（管理職等も含む）","「使用者」は会社の代表取締役のみを指し役員・管理職は含まれない","人事部長のみが「使用者」に該当し他の部門管理職は含まれない","「使用者」は法的には役員に限定され現場の管理職は含まれない"],answer:0,explanation:"労働基準法第10条：「使用者」とは事業主または事業の経営担当者その他その事業の労働者に関する事項について事業主のために行為するすべての者。工場長・部長等の管理職も「使用者」として労基法の責任を負う場合がある。"},
+
+{id:293,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「衛生管理者の業務の一部委託」について正しいものはどれか。",choices:["衛生管理者の業務は全て委託できる","衛生管理者の職務は事業者の責任で実施するもの","外部の産業保健機関に全委託できる","委託すれば選任不要になるとして安全衛生管理体制の構築において法令上義務付けられている"],answer:1,explanation:"衛生管理者の選任・職務実施は事業者の義務であり外部委託では代替できない。産業保健総合支援センター・地域産業保健センター等の活用は産業保健活動の補完・支援であり衛生管理者の選任義務を免除するものではない。"},
+
+{id:294,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「健康診断の結果を有害業務の就業制限に使用すること」について正しいものはどれか。",choices:["健康診断結果を就業制限に使用してはならないは労働安全衛生法の目的を達成するための主要な規制手段である","医師の意見を聴いた上で就業場所の変更・作業転換・労働時間短縮等の措置を講じる","就業制限に本人の同意として事業者が労働者の安全衛生確保のために遵守すべき規定","就業制限は人事部門が単独で決定するとして安全衛生管理体制の構築において法令上義務付けられている"],answer:1,explanation:"健診の事後措置：異常所見がある労働者について医師の意見を聴き①就業場所の変更②作業の転換③労働時間の短縮④深夜業の回数の減少等の就業上の措置を講じることができる（安衛法第66条の5）。措置は医師の意見を踏まえて事業者が決定。"},
+
+{id:295,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「産業医の兼任禁止」について正しいものはどれか。",choices:["常時1000人以上（有害業務500人以上）の事業場では専属産業医が必要で","産業医は他の事業場と兼任できないは労働安全衛生法の目的を達成するための主要な規制手段である","産業医は1事業場のみ担当できるとして安全衛生管理体制の構築において法令上義務付けられている","兼任数に制限はないは労働安全衛生法の目的を達成するための主要な規制手段である"],answer:0,explanation:"常時1000人以上（有害業務500人以上）の事業場では専属産業医（常時当該事業場のみに勤務）が必要。常時50〜999人の事業場では非専属産業医（複数事業場を兼任可：月1回以上の職場巡視等の職務は履行が必要）の選任でよい。"},
+
+{id:296,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「安全衛生委員会の運営」として正しいものはどれか。",choices:["毎月1回以上開催・議事録の3年保存・関係労働者への周知・産業医の意見を衛生委員会","委員会は年1回開催すればよいとして安全衛生管理体制の構築において法令上義務付けられている","委員会の開催記録として安全衛生管理体制の構築において法令上義務付けられている","委員会は任意の機関は労働安全衛生法の目的を達成するための主要な規制手段である"],answer:0,explanation:"衛生委員会の運営：①毎月1回以上開催②議事録は3年間保存③議事の概要を関係労働者に周知④産業医の勧告内容と事業者の対応を衛生委員会等に報告（2019年改正追加）⑤調査審議事項の適切な設定・実施。"},
+
+{id:297,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「労働者の義務」として正しいものはどれか。",choices:["労働者に安全衛生上の義務はないとして事業者が労働者の安全衛生確保のために遵守すべき規定","義務は事業者として事業者が労働者の安全衛生確保のために遵守すべき規定","労働者は安全衛生に関する法律上の措置を守り（労働安全衛生法の規定）","罰則のある義務はないは労働安全衛生法の目的を達成するための主要な規制手段である"],answer:2,explanation:"安衛法上の労働者の義務：①危険防止措置への協力義務（第26条）②保護具の使用義務（第27条）③健康診断の受診義務（第66条第5項）等。違反した場合の罰則は軽微だが労働安全衛生は労使双方の責任。"},
+
+{id:298,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「衛生委員会への産業医の位置づけ」として2019年改正後の内容として正しいものはどれか。",choices:["産業医は衛生委員会に参加できないとして安全衛生管理体制の構築において法令上義務付けられている","産業医の意見は衛生委員会で無効は労働安全衛生法の目的を達成するための主要な規制手段である","産業医は傍聴のみ可能として安全衛生管理体制の構築において法令上義務付けられている","産業医は委員として参加し勧告内容と事業者の対応が衛生委員会"],answer:3,explanation:"2019年改正安衛法：①産業医の勧告内容を事業者が衛生委員会等に報告する義務②産業医への情報提供義務③産業医の意見の実施・不実施とその理由を衛生委員会等に報告する義務が追加。産業医の独立性・意見の実効性が強化された。"},
+
+{id:299,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「化学物質の管理者・取扱い担当者への教育」として正しいものはどれか。",choices:["化学物質取扱い者への教育義務はない","製造者が教育する義務のみがあるとして安全衛生管理体制の構築において法令上義務付けられている","教育は入社時のみでよいは労働安全衛生法の目的を達成するための主要な規制手段である","化学物質を取り扱う労働者に対してSDSの内容"],answer:3,explanation:"化学物質管理の改正（2022年）：リスクアセスメント対象物を取り扱う労働者には①SDSの内容②リスクアセスメント結果③リスク低減措置の内容④保護具の使用方法⑤緊急時の応急措置等についての安全衛生教育の実施が義務付けられた。"},
+
+{id:300,category:"関係法令（概論・その他）",question:"「労働安全衛生法」における「安全衛生の根本的な考え方」として最も適切なものはどれか。",choices:["労働安全衛生は費用がかかるだけで経営に貢献しない","労働安全衛生の向上は労働者の健康・生命を守るだけでなく企業の生産性","安全衛生は規制を守るだけでよいとして事業者が労働者の安全衛生確保のために遵守すべき規定","安全衛生は産業医のみが担当すればよいとして事業者が労働者の安全衛生確保のために遵守すべき規定"],answer:1,explanation:"現代の安全衛生の考え方：労働安全衛生の向上は①労働者の健康・生命の保護②労働災害・職業病による損失の防止③生産性・品質・モラルの向上④企業の社会的責任（CSR）・評判の向上→事業者・労働者・社会全体にとって不可欠な投資（安全投資）という考え方が定着している。"}
+];
+const CAT_META={
+"労働衛生（有害業務以外）":{"color":"#0969A2","icon":"🏥","bg":"#E3F2FD"},
+"関係法令（有害業務以外）":{"color":"#2E7D32","icon":"⚖️","bg":"#E8F5E9"},
+"労働生理":{"color":"#C62828","icon":"🫀","bg":"#FFEBEE"},
+"労働衛生（概論・その他）":{"color":"#6A1B9A","icon":"📊","bg":"#F3E5F5"},
+"関係法令（概論・その他）":{"color":"#E65100","icon":"📋","bg":"#FFF3E0"}
+};
+
+const SUBCAT_DEF={
+  "労働衛生（有害業務以外）":[{key:"yi1",label:"🏥 健康管理・健康診断・疾病",ids:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45]},{key:"yi2",label:"💡 メンタルヘルス・疲労・食中毒・腰痛",ids:[46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90]}],
+  "関係法令（有害業務以外）":[{key:"li1",label:"⚖️ 安全衛生管理体制・衛生管理者",ids:[91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135]},{key:"li2",label:"📝 健康診断・産業医・ストレスチェック",ids:[136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180]}],
+  "労働生理":[{key:"rk1",label:"🫀 循環・呼吸・血液・体温",ids:[181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210]},{key:"rk2",label:"🧠 神経・感覚・代謝・免疫・泌尿",ids:[211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240]}],
+  "労働衛生（概論・その他）":[{key:"yo1",label:"📊 産業保健総論・疫学・評価",ids:[241,242,243,244,245,246,247,248,249,250,251,252,253,254,255]},{key:"yo2",label:"🌐 国際・最新トレンド・健康経営",ids:[256,257,258,259,260,261,262,263,264,265,266,267,268,269,270]}],
+  "関係法令（概論・その他）":[{key:"lo1",label:"📋 労働安全衛生法・総論",ids:[271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300]}]
+};
+// カテゴリ正規化
+(function normalizeCats(){
+const MAP={"労働衛生（有害業務以外）":"労働衛生（有害業務以外）","関係法令（有害業務以外）":"関係法令（有害業務以外）","労働生理":"労働生理","労働衛生（概論・その他）":"労働衛生（概論・その他）","関係法令（概論・その他）":"関係法令（概論・その他）"};
+ALL_QUESTIONS.forEach(q=>{if(MAP[q.category])q.category=MAP[q.category];});
+})();
+const RANKS=[{min:0,label:"入門",kanji:"入",color:"#999"},{min:10,label:"初段",kanji:"初",color:"#9b7a4a"},{min:30,label:"二段",kanji:"二",color:"#7a9b4a"},{min:60,label:"三段",kanji:"三",color:"#4a7a9b"},{min:100,label:"四段",kanji:"四",color:"#7a4a9b"},{min:150,label:"名人",kanji:"名",color:"#D4941A"}];
+const KEY="dojo_kansei2";
+function getRank(n){return[...RANKS].reverse().find(r=>n>=r.min)||RANKS[0];}
+function getNext(n){return RANKS.find(r=>r.min>n);}
+function sc(p){if(p==null)return"#999";return p>=80?"#0F6E56":p>=60?"#D4941A":"#E8572A";}
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r);}catch{}return{wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};}
+function save(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch{}}
+let S={screen:"home",ud:load(),mode:"ALL",fc:"全て",fsc:null,subcatOpen:false,ts:0,shuffle:false,deck:[],idx:0,sel:null,showExp:false,sess:[],tl:null,tout:false,tiv:null};
+function setUd(fn){S.ud=typeof fn==="function"?fn(S.ud):fn;save(S.ud);}
+// ① 前回の続きセーブ/ロード
+function saveProgress(){setUd(p=>({...p,lastProgress:{mode:S.mode,fc:S.fc,shuffle:S.shuffle,ts:S.ts,deckIds:S.deck.map(q=>q.id),idx:S.idx,ts_:Date.now()}}));}
+function hasProgress(){const p=S.ud.lastProgress;return p&&p.deckIds&&p.deckIds.length>0&&p.idx<p.deckIds.length-1;}
+function retryQ(){clearInterval(S.tiv);S.sel=null;S.tout=false;S.tl=null;S.showExp=false;render();startTimer();}
+function pauseQ(){clearInterval(S.tiv);saveProgress();S.screen="home";render();}
+function resumeSession(){
+  const p=S.ud.lastProgress;if(!p)return;
+  S.mode=p.mode;S.fc=p.fc;S.shuffle=p.shuffle||false;S.ts=p.ts||0;
+  S.deck=p.deckIds.map(id=>ALL_QUESTIONS.find(q=>q.id===id)).filter(Boolean);
+  S.idx=p.idx;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  S.screen="quiz";render();startTimer();
+}
+function cv(){
+  const ud=S.ud,ta=ud.totalAnswered||0,rank=getRank(ta),nr=getNext(ta);
+  const rp=nr?Math.round(((ta-rank.min)/(nr.min-rank.min))*100):100;
+  const rh=(ud.history||[]).slice(-200);
+  const or=rh.length?Math.round(rh.filter(h=>h.correct).length/rh.length*100):null;
+  const wq=ALL_QUESTIONS.filter(q=>(ud.wrongCounts||{})[q.id]>0).sort((a,b)=>((ud.wrongCounts[b.id]||0)-(ud.wrongCounts[a.id]||0)));
+  const sq=ALL_QUESTIONS.filter(q=>(ud.starIds||[]).includes(q.id));
+  const cur=S.deck[S.idx];
+  const ia=S.sel!==null||S.tout;
+  const ic=S.sel===cur?.answer;
+  const sc2=S.sess.filter(a=>a.correct).length;
+  const sr=S.sess.length?Math.round(sc2/S.sess.length*100):0;
+  const tp=S.ts>0&&S.tl!==null?Math.round(S.tl/S.ts*100):100;
+  const tc=tp>50?"#0F6E56":tp>25?"#D4941A":"#E8572A";
+  return{ta,rank,rp,or,wq,sq,cur,ia,ic,sc2,sr,tp,tc};
+}
+function startTimer(){clearInterval(S.tiv);if(S.ts===0||S.sel!==null||S.tout)return;S.tl=S.ts;S.tiv=setInterval(()=>{S.tl--;if(S.tl<=0){clearInterval(S.tiv);S.tout=true;S.showExp=true;}render();},1000);}
+function go(om){
+  clearInterval(S.tiv);const m=om||S.mode;
+  let pool=[...ALL_QUESTIONS];
+  if(m==="WEAK")pool=ALL_QUESTIONS.filter(q=>(S.ud.wrongCounts||{})[q.id]>0);
+  else if(m==="STAR")pool=ALL_QUESTIONS.filter(q=>(S.ud.starIds||[]).includes(q.id));
+  else if(S.fc!=="全て")pool=pool.filter(q=>q.category===S.fc);
+  if(S.fsc&&S.fc!=="全て"){const sub=(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc);if(sub)pool=pool.filter(q=>sub.ids.includes(q.id));}
+  if(!pool.length)return;if(om)S.mode=om;
+  S.deck=S.shuffle?shuf(pool):pool;S.idx=0;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  // ① 進捗クリアして新規スタート
+  setUd(p=>{const np={...p};delete np.lastProgress;return np;});
+  S.screen="quiz";render();startTimer();
+}
+function pick(i){
+  if(S.sel!==null||S.tout)return;
+  clearInterval(S.tiv);S.sel=i;S.showExp=true;
+  const q=S.deck[S.idx];const ok=i===q.answer;
+  setUd(p=>{
+    const wc={...p.wrongCounts};
+    if(ok){
+      // ④ 弱点モードで正解したらwrongCountsから削除（クリア）
+      if(S.mode==="WEAK") delete wc[q.id];
+      else wc[q.id]=Math.max(0,(wc[q.id]||0));
+    } else {
+      wc[q.id]=(wc[q.id]||0)+1;
+    }
+    return{...p,wrongCounts:wc,history:[...(p.history||[]).slice(-499),{id:q.id,correct:ok,ts:Date.now()}],totalAnswered:(p.totalAnswered||0)+1};
+  });
+  // ① 進捗保存
+  saveProgress();
+  render();
+  const el=document.getElementById("app");
+  if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+}
+function next(){
+  const q=S.deck[S.idx];const ok=S.sel===q.answer;
+  S.sess=[...S.sess,{q,correct:ok,sel:S.sel}];
+  if(S.idx+1>=S.deck.length){
+    // ① セッション完了: 進捗クリア
+    setUd(p=>{const np={...p,totalSessions:(p.totalSessions||0)+1};delete np.lastProgress;return np;});
+    S.screen="result";render();
+  } else {
+    S.idx++;S.sel=null;S.showExp=false;S.tout=false;S.tl=null;
+    saveProgress();
+    render();startTimer();
+  }
+}
+function star(id){setUd(p=>({...p,starIds:(p.starIds||[]).includes(id)?(p.starIds||[]).filter(s=>s!==id):[...(p.starIds||[]),id]}));render();}
+function clrWrong(id){setUd(p=>{const wc={...p.wrongCounts};delete wc[id];return{...p,wrongCounts:wc};});render();}
+function reset(){if(confirm("学習データをすべてリセットしますか？")){const d={wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};save(d);S.ud=d;render();}}
+function render(){
+  document.getElementById("app").innerHTML=build();
+  if(S.screen==="notebook"||S.screen==="quiz"){
+    const el=document.getElementById("app");
+    if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+  }
+  if(S.screen==="result"||S.screen==="home"){
+    // ⑥ resultとhomeは常にページ最上部
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+}
+const arr=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+const bk=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+const bksvg=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`;
+
+function catStats(){
+  return Object.keys(CAT_META).map(cat=>{
+    const h=(S.ud.history||[]).filter(h=>{const q=ALL_QUESTIONS.find(q=>q.id===h.id);return q&&q.category===cat;});
+    if(!h.length)return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"></div><span class="side-cat-pct" style="color:#999">—</span></div>`;
+    const r=Math.round(h.filter(x=>x.correct).length/h.length*100);
+    return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"><div class="side-cat-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="side-cat-pct" style="color:${sc(r)}">${r}%</span></div>`;
+  }).join("");
+}
+
+function build(){
+  const C=cv();
+  if(S.screen==="home")return home(C);
+  if(S.screen==="quiz")return quiz(C);
+  if(S.screen==="result")return result(C);
+  if(S.screen==="notebook")return notebook(C);
+  return"";
+}
+
+function home(C){
+  const{ta,rank,rp,or,wq,sq}=C;
+  const startOff=(S.mode==="WEAK"&&!wq.length)||(S.mode==="STAR"&&!sq.length);
+  const cats=["全て",...Object.keys(CAT_META)];
+  const isFiltered=S.mode==="ALL"&&(S.fc!=="全て"||S.fsc);
+  const filterLabel=S.fsc?(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc)?.label.replace(/^[^\s]+\s/,""):S.fc!=="全て"?S.fc:"";
+  const left=`
+    <div class="card">
+      <div class="cat-card-hd">
+        <span class="cat-card-title">カテゴリ・絞り込み</span>
+        ${isFiltered?`<span class="cat-filter-badge active">🎯 ${filterLabel}</span>`:`<span class="cat-filter-badge none">全問題</span>`}
+      </div>
+      <div class="cat-row ${S.mode!=="ALL"?"hidden":""}">
+        ${cats.map(c=>{
+          const a=S.fc===c;
+          const m=CAT_META[c];
+          const cnt=c==="全て"?ALL_QUESTIONS.length:ALL_QUESTIONS.filter(q=>q.category===c).length;
+          const wc=c==="全て"?wq.length:ALL_QUESTIONS.filter(q=>q.category===c&&(S.ud.wrongCounts||{})[q.id]>0).length;
+          const badge=wc>0?`<span style="background:#E8572A;color:#fff;font-size:9px;font-weight:700;border-radius:4px;padding:0 4px;">${wc}</span>`:"";
+          return`<button class="cat-chip ${a?"active":""}" onclick="S.fc='${c}';S.fsc=null;render()">${c!=="全て"&&m?m.icon+" ":""}${c}<span style="opacity:.55;font-size:10px;margin-left:3px;">${cnt}</span>${badge}</button>`;
+        }).join("")}
+      </div>
+      ${S.mode==="ALL"&&S.fc!=="全て"&&SUBCAT_DEF[S.fc]?(()=>{
+        const subs=SUBCAT_DEF[S.fc];
+        return`<div class="subcat-section">
+          <div class="subcat-label">章で絞り込む</div>
+          <div class="subcat-grid">
+            <button class="subcat-chip ${!S.fsc?"active":""}" onclick="S.fsc=null;render()">全章</button>
+            ${subs.map(s=>{
+              const cnt2=ALL_QUESTIONS.filter(q=>q.category===S.fc&&s.ids.includes(q.id)).length;
+              return`<button class="subcat-chip ${S.fsc===s.key?"active":""}" onclick="S.fsc='${s.key}';render()">${s.label}<span style="opacity:.6;font-size:10px;margin-left:3px;">${cnt2}</span></button>`;
+            }).join("")}
+          </div>
+        </div>`;
+      })():""}
+      ${S.mode!=="ALL"?`<p style="font-size:11px;color:var(--text3);margin-top:4px;">弱点・スターモード時はカテゴリ絞り込み不可</p>`:""}
+      <div class="opts-compact">
+        <span class="opt-label-ic">⏱</span>
+        ${[0,30,60].map(t=>`<button class="opt-pill ${S.ts===t?"on":""}" onclick="S.ts=${t};render()">${t===0?"なし":t+"s"}</button>`).join("")}
+        <div class="opts-compact-sep"></div>
+        <button class="opt-pill opt-shuffle ${S.shuffle?"on":""}" onclick="S.shuffle=!S.shuffle;render()">🔀 ${S.shuffle?"ランダム":"順番通り"}</button>
+      </div>
+    </div>
+    ${(()=>{
+      const p=S.ud.lastProgress;
+      const hasP=hasProgress();
+      if(hasP){
+        const resumeQ=p.deckIds&&ALL_QUESTIONS.find(q=>q.id===p.deckIds[p.idx]);
+        const cat=resumeQ?(CAT_META[resumeQ.category]||{icon:"📄"}):{icon:"📄"};
+        const catLabel=resumeQ?resumeQ.category:"";
+        const qNum=p.idx+1;
+        return`<div class="start-row">
+          <button class="start-btn ${startOff?"off":""}" onclick="go()">修行開始 ${arr()}</button>
+          <button class="resume-btn" onclick="resumeSession()">
+            <span class="resume-btn-label">▶ 続きから学習</span>
+            <span class="resume-btn-sub">${qNum}問目 ${cat.icon}${catLabel}</span>
+          </button>
+        </div>`;
+      } else {
+        return`<button class="start-btn start-btn-solo ${startOff?"off":""}" onclick="go()">学習スタート ${arr()}</button>`;
+      }
+    })()}
+    <button class="text-link" onclick="reset()">データをリセット</button>`;
+  const right=`
+    <div class="side-panel">
+      <div class="side-title">学習統計</div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算解答数</span><span class="side-stat-val">${ta}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算正答率</span><span class="side-stat-val" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">要復習問題</span><span class="side-stat-val" style="color:${wq.length?"#E8572A":"#0F6E56"}">${wq.length}問</span></div>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">カテゴリ別正答率</div>${catStats()}
+    </div>
+    <button class="side-panel" style="cursor:pointer;text-align:left;width:100%;" onclick="S.screen='notebook';render()">
+      <div class="side-title">間違いノート</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:14px;color:var(--text2);">間違えた問題を確認</span><span style="font-size:18px;font-weight:700;color:${wq.length?"#E8572A":"var(--text3)"};">${wq.length}</span></div>
+    </button>`;
+  const modeTabs=[
+    {k:"ALL",ic:"📚",lbl:"全問",cnt:ALL_QUESTIONS.length,dis:false},
+    {k:"WEAK",ic:"🔥",lbl:"弱点",cnt:wq.length,dis:!wq.length},
+    {k:"STAR",ic:"⭐",lbl:"★登録",cnt:sq.length,dis:!sq.length}
+  ].map(m=>{const on=S.mode===m.k?"hm-on":"";const dis=m.dis?"hm-dis":"";const click=m.dis?"":"S.mode=\'"+m.k+"\';S.fsc=null;render()";return`<button class="hm-tab ${on} ${dis}" onclick="${click}"><span class="hm-ic">${m.ic}</span><span class="hm-lbl">${m.lbl}</span><span class="hm-cnt">${m.cnt}問</span></button>`;}).join("");
+  return`<div class="home-inner">
+    <div class="home-hero">
+      <div class="hero-top">
+        <div class="hero-left">
+          <div class="hero-exam-type">労働安全・衛生</div>
+          <div class="hero-exam-name">衛生管理者（第二種）</div>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hs-num" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span><span class="hs-lbl">正答率</span></div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat"><span class="hs-num">${ta}</span><span class="hs-lbl">解答数</span></div>
+            ${wq.length?`<div class="hero-stat-div"></div><div class="hero-stat"><span class="hs-num" style="color:#E8572A">${wq.length}</span><span class="hs-lbl">要復習</span></div>`:""}
+          </div>
+        </div>
+        <div class="hero-rank" style="border-color:${rank.color}66;background:${rank.color}18">
+          <span class="rank-k" style="color:${rank.color}">${rank.kanji}</span>
+          <span class="rank-l" style="color:${rank.color}">${rank.label}</span>
+          <div class="rank-bar"><div class="rank-fill" style="width:${rp}%;background:${rank.color}"></div></div>
+        </div>
+      </div>
+      <div class="hero-mode-bar">${modeTabs}</div>
+    </div>
+    <div class="pc-cols">
+      <div class="pc-col-main">${left}</div>
+      <div class="pc-col-side">${right}</div>
+    </div>
+  </div>`;
+}
+
+function quiz(C){
+  const{cur,ia,ic,sc2,tp,tc}=C;
+  if(!cur)return"";
+  const sw=S.sess.filter(a=>!a.correct).length;
+  const isStar=(S.ud.starIds||[]).includes(cur.id);
+  const pp=Math.round(((S.idx+1)/S.deck.length)*100);
+  const al=["A","B","C","D"];
+  const catMeta=CAT_META[cur.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+  const catLabel=cur.category||"";
+  const dots=()=>{let h=S.sess.map(a=>`<div class="sb-dot ${a.correct?"sd-ok":"sd-ng"}"></div>`).join("");h+=`<div class="sb-dot sd-cur"></div>`;const f=Math.min(3,S.deck.length-S.idx-1);for(let i=0;i<f;i++)h+=`<div class="sb-dot sd-future"></div>`;const m=S.deck.length-S.idx-f-1;if(m>0)h+=`<span class="sb-more">+${m}</span>`;return h;};
+  const mc=(S.ud.wrongCounts||{})[cur.id]||0;
+  const tim=S.ts>0?`<div class="timer-wrap"><svg width="44" height="44" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="#e5e3dc" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="${tc}" stroke-width="4" stroke-linecap="round" stroke-dasharray="${tp*1.257} 125.7" transform="rotate(-90 24 24)" style="transition:stroke-dasharray .9s linear"/></svg><span class="timer-num" style="color:${tc}">${S.tout?"✕":(S.tl||"")}</span></div>`:"";
+
+  // ── 未回答：問題文＋4択を表示 ──────────────────────
+  if(!ia){
+    const ch=cur.choices.map((c,i)=>`<button class="choice" onclick="pick(${i})"><span class="ch-alpha">${al[i]}</span><span class="ch-body">${c}</span></button>`).join("");
+    return`<div class="quiz-inner">
+      <div class="pc-quiz-main">
+        <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+        <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+        ${tim}
+        <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+        <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+        <div class="choices">${ch}</div>
+      </div>
+      <div class="pc-quiz-side">
+        <div class="side-panel"><div class="side-title">解説</div><div class="side-exp-placeholder">選択肢を選ぶと解説が表示されます</div></div>
+        <div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>
+      </div>
+    </div>`;
+  }
+
+  // ── 回答済み：選択肢を非表示にして解説カードのみ表示 ──
+  const cls=ic&&!S.tout?"exp-ok":S.tout?"exp-time":"exp-ng";
+  const v=S.tout?"⏰ 時間切れ":ic?"✓ 正解！":"✗ 不正解";
+  const vc=ic&&!S.tout?"var(--green-d)":S.tout?"var(--gold)":"var(--accent)";
+
+  const correctRow=`<div class="exp-correct-bar ok">
+    <span class="exp-correct-label">正解</span>
+    <span class="exp-correct-text">${al[cur.answer]}. ${cur.choices[cur.answer]}</span>
+  </div>`;
+  const myRow=(!ic&&!S.tout&&S.sel!==null)?`<div class="exp-correct-bar ng">
+    <span class="exp-correct-label">あなた</span>
+    <span class="exp-correct-text">${al[S.sel]}. ${cur.choices[S.sel]}</span>
+  </div>`:"";
+
+  // PC側解説パネル
+  const expPC=`<div class="side-panel">
+    <div class="side-title">解説</div>
+    <div style="font-size:13px;font-weight:700;color:${vc};margin-bottom:8px;">${v}</div>
+    <div style="background:rgba(29,158,117,.1);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#0F6E56;"><strong>正解：</strong>${al[cur.answer]}. ${cur.choices[cur.answer]}</div>
+    ${(!ic&&!S.tout&&S.sel!==null)?`<div style="background:rgba(230,81,0,.08);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#8B2A0E;"><strong>あなた：</strong>${al[S.sel]}. ${cur.choices[S.sel]}</div>`:""}
+    <div class="side-exp-body">${cur.explanation}</div>
+  </div>`;
+  const stPC=`<div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>`;
+
+  return`<div class="quiz-inner">
+    <div class="pc-quiz-main">
+      <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+      <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+      <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+      <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+      <div class="exp-card exp-sp ${cls}">
+        <div class="exp-head"><span class="exp-verdict">${v}</span></div>
+        ${correctRow}${myRow}
+        <p class="exp-body">${cur.explanation}</p>
+      </div>
+      <div class="next-wrap"><div class="next-3">
+        <button class="btn-retry" onclick="retryQ()">🔁<span class="btn-sub-lbl">もう一度</span></button>
+        <button class="btn-pause" onclick="pauseQ()">⏸<span class="btn-sub-lbl">中断</span></button>
+        <button class="btn-next-main" onclick="next()">${S.idx+1>=S.deck.length?"🏁 結果を見る":"次の問題 →"}</button>
+      </div></div>
+    </div>
+    <div class="pc-quiz-side">${expPC}${stPC}</div>
+  </div>`;
+}
+
+function result(C){
+  const{sc2,sr}=C;
+  const v=sr>=80?"🏆 優秀！":sr>=60?"✅ 合格ライン達成！":"📚 もう一度復習しよう";
+  const vc=sc(sr);
+  const cats=Object.keys(CAT_META).map(cat=>{const qs=S.sess.filter(a=>a.q.category===cat);if(!qs.length)return"";const r=Math.round(qs.filter(a=>a.correct).length/qs.length*100);return`<div class="rc-row"><span class="rc-icon">${CAT_META[cat].icon}</span><span class="rc-name">${cat}</span><div class="rc-track"><div class="rc-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="rc-pct">${r}%</span></div>`;}).join("");
+  // ⑤ undefinedを除去: questionが存在するか確認
+  const log=S.sess.map((a,i)=>{
+    if(!a.q||!a.q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[a.q.id]||0;
+    const cat=CAT_META[a.q.category];
+    const icon=cat?cat.icon:"";
+    const qText=a.q.question.slice(0,28)+"…";
+    return`<div class="ans-row ${a.correct?"ar-ok":"ar-ng"}"><span class="ar-n">Q${i+1}</span><span class="ar-cat">${icon}</span><span class="ar-q">${qText}</span><span class="ar-mark">${a.correct?"✓":"✗"}</span>${!a.correct?`<span class="ar-cnt">×${wc}</span>`:""}</div>`;
+  }).join("");
+  return`<div class="result-inner">
+    <div class="result-hero">
+      <p class="result-eyebrow">修行完了</p>
+      <div class="result-score-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/><circle cx="50" cy="50" r="42" fill="none" stroke="${vc}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${sr*2.639} 263.9" transform="rotate(-90 50 50)" style="transition:stroke-dasharray 1s ease .3s"/></svg><div class="result-score-inner"><span class="result-pct" style="color:${vc}">${sr}<small>%</small></span><span class="result-sub">${sc2}/${S.sess.length}</span></div></div>
+      <div class="result-verdict" style="color:${vc};border-color:${vc}66;background:${vc}22">${v}</div>
+      <div class="result-cats">${cats}</div>
+    </div>
+    <div class="section-hd">問題別レビュー</div>
+    <div class="ans-log">${log}</div>
+    <button class="cta-btn" onclick="go()">もう一度</button>
+    <button class="ghost-btn" onclick="go('WEAK')">弱点だけ特訓</button>
+    <button class="ghost-btn" onclick="S.screen='home';render()">ホームへ戻る</button>
+  </div>`;
+}
+
+function notebook(C){
+  const{wq}=C;const al=["A","B","C","D"];
+  const cards=wq.map(q=>{
+    if(!q||!q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[q.id]||0;
+    const is=(S.ud.starIds||[]).includes(q.id);
+    const cat=CAT_META[q.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+    return`<div class="nb-card"><div class="nb-card-top"><span class="nb-cat" style="color:${cat.color};background:${cat.bg};border-color:${cat.color}55">${cat.icon} ${q.category||""}</span><div class="nb-actions"><span class="nb-wc">✗ ${wc}回</span><button class="nb-star ${is?"on":""}" onclick="star(${q.id})">${is?"★":"☆"}</button><button class="nb-resolve" onclick="clrWrong(${q.id})">解決</button></div></div><p class="nb-q">${q.question}</p><div class="nb-ans-box"><span class="nb-ans-lbl">正解</span><span class="nb-ans-val">${al[q.answer]}. ${q.choices[q.answer]}</span></div><details class="nb-details"><summary class="nb-summary">解説を見る ▾</summary><p class="nb-exp">${q.explanation}</p></details></div>`;
+  }).join("");
+  return`<div class="nb-inner"><div class="nb-nav"><button class="nav-back" onclick="S.screen='home';render()">${bk()}</button><span class="nb-title">間違いノート</span><span class="nb-count">${wq.length}問</span></div>${wq.length===0?`<div class="empty-wrap"><div class="empty-icon">🎉</div><p class="empty-msg">まだ間違えた問題はありません</p><p class="empty-sub">どんどん問題に挑戦しよう！</p></div>`:`<div>${cards}</div>`}</div>`;
+}
+render();
+
+// ── ページ内ナビ スクロール処理 ──
+function scrollToApp(e){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById("app");
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab("app");
+}
+function scrollTo_(e, id){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById(id);
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab(id);
+}
+function setActiveTab(id){
+  document.querySelectorAll(".pn-tab").forEach(t => t.classList.remove("active"));
+  const map = {app:0, apply:1, books:2, courses:3, overview:4, syllabus:5, roadmap:6, faq:7};
+  const tabs = document.querySelectorAll(".pn-tab");
+  const idx = map[id];
+  if(idx !== undefined && tabs[idx]) tabs[idx].classList.add("active");
+}
+const _navIds = ["faq","roadmap","syllabus","overview","courses","books","apply"];
+window.addEventListener("scroll", ()=>{
+  const offset = 120;
+  for(const id of _navIds){
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= offset){
+      setActiveTab(id); return;
+    }
+  }
+  setActiveTab("app");
+}, {passive:true});
+</script>
+
+<section class="aff-section"><div class="aff-inner">
+  <h2 class="aff-h2">試験に申し込む・学習を始める</h2>
+  <p class="aff-sub">公式サイトで最新の試験日程・申込方法を確認してください</p>
+  <a class="official-btn" href="https://www.exam.or.jp/exmn/H_shiken010.htm" target="_blank" rel="noopener">
+    <div class="official-ico">🏛️</div>
+    <div class="official-info"><div class="official-name">公益財団法人安全衛生技術試験協会（公式）</div><div class="official-note">試験日程・受験地・申込方法の詳細はこちらから確認できます</div></div>
+    <div class="official-arr">→</div>
+  </a>
+  <div class="aff-h3">おすすめ参考書</div><div class="book-list"><div class="book-card"><div class="book-title">📖 第2種衛生管理者 集中レッスン（成美堂出版）</div><div class="book-memo">第二種対応の定番テキスト</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=第2種衛生管理者集中レッスン成美堂出版&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/第2種衛生管理者集中レッスン成美堂出版/" target="_blank" rel="noopener">楽天</a></div></div><div class="book-card"><div class="book-title">📖 第2種衛生管理者 過去問題集（各社）</div><div class="book-memo">過去問反復が合格の近道</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=第2種衛生管理者過去問題集各社&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/第2種衛生管理者過去問題集各社/" target="_blank" rel="noopener">楽天</a></div></div></div>
+  <div class="aff-h3">おすすめ通信講座</div><div class="course-list"><a class="course-card" href="https://www.u-can.co.jp/eisei/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">ユーキャン 衛生管理者講座</div><div class="course-price">約25,000円〜</div><div class="course-feat">第二種対応の通信講座</div></div><div class="course-arr">›</div></a><a class="course-card" href="https://studying.jp/eisei/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">スタディング 衛生管理者講座</div><div class="course-price">約8,000円〜</div><div class="course-feat">スマホ完結</div></div><div class="course-arr">›</div></a></div>
+  <p class="aff-note">※ リンクはアフィリエイトリンクです。価格は変動する場合があります。</p>
+</div></section>
+<section class="seo-section"><div class="seo-inner">
+  <h2 class="seo-h2">衛生管理者 第二種とは</h2>
+  <p class="seo-lead">第二種衛生管理者は、有害業務以外の業種（情報通信・金融・小売・サービス業等）の事業場で衛生管理業務を行える国家資格です。第一種より試験範囲が絞られており、オフィス系・サービス業の職場での安全衛生管理に対応しています。</p>
+  <h3 class="seo-h3">試験概要</h3>
+  <div class="info-grid2">
+    <div class="ig-card"><div class="ig-lbl">合格率</div><div class="ig-val">55%</div></div>
+    <div class="ig-card"><div class="ig-lbl">勉強時間</div><div class="ig-val">60〜120時間</div></div>
+    <div class="ig-card"><div class="ig-lbl">受験料</div><div class="ig-val">8,800円</div></div>
+    <div class="ig-card"><div class="ig-lbl">試験形式</div><div class="ig-val">4択マークシート・30問</div></div>
+    <div class="ig-card"><div class="ig-lbl">試験回数</div><div class="ig-val">月1〜2回程度</div></div>
+    <div class="ig-card"><div class="ig-lbl">難易度</div><div class="ig-val">★★☆☆☆</div></div>
+  </div>
+  <h3 class="seo-h3">試験科目</h3><table class="seo-table"><thead><tr><th>科目</th><th>内容</th></tr></thead><tbody><tr><td>労働衛生（有害業務以外）10問</td><td>作業環境管理・健康管理・健康増進・食中毒</td></tr><tr><td>関係法令（有害業務以外）10問</td><td>労働安全衛生法の一般規定・許可・届出・罰則</td></tr><tr><td>労働生理 10問</td><td>人体の各器官・神経・感覚・疲労・ストレス</td></tr></tbody></table>
+  <h3 class="seo-h3">学習ロードマップ</h3><div class="roadmap"><div class="rm-step"><div class="rm-num">1</div><div><div class="rm-title">労働衛生の基礎を学ぶ（1〜2週目）</div><div class="rm-desc">作業環境管理・健康管理の基本を理解する</div></div></div><div class="rm-step"><div class="rm-num">2</div><div><div class="rm-title">関係法令を習得（2〜3週目）</div><div class="rm-desc">労働安全衛生法の一般規定と主要数字を暗記する</div></div></div><div class="rm-step"><div class="rm-num">3</div><div><div class="rm-title">労働生理を学習（3〜4週目）</div><div class="rm-desc">人体の仕組みと疾病の関係を押さえる</div></div></div><div class="rm-step"><div class="rm-num">4</div><div><div class="rm-title">過去問演習で仕上げ（4〜6週目）</div><div class="rm-desc">過去問を繰り返し得点力を高める</div></div></div></div>
+  <h3 class="seo-h3">次に目指す資格</h3><div class="next-shikaku"><a class="next-card" href="kansei1.html"><div class="next-ico" style="background:#FFF3E0">🏥</div><div><div class="next-name">衛生管理者 第一種</div><div class="next-desc">有害業務対応の上位資格へ</div></div></a><a class="next-card" href="mental2.html"><div class="next-ico" style="background:#FBEAF0">🧠</div><div><div class="next-name">メンタルヘルスⅡ種</div><div class="next-desc">管理職向けメンタルヘルス知識も習得</div></div></a></div>
+  <h3 class="seo-h3">よくある質問</h3><div class="faq-list"><details class="faq-item"><summary class="faq-q">第二種の合格率はどのくらいですか？</summary><p class="faq-a">約55%程度で第一種より合格しやすいです。</p></details><details class="faq-item"><summary class="faq-q">どの業種で使えますか？</summary><p class="faq-a">情報通信業・金融業・卸売・小売業・宿泊業・飲食業・医療・教育などで使えます。</p></details><details class="faq-item"><summary class="faq-q">第一種と第二種、どちらを取るべきですか？</summary><p class="faq-a">製造業・建設業など有害業務がある職場は第一種が必要。オフィス系・サービス業は第二種で対応できます。</p></details><details class="faq-item"><summary class="faq-q">受験資格はありますか？</summary><p class="faq-a">第一種と同様に学歴に応じた実務経験が必要です。</p></details></div>
+</div></section>
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div class="sf-logo">
+      <span class="sf-lmark">問</span>
+      資格<span>ドリル</span>
+    </div>
+    <div class="sf-links">
+      <a href="index.html">資格一覧トップ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+    <div class="sf-copy">© 2026 資格ドリル</div>
+  </div>
+</footer>
+</body>
+</html>
