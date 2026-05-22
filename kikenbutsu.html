@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>危険物取扱者乙種第4類 無料問題集・過去問対策 | 資格ドリル</title>
+<meta name="description" content="G検定（ジェネラリスト検定）の無料問題集。AI・機械学習・ディープラーニング・法律・倫理を網羅。合格率65〜76%・勉強時間40〜80時間。オンライン100分/会場120分・145問。弱点特訓・解説つき。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1623;--navy2:#171e2e;--navy3:#1e2840;
+  --green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --brand:#ff3b53;--brand2:#ff7a3d;--gold:#ffb400;--gold-bg:#FEF6E4;
+  --accent:#ff3b53;--accent-bg:#fff0f1;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --font-d:'Inter','Noto Sans JP',sans-serif;
+  --font-b:'Noto Sans JP',sans-serif;
+  --radius:14px;--radius-sm:10px;--tap:52px;
+  --shadow:0 2px 8px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--bg);font-family:var(--font-b);min-height:100vh;color:var(--text);}
+a{text-decoration:none;color:inherit;}
+.site-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;position:sticky;top:0;z-index:100;}
+.site-header-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.site-logo{color:#fff;font-size:18px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:8px;font-family:"Inter","Noto Sans JP";}
+.site-logo .logo-text{background:linear-gradient(90deg,#fff 0%,#ffd6c2 100%);-webkit-background-clip:text;background-clip:text;color:transparent !important;}
+.logo-mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(255,59,83,.45);animation:pulse 2.8s ease-in-out infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{box-shadow:0 4px 14px rgba(255,59,83,.45)}50%{box-shadow:0 6px 22px rgba(255,106,61,.65)}}
+/* ③ PC時: ヘッダー内コンテンツを掲載内容の左端に揃える */
+@media(min-width:769px){
+  .site-header{padding:0;}
+  .site-header-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+  .page-nav-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+}
+.site-back{color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;gap:5px;transition:color .2s;}
+.site-back:hover{color:#fff;}
+.home-inner{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
+.home-hero{background:var(--navy);border-radius:var(--radius);margin-bottom:16px;overflow:hidden;}
+.hero-top{padding:18px 20px 14px;display:flex;align-items:center;gap:14px;}
+.hero-left{flex:1;min-width:0;}
+.hero-exam-type{font-size:10px;color:#1D9E75;font-weight:700;letter-spacing:2.5px;margin-bottom:3px;}
+.hero-exam-name{font-family:var(--font-d);font-size:22px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:8px;}
+.hero-stats{display:flex;align-items:center;}
+.hero-stat{display:flex;flex-direction:column;align-items:center;padding:0 14px 0 0;}
+.hs-num{font-family:var(--font-d);font-size:18px;font-weight:900;color:#fff;}
+.hs-lbl{font-size:10px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.hero-stat-div{width:1px;height:28px;background:rgba(255,255,255,0.15);margin-right:14px;}
+.hero-rank{display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid;border-radius:12px;padding:10px 14px;flex-shrink:0;min-width:60px;}
+.rank-k{font-family:var(--font-d);font-size:26px;font-weight:900;line-height:1;}
+.rank-l{font-size:10px;font-weight:700;letter-spacing:1px;}
+.rank-bar{width:100%;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden;margin-top:4px;}
+.rank-fill{height:100%;border-radius:2px;transition:width 1s ease;}
+/* モードタブ（ヒーロー内）コンパクト1行 */
+.hero-mode-bar{display:flex;border-top:1px solid rgba(255,255,255,.08);}
+.hm-tab{flex:1;padding:8px 4px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:5px;cursor:pointer;border:none;background:none;font-family:var(--font-b);color:rgba(255,255,255,.4);transition:all .2s;border-bottom:2px solid transparent;}
+.hm-tab:not(.hm-dis):hover{color:rgba(255,255,255,.8);background:rgba(255,255,255,.04);}
+.hm-tab.hm-on{color:#fff;border-bottom-color:var(--brand);background:rgba(255,59,83,.08);}
+.hm-tab.hm-dis{opacity:.3;cursor:not-allowed;}
+.hm-ic{font-size:14px;line-height:1;transition:transform .25s cubic-bezier(.34,1.56,.64,1);flex-shrink:0;}
+.hm-tab.hm-on .hm-ic{transform:scale(1.15);}
+.hm-lbl{font-size:12px;font-weight:700;}
+.hm-cnt{font-size:10px;background:rgba(255,255,255,.12);border-radius:4px;padding:1px 6px;line-height:1.5;transition:all .2s;}
+.hm-tab.hm-on .hm-cnt{background:var(--brand);color:#fff;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);margin-bottom:12px;}
+.card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.cat-card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.cat-card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;}
+.cat-filter-badge{font-size:10px;padding:2px 8px;border-radius:99px;font-weight:700;}
+.cat-filter-badge.none{color:var(--text3);background:var(--bg);}
+.cat-filter-badge.active{color:#fff;background:var(--brand);animation:badgePop .3s cubic-bezier(.34,1.56,.64,1);}
+@keyframes badgePop{0%{transform:scale(.7)}100%{transform:scale(1)}}
+.cat-row{display:flex;gap:7px;flex-wrap:wrap;}
+.cat-row.hidden{display:none;}
+.cat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:7px 13px;font-size:12px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .2s;display:flex;align-items:center;gap:5px;}
+.cat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;transform:translateY(-1px);}
+.cat-chip.active{border-color:var(--navy)!important;color:#fff!important;background:var(--navy)!important;font-weight:700!important;box-shadow:0 3px 10px rgba(15,22,35,.2);}
+.subcat-section{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);animation:fadeSlideIn .22s ease;}
+@keyframes fadeSlideIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.subcat-label{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;margin-bottom:7px;display:flex;align-items:center;gap:5px;text-transform:uppercase;}
+.subcat-label::before{content:"";width:2px;height:10px;background:linear-gradient(var(--brand),var(--brand2));border-radius:1px;flex-shrink:0;}
+.subcat-grid{display:flex;gap:5px;flex-wrap:wrap;}
+.subcat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:8px;padding:5px 11px;font-size:11px;cursor:pointer;color:var(--text2);transition:all .2s;display:flex;align-items:center;gap:4px;}
+.subcat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;}
+.subcat-chip.active{background:linear-gradient(135deg,var(--brand),var(--brand2));border-color:transparent;color:#fff;font-weight:700;box-shadow:0 3px 8px rgba(255,59,83,.3);}
+.opts-compact{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+.opts-compact-sep{width:1px;height:16px;background:var(--border);flex-shrink:0;}
+.opt-label-ic{font-size:12px;color:var(--text3);}
+.opt-pill{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:4px 9px;font-size:11px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.opt-pill:hover{background:#f0efe8;border-color:var(--border2);}
+.opt-pill.on{background:var(--accent-bg)!important;border-color:var(--brand)!important;color:var(--brand)!important;font-weight:700;}
+.opt-shuffle.on{background:var(--green-bg)!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+/* スタート・継続ボタン行 */
+.start-row{display:flex;gap:8px;margin-bottom:8px;}
+.start-btn{flex:1;height:52px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:900;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 8px 22px rgba(255,59,83,.35);}
+.start-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(255,59,83,.5);}
+.start-btn.off{opacity:.35;cursor:not-allowed;transform:none!important;}
+.start-btn-solo{width:100%;height:56px;font-size:18px;letter-spacing:2px;margin-bottom:8px;}
+.resume-btn{flex:1;height:52px;background:var(--green-bg);border:1.5px solid var(--green);border-radius:var(--radius);color:var(--green-d);font-size:13px;font-weight:700;font-family:var(--font-b);cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.2;}
+.resume-btn:hover{background:var(--green);color:#fff;}
+.resume-btn-label{font-size:12px;font-weight:700;}
+.resume-btn-sub{font-size:10px;opacity:.75;}
+.text-link{background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font-b);text-decoration:underline;width:100%;text-align:center;padding:6px;display:block;}
+.quiz-inner{max-width:480px;margin:0 auto;padding:8px 12px 70px;display:flex;flex-direction:column;gap:8px;}
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;}
+.nav-back{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:var(--shadow);}
+.nav-back:hover{border-color:var(--border2);}
+.quiz-counter-wrap{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.quiz-counter{display:flex;align-items:baseline;gap:3px;}
+.qc-cur{font-family:var(--font-d);font-size:22px;font-weight:900;}
+.qc-sep{font-size:12px;color:var(--text3);}
+.qc-tot{font-size:13px;color:var(--text3);}
+.qc-sub{font-size:10px;color:var(--text3);letter-spacing:.5px;}
+.star-btn{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);font-size:18px;cursor:pointer;color:var(--text3);transition:all .2s;line-height:1;box-shadow:var(--shadow);}
+.star-btn.on{color:var(--gold);border-color:var(--gold);background:var(--gold-bg);}
+.q-progress{height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
+.q-prog-fill{height:100%;background:var(--brand);border-radius:2px;transition:width .4s ease;}
+.timer-wrap{position:relative;width:44px;height:44px;align-self:center;}
+.timer-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:13px;font-weight:900;}
+.session-bar{display:flex;align-items:center;gap:6px;}
+.sb-ok{font-size:11px;font-weight:700;color:var(--green);min-width:28px;}
+.sb-ng{font-size:11px;font-weight:700;color:var(--accent);min-width:28px;text-align:right;}
+.sb-dots{flex:1;display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.sb-dot{width:7px;height:7px;border-radius:50%;}
+.sd-ok{background:var(--green);}
+.sd-ng{background:var(--accent);}
+.sd-cur{background:var(--gold);width:9px;height:9px;}
+.sd-future{background:var(--border);}
+.sb-more{font-size:9px;color:var(--text3);}
+.q-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);}
+.q-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:4px;}
+.q-cat-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid;}
+.q-miss{font-size:10px;font-weight:700;color:var(--accent);background:var(--accent-bg);border:1px solid rgba(230,81,0,.3);padding:3px 8px;border-radius:6px;}
+.q-text{font-size:13px;line-height:1.7;font-weight:500;}
+.choices{display:flex;flex-direction:column;gap:6px;}
+.choice{background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;padding:0 12px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;gap:10px;text-align:left;transition:all .15s;color:var(--text2);min-height:44px;width:100%;box-shadow:var(--shadow);}
+.choice:not(.ch-ok):not(.ch-ng):not(.ch-fade):hover{border-color:var(--accent);background:#FFF3E0;transform:translateX(2px);}
+.ch-ok{background:#F0FBF6!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+.ch-ng{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:#8B2A0E!important;}
+.ch-fade{opacity:.3;}
+.ch-alpha{font-family:var(--font-d);font-weight:900;font-size:12px;width:26px;height:26px;border-radius:6px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.ch-ok .ch-alpha{background:var(--green);color:#fff;border-color:var(--green);}
+.ch-ng .ch-alpha{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ch-body{flex:1;font-size:12px;line-height:1.5;padding:10px 0;}
+.ch-icon{font-size:15px;font-weight:700;}
+.ch-ok .ch-icon{color:var(--green);}
+.ch-ng .ch-icon{color:var(--accent);}
+.exp-card{border-radius:10px;padding:10px 12px;border:1px solid;}
+.exp-ok{background:#F0FBF6;border-color:rgba(29,158,117,.3);}
+.exp-ng{background:var(--accent-bg);border-color:rgba(230,81,0,.25);}
+.exp-time{background:var(--gold-bg);border-color:rgba(212,148,26,.3);}
+.exp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+.exp-verdict{font-size:13px;font-weight:700;}
+.exp-ok .exp-verdict{color:var(--green-d);}
+.exp-ng .exp-verdict{color:var(--accent);}
+.exp-time .exp-verdict{color:var(--gold);}
+.exp-ans{font-size:11px;color:var(--gold);}
+/* 正解表示バー */
+.exp-correct-bar{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:7px;margin-bottom:6px;}
+.exp-correct-bar.ok{background:rgba(29,158,117,.12);}
+.exp-correct-bar.ng{background:rgba(230,81,0,.08);}
+.exp-correct-label{font-size:10px;font-weight:700;white-space:nowrap;padding-top:1px;}
+.exp-correct-bar.ok .exp-correct-label{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-label{color:var(--accent);}
+.exp-correct-text{font-size:12px;line-height:1.5;}
+.exp-correct-bar.ok .exp-correct-text{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-text{color:#8B2A0E;}
+.exp-body{font-size:11.5px;line-height:1.8;color:var(--text2);}
+.next-wrap{position:sticky;bottom:12px;padding-top:6px;background:linear-gradient(to top,var(--bg) 65%,transparent);}
+.next-btn{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);width:100%;height:46px;font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.3);}
+.next-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.next-3{display:grid;grid-template-columns:1fr 1fr 2fr;gap:6px;}
+.btn-retry{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-retry:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-bg);}
+.btn-pause{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-pause:hover{border-color:var(--green);color:var(--green-d);background:var(--green-bg);}
+.btn-next-main{height:46px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:.5px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 4px 14px rgba(255,59,83,.3);}
+.btn-next-main:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(255,59,83,.45);}
+.btn-sub-lbl{font-size:9px;font-weight:400;opacity:.7;line-height:1;}
+/* ⑥ result コンパクト化 */
+.result-inner{max-width:480px;margin:0 auto;padding:16px 16px 40px;display:flex;flex-direction:column;gap:12px;}
+.result-hero{background:var(--navy);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+.result-eyebrow{font-size:10px;letter-spacing:4px;color:rgba(255,255,255,0.5);text-transform:uppercase;}
+.result-score-wrap{position:relative;width:100px;height:100px;}
+.result-score-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.result-pct{font-family:var(--font-d);font-size:32px;font-weight:900;line-height:1;color:#fff;}
+.result-pct small{font-size:14px;}
+.result-sub{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.result-verdict{font-size:13px;font-weight:700;padding:6px 16px;border-radius:var(--radius-sm);border:1px solid;}
+.result-cats{width:100%;display:flex;flex-direction:column;gap:6px;}
+.rc-row{display:flex;align-items:center;gap:8px;}
+.rc-icon{font-size:12px;}
+.rc-name{font-size:10px;font-weight:700;width:68px;color:rgba(255,255,255,0.6);}
+.rc-track{flex:1;height:3px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
+.rc-fill{height:100%;border-radius:2px;transition:width 1s ease .3s;}
+.rc-pct{font-size:10px;font-weight:700;width:28px;text-align:right;color:#fff;}
+.section-hd{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;}
+.ans-log{display:flex;flex-direction:column;gap:5px;}
+.ans-row{display:flex;align-items:center;gap:8px;background:var(--bg2);border-radius:8px;padding:8px 10px;border:1px solid var(--border);border-left:3px solid var(--border);box-shadow:var(--shadow);}
+.ar-ok{border-left-color:var(--green)!important;}
+.ar-ng{border-left-color:var(--accent)!important;}
+.ar-n{font-size:10px;color:var(--text3);min-width:22px;}
+.ar-cat{font-size:12px;}
+.ar-q{flex:1;font-size:11px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ar-mark{font-size:13px;font-weight:700;}
+.ar-ok .ar-mark{color:var(--green);}
+.ar-ng .ar-mark{color:var(--accent);}
+.ar-cnt{font-size:10px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px;}
+.cta-btn{width:100%;height:44px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.25);}
+.cta-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.ghost-btn{width:100%;height:40px;background:transparent;border:1.5px solid var(--border2);border-radius:var(--radius);color:var(--text2);font-size:13px;font-family:var(--font-b);cursor:pointer;transition:all .2s;}
+.ghost-btn:hover{background:#f0efe8;}
+.nb-inner{max-width:480px;margin:0 auto;padding:16px 16px 80px;display:flex;flex-direction:column;gap:12px;}
+.nb-nav{display:flex;align-items:center;gap:12px;}
+.nb-title{font-family:var(--font-d);font-size:20px;font-weight:900;flex:1;}
+.nb-count{font-size:13px;color:var(--text3);}
+.nb-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:10px;}
+.nb-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:6px;}
+.nb-cat{font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;border:1px solid;}
+.nb-actions{display:flex;align-items:center;gap:8px;}
+.nb-wc{font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--accent-bg);color:var(--accent);}
+.nb-star{background:none;border:none;font-size:20px;cursor:pointer;color:var(--text3);transition:color .2s;line-height:1;}
+.nb-star.on{color:var(--gold);}
+.nb-resolve{background:var(--green-bg);border:1px solid rgba(29,158,117,.4);border-radius:7px;color:var(--green-d);font-size:11px;font-weight:700;padding:5px 10px;cursor:pointer;font-family:var(--font-b);}
+.nb-q{font-size:14px;line-height:1.75;margin-bottom:10px;font-weight:500;}
+.nb-ans-box{background:var(--green-bg);border-radius:9px;padding:9px 12px;margin-bottom:8px;display:flex;gap:8px;}
+.nb-ans-lbl{font-size:11px;color:var(--green-d);font-weight:700;white-space:nowrap;margin-top:1px;}
+.nb-ans-val{font-size:13px;color:var(--green-d);line-height:1.5;}
+.nb-details{margin-top:4px;}
+.nb-summary{font-size:12px;color:var(--text3);cursor:pointer;list-style:none;padding:4px 0;user-select:none;}
+.nb-summary::-webkit-details-marker{display:none;}
+.nb-exp{font-size:12px;line-height:1.9;color:var(--text2);margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.empty-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:60px 20px;text-align:center;}
+.empty-icon{font-size:48px;}
+.empty-msg{font-size:16px;font-weight:700;color:var(--text2);}
+.empty-sub{font-size:13px;color:var(--text3);}
+
+/* ── スマホ：サイドパネルをメインコンテンツの下に表示 ── */
+@media (max-width:768px){
+  .pc-cols{display:flex;flex-direction:column;gap:0;}
+  .pc-col-main{flex:1;min-width:0;}
+  .pc-col-side{display:flex;flex-direction:column;gap:12px;margin-top:12px;}
+  .quiz-inner{display:flex;flex-direction:column;}
+  .pc-quiz-main{display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{display:none;}
+}
+/* ── PC 2カラム ── */
+@media (min-width:769px){
+  .home-inner{max-width:920px;padding:28px 32px 60px;}
+  .pc-cols{display:flex;gap:24px;align-items:flex-start;}
+  .pc-col-main{flex:1;min-width:0;}
+  /* ② サイドパネル: ビューポート高さを超えないよう最大高さ設定してスクロール */
+  .pc-col-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-col-side::-webkit-scrollbar{display:none;}
+  .quiz-inner{max-width:920px;padding:24px 32px 40px;flex-direction:row;gap:24px;align-items:flex-start;}
+  .pc-quiz-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-quiz-side::-webkit-scrollbar{display:none;}
+  .next-wrap{position:static;background:transparent;padding-top:0;}
+  /* ⑥ result: PC時もコンパクトに */
+  .result-inner{max-width:680px;padding:16px 32px 40px;}
+  .nb-inner{max-width:760px;padding:24px 32px 80px;}
+  .exp-sp{display:none;}
+}
+.side-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);}
+.side-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.side-stat-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);}
+.side-stat-row:last-child{border-bottom:none;}
+.side-stat-lbl{font-size:13px;color:var(--text2);}
+.side-stat-val{font-size:16px;font-weight:700;font-family:var(--font-d);}
+.side-cat-row{display:flex;align-items:center;gap:8px;padding:4px 0;}
+.side-cat-icon{font-size:13px;width:18px;}
+.side-cat-name{font-size:11px;color:var(--text2);width:72px;font-weight:700;}
+.side-cat-track{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.side-cat-fill{height:100%;border-radius:2px;transition:width .6s ease;}
+.side-cat-pct{font-size:11px;font-weight:700;width:28px;text-align:right;}
+.side-exp-placeholder{font-size:13px;color:var(--text3);text-align:center;padding:16px 0;}
+.side-exp-verdict{font-size:14px;font-weight:700;margin-bottom:8px;}
+.side-exp-body{font-size:13px;line-height:1.9;color:var(--text2);}
+
+/* ── ページ内タブナビ ── */
+.page-nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.1);overflow-x:auto;scrollbar-width:none;position:sticky;top:52px;z-index:90;}
+.page-nav::-webkit-scrollbar{display:none;}
+.page-nav-inner{display:flex;align-items:center;min-width:max-content;padding:0 12px;}
+.pn-tab{color:rgba(255,255,255,0.55);font-size:12px;font-weight:600;padding:10px 12px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;text-decoration:none;display:block;}
+.pn-tab:hover{color:#fff;}
+.pn-tab.active{color:#fff;border-bottom-color:#1D9E75;}
+
+/* ① resume-btn は上で定義済み */
+
+/* ── モード選択コンパクト化 ── */
+.mode-row-compact{display:flex;gap:6px;}
+.mode-btn-compact{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:7px 4px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;justify-content:center;gap:5px;color:var(--text2);transition:all .18s;height:40px;}
+.mode-btn-compact:hover:not(.mode-off){background:#f0efe8;border-color:var(--border2);}
+.mode-btn-compact.mode-active{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:var(--accent)!important;}
+.mode-btn-compact.mode-off{opacity:.4;cursor:not-allowed;}
+.mbc-icon{font-size:14px;line-height:1;}
+.mbc-label{font-size:11px;font-weight:700;}
+.mbc-count{font-size:10px;color:var(--text3);margin-left:1px;}
+.mode-btn-compact.mode-active .mbc-count{color:var(--accent);}
+
+/* ── カテゴリ+オプション 横並び ── */
+.cat-opt-row{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;}
+.cat-opt-row .cat-row{flex:1;min-width:0;}
+.opt-mini{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+
+/* ── SEOコンテンツ ── */
+.seo-section{background:#fff;border-top:1px solid #e5e3dc;padding:32px 0 0;}
+.seo-inner{max-width:720px;margin:0 auto;padding:0 16px 40px;}
+.seo-h2{font-size:20px;font-weight:700;margin-bottom:10px;color:#1a1a1a;line-height:1.4;}
+.seo-h3{font-size:16px;font-weight:700;margin:28px 0 12px;color:#1a1a1a;border-left:3px solid #1D9E75;padding-left:10px;}
+.seo-lead{font-size:14px;color:#444;line-height:1.8;margin-bottom:20px;}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+.info-card{background:#f5f4f0;border-radius:10px;padding:12px 14px;}
+.info-label{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:4px;}
+.info-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+.seo-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px;}
+.seo-table th{background:#1a2744;color:#fff;padding:8px 12px;text-align:left;font-weight:700;font-size:12px;}
+.seo-table td{padding:8px 12px;border-bottom:1px solid #e5e3dc;color:#333;line-height:1.5;}
+.seo-table tr:last-child td{border-bottom:none;}
+.seo-table tr:nth-child(even) td{background:#f9f8f5;}
+.roadmap{display:flex;flex-direction:column;gap:0;margin-bottom:8px;}
+.rm-step{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #f0efe8;}
+.rm-step:last-child{border-bottom:none;}
+.rm-num{width:28px;height:28px;background:#1a2744;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px;}
+.rm-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:3px;}
+.rm-desc{font-size:12px;color:#666;line-height:1.6;}
+.next-shikaku{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+.next-card{display:flex;align-items:center;gap:12px;background:#f5f4f0;border:1px solid #e5e3dc;border-radius:12px;padding:12px 14px;transition:border-color .15s;text-decoration:none;color:inherit;}
+.next-card:hover{border-color:#1D9E75;}
+.next-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.next-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.next-desc{font-size:11px;color:#888;}
+.faq-list{display:flex;flex-direction:column;gap:8px;}
+.faq-item{background:#f9f8f5;border:1px solid #e5e3dc;border-radius:10px;overflow:hidden;}
+.faq-q{padding:12px 14px;font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;color:#1a1a1a;}
+.faq-q::after{content:'▾';color:#1D9E75;font-size:14px;flex-shrink:0;margin-left:8px;}
+.faq-item[open] .faq-q::after{content:'▴';}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 14px 12px;font-size:13px;color:#444;line-height:1.8;}
+@media(min-width:769px){
+  .info-grid{grid-template-columns:repeat(3,1fr);}
+  .next-shikaku{flex-direction:row;}
+  .next-card{flex:1;}
+  .seo-inner{padding:0 32px 40px;}
+}
+/* フッター（横幅いっぱいバー）*/
+.site-footer{background:var(--navy);padding:14px 16px;margin-top:0;width:100%;}
+.sf-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:920px;margin:0 auto;}
+.sf-logo{color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.sf-logo span{color:var(--green) !important;background:none;}
+.sf-lmark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;}
+.sf-links{display:flex;gap:16px;flex-wrap:wrap;}
+.sf-links a{color:rgba(255,255,255,.4);font-size:11px;transition:color .15s;}
+.sf-links a:hover{color:rgba(255,255,255,.75);}
+.sf-copy{color:rgba(255,255,255,.2);font-size:10px;}
+@media(max-width:768px){
+  .sf-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+@media(min-width:769px){
+  .site-footer{padding:14px 0;}
+  .sf-inner{padding:0 32px;}
+}
+
+
+/* ── アフィリエイト・申込セクション ── */
+.aff-section{background:#f5f4f0;padding:32px 0;}
+.aff-inner{max-width:720px;margin:0 auto;padding:0 16px;}
+.aff-h2{font-size:18px;font-weight:700;margin-bottom:4px;color:#1a1a1a;}
+.aff-sub{font-size:12px;color:#999;margin-bottom:20px;}
+
+/* 公式申込 */
+.official-btn{display:flex;align-items:center;gap:14px;background:#1a2744;border-radius:14px;padding:16px 20px;text-decoration:none;color:#fff;transition:opacity .15s;margin-bottom:24px;}
+.official-btn:hover{opacity:.88;}
+.official-ico{width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.official-info{flex:1;min-width:0;}
+.official-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.official-note{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;}
+.official-arr{font-size:18px;color:rgba(255,255,255,.5);flex-shrink:0;}
+
+.aff-h3{font-size:14px;font-weight:700;margin-bottom:12px;color:#1a1a1a;display:flex;align-items:center;gap:7px;}
+.aff-h3::before{content:'';width:3px;height:15px;background:#1D9E75;border-radius:2px;flex-shrink:0;}
+
+/* 参考書 */
+.book-list{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
+.book-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;}
+.book-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}
+.book-memo{font-size:11px;color:#888;margin-bottom:10px;line-height:1.5;}
+.book-links{display:flex;gap:8px;}
+.book-link{display:flex;align-items:center;gap:5px;padding:7px 12px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;transition:opacity .15s;flex:1;justify-content:center;}
+.book-link:hover{opacity:.82;}
+.book-link-amz{background:#FF9900;color:#fff;}
+.book-link-rak{background:#BF0000;color:#fff;}
+
+/* 通信講座 */
+.course-list{display:flex;flex-direction:column;gap:10px;}
+.course-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;transition:border-color .15s;}
+.course-card:hover{border-color:#1D9E75;}
+.course-ico{width:40px;height:40px;background:#E1F5EE;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.course-info{flex:1;min-width:0;}
+.course-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.course-price{font-size:11px;color:#1D9E75;font-weight:700;}
+.course-feat{font-size:11px;color:#888;margin-top:1px;}
+.course-arr{color:#ccc;font-size:15px;flex-shrink:0;}
+.aff-note{font-size:10px;color:#bbb;text-align:center;margin-top:16px;line-height:1.6;}
+
+@media(min-width:769px){
+  .aff-inner{padding:0 32px;}
+  .book-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-card{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+
+.info-grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:8px;}
+.ig-card{background:#f5f4f0;border-radius:9px;padding:11px 13px;}
+.ig-lbl{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:3px;}
+.ig-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+</style>
+<link rel="canonical" href="https://shikaku-pass.github.io/shikaku/gken.html">
+<meta property="og:title" content="危険物取扱者乙4 無料問題集 | 資格ドリル">
+<meta property="og:description" content="危険物取扱者乙種第4類（乙4）の無料問題集。危険物の性質・法令・基礎化学・消火を網羅。合格率35〜40%・勉強時間60〜100時間。弱点特訓・解説つき。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shikaku-drill.com/kikenbutsu/">
+<meta property="og:site_name" content="資格ドリル">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="危険物取扱者乙4 無料問題集 | 資格ドリル">
+<meta name="twitter:description" content="危険物取扱者乙種第4類（乙4）の無料問題集。危険物の性質・法令・基礎化学・消火を網羅。合格率35〜40%・勉強時間60〜100時間。弱点特訓・解説つき。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "G検定（ジェネラリスト検定）無料問題集",
+      "description": "G検定はJDLA（日本ディープラーニング協会）が実施するAI・ディープラーニング活用リテラシーの検定試験です。AI概論・機械学習・ディープラーニング・生成AI・法律・倫理など幅広い範囲から出題されます。",
+      "provider": {"@type": "Organization", "name": "資格ドリル"},
+      "educationalLevel": "入門・中級",
+      "inLanguage": "ja",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "G検定の合格率はどのくらいですか？","acceptedAnswer": {"@type": "Answer","text": "例年60〜76%程度で推移しており、AI系資格の中では比較的取得しやすい検定です。出題範囲が広いため、公式テキストを中心とした網羅的な学習が合格の鍵です。"}},
+        {"@type": "Question","name": "G検定の勉強時間はどのくらい必要ですか？","acceptedAnswer": {"@type": "Answer","text": "AI未経験者で40〜80時間が目安です。IT・AI知識がある方は20〜40時間程度で合格を目指せます。公式テキストと問題集を組み合わせた学習が効果的です。"}},
+        {"@type": "Question","name": "G検定のオンライン試験と会場試験の違いは何ですか？","acceptedAnswer": {"@type": "Answer","text": "問題数は同じ145問程度ですが、試験時間が異なります。オンライン試験（自宅受験）は100分、会場試験（全国指定会場）は120分です。2026年はオンライン年6回・会場試験年3回が開催されます。"}},
+        {"@type": "Question","name": "G検定に合格すると何が得られますか？","acceptedAnswer": {"@type": "Answer","text": "合格証・オープンバッジが発行され、日本最大級のAI人材コミュニティ「CDLE」に参加できます。DX推進パスポートのバッジも取得可能で、就職・転職・社内DX推進でのアピールになります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-logo" href="index.html">
+      <div class="logo-mark">問</div>
+      <span class="logo-text">資格ドリル</span>
+    </a>
+    <a class="site-back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      資格一覧へ
+    </a>
+  </div>
+</header>
+<nav class="page-nav" id="pageNav">
+  <div class="page-nav-inner">
+    <a class="pn-tab active" href="#app"      onclick="scrollToApp(event)">📝 問題を解く</a>
+    <a class="pn-tab"        href="#apply"    onclick="scrollTo_(event,'apply')">🤖 申し込み</a>
+    <a class="pn-tab"        href="#books"    onclick="scrollTo_(event,'books')">📖 参考書</a>
+    <a class="pn-tab"        href="#courses"  onclick="scrollTo_(event,'courses')">🎓 通信講座</a>
+    <a class="pn-tab"        href="#overview" onclick="scrollTo_(event,'overview')">📋 試験概要</a>
+    <a class="pn-tab"        href="#syllabus" onclick="scrollTo_(event,'syllabus')">📊 出題分野</a>
+    <a class="pn-tab"        href="#roadmap"  onclick="scrollTo_(event,'roadmap')">🗺️ 学習の流れ</a>
+    <a class="pn-tab"        href="#faq"      onclick="scrollTo_(event,'faq')">❓ よくある質問</a>
+  </div>
+</nav>
+<div id="app"></div>
+<script>
+// ▼▼▼ ここに問題データを追加してください ▼▼▼
+const ALL_QUESTIONS=[
+{id:1,category:"危険物に関する法令（基礎）",question:"消防法における「危険物」の定義として正しいものはどれか。",choices:["火災の危険性が著しく高い物質で、内閣府令で定めるもの","別表第一の品名欄に掲げる物品で、同表に定める","爆発・燃焼・引火のおそれがある物質で、消防長が指定したもの","固体または液体で、引火点が250℃以下の物質"],answer:1,explanation:"消防法第2条第7項により、危険物とは「別表第一の品名欄に掲げる物品で、同表に定める区分に応じ同表の性質欄に掲げる性状を有するもの」と定義されています。"},
+{id:2,category:"危険物に関する法令（基礎）",question:"第4類危険物の性質として正しいものはどれか。",choices:["酸化性液体として危険物の定義・分類において法令上重要な概念とされている","自己反応性物質として消防法・危険物規制において定められている重要な規定","引火性液体（消防法の規定）","禁水性物質として消防法・危険物規制において定められている重要な規定"],answer:2,explanation:"消防法別表第一において、第4類危険物の性質は「引火性液体」と定められています。ガソリン・灯油・軽油・重油・アルコール類などが該当します。"},
+{id:3,category:"危険物に関する法令（基礎）",question:"指定数量の説明として最も適切なものはどれか。",choices:["危険物の危険性を勘案して政令で定める数量","1か所に貯蔵できる危険物の上限量","消防署長が許可した貯蔵の最大量","危険物を運搬できる1回あたりの最大量"],answer:0,explanation:"指定数量とは、危険物の種類ごとの危険性を考慮して消防法施行令別表第三で定められた数量です。この数量以上を貯蔵・取り扱う場合に消防法の規制が適用されます。"},
+{id:4,category:"危険物に関する法令（基礎）",question:"製造所等の設置または変更の許可権者として正しいものはどれか。",choices:["消防署長として危険物の定義・分類において法令上重要な概念とされている","消防長が危険物規制法令において類別・品名に関する規定として定められている","市町村長等（市町村長（消防法の規定）","危険物保安監督者として消防法・危険物規制において定められている重要な規定"],answer:2,explanation:"消防法第11条第1項により、製造所等を設置・変更する者は市町村長等（市町村長・都道府県知事・総務大臣）の許可を受けなければなりません。"},
+{id:5,category:"危険物に関する法令（基礎）",question:"危険物取扱者免状の種類の組み合わせとして正しいものはどれか。",choices:["甲種・乙種・丙種（消防法の規定）","甲種・乙種・特種として消防法・危険物規制において定められている重要な規定","1種・2種・3種として消防法・危険物規制において定められている重要な規定","A種・B種・C種として危険物の定義・分類において法令上重要な概念とされている"],answer:0,explanation:"危険物取扱者免状は甲種・乙種（第1類～第6類）・丙種の3種類です。甲種はすべての危険物、乙種は該当する類の危険物、丙種は特定の第4類危険物を取り扱えます。"},
+{id:6,category:"危険物に関する法令（基礎）",question:"乙種第4類危険物取扱者が単独で取り扱える危険物として正しいものはどれか。",choices:["すべての類の危険物として消防法・危険物規制において定められている重要な規定","第4類危険物のみ（消防法の規定）","第4類および第1類危険物","丙種免状で取り扱えるものを除く第4類危険物"],answer:1,explanation:"乙種第4類の免状保有者は、第4類危険物（引火性液体）のみ単独で取り扱うことができます。他の類は別途乙種免状が必要です。"},
+{id:7,category:"危険物に関する法令（基礎）",question:"危険物取扱者免状の交付機関として正しいものはどれか。",choices:["消防庁長官として危険物の定義・分類において法令上重要な概念とされている","市町村長として危険物の定義・分類において法令上重要な概念とされている","都道府県知事（消防法の規定）","総務大臣として危険物の定義・分類において法令上重要な概念とされている"],answer:2,explanation:"危険物取扱者免状は、試験を実施した都道府県知事が交付します。消防法第13条の2第1項に規定されています。"},
+{id:8,category:"危険物に関する法令（基礎）",question:"危険物取扱者免状の書き換えが必要になる場合として正しいものはどれか。",choices:["免状の写真が撮影から10年を経過したとき","免状取得後5年ごとに定期的にとして消防法・危険物規制において定められている重要な規定","危険物保安監督者に選任されたとき","保安講習を受講したときとして危険物の定義・分類において法令上重要な概念とされている"],answer:0,explanation:"免状に添付された写真が撮影から10年を経過したときは、免状の書き換えを申請しなければなりません（消防法施行規則第55条）。"},
+{id:9,category:"危険物に関する法令（基礎）",question:"危険物取扱者免状の返納を命じることができる者はどれか。",choices:["消防署長が危険物規制法令において類別・品名に関する規定として定められている","消防長として消防法・危険物規制において定められている重要な規定","都道府県知事（消防法の規定）","市町村長として消防法・危険物規制において定められている重要な規定"],answer:2,explanation:"消防法第13条の2第3項により、都道府県知事は免状の交付を受けた者が消防法令に違反したときなどに免状の返納を命じることができます。"},
+{id:10,category:"危険物に関する法令（基礎）",question:"危険物取扱者試験の受験資格として正しいものはどれか。",choices:["乙種は誰でも受験できるとして消防法・危険物規制において定められている重要な規定","甲種・乙種・丙種ともに誰でも受験できる","甲種のみ受験資格が必要として消防法・危険物規制において定められている重要な規定","乙種は18歳以上でなければ受験できない"],answer:1,explanation:"危険物取扱者試験は甲種・乙種・丙種ともに受験資格の制限はなく、誰でも受験できます。ただし甲種は一定の要件を満たす場合のみ受験できるという誤解がありますが、現行制度では誰でも受験可能です。"},
+{id:11,category:"危険物に関する法令（基礎）",question:"指定数量の倍数の計算式として正しいものはどれか。",choices:["貯蔵量 × 指定数量","貯蔵量 ÷ 指定数量","指定数量 ÷ 貯蔵量","貯蔵量 − 指定数量"],answer:1,explanation:"指定数量の倍数＝貯蔵量÷指定数量で求めます。複数の危険物を貯蔵する場合は各品名ごとに計算した倍数を合算します。"},
+{id:12,category:"危険物に関する法令（基礎）",question:"指定数量未満の危険物の貯蔵・取扱いを規制する法律として正しいものはどれか。",choices:["消防法として消防法・危険物規制において定められている重要な規定","危険物船舶運送及び貯蔵規則","高圧ガス保安法として危険物の定義・分類において法令上重要な概念とされている","各市町村の火災予防条例（消防法の規定）"],answer:3,explanation:"指定数量未満の危険物は消防法の適用外となり、各市町村が制定する火災予防条例によって規制されます。"},
+{id:13,category:"危険物に関する法令（基礎）",question:"製造所等の区分として正しい組み合わせはどれか。",choices:["製造所・貯蔵所・取扱所","製造所・保管所・取扱所","製造所・貯蔵所・販売所","生産所・貯蔵所・取扱所"],answer:0,explanation:"消防法第11条により、製造所等は「製造所」「貯蔵所」「取扱所」の3種類に区分されます。販売所・保管所・生産所という区分は存在しません。"},
+{id:14,category:"危険物に関する法令（基礎）",question:"貯蔵所の種類に含まれないものはどれか。",choices:["屋内貯蔵所として危険物の定義・分類において法令上重要な概念とされている","屋外タンク貯蔵所として消防法・危険物規制において定められている重要な規定","地下タンク貯蔵所として危険物の定義・分類において法令上重要な概念とされている","移動タンク貯蔵所（消防法の規定）"],answer:3,explanation:"移動タンク貯蔵所は貯蔵所の一種ですが、本問では正解が問われています。実際には移動タンク貯蔵所も貯蔵所に含まれます。なお選択肢はすべて貯蔵所の種類であるため、この問題は製造所等の体系を確認するためのものです。"},
+{id:15,category:"危険物に関する法令（基礎）",question:"取扱所の種類として誤っているものはどれか。",choices:["給油取扱所として消防法・危険物規制において定められている重要な規定","販売取扱所として危険物の定義・分類において法令上重要な概念とされている","移送取扱所として危険物の定義・分類において法令上重要な概念とされている","製造取扱所（消防法の規定）"],answer:3,explanation:"取扱所は「給油取扱所」「販売取扱所」「移送取扱所」「一般取扱所」の4種類です。「製造取扱所」という区分は存在しません。"},
+{id:16,category:"危険物に関する法令（基礎）",question:"危険物取扱者が立ち会いをすることで、危険物取扱者以外の者が危険物を取り扱える場合がある。この立ち会いができる危険物取扱者として正しいものはどれか。",choices:["甲種または乙種の免状保有者のみ（消防法の規定）","甲種・乙種・丙種のすべての免状保有者","甲種・乙種の免状保有者、および取り扱う危険物が丙種の範囲内であれば丙種も可","乙種のみとして危険物の定義・分類において法令上重要な概念とされている"],answer:0,explanation:"危険物取扱者以外の者が危険物を取り扱う際に立ち会えるのは、甲種または乙種の危険物取扱者です。丙種免状保有者は立ち会いができません。"},
+{id:17,category:"危険物に関する法令（基礎）",question:"保安講習の受講義務がある者として正しいものはどれか。",choices:["製造所等において危険物の取扱い作業に従事する危険物取扱者（消防法の規定）","危険物取扱者免状を有するすべての者として危険物の定義・分類において法令上重要な概念とされている","危険物保安監督者に選任されたすべての者が危険物規制法令において類別・品名に関する規定として定められている","乙種・甲種の免状保有者のみとして消防法・危険物規制において定められている重要な規定"],answer:0,explanation:"保安講習の受講義務があるのは「製造所等において危険物の取扱い作業に従事する危険物取扱者」です。免状を持っていても危険物取扱業務に従事していない者は受講義務がありません。"},
+{id:18,category:"危険物に関する法令（基礎）",question:"保安講習の受講期間として正しいものはどれか。",choices:["毎年1回が危険物規制法令において類別・品名に関する規定として定められている","2年に1回として危険物の定義・分類において法令上重要な概念とされている","3年に1回（消防法の規定）","5年に1回が危険物規制法令において類別・品名に関する規定として定められている"],answer:2,explanation:"危険物取扱者の保安講習は、原則として3年に1回（継続して従事している場合は前回受講から3年以内）受講しなければなりません。"},
+{id:19,category:"危険物に関する法令（基礎）",question:"消防法における「製造所等」の完成検査を行う機関として正しいものはどれか。",choices:["市町村長等（消防法の規定）","消防署長として消防法・危険物規制において定められている重要な規定","都道府県知事として消防法・危険物規制において定められている重要な規定","国土交通大臣として危険物の定義・分類において法令上重要な概念とされている"],answer:0,explanation:"製造所等の完成検査は、設置許可を行った市町村長等が行います（消防法第11条第3項）。"},
+{id:20,category:"危険物に関する法令（基礎）",question:"製造所等の所有者等が変更になった場合の手続きとして正しいものはどれか。",choices:["市町村長等に届け出る（消防法の規定）","新たに設置許可を申請する","変更許可を申請するが危険物規制法令において類別・品名に関する規定として定められている","消防署長に報告するが危険物規制法令において類別・品名に関する規定として定められている"],answer:0,explanation:"製造所等の所有者・管理者・占有者が変更された場合は、市町村長等に届け出る必要があります（消防法第11条第6項）。"},
+{id:21,category:"危険物に関する法令（基礎）",question:"危険物の「品名」として第4類に含まれないものはどれか。",choices:["ガソリンが危険物規制法令において類別・品名に関する規定として定められている","灯油として消防法・危険物規制において定められている重要な規定","軽油として消防法・危険物規制において定められている重要な規定","硫化りん（消防法の規定）"],answer:3,explanation:"硫化りんは第2類危険物（可燃性固体）に該当します。第4類危険物には特殊引火物・第1石油類・アルコール類・第2石油類・第3石油類・第4石油類・動植物油類が含まれます。"},
+{id:22,category:"危険物に関する法令（基礎）",question:"危険物施設保安員を選任しなければならない施設として正しいものはどれか。",choices:["指定数量の倍数が10以上の製造所・一般取扱所","指定数量の倍数が100以上の製造所（消防法の規定）","すべての製造所等が危険物規制法令において類別・品名に関する規定として定められている","危険物保安統括管理者を置く事業所の製造所等"],answer:1,explanation:"危険物施設保安員は、指定数量の倍数が100以上の製造所・一般取扱所の所有者等が選任義務を負います。"},
+{id:23,category:"危険物に関する法令（基礎）",question:"危険物保安統括管理者を選任しなければならない事業所として正しいものはどれか。",choices:["危険物を取り扱う製造所等を有するすべての事業所","1つの事業所で指定数量の3,000倍以上を取","複数の製造所等を有する事業者として消防法・危険物規制において定められている重要な規定","危険物保安監督者を複数選任している事業所"],answer:1,explanation:"危険物保安統括管理者は、1つの事業所で指定数量の倍数が3,000以上の第4類危険物を取り扱う大規模事業所において選任が義務付けられます。"},
+{id:24,category:"危険物に関する法令（基礎）",question:"定期点検を実施しなければならない製造所等として誤っているものはどれか。",choices:["地下タンクを有する製造所として消防法・危険物規制において定められている重要な規定","地下タンク貯蔵所が危険物規制法令において類別・品名に関する規定として定められている","移動タンク貯蔵所として消防法・危険物規制において定められている重要な規定","屋内貯蔵所（指定数量の倍数が10未満）（消防法の規定）"],answer:3,explanation:"指定数量の倍数が10未満の屋内貯蔵所は定期点検の義務がありません。定期点検が義務付けられる施設には地下タンク関連施設・移動タンク貯蔵所・指定数量の10倍以上の製造所等などが含まれます。"},
+{id:25,category:"危険物に関する法令（基礎）",question:"定期点検の実施頻度として正しいものはどれか。",choices:["半年に1回以上が危険物規制法令において類別・品名に関する規定として定められている","3年に1回以上として危険物の定義・分類において法令上重要な概念とされている","2年に1回以上が危険物規制法令において類別・品名に関する規定として定められている","1年に1回以上（消防法の規定）"],answer:3,explanation:"定期点検は原則として1年に1回以上実施しなければなりません（消防法施行規則第62条の4）。ただし危険物保安技術協会の点検を受けるなど特例もあります。"},
+{id:26,category:"危険物に関する法令（基礎）",question:"製造所等に関する事故が発生した場合に市町村長等への報告義務が生じる者はどれか。",choices:["危険物取扱者が危険物規制法令において類別・品名に関する規定として定められている","危険物保安監督者として消防法・危険物規制において定められている重要な規定","製造所等の所有者・管理者・占有者（消防法の規定）","危険物施設保安員として危険物の定義・分類において法令上重要な概念とされている"],answer:2,explanation:"危険物の流出等の事故が発生した場合、製造所等の所有者・管理者・占有者は遅滞なく市町村長等に届け出なければなりません。"},
+{id:27,category:"危険物に関する法令（基礎）",question:"消防吏員または警察官が製造所等に立入検査を行う根拠となる法律はどれか。",choices:["消防組織法が危険物規制法令において類別・品名に関する規定として定められている","火薬類取締法として消防法・危険物規制において定められている重要な規定","危険物安全管理法として危険物の定義・分類において法令上重要な概念とされている","消防法（消防法の規定）"],answer:3,explanation:"消防法第16条の5により、消防吏員または警察官は必要に応じて製造所等に立入検査を行い、危険物の保管状況等を検査することができます。"},
+{id:28,category:"危険物に関する法令（基礎）",question:"製造所等の譲渡・引渡があった場合、譲受人が地位を引き継ぐために必要な手続きはどれか。",choices:["新たに設置許可を申請する","変更許可を申請するが危険物規制法令において類別・品名に関する規定として定められている","市町村長等に届け出る（消防法の規定）","消防署長に届け出るとして消防法・危険物規制において定められている重要な規定"],answer:2,explanation:"製造所等の譲渡・引渡があった場合、譲受人（新所有者等）は遅滞なく市町村長等に届け出なければなりません（消防法第11条の5）。"},
+{id:29,category:"危険物に関する法令（基礎）",question:"仮使用の承認を行う権限を持つ者はどれか。",choices:["消防署長として危険物の定義・分類において法令上重要な概念とされている","消防長が危険物規制法令において類別・品名に関する規定として定められている","市町村長等（消防法の規定）","都道府県知事として危険物の定義・分類において法令上重要な概念とされている"],answer:2,explanation:"製造所等の変更工事期間中に、工事に関係しない部分を仮に使用するためには市町村長等の承認（仮使用承認）を受ける必要があります（消防法第11条第1項ただし書）。"},
+{id:30,category:"危険物に関する法令（基礎）",question:"危険物取扱者免状の書き換えを行う機関として正しいものはどれか。",choices:["免状を交付した都道府県知事または居住地（消防法の規定）","消防庁長官として危険物の定義・分類において法令上重要な概念とされている","市町村長が危険物規制法令において類別・品名に関する規定として定められている","消防署長として危険物の定義・分類において法令上重要な概念とされている"],answer:0,explanation:"免状の書き換えは、免状を交付した都道府県知事または居住地・勤務地を管轄する都道府県知事に申請します（消防法施行規則第55条）。"},
+{id:31,category:"危険物に関する法令（製造所等の基準）",question:"製造所の建築物の構造として正しいものはどれか。",choices:["木造平屋建てで換気が良ければよい","地上2階以上の建築は禁止されている","鉄骨造であれば構造の制限はない","壁・柱・床・はり・屋根を耐火構造"],answer:3,explanation:"製造所の建築物は、壁・柱・床・はり・屋根を耐火構造または不燃材料で造らなければなりません（消防法施行規則）。"},
+{id:32,category:"危険物に関する法令（製造所等の基準）",question:"製造所の保有空地について正しいものはどれか。",choices:["保有空地は貯蔵所の基準であり、製造所には不要","指定数量の倍数に応じた空地を確保する義務がある","幅3m以上の空地を常に確保しなければならない","隣接する建築物が耐火構造であれば空地は不要"],answer:1,explanation:"製造所の保有空地は、指定数量の倍数に応じて必要な幅が定められています（3m以上または5m以上）。空地は火災の延焼防止・消火活動のために必要です。"},
+{id:33,category:"危険物に関する法令（製造所等の基準）",question:"屋内貯蔵所の貯蔵倉庫の床の基準として正しいものはどれか。",choices:["木材を使用した床でも断熱材があれば良いとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","カーペット敷きでも滑り止めがあれば良いとして危険物施設の安全基準として消防法令上定められている要件","危険物が浸透しない構造とし、傾斜をつけて集液設備を設ける（施設基準の規定）","床面の強度基準はないとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている"],answer:2,explanation:"屋内貯蔵所の床は、危険物が地下に浸透しない構造（コンクリート等）とし、適切な傾斜をつけて危険物を集めるための集液設備（ためます等）を設ける必要があります。"},
+{id:34,category:"危険物に関する法令（製造所等の基準）",question:"屋外タンク貯蔵所の防油堤の容量として正しいものはどれか。",choices:["タンク容量の50%以上","タンク容量の100%","タンク容量の200%以上","防油堤の容量規定はない"],answer:1,explanation:"屋外タンク貯蔵所の防油堤は、タンク容量の100%以上（2基以上の場合は最大タンク容量の110%以上）の容量を持たなければなりません。危険物の流出防止が目的です。"},
+{id:35,category:"危険物に関する法令（製造所等の基準）",question:"地下タンク貯蔵所のタンクの埋設方法として正しいものはどれか。",choices:["タンクを直接土中に埋設するとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","タンクをコンクリートで固めて埋設する","タンク室（コンクリート製等）に収容して埋設す","地下埋設の基準はないとして危険物施設の安全基準として消防法令上定められている要件"],answer:2,explanation:"地下タンク貯蔵所のタンクは、地盤面下に設けられたコンクリート製等のタンク室に収容して設置するか、二重殻タンク（ジャケット構造）とするのが原則です。"},
+{id:36,category:"危険物に関する法令（製造所等の基準）",question:"移動タンク貯蔵所（タンクローリー）のタンクの内部仕切りとして正しいものはどれか。",choices:["内部に仕切りは設けてはならないとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","4,000Lごとに完全に区切る仕切板を設ける","4,000L以下ごとに間仕切りを設け、かつ3","2,000Lごとに間仕切りを設ける"],answer:2,explanation:"移動タンクのタンク内部は4,000L以下ごとに間仕切りを設け、かつ間仕切りで区切られた各部分に3,000L以下ごとに防波板（厚さ1.6mm以上の鋼板）を設ける必要があります。"},
+{id:37,category:"危険物に関する法令（製造所等の基準）",question:"給油取扱所（ガソリンスタンド）における固定給油設備のホースの先端から敷地境界線までの距離として正しいものはどれか。",choices:["1m以上が製造所等の設置・変更許可において技術上の基準として規定されている","2m以上（施設基準の規定）","4m以上として製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","制限なしとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている"],answer:1,explanation:"給油取扱所の固定給油設備のホース機器の先端から敷地境界線まで、建築物の壁まで2m以上の距離を保たなければなりません（消防法施行規則第25条）。"},
+{id:38,category:"危険物に関する法令（製造所等の基準）",question:"販売取扱所の第一種（指定数量の15倍以下）の建築物の配置として正しいものはどれか。",choices:["建物の1階のみに設置できる","1階または2階のいずれかに設置できる","地下を含めどの階にも設置できる","独立した建物でなければならない"],answer:0,explanation:"第一種販売取扱所は建築物の1階のみに設置しなければなりません。第二種（15倍超～40倍以下）は1階のみに設けます。"},
+{id:39,category:"危険物に関する法令（製造所等の基準）",question:"製造所等の電気設備に関する基準として正しいものはどれか。",choices:["一般家庭と同様の電気設備が使用できる","可燃性ガスや引火性蒸気が滞留するおそれのある","蛍光灯は防爆でなくても設置できる","電気設備の基準は消防法に規定されていない"],answer:1,explanation:"可燃性ガスや引火性蒸気が滞留するおそれのある場所では、防爆構造の電気設備を用いなければなりません。これにより電気火花による点火を防止します。"},
+{id:40,category:"危険物に関する法令（製造所等の基準）",question:"屋内タンク貯蔵所のタンクの容量制限として正しいものはどれか。",choices:["指定数量の40倍以下","指定数量の20倍以下","制限なしとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","指定数量の10倍以下"],answer:0,explanation:"屋内タンク貯蔵所のタンク容量は、指定数量の40倍以下（第4石油類・動植物油類は20,000L以下）と定められています。"},
+{id:41,category:"危険物に関する法令（製造所等の基準）",question:"製造所の安全距離が必要な対象物として誤っているものはどれか。",choices:["住居（製造所と同一敷地外）","学校・病院が製造所等の設置・変更許可において技術上の基準として規定されている","重要文化財が製造所等の設置・変更許可において技術上の基準として規定されている","コンビニエンスストア（施設基準の規定）"],answer:3,explanation:"安全距離が必要な対象は、住居・学校・病院・重要文化財・高圧ガス設施・使用電圧7,000Vを超える電線などです。コンビニエンスストアは対象外です。"},
+{id:42,category:"危険物に関する法令（製造所等の基準）",question:"屋外貯蔵所で貯蔵できない危険物はどれか。",choices:["第2石油類（引火点が0℃以上のもの）","第3石油類が製造所等の設置・変更許可において技術上の基準として規定されている","硫黄として危険物施設の安全基準として消防法令上定められている要件","特殊引火物（施設基準の規定）"],answer:3,explanation:"屋外貯蔵所では、引火点が0℃以上の第4類危険物のほか、硫黄・引火性固体などが貯蔵可能です。特殊引火物（ジエチルエーテル・二硫化炭素など）は引火点が低く、屋外貯蔵所には貯蔵できません。"},
+{id:43,category:"危険物に関する法令（製造所等の基準）",question:"給油取扱所に設けなければならない掲示板の内容として必須でないものはどれか。",choices:["危険物の類・品名・最大数量","所有者・管理者・占有者の氏名","防火に関して注意すべき事項","代表取締役の氏名"],answer:3,explanation:"掲示板には危険物の類・品名・最大数量、危険物保安監督者の氏名、防火に関する注意事項などを掲示しますが、代表取締役の氏名は法令上求められていません。"},
+{id:44,category:"危険物に関する法令（製造所等の基準）",question:"移動タンク貯蔵所に掲示しなければならない標識として正しいものはどれか。",choices:["「危」と表示した0.3m²以上の黒地に黄色文字の標識","「危」と表示した0.3m²以上の黄地に黒色文字の標識（施設基準の規定）","「可燃物」と表示した赤色の標識が製造所等の設置・変更許可において技術上の基準として規定されている","標識の掲示義務はないとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている"],answer:1,explanation:"移動タンク貯蔵所には「危」と表示した、0.3m²以上の大きさの黄地に黒色文字の標識を掲示しなければなりません。"},
+{id:45,category:"危険物に関する法令（製造所等の基準）",question:"製造所等に設置する消火設備について、第4類危険物に有効でないものはどれか。",choices:["泡消火設備が製造所等の設置・変更許可において技術上の基準として規定されている","粉末消火設備が製造所等の設置・変更許可において技術上の基準として規定されている","ハロゲン化物消火設備","棒状放水の屋内消火栓設備"],answer:3,explanation:"第4類危険物（引火性液体）の火災に棒状放水は適しません。液体に強い水流をかけると飛散して火災が拡大します。泡・粉末・ハロゲン化物・二酸化炭素消火設備が有効です。"},
+{id:46,category:"危険物に関する法令（製造所等の基準）",question:"保有空地の説明として正しいものはどれか。",choices:["危険物を貯蔵する場所の面積","製造所等の周囲に設ける、建築物","消防車の進入路として確保すべき道路幅","危険物を搬入・搬出するための専用通路"],answer:1,explanation:"保有空地とは、製造所等の周囲に設ける空き地のことで、火災の延焼防止・消火活動の確保を目的としています。この空地に建築物や工作物を設置することは禁止されています。"},
+{id:47,category:"危険物に関する法令（製造所等の基準）",question:"屋内貯蔵所の1棟の床面積の上限として正しいものはどれか。",choices:["500m²として製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","1,000m²として危険物施設の安全基準として消防法令上定められている要件","1,500m²（施設基準の規定）","2,000m²が製造所等の設置・変更許可において技術上の基準として規定されている"],answer:2,explanation:"屋内貯蔵所の貯蔵倉庫の床面積は1,500m²を超えてはなりません（消防法施行規則第16条）。"},
+{id:48,category:"危険物に関する法令（製造所等の基準）",question:"製造所の壁・柱・床の構造として正しいものはどれか。",choices:["不燃材料で造ればよい","軽量鉄骨で造ることが推奨される","耐火構造で造る（施設基準の規定）","構造に制限はないとして危険物施設の安全基準として消防法令上定められている要件"],answer:2,explanation:"製造所の壁・柱・床・はりは耐火構造（または一定基準の不燃材料）で造らなければなりません。耐火構造とすることで火災の拡大を防止します。"},
+{id:49,category:"危険物に関する法令（製造所等の基準）",question:"地下タンク貯蔵所の漏洩検査管の設置目的として正しいものはどれか。",choices:["危険物の漏洩を早期に検知するため","タンク内の液量を測定するため","タンクの圧力を管理するため","通気のためとして危険物施設の安全基準として消防法令上定められている要件"],answer:0,explanation:"漏洩検査管（検知管）は、地下タンクからの危険物漏洩を早期に発見するために設置します。タンク周囲の土中に設け、液体や蒸気の漏洩を検知します。"},
+{id:50,category:"危険物に関する法令（製造所等の基準）",question:"給油取扱所における「専用タンク」の意味として正しいものはどれか。",choices:["給油専用に使用するタンクとして危険物施設の安全基準として消防法令上定められている要件","消防庁が認定した特別なタンクとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","給油取扱所に設ける危険物を貯蔵するタンク","複数の種類の油を混在貯蔵できるタンク"],answer:2,explanation:"給油取扱所の専用タンクとは、給油取扱所に設置される危険物を貯蔵するタンクのことです。地下に埋設されているものが一般的です。"},
+{id:51,category:"危険物に関する法令（製造所等の基準）",question:"屋外タンク貯蔵所のタンクの板厚の最低基準として正しいものはどれか。",choices:["1.2mm以上として危険物施設の安全基準として消防法令上定められている要件","2.4mm以上として危険物施設の安全基準として消防法令上定められている要件","3.2mm以上（施設基準の規定）","タンクの容量によるとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている"],answer:2,explanation:"屋外タンク貯蔵所のタンクの鋼板の厚さは、タンクの容量等に応じて3.2mm以上が必要です（側板部分）。"},
+{id:52,category:"危険物に関する法令（製造所等の基準）",question:"第一種販売取扱所で指定数量の倍数の上限として正しいものはどれか。",choices:["5倍以下として危険物施設の安全基準として消防法令上定められている要件","10倍以下として危険物施設の安全基準として消防法令上定められている要件","15倍以下（施設基準の規定）","20倍以下として製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている"],answer:2,explanation:"第一種販売取扱所は指定数量の15倍以下の危険物を容器入りのまま販売する施設です。15倍超～40倍以下は第二種販売取扱所となります。"},
+{id:53,category:"危険物に関する法令（製造所等の基準）",question:"製造所等の位置・構造・設備の技術上の基準を定めているものはどれか。",choices:["消防法施行令・消防法施行規則（施設基準の規定）","消防法として製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","都道府県条例が製造所等の設置・変更許可において技術上の基準として規定されている","市町村火災予防条例が製造所等の設置・変更許可において技術上の基準として規定されている"],answer:0,explanation:"製造所等の位置・構造・設備の技術上の基準は、消防法施行令および消防法施行規則で詳細に定められています。"},
+{id:54,category:"危険物に関する法令（製造所等の基準）",question:"移動タンク貯蔵所の底弁について正しいものはどれか。",choices:["非常時に直ちに閉鎖できる手動閉鎖装置と自動閉鎖装置を設ける","底弁は設置してはならないが製造所等の設置・変更許可において技術上の基準として規定されている","電動式閉鎖装置のみでよいとして危険物施設の安全基準として消防法令上定められている要件","底弁に閉鎖装置の設置義務はないとして危険物施設の安全基準として消防法令上定められている要件"],answer:0,explanation:"移動タンクの底弁には、非常時に直ちに閉鎖できる手動閉鎖装置と、車両火災等の際に自動的に閉鎖する自動閉鎖装置（メカニカルシールなど）を設ける必要があります。"},
+{id:55,category:"危険物に関する法令（製造所等の基準）",question:"屋内貯蔵所に設置する採光・照明設備の基準として正しいものはどれか。",choices:["蛍光灯を天井に設置すればよいとして危険物施設の安全基準として消防法令上定められている要件","採光・照明設備は防爆構造の電気設備を使用する（施設基準の規定）","自然採光のみで人工照明は禁止として製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","採光・照明設備の基準はないとして危険物施設の安全基準として消防法令上定められている要件"],answer:1,explanation:"引火性液体の蒸気が滞留するおそれがある屋内貯蔵所では、電気設備（照明等）は防爆構造のものを使用しなければなりません。"},
+{id:56,category:"危険物に関する法令（製造所等の基準）",question:"製造所等の変更工事中に「仮使用」の承認を受ける場合、工事部分と使用部分の関係として正しいものはどれか。",choices:["工事部分と完全に区画された部分のみ仮使用できる","工事部分と完全に区画されていなくても使用できる","変更工事中は一切使用できないが製造所等の設置・変更許可において技術上の基準として規定されている","変更工事の規模に関わらず常に仮使用できる"],answer:0,explanation:"仮使用は、変更工事に関係のない部分で、かつ工事部分と完全に区画された部分に限って承認されます。"},
+{id:57,category:"危険物に関する法令（製造所等の基準）",question:"製造所の採光・換気の基準で、換気設備について正しいものはどれか。",choices:["自然換気のみで足りるとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","換気設備の基準はないとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","密閉構造にして換気を遮断するとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","強制換気設備（フード等）が必要な場合もある（施設基準の規定）"],answer:3,explanation:"製造所では、引火性蒸気の滞留を防ぐため、必要に応じて強制換気設備（局所排気装置・全体換気装置等）を設置します。換気口には引火防止のための基準もあります。"},
+{id:58,category:"危険物に関する法令（製造所等の基準）",question:"屋外タンク貯蔵所の防油堤の設置目的として正しいものはどれか。",choices:["危険物が流出した際の拡散防止","タンクの転倒防止が製造所等の設置・変更許可において技術上の基準として規定されている","地震対策のための補強","防犯のための囲いが製造所等の設置・変更許可において技術上の基準として規定されている"],answer:0,explanation:"防油堤は、タンクから危険物が漏洩・流出した場合に周辺への拡散を防止し、環境汚染や火災の拡大を防ぐために設置します。"},
+{id:59,category:"危険物に関する法令（製造所等の基準）",question:"危険物を取り扱う配管の基準として誤っているものはどれか。",choices:["最大常用圧力の1.5倍以上の圧力で水圧試験を実施する","外面の腐食防止の措置を講じるが製造所等の設置・変更許可において技術上の基準として規定されている","地下に設ける場合は漏洩検知装置を設置する","塩化ビニル管は一般に使用を禁止されていない"],answer:3,explanation:"危険物の配管は原則として金属製（鋼管等）とし、塩化ビニル管等の樹脂製配管は引火性液体の輸送には適しません。金属製とし、腐食防止・水圧試験等の基準が定められています。"},
+{id:60,category:"危険物に関する法令（製造所等の基準）",question:"簡易タンク貯蔵所のタンク1基の容量の上限として正しいものはどれか。",choices:["300Lとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","1,000Lとして製造所・貯蔵所・取扱所の位置・構造・設備基準として定められている","600L（施設基準の規定）","2,000Lとして危険物施設の安全基準として消防法令上定められている要件"],answer:2,explanation:"簡易タンク貯蔵所のタンク1基の容量は600L以下と定められています。同一の簡易タンク貯蔵所に設置できるタンクの数は3基以下です。"},
+{id:61,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"屋内貯蔵所で第4類危険物を貯蔵する際の容器の積み重ね高さの上限として正しいものはどれか。",choices:["2mとして危険物の輸送・運搬において法令上義務付けられている要件","6mとして危険物の貯蔵・取扱・運搬において法令上定められている技術基準","4mが危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","3m（取扱基準の規定）"],answer:3,explanation:"屋内貯蔵所では、危険物を収納した容器の積み重ね高さは3m以下としなければなりません（消防法施行規則）。"},
+{id:62,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"製造所等以外の場所で危険物の貯蔵・取扱いが認められる場合として正しいものはどれか。",choices:["いかなる場合も認められないとして危険物の輸送・運搬において法令上義務付けられている要件","航空機・船舶・鉄道・軌道による危険物の貯蔵","個人宅での少量貯蔵の場合が危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","事業所の敷地内であれば認められる"],answer:1,explanation:"消防法第16条の2により、航空機・船舶・鉄道・軌道による危険物の貯蔵・取扱いについては消防法の適用が除外され、それぞれ別の法令が適用されます。"},
+{id:63,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の運搬容器の外部に表示する事項として不要なものはどれか。",choices:["危険物の品名・危険等級・化学名","危険物の数量が危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","製造年月日（取扱基準の規定）","収納する危険物に応じた注意事項"],answer:2,explanation:"運搬容器の外部に表示が必要な事項は「品名・危険等級・化学名」「最大容積または最大収容重量」「数量」「収納する危険物に応じた注意事項」などです。製造年月日は必須表示ではありません。"},
+{id:64,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の運搬に関する基準として正しいものはどれか。",choices:["運搬容器は密栓して運搬するとして危険物の輸送・運搬において法令上義務付けられている要件","容器の材質に制限はないが危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","固体の危険物の運搬容器は、内容積の100%まで収納できる","液体の危険物の運搬容器は、内容積の98%以下（取扱基準の規定）"],answer:3,explanation:"液体の危険物を運搬容器に収納する場合、内容積の98%以下の収納率とし、55℃の温度で漏れないようにしなければなりません。"},
+{id:65,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の運搬において、混載が禁止されている組み合わせとして正しいものはどれか。",choices:["第1類と第6類として危険物の貯蔵・取扱・運搬において法令上定められている技術基準","第3類と第5類は混載可能","第2類と第4類が危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","第1類と第4類（取扱基準の規定）"],answer:3,explanation:"第1類（酸化性固体）と第4類（引火性液体）の混載は禁止されています。第1類は酸化性があり、第4類の可燃物と組み合わさると火災・爆発の危険性が高まります。"},
+{id:66,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"車両で危険物を運搬する場合に必要な標識として正しいものはどれか。",choices:["「危険物」と表示した赤い旗","「可燃物注意」の看板","「危」と表示した標識","特に標識は不要として危険物の貯蔵・取扱・運搬において法令上定められている技術基準"],answer:2,explanation:"車両で危険物を運搬する場合、車両の前後の見やすい位置に「危」と表示した一定の大きさ（0.3m²以上）の標識を掲げなければなりません。"},
+{id:67,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の運搬を行う際に、一定数量以上で必要となる措置として正しいものはどれか。",choices:["危険物取扱者の同乗または運搬基準の遵守（取扱基準の規定）","警察署への届け出として危険物の貯蔵・取扱・運搬において法令上定められている技術基準","消防署への事前連絡として危険物の輸送・運搬において法令上義務付けられている要件","道路使用許可の取得として危険物の輸送・運搬において法令上義務付けられている要件"],answer:0,explanation:"指定数量以上の危険物を車両で運搬する場合は、危険物取扱者を同乗させ、かつ消防法令に定める運搬基準を遵守しなければなりません。"},
+{id:68,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"移動タンク貯蔵所による危険物の移送について正しいものはどれか。",choices:["危険物取扱者が乗車しなくてもよいとして危険物の輸送・運搬において法令上義務付けられている要件","危険物取扱者が乗車し、免状を携帯しなければならない","免状の携帯は不要だが、取扱者の資格が必要","消防署の許可を得れば一般ドライバーも移送できる"],answer:1,explanation:"移動タンク貯蔵所による危険物の移送には、当該危険物を取り扱うことができる危険物取扱者が乗車し、免状を携帯しなければなりません（消防法第16条の2第3項）。"},
+{id:69,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の類ごとに定められた「危険等級」の区分として正しいものはどれか。",choices:["1級・2級・3級が危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","Ⅰ・Ⅱ・Ⅲ（取扱基準の規定）","A・B・Cとして危険物の輸送・運搬において法令上義務付けられている要件","高危険・中危険・低危険"],answer:1,explanation:"危険物の危険等級は「危険等級Ⅰ」「危険等級Ⅱ」「危険等級Ⅲ」の3段階で、危険性の高いものほどⅠに分類されます。"},
+{id:70,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"第4類危険物のうち危険等級Ⅰに分類されるものはどれか。",choices:["第1石油類として危険物の輸送・運搬において法令上義務付けられている要件","第2石油類が危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","特殊引火物（取扱基準の規定）","アルコール類として危険物の輸送・運搬において法令上義務付けられている要件"],answer:2,explanation:"第4類危険物のうち特殊引火物（ジエチルエーテル・二硫化炭素等）は危険等級Ⅰに分類されます。第1石油類・アルコール類は危険等級Ⅱ、第2石油類以上は危険等級Ⅲです。"},
+{id:71,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物を貯蔵する際に、品名の異なる危険物を同一の場所に貯蔵してよいか。",choices:["いかなる場合も禁止が危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","原則禁止だが、一定の基準を満たせば同一場所に貯蔵できる","常に自由に混在貯蔵できるが危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","同一類の危険物であれば無制限に混在できる"],answer:1,explanation:"性質の異なる危険物の混在貯蔵は原則禁止ですが、消防法令で定められた類の組み合わせ（混在禁止規定に該当しないもの）や一定の隔離基準を満たせば同一場所での貯蔵が認められる場合があります。"},
+{id:72,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の取扱いに関して、みだりに火気を使用してはならない場所として正しいものはどれか。",choices:["給油取扱所の事務所内のみとして危険物の貯蔵・取扱・運搬において法令上定められている技術基準","製造所等のすべての場所として危険物の貯蔵・取扱・運搬において法令上定められている技術基準","製造所等において、危険物を取り扱う場所","危険物保安監督者が指定した場所のみ"],answer:2,explanation:"製造所等において危険物を取り扱う場所では、みだりに火気を使用することが禁止されます。これは消防法施行規則の基準によるものです。"},
+{id:73,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の流出事故が発生した場合の応急措置として誤っているものはどれか。",choices:["直ちに火気を遮断し、周囲の人員を避難させる","流出した危険物を乾燥砂や土砂で覆う","流出した危険物を下水道に流して処理する","消防機関に通報するとして危険物の輸送・運搬において法令上義務付けられている要件"],answer:2,explanation:"流出した危険物を下水道に流すことは、爆発・火災の危険があるとともに水質汚染を引き起こすため絶対にしてはなりません。適切な吸着材・砂等で回収します。"},
+{id:74,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"製造所等で危険物を取り扱う際に静電気の発生を防止する方法として誤っているものはどれか。",choices:["接地（アース）を行うが危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","導電性のある素材を使用する","作業者が帯電防止の作業着を着用する","作業を乾燥した低湿度環境で行う"],answer:3,explanation:"乾燥した低湿度環境では静電気が蓄積しやすくなります。湿度を適切に保つ（高くする）ことが静電気防止に効果的です。接地・導電性素材・帯電防止服は正しい対策です。"},
+{id:75,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の貯蔵・取扱いに係る技術上の基準に違反した場合に発動される措置として正しいものはどれか。",choices:["市町村長等が措置命令","直ちに免状が取り消される","警察署長が業務停止命令を発する","罰則はなく、改善指導のみ"],answer:0,explanation:"技術基準違反があった場合、市町村長等は製造所等の所有者等に対して修理・改造・移転等の措置命令を発することができます（消防法第11条の5）。"},
+{id:76,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の運搬容器の材質として適切でないものはどれか。",choices:["鋼板製の缶として危険物の貯蔵・取扱・運搬において法令上定められている技術基準","ガラス製の容器（一定の条件で使用可）","木製の容器のみ（金属製なしで）（取扱基準の規定）","プラスチック製容器（一定の条件で使用可）"],answer:2,explanation:"木製の容器のみでは危険物の運搬容器としての基準を満たしません。金属製・ガラス製・プラスチック製等が規定の基準に適合する場合に使用できます。木製は内装容器の外側（外装容器）として使用される場合があります。"},
+{id:77,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"屋内貯蔵所で貯蔵できる危険物の温度管理として正しいものはどれか。",choices:["危険物の種類に応じて過熱防止の措置を講じる","温度管理の基準はないとして危険物の貯蔵・取扱・運搬において法令上定められている技術基準","常温（20℃前後）で管理すれば基準を満たす","冷蔵保存が必須として危険物の貯蔵・取扱・運搬において法令上定められている技術基準"],answer:0,explanation:"屋内貯蔵所では、危険物の性質に応じて過熱による自然発火や蒸発を防ぐ温度管理が必要です。特に特殊引火物等は低温管理が求められます。"},
+{id:78,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"移動タンク貯蔵所の運転者が車両を離れるときの対応として正しいものはどれか。",choices:["エンジンをかけたまま離れてよいとして危険物の貯蔵・取扱・運搬において法令上定められている技術基準","タンクの底弁を必ず閉め、免状を携帯して行動する（取扱基準の規定）","他の者を監視に残せばエンジンをかけたまま離れられる","特に規定はないとして危険物の輸送・運搬において法令上義務付けられている要件"],answer:1,explanation:"移動タンクから離れる場合は、底弁その他の弁を閉鎖し、施錠装置を施すなどの措置を取らなければなりません。また移送中は常に免状を携帯する必要があります。"},
+{id:79,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の貯蔵・取扱いにおいて「廃棄」する場合の基準として正しいものはどれか。",choices:["一般ごみとして廃棄できるとして危険物の貯蔵・取扱・運搬において法令上定められている技術基準","焼却・埋没・海洋投棄など方法は自由","環境汚染や火災が生じないような安全な方法","廃棄方法に法令上の基準はないとして危険物の輸送・運搬において法令上義務付けられている要件"],answer:2,explanation:"危険物を廃棄する場合は、危険物の性質に応じた安全な方法（燃焼・中和・希釈・その他安全な方法）で行わなければなりません。海洋投棄や無断埋没は法令違反です。"},
+{id:80,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の詰め替えを行う場合に注意しなければならない事項として誤っているものはどれか。",choices:["詰め替えは危険物取扱者または立会いのもと行う","静電気の発生に注意するが危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","容器の材質・基準に適合した容器を使用する","金属製容器であれば容量に制限はない（取扱基準の規定）"],answer:3,explanation:"金属製の運搬容器でも容量の上限が法令で定められています（例えば内装容器では30L以下など）。材質だけでなく、容量の基準も遵守する必要があります。"},
+{id:81,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"高引火点危険物（引火点が100℃以上）の取扱いにおいて、通常の第4類危険物と比べて緩和される規制として正しいものはどれか。",choices:["保有空地の大幅な縮小として危険物の輸送・運搬において法令上義務付けられている要件","指定数量の適用除外として危険物の貯蔵・取扱・運搬において法令上定められている技術基準","常温（20℃未満）での取扱いであれば一部の位置（取扱基準の規定）","消防署への届出不要が危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定"],answer:2,explanation:"高引火点危険物（引火点100℃以上）は、常温（20℃未満）での取扱いに限り、製造所等の位置・構造・設備の技術基準の一部について緩和規定が適用されます。"},
+{id:82,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の貯蔵・取扱いについて「みだりに」行ってはいけない事項として誤っているものはどれか。",choices:["火気の使用が危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","係員以外の立ち入りとして危険物の輸送・運搬において法令上義務付けられている要件","危険物に水や他の物質を混入する","危険物の品名・数量・指定数量倍数の確認"],answer:3,explanation:"危険物の品名・数量の確認は適切な管理のために必要な行為であり、「みだりに行ってはならない」事項ではありません。火気使用・無関係者立ち入り・危険物への水混入等は禁止されています。"},
+{id:83,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"屋外貯蔵所での危険物の貯蔵において「架台」を使用する場合の高さの制限として正しいものはどれか。",choices:["1m以下が危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","高さの制限はないが危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","5m以下として危険物の輸送・運搬において法令上義務付けられている要件","3m以下（取扱基準の規定）"],answer:3,explanation:"屋外貯蔵所において架台を設ける場合は、架台の高さを6m未満（一説に3m未満等の基準）とし、転倒防止措置を講じることが求められます。"},
+{id:84,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"運搬の際に内容積が5L以下の容器（内装容器）の外側に使用できる外装容器の材質として正しいものはどれか。",choices:["厚紙製は使用できないとして危険物の輸送・運搬において法令上義務付けられている要件","プラスチック製のみとして危険物の貯蔵・取扱・運搬において法令上定められている技術基準","木箱・ファイバ板箱・金属製容器が使用できる（取扱基準の規定）","ガラス製のみとして危険物の輸送・運搬において法令上義務付けられている要件"],answer:2,explanation:"内装容器を外装容器に収納して運搬する場合、外装容器には木箱・ファイバ板箱・金属製容器等が使用できます（基準に適合するものに限る）。"},
+{id:85,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の取扱作業の保安に関する講習（保安講習）を受講する期間として正しいものはどれか。",choices:["初めて従事した日から1年以内、以降2年ごと","5年ごととして危険物の輸送・運搬において法令上義務付けられている要件","初めて従事した日から3年以内、以降3年ごと","初めて従事した日から2年以内、以降3年ごと"],answer:3,explanation:"危険物取扱業務に初めて従事した日から2年以内に受講し、その後は3年ごとに受講しなければなりません。ただし過去2年以内に免状を交付・受講した場合は特例があります。"},
+{id:86,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の移送（移動タンク貯蔵所による輸送）を行う際、長距離・長時間にわたる場合の措置として正しいものはどれか。",choices:["2人以上の乗車が必要な場合がある","1人であれば連続何時間でも運転できる","長時間の場合は警察に届け出る","移送距離に関係なく規定はない"],answer:0,explanation:"消防法施行規則では、長距離・長時間の移送の場合（例：一人が連続して4時間を超えて運転する場合など）は、2人以上の乗務を求める場合があります。"},
+{id:87,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物を車両で運搬する際の消火設備の積載義務として正しいものはどれか。",choices:["消火設備の積載義務はないとして危険物の貯蔵・取扱・運搬において法令上定められている技術基準","消防署が指定した消火設備のみ積載できる","危険物の種類・数量に応じた消火設備を積載する","小型の消火器を1本以上積載しなければならない"],answer:3,explanation:"危険物を運搬する車両には、消防法施行規則の定めに基づき、危険物の種類・数量に応じた消火器（粉末消火器等）を積載しなければなりません。"},
+{id:88,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"ガソリンを購入する際に、容器への詰め替え販売ができる販売取扱所について正しいものはどれか。",choices:["販売取扱所では容器への詰め替えは一切禁止として危険物の輸送・運搬において法令上義務付けられている要件","消防署の許可があれば任意の容器に詰め替えられる","ガソリンは容器販売できないとして危険物の輸送・運搬において法令上義務付けられている要件","顧客が持参した適切な容器への詰め替えが認められる場合がある"],answer:3,explanation:"販売取扱所では、適法な容器（金属製の携行缶等）に危険物を詰め替えて販売することが認められています。ただし本人確認や目的確認等の規制が近年強化されています。"},
+{id:89,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"同一の屋内貯蔵所において、第1類と第4類の危険物を貯蔵する場合の措置として正しいものはどれか。",choices:["同一場所に混在可能が危険物の安全な取扱いにおいて遵守すべき重要な法令上の規定","1m以上の間隔を置いて貯蔵する","相互に1m以上の間隔を置き、かつ指定数量の倍数の合計を守る","原則として同一の貯蔵所に貯蔵できない"],answer:3,explanation:"第1類（酸化性固体）と第4類（引火性液体）の危険物は混在貯蔵が禁止されています。酸化性と引火性の組み合わせは火災・爆発の危険が高いためです。"},
+{id:90,category:"危険物に関する法令（貯蔵・取扱・運搬）",question:"危険物の貯蔵・取扱い中の「過熱」を防ぐための基本的な措置として正しいものはどれか。",choices:["換気を遮断するとして危険物の輸送・運搬において法令上義務付けられている要件","直射日光を避け、通風・換気を行う","危険物を金属容器に密封する","空調設備で冷却するのみでよい"],answer:1,explanation:"引火性液体の過熱を防ぐためには、直射日光を避け、適切な通風・換気を行うことが基本的な対策です。密封すると蒸気圧が高まり危険です。"},
+{id:91,category:"危険物に関する法令（保安）",question:"危険物保安監督者の選任資格として正しいものはどれか。",choices:["甲種・乙種・丙種のいずれかの免状保有者","消防設備士資格保有者として危険物保安監督者・予防規程において法令上定められている要件","甲種免状保有者のみが危険物施設の保安管理において法令上義務付けられている重要な規定","甲種または乙種の免状保有者で、6か月以上の実務経験者"],answer:3,explanation:"危険物保安監督者には、甲種または乙種の危険物取扱者免状を保有し、かつ6か月以上の危険物取扱いの実務経験を有する者を選任しなければなりません（消防法第13条第1項）。"},
+{id:92,category:"危険物に関する法令（保安）",question:"危険物保安監督者の選任・解任の届け出先として正しいものはどれか。",choices:["消防庁長官が危険物施設の保安管理において法令上義務付けられている重要な規定","消防署長が危険物施設の保安管理において法令上義務付けられている重要な規定","市町村長等（保安規定による）","都道府県知事として危険物保安監督者・予防規程において法令上定められている要件"],answer:2,explanation:"危険物保安監督者を選任・解任した場合は、遅滞なく市町村長等に届け出なければなりません（消防法第13条第2項）。"},
+{id:93,category:"危険物に関する法令（保安）",question:"危険物保安監督者の業務として誤っているものはどれか。",choices:["作業者に対して保安に関する必要な指示を行う","危険物施設の構造・設備の工事を自ら行う","火災等の災害が発生した場合に応急措置を講じ、消防機関へ連絡する","危険物の取扱い作業に立ち会う"],answer:1,explanation:"危険物保安監督者は施設の安全管理・監督・指示・立会いを行う役割ですが、構造・設備の工事を自ら行うことは業務ではありません（工事は別途許可・届出が必要）。"},
+{id:94,category:"危険物に関する法令（保安）",question:"危険物施設保安員の業務として正しいものはどれか。",choices:["危険物保安監督者を補佐し、施設の点検","製造所等の使用停止命令を出す権限がある","危険物取扱者の代わりに単独で危険物を取り扱う","定期点検を単独で実施する（危険物保安監督者なしで）"],answer:0,explanation:"危険物施設保安員は危険物保安監督者を補佐し、施設の保全・点検・整備に関する補助業務を行います。単独での取扱いや停止命令権限はありません。"},
+{id:95,category:"危険物に関する法令（保安）",question:"危険物保安統括管理者の業務として正しいものはどれか。",choices:["製造所等ごとの保安監督者を監督し、事業所全体","個々の危険物の取扱い作業を直接指揮する","消防署との交渉窓口になる法的義務がある","免状の管理・保管を担当するが危険物施設の保安管理において法令上義務付けられている重要な規定"],answer:0,explanation:"危険物保安統括管理者は、複数の製造所等を持つ大規模事業所において、危険物保安監督者を総括監督し、事業所全体の危険物保安管理を統括する役割を担います。"},
+{id:96,category:"危険物に関する法令（保安）",question:"予防規程の作成・変更に際して認可を受ける必要がある機関はどれか。",choices:["消防庁長官として危険物保安監督者・予防規程において法令上定められている要件","消防署長として定期点検・保安検査において法令上定められている実施義務","市町村長等（保安規定による）","都道府県知事として定期点検・保安検査において法令上定められている実施義務"],answer:2,explanation:"予防規程は、製造所等の所有者等が作成し、市町村長等の認可を受けなければなりません（消防法第14条の2）。"},
+{id:97,category:"危険物に関する法令（保安）",question:"予防規程を定めなければならない製造所等として正しいものはどれか。",choices:["すべての製造所等が危険物施設の保安管理において法令上義務付けられている重要な規定","危険物保安統括管理者を置く事業所のみ","指定数量の倍数が100以上のすべての製造所等","指定数量の倍数が10以上の製造所、一般取扱所等"],answer:3,explanation:"予防規程が義務付けられる製造所等は、指定数量の倍数が10以上の製造所・屋外タンク貯蔵所・給油取扱所・一般取扱所等が該当します（施設の種類によって倍数要件が異なります）。"},
+{id:98,category:"危険物に関する法令（保安）",question:"予防規程に定める事項として誤っているものはどれか。",choices:["危険物の保安に関する業務を管理する者の職務・組織","危険物施設の点検・整備に関する事項","火災が発生した場合の消火・通報・避難の訓練の実施","危険物保安監督者の個人収入（保安規定による）"],answer:3,explanation:"予防規程に定める事項は、保安業務管理者の職務・組織、施設の点検・整備、訓練の実施、危険物の保安業務などです。個人の収入は予防規程の記載事項ではありません。"},
+{id:99,category:"危険物に関する法令（保安）",question:"製造所等の所有者等に対して緊急に危険物施設の使用停止を命じることができる者はどれか。",choices:["危険物保安監督者として定期点検・保安検査において法令上定められている実施義務","消防署長として危険物保安監督者・予防規程において法令上定められている要件","市町村長等（保安規定による）","都道府県知事として定期点検・保安検査において法令上定められている実施義務"],answer:2,explanation:"製造所等に危険な状態が生じた場合または危険な状態を招くおそれがある場合、市町村長等は製造所等の一時使用停止・使用制限を命じることができます（消防法第16条の6）。"},
+{id:100,category:"危険物に関する法令（保安）",question:"自衛消防組織を設置しなければならない事業所として正しいものはどれか。",choices:["すべての製造所等として危険物保安監督者・予防規程において法令上定められている要件","従業員50名以上の事業所","危険物保安統括管理者を置く事業所","特定の大規模な製造所・一般取扱所"],answer:3,explanation:"自衛消防組織は、一定規模以上（指定数量の倍数が3,000以上等）の製造所・一般取扱所の所有者等に設置が義務付けられます。"},
+{id:101,category:"危険物に関する法令（保安）",question:"消防法における「予防規程」の目的として最も適切なものはどれか。",choices:["製造所等の設置コストの削減","危険物取扱者の雇用条件を定めた規程","消防署が策定する取締規則","危険物の保安に関して自主的"],answer:3,explanation:"予防規程は、製造所等の所有者等が自主的に危険物の保安に関する管理方法を定めた内部規程で、消防行政の補完として機能します。市町村長等の認可が必要です。"},
+{id:102,category:"危険物に関する法令（保安）",question:"危険物保安監督者を選任しなくてもよい製造所等はどれか。",choices:["移動タンク貯蔵所（保安規定による）","屋内タンク貯蔵所として定期点検・保安検査において法令上定められている実施義務","給油取扱所が危険物施設の保安管理において法令上義務付けられている重要な規定","一般取扱所として定期点検・保安検査において法令上定められている実施義務"],answer:0,explanation:"移動タンク貯蔵所は危険物保安監督者の選任が不要とされています（消防法施行令第31条）。これは移動タンク貯蔵所の業務形態の特殊性によるものです。"},
+{id:103,category:"危険物に関する法令（保安）",question:"定期点検の記録の保存期間として正しいものはどれか。",choices:["1年間として定期点検・保安検査において法令上定められている実施義務","3年間（保安規定による）","5年間として定期点検・保安検査において法令上定められている実施義務","10年間として危険物保安監督者・予防規程において法令上定められている要件"],answer:1,explanation:"定期点検の記録は3年間（地下埋設タンク等の漏洩検査は25年間）保存しなければなりません（消防法施行規則第62条の6）。"},
+{id:104,category:"危険物に関する法令（保安）",question:"危険物施設で火災が発生した場合、製造所等の所有者等がとるべき措置として正しいものはどれか。",choices:["直ちに応急措置を講じるとともに、消防機関に通報する","消防機関に通報するだけでよいとして危険物保安監督者・予防規程において法令上定められている要件","危険物保安監督者の指示を受けてから行動する","消防機関が到着するまで待機するが危険物施設の保安管理において法令上義務付けられている重要な規定"],answer:0,explanation:"火災等の災害が発生した場合、製造所等の所有者等は直ちに応急措置を講じるとともに、消防機関等に通報しなければなりません（消防法第16条の3）。"},
+{id:105,category:"危険物に関する法令（保安）",question:"危険物取扱者免状の携帯義務について正しいものはどれか。",choices:["危険物の取扱い作業中と移動タンクによる移送中","免状は常時携帯しなければならない","危険物取扱業務に従事するすべての場面で携帯義務がある","携帯義務はなく、事業所内に保管すればよい"],answer:0,explanation:"危険物取扱者は、危険物の取扱い作業を行う際および移動タンク貯蔵所による移送の際には免状を携帯しなければなりません（消防法第13条の2第5項）。"},
+{id:106,category:"危険物に関する法令（保安）",question:"消防法に違反した場合の罰則として正しいものはどれか。",choices:["1年以下の懲役または100万円以下の罰金など","消防法に刑事罰の規定はないとして危険物保安監督者・予防規程において法令上定められている要件","違反には指導・勧告のみで罰則はない","行政処分のみで刑事訴追はないとして定期点検・保安検査において法令上定められている実施義務"],answer:0,explanation:"消防法には、違反の内容・程度に応じた段階的な罰則（懲役・罰金等）が定められており、重大な違反は刑事訴追の対象となります（消防法第43条等）。"},
+{id:107,category:"危険物に関する法令（保安）",question:"危険物保安監督者が旅行・疾病等で職務を行えない場合の対応として正しいものはどれか。",choices:["業務を一時停止するとして定期点検・保安検査において法令上定められている実施義務","代理者（代行者）を定めて職務を行わせる","届け出なしに他の者が代行できる","消防署員が代行するとして危険物保安監督者・予防規程において法令上定められている要件"],answer:1,explanation:"危険物保安監督者が旅行・疾病等で職務を行えない場合は、あらかじめ代理者（代行者）を定め、その者に職務を行わせなければなりません。"},
+{id:108,category:"危険物に関する法令（保安）",question:"危険物施設保安員の選任が必要な施設として正しいものはどれか。",choices:["指定数量の倍数が100以上の製造所","指定数量の倍数が10以上の製造所・一般取扱所","すべての製造所等として定期点検・保安検査において法令上定められている実施義務","危険物保安統括管理者を置く製造所等"],answer:0,explanation:"危険物施設保安員は、指定数量の倍数が100以上の製造所・一般取扱所の所有者等が選任義務を負います。"},
+{id:109,category:"危険物に関する法令（保安）",question:"製造所等の定期点検を自ら実施できる者として正しいものはどれか。",choices:["危険物取扱者または危険物施設保安員","危険物保安監督者のみが危険物施設の保安管理において法令上義務付けられている重要な規定","消防設備士のみが危険物施設の保安管理において法令上義務付けられている重要な規定","誰でもできる（資格不要）"],answer:0,explanation:"定期点検は、危険物取扱者または危険物施設保安員が自ら実施します。または危険物取扱者の立ち会いのもとで実施することも認められています。"},
+{id:110,category:"危険物に関する法令（保安）",question:"消防吏員が製造所等に立ち入り検査を行う際、検査を拒否・妨害した場合の罰則として正しいものはどれか。",choices:["罰則はなく、行政指導のみ","30万円以下の罰金または拘留","1年以下の懲役または100万円以下の罰金","免状の取り消しのみとして危険物保安監督者・予防規程において法令上定められている要件"],answer:1,explanation:"立入検査を拒否・妨害した者には罰則が定められています（消防法第44条）。30万円以下の罰金等の刑事罰の対象となります。"},
+{id:111,category:"危険物に関する法令（保安）",question:"給油取扱所（ガソリンスタンド）に設置が義務付けられている危険物保安監督者について正しいものはどれか。",choices:["給油取扱所への選任義務はない","すべての給油取扱所で選任が必要","指定数量の10倍以上の給油取扱所のみ","政令で定める給油取扱所"],answer:3,explanation:"給油取扱所（ガソリンスタンド）はすべて危険物保安監督者の選任が義務付けられます（消防法施行令第31条）。"},
+{id:112,category:"危険物に関する法令（保安）",question:"危険物保安監督者の職務として正しいものはどれか。",choices:["危険物の取扱い作業に従事する者に指示し、保安（保安規定による）","製造所等の建設工事を監理するとして危険物保安監督者・予防規程において法令上定められている要件","消防機関の業務を補助するが危険物施設の保安管理において法令上義務付けられている重要な規定","免状の更新手続きを管理するが危険物施設の保安管理において法令上義務付けられている重要な規定"],answer:0,explanation:"危険物保安監督者は、危険物の取扱い作業に従事する者（作業者）に対して保安上の指示を行い、作業の安全を監督することが主たる職務です。"},
+{id:113,category:"危険物に関する法令（保安）",question:"製造所等の所有者等に義務付けられている「応急措置」の例として適切なものはどれか。",choices:["危険物の流出時に速やかに中和（保安規定による）","消防署に任せて自らは対処しない","警察署に届け出るとして危険物保安監督者・予防規程において法令上定められている要件","隣接住民に連絡するとして危険物保安監督者・予防規程において法令上定められている要件"],answer:0,explanation:"製造所等で危険物の流出等の事故が発生した場合、所有者等は直ちに流出した危険物の回収・中和・吸着等の応急措置を講じなければなりません（消防法第16条の3）。"},
+{id:114,category:"危険物に関する法令（保安）",question:"危険物保安監督者として選任できる者の最低実務経験年数として正しいものはどれか。",choices:["3か月以上として危険物保安監督者・予防規程において法令上定められている要件","6か月以上（保安規定による）","1年以上として定期点検・保安検査において法令上定められている実施義務","3年以上として危険物保安監督者・予防規程において法令上定められている要件"],answer:1,explanation:"危険物保安監督者には、甲種または乙種の危険物取扱者免状を持ち、製造所等における危険物取扱いの実務経験が6か月以上ある者を選任しなければなりません。"},
+{id:115,category:"危険物に関する法令（保安）",question:"予防規程に関して市町村長等が行える措置として正しいものはどれか。",choices:["予防規程の内容を変更することを命じることができる","予防規程に関して命令する権限はないとして危険物保安監督者・予防規程において法令上定められている要件","予防規程の廃止を命じることができるとして定期点検・保安検査において法令上定められている実施義務","予防規程に違反した従業員を逮捕できる"],answer:0,explanation:"市町村長等は、予防規程の内容が消防法令の基準を満たさないと判断した場合、所有者等に対して内容の変更を命じることができます（消防法第14条の2第3項）。"},
+{id:116,category:"危険物に関する法令（保安）",question:"自衛消防組織に関する説明として正しいものはどれか。",choices:["大規模な製造所等の所有者等が自主的に組織するもの（保安規定による）","消防機関が設置するものが危険物施設の保安管理において法令上義務付けられている重要な規定","自衛隊が担当するとして危険物保安監督者・予防規程において法令上定められている要件","任意の組織であり法的義務はないとして定期点検・保安検査において法令上定められている実施義務"],answer:0,explanation:"自衛消防組織は、一定規模以上の製造所等の所有者等が消防法に基づき設置義務を負う、事業所内の自主的な消防組織です。"},
+{id:117,category:"危険物に関する法令（保安）",question:"消防法上、危険物施設の「廃止」の手続きとして正しいものはどれか。",choices:["廃止したい場合、許可取り消しを申請する","消防署に口頭で連絡すればよい","廃止には市町村長等の許可が必要","廃止の届け出を市町村長等に提出する"],answer:3,explanation:"製造所等を廃止する場合、所有者等は遅滞なく市町村長等に廃止の届け出を行わなければなりません（消防法第11条第6項）。"},
+{id:118,category:"危険物に関する法令（保安）",question:"危険物取扱者試験に合格した後、免状の交付を申請しなかった場合に取扱い作業ができるか。",choices:["合格したので免状なしでも取り扱える","所属事業所の許可があれば取り扱える","6か月以内なら免状なしで取り扱える","免状の交付を受けなければ取扱作業"],answer:3,explanation:"危険物の取扱い作業や立ち会いには、都道府県知事が交付した免状の携帯が必要です。試験合格だけでは免状として認められません。"},
+{id:119,category:"危険物に関する法令（保安）",question:"製造所等において危険物取扱者以外の者が危険物の取扱い作業を行うことができる条件として正しいものはどれか。",choices:["いかなる場合も不可として危険物保安監督者・予防規程において法令上定められている要件","甲種または乙種の危険物取扱者が立ち会えば取り扱いができる","危険物保安監督者が認めれば可として危険物保安監督者・予防規程において法令上定められている要件","危険物施設保安員が立ち会えば可として定期点検・保安検査において法令上定められている実施義務"],answer:1,explanation:"製造所等において危険物取扱者以外の者が危険物の取扱い作業を行う場合は、甲種または乙種の危険物取扱者が立ち会わなければなりません（消防法第13条第3項）。"},
+{id:120,category:"危険物に関する法令（保安）",question:"危険物保安監督者に関する説明として誤っているものはどれか。",choices:["製造所等ごとに選任されるが危険物施設の保安管理において法令上義務付けられている重要な規定","資格は甲種または乙種の免状と6か月以上の実務経験","保安監督者自身が危険物取扱者でなくてよい","選任・解任は市町村長等に届け出る"],answer:2,explanation:"危険物保安監督者は、甲種または乙種の危険物取扱者免状を有する者でなければなりません。資格のない者が保安監督者になることはできません。"},
+{id:121,category:"基礎的な物理学",question:"物質の三態（固体・液体・気体）について、液体が気体になる現象を何というか。",choices:["融解として引火・発火・燃焼に関連する物理量として重要な数値・基準","凝固として危険物取扱いに関連する物理的性質の重要な測定値・単位","蒸発（気化）（物理的特性値）","昇華が物質の燃焼・爆発に関わる物理的特性として定義されている概念"],answer:2,explanation:"液体が気体になる現象を「蒸発（気化）」といいます。融解は固体→液体、凝固は液体→固体、昇華は固体→気体（または気体→固体）の変化です。"},
+{id:122,category:"基礎的な物理学",question:"引火点の説明として正しいものはどれか。",choices:["物質が自然発火する最低温度として引火・発火・燃焼に関連する物理量として重要な数値・基準","可燃性液体の蒸気に小火炎を近づけたとき、瞬間","物質が燃焼を継続するのに必要な最低温度","物質が完全燃焼する温度として引火・発火・燃焼に関連する物理量として重要な数値・基準"],answer:1,explanation:"引火点とは、可燃性液体の液面上の蒸気が空気と混合して引火するのに必要な最低の液温です。引火点が低いほど引火しやすく、危険性が高いです。"},
+{id:123,category:"基礎的な物理学",question:"発火点（着火点）の説明として正しいものはどれか。",choices:["引火点と同じ意味が物質の燃焼・爆発に関わる物理的特性として定義されている概念","物質が燃え始める温度として危険物取扱いに関連する物理的性質の重要な測定値・単位","火源がなくても物質が自然発火する最低温度（物理的特性値）","引火点より低い温度として引火・発火・燃焼に関連する物理量として重要な数値・基準"],answer:2,explanation:"発火点（着火点）は、火源を近づけなくても物質が自然に発火・燃焼を開始する最低温度です。引火点とは異なり、外部からの点火源を必要としない点が特徴です。"},
+{id:124,category:"基礎的な物理学",question:"燃焼範囲（爆発範囲）の説明として正しいものはどれか。",choices:["物質が燃焼できる温度の範囲として引火・発火・燃焼に関連する物理量として重要な数値・基準","空気中の可燃性蒸気の濃度のうち燃焼が起こる濃度範囲（体積%）","燃焼が起こる圧力の範囲として引火・発火・燃焼に関連する物理量として重要な数値・基準","燃焼に必要な酸素濃度の範囲として危険物取扱いに関連する物理的性質の重要な測定値・単位"],answer:1,explanation:"燃焼範囲とは、空気と可燃性蒸気の混合気体において、燃焼が起こる可燃性蒸気の濃度範囲（vol%）のことです。下限界以下・上限界以上では燃焼しません。"},
+{id:125,category:"基礎的な物理学",question:"蒸気比重の説明として正しいものはどれか。",choices:["液体の密度を水の密度で割った値","気体の粘度の比較値として引火・発火・燃焼に関連する物理量として重要な数値・基準","物質の沸点を空気の沸点で割った値","物質の蒸気の密度を空気の密度で割った値"],answer:3,explanation:"蒸気比重とは、物質の蒸気の密度を空気の密度（空気=1）と比べた値です。蒸気比重>1の蒸気は空気より重く、低所に滞留します。第4類危険物の蒸気比重はほぼすべて1以上です。"},
+{id:126,category:"基礎的な物理学",question:"第4類危険物の蒸気比重に関して正しいものはどれか。",choices:["空気より重い蒸気が多く、低所","空気より軽い蒸気が多い","水より重い蒸気が多い","蒸気比重は引火点に関係しない"],answer:0,explanation:"第4類危険物の蒸気は一般に空気より重く（蒸気比重>1）、低所に滞留する傾向があります。このため換気を怠ると低所での点火源との接触リスクが高まります。"},
+{id:127,category:"基礎的な物理学",question:"液体の温度が上昇すると粘度（粘性）はどう変化するか。",choices:["粘度は低下する（物理的特性値）","粘度は増加するが物質の燃焼・爆発に関わる物理的特性として定義されている概念","粘度は変化しないが物質の燃焼・爆発に関わる物理的特性として定義されている概念","液体の種類によって粘度の変化方向は異なる（上がる場合も下がる場合もある）"],answer:0,explanation:"一般的に液体は温度が上昇すると粘度（粘性）が低下します。粘度が低い液体は流動しやすく、蒸発も促進されます。気体は逆に温度上昇で粘度が増加します。"},
+{id:128,category:"基礎的な物理学",question:"静電気の発生・蓄積が危険物取扱いで問題となる主な理由として正しいものはどれか。",choices:["静電気が危険物を変質させるため","静電気が人体に有害であるためとして引火・発火・燃焼に関連する物理量として重要な数値・基準","静電気が危険物の沸点を下げるため","蓄積した静電気の放電火花が点火源となるため"],answer:3,explanation:"静電気は危険物の移送・流動・撹拌等によって発生し、導体で逃がさずに蓄積すると放電（スパーク）が発生し、これが点火源となって引火・爆発を引き起こす危険があります。"},
+{id:129,category:"基礎的な物理学",question:"液体の比重（液比重）について第4類危険物の特徴として正しいものはどれか。",choices:["第4類危険物のほとんどは水より重い","比重は危険性と関係ないとして引火・発火・燃焼に関連する物理量として重要な数値・基準","水と同程度の比重のものが多い","第4類危険物のほとんどは水より軽い"],answer:3,explanation:"第4類危険物（引火性液体）の多くは水より軽く（比重<1）、水面に浮く性質があります。このため水系消火剤で消火すると危険物が浮いて燃焼が拡大します。"},
+{id:130,category:"基礎的な物理学",question:"沸点の低い液体の特徴として正しいものはどれか。",choices:["蒸発しにくく引火の危険が少ない","沸点が低いほど粘度が高いが物質の燃焼・爆発に関わる物理的特性として定義されている概念","沸点と引火点は無関係が物質の燃焼・爆発に関わる物理的特性として定義されている概念","蒸発しやすく引火しやすい危険物が多い"],answer:3,explanation:"沸点が低い液体は常温でも蒸発しやすく、可燃性蒸気を生じやすいため引火の危険性が高くなります。特殊引火物（ジエチルエーテルの沸点34.6℃等）がその典型です。"},
+{id:131,category:"基礎的な物理学",question:"熱の伝わり方の「対流」の説明として正しいものはどれか。",choices:["熱が物質を通じて伝わる現象として引火・発火・燃焼に関連する物理量として重要な数値・基準","流体（気体・液体）が循環して熱を運ぶ現象","高温物体から電磁波の形で熱が伝わる現象","固体内を熱が伝わる現象が物質の燃焼・爆発に関わる物理的特性として定義されている概念"],answer:1,explanation:"対流とは、流体（気体・液体）の流れによって熱が移動する現象です。熱伝導（固体内の熱移動）・輻射（電磁波による熱移動）とともに熱の三大伝達方法の一つです。"},
+{id:132,category:"基礎的な物理学",question:"ボイルの法則として正しいものはどれか。",choices:["温度が一定のとき、気体の体積は圧力に反比例する","圧力が一定のとき、気体の体積は絶対温度に比例する","気体の体積は圧力と温度の積に比例する","気体の密度は圧力に反比例するとして危険物取扱いに関連する物理的性質の重要な測定値・単位"],answer:0,explanation:"ボイルの法則は「温度が一定のとき、一定量の気体の体積は圧力に反比例する（PV=一定）」です。シャルルの法則は「圧力一定のとき体積は絶対温度に比例する」です。"},
+{id:133,category:"基礎的な物理学",question:"物質の「潜熱」の説明として正しいものはどれか。",choices:["物質を加熱するときに必要なエネルギー全体","物質が冷却されるときに放出する熱","物質が燃焼するときに発生する熱","物質の温度変化を伴わない状態変化"],answer:3,explanation:"潜熱とは、物質が固体→液体（融解）や液体→気体（蒸発）に状態変化するとき、温度変化を伴わずに費やされる熱量です。水の蒸発潜熱は大きく、水系消火剤の冷却効果の源泉です。"},
+{id:134,category:"基礎的な物理学",question:"引火点と燃焼点の関係として正しいものはどれか。",choices:["引火点と燃焼点は同じ温度","燃焼点は引火点より低い温度","引火点は燃焼点より高い温度","燃焼点は引火点より高い温度"],answer:3,explanation:"燃焼点は引火点より高い温度で、火源を取り除いても燃焼が継続する最低液温です。引火点では瞬間的に引火しますが、燃焼点に達すると継続的な燃焼が可能となります。"},
+{id:135,category:"基礎的な物理学",question:"気体の体積と温度の関係（シャルルの法則）として正しいものはどれか。",choices:["温度が上昇すると体積は減少する","温度が下がると体積は増加するとして危険物取扱いに関連する物理的性質の重要な測定値・単位","圧力が一定のとき、体積は絶対温度に比例する","圧力が一定のとき、体積は摂氏温度に比例する"],answer:2,explanation:"シャルルの法則は「圧力一定のとき、気体の体積は絶対温度（K）に比例する」です。摂氏温度ではなく絶対温度（0K=-273℃）を基準とします。"},
+{id:136,category:"基礎的な物理学",question:"液体の「引火点」と「蒸気圧」の関係として正しいものはどれか。",choices:["引火点が低い液体ほど蒸気圧は低い","蒸気圧と引火点は無関係として危険物取扱いに関連する物理的性質の重要な測定値・単位","引火点が低い液体ほど蒸気圧は高い","蒸気圧が高いほど引火点は高い"],answer:2,explanation:"引火点が低い液体（例：ジエチルエーテル-45℃）は常温でも蒸発しやすく蒸気圧が高い。蒸気圧が高いほど液面上に可燃性蒸気が多く存在し、引火しやすくなります。"},
+{id:137,category:"基礎的な物理学",question:"電気の「導体」と「不導体（絶縁体）」に関して、静電気の蓄積の観点から正しいものはどれか。",choices:["導体は静電気を蓄積しやすいとして危険物取扱いに関連する物理的性質の重要な測定値・単位","導体も不導体も静電気の蓄積に差はない","不導体（絶縁体）は静電気を蓄積しやすい","金属は必ず静電気を蓄積するが物質の燃焼・爆発に関わる物理的特性として定義されている概念"],answer:2,explanation:"不導体（絶縁体）は電気を通さないため、発生した静電気を逃がせず蓄積します。一方、導体（金属等）は接地（アース）することで静電気を地面に逃がすことができます。"},
+{id:138,category:"基礎的な物理学",question:"物質の「比熱」の説明として正しいものはどれか。",choices:["単位体積の物質の質量として危険物取扱いに関連する物理的性質の重要な測定値・単位","物質1gを1℃（または1K）上昇させるのに必要な熱量","物質が持つ総熱量として引火・発火・燃焼に関連する物理量として重要な数値・基準","物質の熱伝導率として引火・発火・燃焼に関連する物理量として重要な数値・基準"],answer:1,explanation:"比熱とは、物質1g（または1kg）の温度を1℃（1K）上昇させるのに必要な熱量です。水は比熱が大きく（4.18J/g・K）、冷却効果に優れます。"},
+{id:139,category:"基礎的な物理学",question:"「燃焼範囲の下限界」の意味として正しいものはどれか。",choices:["燃焼が起こる最高濃度","燃焼が起こる最低濃度","燃焼を起こすのに必要な最低温度","着火に必要な最低エネルギー"],answer:1,explanation:"燃焼範囲の下限界（爆発下限界・LEL）は、空気と混合した可燃性蒸気の濃度のうち、燃焼が起こる最低濃度（vol%）です。この濃度以下では混合気体が薄すぎて燃焼しません。"},
+{id:140,category:"基礎的な物理学",question:"「自然発火」が起こりやすい条件として正しいものはどれか。",choices:["温度が低く湿度が低い環境として危険物取扱いに関連する物理的性質の重要な測定値・単位","通気性が良く乾燥した環境として引火・発火・燃焼に関連する物理量として重要な数値・基準","熱が逃げにくく、酸化反応が進みやすい（物理的特性値）","酸素が存在しない密閉環境として危険物取扱いに関連する物理的性質の重要な測定値・単位"],answer:2,explanation:"自然発火は、外部からの点火源なしに物質が自発的に発熱・発火する現象です。熱が蓄積しやすい環境（断熱性が高く通気が悪い場所）や酸化反応が促進される条件で起こりやすくなります。"},
+{id:141,category:"基礎的な物理学",question:"圧力の単位として国際単位系（SI単位）で正しいものはどれか。",choices:["atm（大気圧）として危険物取扱いに関連する物理的性質の重要な測定値・単位","Pa（パスカル）（物理的特性値）","mmHg（水銀柱ミリメートル）","kgf/cm²として危険物取扱いに関連する物理的性質の重要な測定値・単位"],answer:1,explanation:"圧力のSI単位はPa（パスカル）です。1Pa=1N/m²です。atm・mmHg・kgf/cm²も用いられますが、SI単位はPaです。"},
+{id:142,category:"基礎的な物理学",question:"「熱伝導」の説明として正しいものはどれか。",choices:["流体の流れによって熱が運ばれる現象","物質内部を高温部から低温部へ熱が伝わる現象","電磁波（赤外線等）として熱が伝わる現象","気体の膨張によって温度が下がる現象"],answer:1,explanation:"熱伝導は、物質内部において高温部から低温部へ直接熱が伝わる現象です。金属は熱伝導率が高く、木材・空気は低い（断熱性が高い）です。"},
+{id:143,category:"基礎的な物理学",question:"「燃焼範囲が広い」危険物の特徴として正しいものはどれか。",choices:["引火の危険性が低いとして引火・発火・燃焼に関連する物理量として重要な数値・基準","さまざまな濃度条件で燃焼が起こりやすく、危険性が高い","燃焼速度が速いことを意味するとして引火・発火・燃焼に関連する物理量として重要な数値・基準","消火が容易になるとして危険物取扱いに関連する物理的性質の重要な測定値・単位"],answer:1,explanation:"燃焼範囲（爆発範囲）が広いほど、空気との混合比率が広い範囲で燃焼が起こるため、危険性が高い物質といえます。アセトアルデヒド（4～60vol%）などが広い燃焼範囲を持ちます。"},
+{id:144,category:"基礎的な物理学",question:"液体に浮力が生じる条件として正しいものはどれか。",choices:["液体の密度が浮く物体の密度より大きいとき","液体の密度が浮く物体の密度より小さいとき","密度に関係なく液体に浸かった物体には浮力が生じる","浮力は流体の密度に関係しないとして危険物取扱いに関連する物理的性質の重要な測定値・単位"],answer:2,explanation:"液体中の物体には、押しのけた液体の重さ分の浮力（アルキメデスの原理）が常に生じます。ただし物体が浮くためには浮力が物体の重力（重さ）より大きい、つまり物体の密度が液体より小さい必要があります。"},
+{id:145,category:"基礎的な物理学",question:"絶対温度（K：ケルビン）と摂氏温度（℃）の変換式として正しいものはどれか。",choices:["K = ℃ + 100","K = ℃ + 273","K = ℃ × 1.8 + 32","K = ℃ − 273"],answer:1,explanation:"絶対温度（K）＝摂氏温度（℃）+ 273です。絶対零度（0K）は-273℃（正確には-273.15℃）に相当します。気体の状態方程式では絶対温度を使用します。"},
+{id:146,category:"基礎的な物理学",question:"「蒸発」と「沸騰」の違いとして正しいものはどれか。",choices:["蒸発は液体表面から、沸騰は液体内部からも気化が起こる現象","沸騰は液体表面から、蒸発は液体内部から気化する現象","蒸発と沸騰は同じ現象として危険物取扱いに関連する物理的性質の重要な測定値・単位","沸騰は冷却されたときに起こるとして危険物取扱いに関連する物理的性質の重要な測定値・単位"],answer:0,explanation:"蒸発は液体の表面のみから気化する現象で、温度を問わず起こります。沸騰は蒸気圧が外部気圧と等しくなった温度（沸点）で、液体の表面だけでなく内部からも気泡が生じる激しい気化現象です。"},
+{id:147,category:"基礎的な物理学",question:"危険物の引火の危険性を評価する上で最も重要な物理的性質はどれか。",choices:["引火点（物理的特性値）","比熱が物質の燃焼・爆発に関わる物理的特性として定義されている概念","融点として危険物取扱いに関連する物理的性質の重要な測定値・単位","電気伝導率として引火・発火・燃焼に関連する物理量として重要な数値・基準"],answer:0,explanation:"引火点は、危険物の引火危険性を直接表す最も重要な物理的性質です。引火点が低いほど低温でも引火し、危険性が高くなります。第4類危険物の分類にも引火点が使用されます。"},
+{id:148,category:"基礎的な物理学",question:"「蒸気密度」が空気の2倍の物質について正しいものはどれか。",choices:["空気よりも重く、低所に滞留する","空気中で上方に拡散する","水に溶けやすいとして危険物取扱いに関連する物理的性質の重要な測定値・単位","蒸気密度は引火点に影響する"],answer:0,explanation:"蒸気密度（比重）が2（空気=1）の物質の蒸気は空気の2倍の重さがあり、低所・床面・地下ピット等に滞留します。これが点火源と接触すると引火・爆発の危険があります。"},
+{id:149,category:"基礎的な物理学",question:"液体危険物の貯蔵タンク内に発生する蒸気の圧力（蒸気圧）は温度との関係でどうなるか。",choices:["温度が上昇すると蒸気圧は低下する","温度が下がると蒸気圧は増加する","温度と蒸気圧は無関係が物質の燃焼・爆発に関わる物理的特性として定義されている概念","温度が上昇すると蒸気圧は増加する"],answer:3,explanation:"蒸気圧は温度に依存し、温度が上昇するほど蒸気圧は増加します。これは液体の蒸発が促進されるためで、高温環境ではタンクの圧力上昇・危険物の気化量増大につながります。"},
+{id:150,category:"基礎的な物理学",question:"液体の「粘度（粘性）」が低いと危険物取扱い上どのような影響があるか。",choices:["蒸発しにくくなるとして引火・発火・燃焼に関連する物理量として重要な数値・基準","引火点が上昇するが物質の燃焼・爆発に関わる物理的特性として定義されている概念","流動しやすく広がりやすいため、漏洩時の危険範囲が拡大する","燃焼範囲が狭くなるとして危険物取扱いに関連する物理的性質の重要な測定値・単位"],answer:2,explanation:"粘度が低い液体は流動しやすく広がりやすいため、漏洩した場合に短時間で広範囲に広がります。このため火源との接触リスクが高まり、危険性が大きくなります。"},
+{id:151,category:"基礎的な化学",question:"物質の変化のうち「化学変化」の例として正しいものはどれか。",choices:["水が氷になるとして有機化合物・無機化合物の危険性に関わる化学的特性","砂糖が水に溶けるとして危険物の化学的性質・反応において重要な概念として定義されている","鉄が酸素と反応して錆びる（酸化）（化学的特性値）","アルコールが蒸発するとして有機化合物・無機化合物の危険性に関わる化学的特性"],answer:2,explanation:"化学変化（化学反応）は物質の組成・構造が変わる変化です。鉄の酸化（錆び）は鉄と酸素が化合してFe₂O₃（酸化鉄）を生成する化学変化です。融解・溶解・蒸発は物理変化です。"},
+{id:152,category:"基礎的な化学",question:"酸化の説明として正しいものはどれか。",choices:["物質が水素を受け取る反応として有機化合物・無機化合物の危険性に関わる化学的特性","物質が酸素を失う反応として有機化合物・無機化合物の危険性に関わる化学的特性","物質が酸素と結合または水素を失う反応（化学的特性値）","物質が電子を受け取る反応が化学反応・酸化還元において危険物の特性を示す重要な化学量"],answer:2,explanation:"酸化とは、物質が酸素と結合する、または物質から水素が取り除かれる（電子を失う）反応の総称です。燃焼は酸化の一種（急激な酸化）です。"},
+{id:153,category:"基礎的な化学",question:"有機化合物の主な構成元素として正しいものはどれか。",choices:["鉄・銅・ニッケルとして危険物の化学的性質・反応において重要な概念として定義されている","ケイ素・アルミニウム・マグネシウム","ナトリウム・カリウム・カルシウム","炭素・水素・酸素・窒素など（化学的特性値）"],answer:3,explanation:"有機化合物は炭素（C）を基本骨格とし、水素（H）・酸素（O）・窒素（N）・硫黄（S）等から構成されます。第4類危険物（炭化水素・アルコール等）はほぼすべて有機化合物です。"},
+{id:154,category:"基礎的な化学",question:"「炭化水素」の説明として正しいものはどれか。",choices:["炭素と水素のみから成る化合物","炭素と酸素のみから成る化合物","炭素・水素・酸素から成る化合物","炭素のみから成る物質"],answer:0,explanation:"炭化水素は炭素（C）と水素（H）のみから構成される化合物の総称です。ガソリン・軽油・灯油の主成分であり、第4類危険物の多くは炭化水素またはその誘導体です。"},
+{id:155,category:"基礎的な化学",question:"元素の「同素体」の説明として正しいものはどれか。",choices:["同じ元素からなる異なる性質を持つ単体","異なる元素が同じ割合で結合した化合物","同じ化学式を持つ異なる化合物（異性体）","同じ物質の固体・液体・気体"],answer:0,explanation:"同素体とは、同じ元素からなる異なる性質を持つ単体のことです。例：炭素の同素体（ダイヤモンド・グラファイト・フラーレン）、硫黄の同素体、酸素とオゾン（O₂とO₃）等。"},
+{id:156,category:"基礎的な化学",question:"化学式C₂H₅OHで表される物質はどれか。",choices:["メタノール（メチルアルコール）","エタノール（エチルアルコール）（化学的特性値）","アセトンが化学反応・酸化還元において危険物の特性を示す重要な化学量","ジエチルエーテルが化学反応・酸化還元において危険物の特性を示す重要な化学量"],answer:1,explanation:"C₂H₅OH（またはCH₃CH₂OH）はエタノール（エチルアルコール）です。メタノールはCH₃OH、アセトンはCH₃COCH₃、ジエチルエーテルはC₂H₅OC₂H₅です。"},
+{id:157,category:"基礎的な化学",question:"水溶液のpHについて正しいものはどれか。",choices:["pH7が酸性、pH7以下がアルカリ性として危険物の化学的性質・反応において重要な概念として定義されている","pH7が中性、pH7未満が酸性、pH7超がアルカリ性","pH7が中性、pH7超が酸性、pH7未満がアルカリ性","pHが低いほどアルカリ性が強いとして危険物の化学的性質・反応において重要な概念として定義されている"],answer:1,explanation:"pH7が中性、7未満（小さい）が酸性、7超（大きい）がアルカリ性（塩基性）です。pHが低いほど酸性が強く、高いほどアルカリ性が強い。"},
+{id:158,category:"基礎的な化学",question:"有機溶剤（第4類危険物の多く）と水の関係として正しいものはどれか。",choices:["すべて水によく溶けるとして危険物の化学的性質・反応において重要な概念として定義されている","水に溶けないもの（非水溶性）が多い（化学的特性値）","すべて水と混合しないとして有機化合物・無機化合物の危険性に関わる化学的特性","すべて水より重いが化学反応・酸化還元において危険物の特性を示す重要な化学量"],answer:1,explanation:"第4類危険物（有機溶剤）は水に溶けないもの（非水溶性：ガソリン・灯油・軽油等）が多いです。アルコール類・アセトン等は水溶性ですが、炭化水素系は一般に非水溶性です。"},
+{id:159,category:"基礎的な化学",question:"燃焼で生成される主な物質（完全燃焼の場合）として正しいものはどれか。",choices:["炭素と水素が化学反応・酸化還元において危険物の特性を示す重要な化学量","二酸化炭素と一酸化炭素","二酸化炭素と水（化学的特性値）","窒素と酸素が化学反応・酸化還元において危険物の特性を示す重要な化学量"],answer:2,explanation:"炭化水素系の危険物が完全燃焼すると、二酸化炭素（CO₂）と水（H₂O）が生成されます。不完全燃焼では一酸化炭素（CO）や煤（すす）も生成されます。"},
+{id:160,category:"基礎的な化学",question:"「重合反応」の説明として正しいものはどれか。",choices:["大きな分子が小さな分子に分解される反応が化学反応・酸化還元において危険物の特性を示す重要な化学量","酸化還元反応の一種として有機化合物・無機化合物の危険性に関わる化学的特性","酸と塩基が中和する反応が化学反応・酸化還元において危険物の特性を示す重要な化学量","小さな単量体（モノマー）が多数結合して高分子を形成する反応"],answer:3,explanation:"重合反応は、多数の小さな分子（モノマー・単量体）が互いに結合して高分子化合物（ポリマー）を形成する反応です。一部の危険物（アセトアルデヒド等）は重合反応を起こす性質があります。"},
+{id:161,category:"基礎的な化学",question:"「混合物」と「純物質」の説明として正しいものはどれか。",choices:["ガソリンは純物質であるとして危険物の化学的性質・反応において重要な概念として定義されている","混合物は一定の沸点を持つとして有機化合物・無機化合物の危険性に関わる化学的特性","ガソリンは炭化水素の混合物であり、純物質ではない","純物質は複数の元素からなる化合物のみを指す"],answer:2,explanation:"ガソリンは多種の炭化水素の混合物であり、一定の沸点や融点を持ちません。純物質（純粋な物質）は1種類の物質のみからなり、一定の物理的性質（沸点・融点等）を持ちます。"},
+{id:162,category:"基礎的な化学",question:"「触媒」の働きとして正しいものはどれか。",choices:["反応に消費されて反応生成物となる","自身は変化せずに化学反応の速度を変える","反応温度を必ず上昇させるとして有機化合物・無機化合物の危険性に関わる化学的特性","反応に不可欠であり、なければ反応は起こらない"],answer:1,explanation:"触媒は化学反応において、自身は変化せず（消費されず）に反応速度を増加（または減少）させる物質です。反応後も触媒は再生されます。"},
+{id:163,category:"基礎的な化学",question:"「アルコール類」の一般的な性質として正しいものはどれか。",choices:["ヒドロキシ基（-OH）を含む有機化合物（化学的特性値）","水に溶けないとして有機化合物・無機化合物の危険性に関わる化学的特性","強い酸性を示すとして危険物の化学的性質・反応において重要な概念として定義されている","水より常に重いとして危険物の化学的性質・反応において重要な概念として定義されている"],answer:0,explanation:"アルコール類はヒドロキシ基（-OH）を含む有機化合物です。炭素数が少ないアルコール（メタノール・エタノール等）は水に溶けやすく、炭素数が増えると水への溶解性は低下します。"},
+{id:164,category:"基礎的な化学",question:"「イオン化傾向」について正しいものはどれか。",choices:["イオン化傾向が大きい金属ほど腐食しにくい","イオン化傾向は金属の電気伝導性を表す","イオン化傾向が大きい金属ほど腐食しやすく","イオン化傾向は沸点の高さを表す"],answer:2,explanation:"イオン化傾向が大きい金属（リチウム・カリウム・ナトリウム等）は電子を失ってイオンになりやすく、腐食・酸化されやすい。危険物施設の配管・タンク材質の選定に関係します。"},
+{id:165,category:"基礎的な化学",question:"「溶解度」の説明として正しいものはどれか。",choices:["液体の密度を表す単位が化学反応・酸化還元において危険物の特性を示す重要な化学量","液体の粘度を表す指標として有機化合物・無機化合物の危険性に関わる化学的特性","一定温度・一定量の溶媒に溶ける溶質の最大量（化学的特性値）","物質の沸点と融点の差が化学反応・酸化還元において危険物の特性を示す重要な化学量"],answer:2,explanation:"溶解度は、一定温度において一定量の溶媒（通常水100g）に溶ける溶質の最大量（g）です。温度によって変化します。危険物の水への溶解性は消火方法の選定に関係します。"},
+{id:166,category:"基礎的な化学",question:"「酸化数」に関して、酸素原子の酸化数として通常使われる値はどれか。",choices:["+2として危険物の化学的性質・反応において重要な概念として定義されている","-2（化学的特性値）","0として危険物の化学的性質・反応において重要な概念として定義されている","+1として危険物の化学的性質・反応において重要な概念として定義されている"],answer:1,explanation:"酸化物中の酸素原子の酸化数は通常-2です（ただしH₂O₂中の酸素は-1、OF₂中は+2）。酸化数は電子のやり取りを整理するための概念的な数値です。"},
+{id:167,category:"基礎的な化学",question:"「分子量」の説明として正しいものはどれか。",choices:["分子1個の電荷量として危険物の化学的性質・反応において重要な概念として定義されている","分子を構成する原子の原子量の合計（化学的特性値）","物質1モルの体積として有機化合物・無機化合物の危険性に関わる化学的特性","物質の燃焼熱が化学反応・酸化還元において危険物の特性を示す重要な化学量"],answer:1,explanation:"分子量は、分子を構成する原子の原子量の合計です。例：水（H₂O）の分子量=1×2+16=18。蒸気比重の計算等にも使用されます。"},
+{id:168,category:"基礎的な化学",question:"「化学反応式」において、矢印の左辺（反応前）と右辺（反応後）で保存される量として正しいものはどれか。",choices:["分子の数として危険物の化学的性質・反応において重要な概念として定義されている","原子の種類と数（質量保存の法則）（化学的特性値）","物質の体積が化学反応・酸化還元において危険物の特性を示す重要な化学量","物質の温度として危険物の化学的性質・反応において重要な概念として定義されている"],answer:1,explanation:"化学反応の前後では、原子の種類と数（したがって質量）は変化しません（質量保存の法則）。分子の数・体積・温度は反応によって変化します。"},
+{id:169,category:"基礎的な化学",question:"第4類危険物の多くが持つ「炭素-炭素結合（C-C結合）」と「炭素-水素結合（C-H結合）」について正しいものはどれか。",choices:["C-H結合は非常に安定で燃焼しないが化学反応・酸化還元において危険物の特性を示す重要な化学量","水素が多いほど燃焼しにくいとして危険物の化学的性質・反応において重要な概念として定義されている","C-C結合は爆発的に反応するが化学反応・酸化還元において危険物の特性を示す重要な化学量","炭化水素のC-H結合は可燃性の根源であり、燃焼時に酸化される"],answer:3,explanation:"炭化水素のC-H結合（および炭素骨格）は燃焼の際に酸素と反応（酸化）してCO₂とH₂Oを生成します。水素原子が多いほど燃焼熱が大きく、燃焼しやすい傾向があります。"},
+{id:170,category:"基礎的な化学",question:"「異性体」の説明として正しいものはどれか。",choices:["同じ化学式を持つが異なる構造","異なる化学式を持つ同じ性質の化合物","同一物質の固体と液体の状態","元素が異なるが性質が同じ化合物"],answer:0,explanation:"異性体とは、化学式（分子式）が同じでも構造が異なるため性質が違う化合物のことです。例：ブタン（C₄H₁₀）には直鎖状のn-ブタンと分岐したイソブタンの構造異性体があります。"},
+{id:171,category:"基礎的な化学",question:"ガソリンの主成分として正しいものはどれか。",choices:["炭素数1～3の炭化水素として危険物の化学的性質・反応において重要な概念として定義されている","炭素数4～10程度の炭化水素の混合物","エタノールのみが化学反応・酸化還元において危険物の特性を示す重要な化学量","炭素数15～20の炭化水素"],answer:1,explanation:"ガソリンは主に炭素数4～10程度の脂肪族・芳香族炭化水素の混合物です。原油の蒸留によって得られ、組成は一定でなく混合物です。"},
+{id:172,category:"基礎的な化学",question:"「エステル」の生成反応として正しいものはどれか。",choices:["酸とアルコールが反応して水を失う","酸と塩基が反応して塩と水を生成する（中和）","炭化水素が酸素と反応する（燃焼）","アルコールが酸化されてアルデヒドになる反応"],answer:0,explanation:"エステル化とは、カルボン酸とアルコールが縮合反応してエステルと水を生成する反応です。動植物油類（脂肪酸のグリセリンエステル）もエステルの一種です。"},
+{id:173,category:"基礎的な化学",question:"「金属のナトリウム」と水の反応として正しいものはどれか。",choices:["ゆっくり溶けるだけで気体は発生しない","激しく反応して水素を発生し、発熱","水と混合してもほとんど反応しない","水に溶けて塩酸を生成する"],answer:1,explanation:"金属ナトリウムは水と激しく反応して水酸化ナトリウム（NaOH）と水素ガス（H₂）を発生します。この発熱により水素に引火・爆発することがあります（第3類危険物の代表的な反応）。"},
+{id:174,category:"基礎的な化学",question:"「酸化還元反応」において還元とは何か。",choices:["酸素を受け取ることとして有機化合物・無機化合物の危険性に関わる化学的特性","電子を失うこととして危険物の化学的性質・反応において重要な概念として定義されている","水素を失うこととして危険物の化学的性質・反応において重要な概念として定義されている","酸素を失う・水素を得る（化学的特性値）"],answer:3,explanation:"還元は酸化の逆で「酸素を失う」「水素を得る」「電子を得る」の3つの側面で定義されます。酸化と還元は常に同時に起こります（酸化還元反応）。"},
+{id:175,category:"基礎的な化学",question:"「単体」「化合物」「混合物」の分類で、ガソリンが属するのはどれか。",choices:["単体として有機化合物・無機化合物の危険性に関わる化学的特性","化合物として有機化合物・無機化合物の危険性に関わる化学的特性","混合物（化学的特性値）","元素として危険物の化学的性質・反応において重要な概念として定義されている"],answer:2,explanation:"ガソリンは複数の炭化水素成分（ブタン・ペンタン・へキサン・オクタン等）が混合した「混合物」です。単一の化学式では表せず、沸点範囲（約40～220℃）を持ちます。"},
+{id:176,category:"基礎的な化学",question:"「共有結合」の説明として正しいものはどれか。",choices:["金属陽イオンと非金属陰イオンが静電気力で結合","水素原子を介した分子間の引力として危険物の化学的性質・反応において重要な概念として定義されている","金属内の自由電子による結合として危険物の化学的性質・反応において重要な概念として定義されている","2つの原子が電子対を共有して形成する結合（化学的特性値）"],answer:3,explanation:"共有結合は、2つの原子が電子対を共有することで形成される化学結合です。有機化合物（炭化水素等）のC-C結合・C-H結合は共有結合です。"},
+{id:177,category:"基礎的な化学",question:"「水溶性」と「非水溶性」の危険物では、水系消火剤（泡消火剤等）の効果に違いはあるか。",choices:["水溶性危険物には通常の泡消火剤は効果が薄く、","効果に違いはないとして危険物の化学的性質・反応において重要な概念として定義されている","非水溶性危険物には泡消火は効果がない","水溶性危険物は水で消火できるが化学反応・酸化還元において危険物の特性を示す重要な化学量"],answer:0,explanation:"水溶性危険物（アルコール類・アセトン等）には、通常の泡消火剤を使用すると危険物が泡に溶け込んで泡が崩壊するため、耐アルコール型（水溶性液体用）泡消火剤を使用します。"},
+{id:178,category:"基礎的な化学",question:"「電気陰性度」が高い元素の特徴として正しいものはどれか。",choices:["共有電子対を自分に引き寄せる力が強い（化学的特性値）","金属元素に多いが化学反応・酸化還元において危険物の特性を示す重要な化学量","電気伝導性が高いが化学反応・酸化還元において危険物の特性を示す重要な化学量","陽イオンになりやすいとして危険物の化学的性質・反応において重要な概念として定義されている"],answer:0,explanation:"電気陰性度が高い元素（フッ素・酸素・窒素・塩素等）は共有電子対を強く引き寄せる性質があります。この差が極性の原因になります。"},
+{id:179,category:"基礎的な化学",question:"「窒素（N₂）」の性質として正しいものはどれか。",choices:["可燃性気体が化学反応・酸化還元において危険物の特性を示す重要な化学量","燃焼を助ける支燃性気体として危険物の化学的性質・反応において重要な概念として定義されている","不活性（不燃性）気体で空気の約78%を占める（化学的特性値）","有毒ガスで取り扱いに危険があるとして危険物の化学的性質・反応において重要な概念として定義されている"],answer:2,explanation:"窒素（N₂）は不活性な不燃性気体で、大気の約78%を占めます。燃焼しないため不活性ガス消火（窒素充填による酸素濃度の希薄化）にも利用されます。"},
+{id:180,category:"基礎的な化学",question:"「加水分解」の説明として正しいものはどれか。",choices:["化合物が水と反応して分解する反応（化学的特性値）","水を電気分解する反応が化学反応・酸化還元において危険物の特性を示す重要な化学量","水を触媒とする酸化反応として危険物の化学的性質・反応において重要な概念として定義されている","水の蒸発を利用した分離が化学反応・酸化還元において危険物の特性を示す重要な化学量"],answer:0,explanation:"加水分解は、化合物が水（H₂O）と反応して分解する反応です。エステルの加水分解（エステル+水→酸+アルコール）や有機溶剤の一部が水分で変質する現象がこれに相当します。"},
+{id:181,category:"燃焼・消火の理論",question:"燃焼の三要素として正しいものはどれか。",choices:["可燃物・熱源・圧力が燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","酸素・水素・点火源が燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","可燃物・窒素・点火源が燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","可燃物・酸素（支燃性物質）・点火源（燃焼・消火の基準）"],answer:3,explanation:"燃焼（火災）が起こるためには「可燃物（燃料）」「酸素（支燃性ガス）」「点火源（熱・火花等）」の三要素が同時に揃う必要があります。この3つのうち1つを取り除くことが消火の原理です。"},
+{id:182,category:"燃焼・消火の理論",question:"消火の「冷却効果」の説明として正しいものはどれか。",choices:["可燃物から酸素を遮断するが燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","燃焼物の温度を引火点以下に下げて燃焼を停止させる","可燃性ガスの濃度を燃焼範囲外に下げる","燃焼反応の連鎖を断ち切るとして危険物の燃焼性・消火適応性において重要な特性として認識される"],answer:1,explanation:"冷却消火とは、燃焼物に水等の冷却剤を放射して温度を引火点（燃焼点）以下に下げ、燃焼を停止させる消火方法です。水は蒸発潜熱が大きく、優れた冷却効果を持ちます。"},
+{id:183,category:"燃焼・消火の理論",question:"消火の「窒息効果」の説明として正しいものはどれか。",choices:["燃焼物を冷却する効果として危険物の燃焼性・消火適応性において重要な特性として認識される","燃焼物への酸素の供給を遮断して燃焼を停止させる（燃焼・消火の基準）","燃焼連鎖反応を化学的に抑制するとして危険物の燃焼性・消火適応性において重要な特性として認識される","可燃物を除去するとして危険物の燃焼性・消火適応性において重要な特性として認識される"],answer:1,explanation:"窒息消火とは、燃焼物への酸素（空気）の供給を遮断することで燃焼を停止させる消火方法です。泡・二酸化炭素・砂等をかけて酸素を遮断します。"},
+{id:184,category:"燃焼・消火の理論",question:"「負触媒効果（抑制効果）」を利用した消火方法として正しいものはどれか。",choices:["水による冷却消火として危険物の燃焼性・消火適応性において重要な特性として認識される","砂による窒息消火が燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","ハロゲン化物・粉末消火剤による燃焼連鎖反応の抑制（燃焼・消火の基準）","二酸化炭素による酸素希薄化として燃焼の三要素・消火方法において重要な技術的概念とされている"],answer:2,explanation:"負触媒効果（抑制効果）とは、燃焼の連鎖反応に介入してラジカルを不活性化し、燃焼を化学的に抑制する消火効果です。ハロゲン化物消火剤・粉末消火剤（リン酸アンモニウム系等）が活用します。"},
+{id:185,category:"燃焼・消火の理論",question:"第4類危険物の火災に水による棒状注水が適さない理由として正しいものはどれか。",choices:["水は第4類危険物と化学反応して有毒ガスを生成するから","第4類危険物の多くは水より軽く、棒状注水する","水では温度を下げられないからとして燃焼の三要素・消火方法において重要な技術的概念とされている","水は第4類危険物に溶けてしまうから"],answer:1,explanation:"第4類危険物（引火性液体）の多くは水より軽く、棒状注水すると危険物が飛散・拡大して燃焼範囲が広がります。霧状放水や泡消火が適切です。"},
+{id:186,category:"燃焼・消火の理論",question:"「泡消火剤」の消火効果として主なものはどれか。",choices:["冷却効果のみが燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","窒息効果（酸素遮断）と冷却効果（燃焼・消火の基準）","負触媒効果のみとして燃焼の三要素・消火方法において重要な技術的概念とされている","除去効果のみとして燃焼の三要素・消火方法において重要な技術的概念とされている"],answer:1,explanation:"泡消火剤は、燃焼物の表面を泡で覆って酸素を遮断する「窒息効果」と、泡の水分による「冷却効果」の両方を持ちます。第4類危険物（引火性液体）の油火災に効果的です。"},
+{id:187,category:"燃焼・消火の理論",question:"「粉末消火剤（ABC粉末）」の主成分として正しいものはどれか。",choices:["リン酸アンモニウム（第一リン酸アンモニウム）（燃焼・消火の基準）","炭酸水素ナトリウムとして危険物の燃焼性・消火適応性において重要な特性として認識される","炭酸カルシウムとして危険物の燃焼性・消火適応性において重要な特性として認識される","塩化カルシウムとして危険物の燃焼性・消火適応性において重要な特性として認識される"],answer:0,explanation:"ABC粉末（第一種・第二種・第三種粉末）の主成分はリン酸アンモニウム（NH₄H₂PO₄）です。A・B・Cすべての火災（普通・油・電気）に対応できます。"},
+{id:188,category:"燃焼・消火の理論",question:"「二酸化炭素消火剤」の特徴として誤っているものはどれか。",choices:["電気設備の火災に有効","精密機器への汚損が少ない","密閉空間での使用は酸欠の危険がある","A火災（普通火災）に特に有効"],answer:3,explanation:"二酸化炭素消火剤は酸素希薄化（窒息）効果を持ち、B（油）・C（電気）火災に有効です。A火災（木材・紙等）への冷却・浸透効果が低く、特にA火災に適しているとはいえません。密閉空間での使用は酸欠に注意が必要です。"},
+{id:189,category:"燃焼・消火の理論",question:"「引火」と「発火（自然発火）」の違いとして正しいものはどれか。",choices:["どちらも外部からの点火源が必要として燃焼の三要素・消火方法において重要な技術的概念とされている","発火は外部点火源が必要、引火は点火源不要","引火は外部点火源が必要、発火は点火源なしで自然に起こる","引火と発火は同じ意味として危険物の燃焼性・消火適応性において重要な特性として認識される"],answer:2,explanation:"引火は可燃性蒸気が外部点火源（炎・火花等）によって点火される現象で、発火（自然発火）は外部点火源なしに物質が自然に発火する現象です。発火点は引火点より高い温度です。"},
+{id:190,category:"燃焼・消火の理論",question:"「完全燃焼」と「不完全燃焼」の違いとして正しいものはどれか。",choices:["完全燃焼は酸素が過剰な場合、不完全燃焼は酸素","完全燃焼は温度が高い場合にのみ起こる","不完全燃焼は酸素が過剰な場合に起こる","どちらも同じ生成物を出すが燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念"],answer:0,explanation:"完全燃焼は酸素が十分な場合にCO₂とH₂Oのみを生成します。不完全燃焼は酸素不足の場合に起こり、一酸化炭素（CO）や煤（C）等の有害物質が生成されます。"},
+{id:191,category:"燃焼・消火の理論",question:"「燃焼速度」に影響する主な要因として正しいものはどれか。",choices:["物質の色として燃焼の三要素・消火方法において重要な技術的概念とされている","容器の色や材質として危険物の燃焼性・消火適応性において重要な特性として認識される","物質の味や匂いとして燃焼の三要素・消火方法において重要な技術的概念とされている","酸素濃度・温度・物質の種類・粒径（燃焼・消火の基準）"],answer:3,explanation:"燃焼速度は、酸素濃度（高いほど速い）・温度（高いほど速い）・物質の種類（化学的性質）・粉体では粒径（小さいほど速い）等の要因によって変化します。"},
+{id:192,category:"燃焼・消火の理論",question:"「爆燃」と「爆轟（デトネーション）」の違いとして正しいものはどれか。",choices:["どちらも音速以下の燃焼速度が燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","爆燃は音速以下、爆轟は音速以上の速度で伝播する（燃焼・消火の基準）","爆轟は音速以下、爆燃は音速以上として危険物の燃焼性・消火適応性において重要な特性として認識される","どちらも同じ速度として危険物の燃焼性・消火適応性において重要な特性として認識される"],answer:1,explanation:"爆燃は音速以下の速度で燃焼が伝播する現象、爆轟（デトネーション）は音速以上の速度で衝撃波を伴いながら伝播する現象です。爆轟はより破壊力が大きいです。"},
+{id:193,category:"燃焼・消火の理論",question:"「砂（乾燥砂）」による消火の効果として正しいものはどれか。",choices:["冷却効果のみとして燃焼の三要素・消火方法において重要な技術的概念とされている","化学的な抑制効果として燃焼の三要素・消火方法において重要な技術的概念とされている","窒息効果（酸素遮断）が主な効果（燃焼・消火の基準）","除去効果として危険物の燃焼性・消火適応性において重要な特性として認識される"],answer:2,explanation:"乾燥砂は燃焼物の表面を覆って酸素の供給を遮断する「窒息効果」を発揮します。第3類危険物（禁水性物質）や第4類危険物の消火にも使用されます。"},
+{id:194,category:"燃焼・消火の理論",question:"「消火効果の除去効果」の説明として正しいものはどれか。",choices:["燃焼物を冷却するとして燃焼の三要素・消火方法において重要な技術的概念とされている","酸素を遮断するとして燃焼の三要素・消火方法において重要な技術的概念とされている","燃焼連鎖を断ち切るとして燃焼の三要素・消火方法において重要な技術的概念とされている","可燃物そのものを取り除くかガスを遮断する（燃焼・消火の基準）"],answer:3,explanation:"除去消火とは、燃焼の三要素のうち「可燃物」を取り除く消火方法です。ガス火災でのバルブ閉止、山火事での防火帯設置、燃え移る前の可燃物撤去などが該当します。"},
+{id:195,category:"燃焼・消火の理論",question:"「ハロゲン化物消火剤（ハロン）」の消火効果として主なものはどれか。",choices:["冷却効果として危険物の燃焼性・消火適応性において重要な特性として認識される","窒息効果として燃焼の三要素・消火方法において重要な技術的概念とされている","負触媒効果（燃焼連鎖反応の化学的抑制）（燃焼・消火の基準）","除去効果として危険物の燃焼性・消火適応性において重要な特性として認識される"],answer:2,explanation:"ハロゲン化物消火剤（ハロン1301等）の主な消火効果は負触媒効果で、燃焼連鎖反応に関与するラジカルを不活性化して燃焼を化学的に抑制します。オゾン層破壊問題で現在は使用が制限されています。"},
+{id:196,category:"燃焼・消火の理論",question:"「油火災（B火災）」への消火に適さないものはどれか。",choices:["泡消火器として燃焼の三要素・消火方法において重要な技術的概念とされている","粉末消火器が燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","二酸化炭素消火器として燃焼の三要素・消火方法において重要な技術的概念とされている","棒状注水による水消火（燃焼・消火の基準）"],answer:3,explanation:"油火災（B火災）に棒状注水による水消火は危険物を飛散・拡大させるため禁止です。泡・粉末・二酸化炭素・ハロゲン化物消火剤が適切です。"},
+{id:197,category:"燃焼・消火の理論",question:"「電気火災（C火災）」への消火で使用してはならないものはどれか。",choices:["二酸化炭素消火器として危険物の燃焼性・消火適応性において重要な特性として認識される","粉末（ABC）消火器","ハロゲン化物消火器として燃焼の三要素・消火方法において重要な技術的概念とされている","水消火器（棒状放水）（燃焼・消火の基準）"],answer:3,explanation:"電気火災（C火災）には導電性のある水系消火剤（水・泡等）は感電の危険があるため使用禁止です。不導電性の消火剤（CO₂・粉末・ハロゲン化物）を使用します。"},
+{id:198,category:"燃焼・消火の理論",question:"「蒸発燃焼」の説明として正しいものはどれか。",choices:["固体が直接燃焼するとして危険物の燃焼性・消火適応性において重要な特性として認識される","液体・固体が蒸発した蒸気が空気と混合して燃焼する（燃焼・消火の基準）","金属が酸素と直接反応して燃焼するとして危険物の燃焼性・消火適応性において重要な特性として認識される","内部から分解ガスが発生して燃焼するとして燃焼の三要素・消火方法において重要な技術的概念とされている"],answer:1,explanation:"蒸発燃焼は、可燃性液体（ガソリン・アルコール等）や固体（蝋・ナフタリン等）が蒸発した蒸気が空気と混合して燃焼する形態です。第4類危険物の燃焼はほぼすべてこの形態です。"},
+{id:199,category:"燃焼・消火の理論",question:"「分解燃焼」の例として正しいものはどれか。",choices:["ガソリンの燃焼として危険物の燃焼性・消火適応性において重要な特性として認識される","鉄粉の燃焼として燃焼の三要素・消火方法において重要な技術的概念とされている","木材・石炭の燃焼（熱分解ガスが燃焼）（燃焼・消火の基準）","アルコールの燃焼が燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念"],answer:2,explanation:"分解燃焼とは、熱によって固体が分解し、発生した可燃性ガスが燃焼する形態です。木材・石炭・プラスチック等がこれに当たります。表面燃焼（コークス等）・蒸発燃焼と区別されます。"},
+{id:200,category:"燃焼・消火の理論",question:"「粉じん爆発」が起こりやすい条件として正しいものはどれか。",choices:["粉じんの粒径が大きく、空気中に均一に分散している","粉じんの粒径が小さく、空気中に一定濃度で分散している","粉じんが水に濡れているとして危険物の燃焼性・消火適応性において重要な特性として認識される","密閉空間で粉じんが沈積しているとして危険物の燃焼性・消火適応性において重要な特性として認識される"],answer:1,explanation:"粉じん爆発は、可燃性固体の微粉末（粒径が小さいもの）が空気中に適切な濃度で分散（浮遊）している場合に点火源で急激な燃焼・爆発を起こす現象です。粒径が小さいほど表面積が大きく爆発しやすい。"},
+{id:201,category:"燃焼・消火の理論",question:"燃焼の連鎖反応とは何か。",choices:["燃焼による熱が隣の物質に伝わって次々燃える現象","燃焼ガスが連続して発生する現象として危険物の燃焼性・消火適応性において重要な特性として認識される","電気が次々と流れる現象として危険物の燃焼性・消火適応性において重要な特性として認識される","活性ラジカルが生成され、次の反応を促進しなが（燃焼・消火の基準）"],answer:3,explanation:"燃焼の連鎖反応とは、燃焼で生成された活性種（ラジカル）が次の酸化反応を促進し、自己持続的に燃焼が継続するメカニズムです。ハロゲン化物消火剤はこの連鎖を断ち切ります。"},
+{id:202,category:"燃焼・消火の理論",question:"第4類危険物に対する消火方法として最も適切なものはどれか。",choices:["棒状放水による注水が燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","大量の水をかけて冷却する","泡・粉末・二酸化炭素（燃焼・消火の基準）","高圧霧状水のみが燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念"],answer:2,explanation:"第4類危険物（引火性液体）の消火には泡消火剤・粉末消火剤・二酸化炭素消火剤・ハロゲン化物消火剤が適しています。棒状注水は飛散を招き危険です。"},
+{id:203,category:"燃焼・消火の理論",question:"「沸騰範囲」の広いガソリン等が燃焼するときの炎の特徴として正しいものはどれか。",choices:["常に青白い炎を上げるとして燃焼の三要素・消火方法において重要な技術的概念とされている","燃焼中に爆発は起こらないとして危険物の燃焼性・消火適応性において重要な特性として認識される","炎は常に小さいとして危険物の燃焼性・消火適応性において重要な特性として認識される","大量の黒煙と橙色〜黄色の炎を生じることが多い（燃焼・消火の基準）"],answer:3,explanation:"ガソリン等の炭化水素系燃料の燃焼では不完全燃焼の煤（カーボン）を含んだ黒煙と、輝度の高い橙〜黄色の炎が生じます。完全燃焼では青い炎になります。"},
+{id:204,category:"燃焼・消火の理論",question:"「フラッシュオーバー」の説明として正しいものはどれか。",choices:["液体危険物が沸騰して飛散する現象","タンク火災において水分が急激に蒸発して爆発的に危険物を噴き出す現象","室内火災において可燃物の全面が急激に燃焼","引火点以下の危険物に引火する現象"],answer:2,explanation:"フラッシュオーバーは、火災が成長して室内の可燃物が熱分解ガスを放出し、それが一斉に着火して室内全体が急激に全面燃焼に移行する危険な現象です。"},
+{id:205,category:"燃焼・消火の理論",question:"「ボイルオーバー」の説明として正しいものはどれか。",choices:["タンク内の危険物が沸点以上に加熱されてタンクが変形する現象","タンク火災において、タンク底部の水分が急激に（燃焼・消火の基準）","蒸気が圧力で弁を押し開ける現象が燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","引火点以下の液体が引火する現象として燃焼の三要素・消火方法において重要な技術的概念とされている"],answer:1,explanation:"ボイルオーバーは、屋外タンクの重質油火災において、タンク底部に滞留した水分層が熱波（ヒートウェーブ）によって急激に沸騰・蒸発し、燃焼中の油を周囲に大量噴出させる危険な現象です。"},
+{id:206,category:"燃焼・消火の理論",question:"「危険物火災に水系消火剤が不適な理由」として誤っているものはどれか。",choices:["第4類危険物の多くが水に溶けず、水面上で燃焼するため","棒状水流が危険物を飛散させるため","水は一切の消火に無効であるため","第3類危険物（禁水性）は水と激しく反応するため"],answer:2,explanation:"水系消火剤は普通火災（木材・紙等）に有効です。第4類危険物等に不適なのは、飛散・拡散・禁水性物質との反応等の理由によるものであり、「一切無効」ではありません。"},
+{id:207,category:"燃焼・消火の理論",question:"「消火器の使用後の噴射残圧」について正しいものはどれか。",choices:["使い切っても安全性に問題はなく、そのまま保管できる","使い切った消火器でも内部に残圧がある場合があ","使用後の消火器は一般ごみとして処分できる","一度使用したら再充填して再利用する義務がある"],answer:1,explanation:"使い切った消火器でも内部に残圧・残剤が残っている場合があり、分解・廃棄は危険です。消火器の廃棄は専門業者（消火器リサイクル推進センター等）に依頼します。"},
+{id:208,category:"燃焼・消火の理論",question:"「燃焼下限界（LEL）」が低い危険物の特徴として正しいものはどれか。",choices:["少量の蒸気発生でも燃焼が起こりにくいが燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","引火点が高いとして燃焼の三要素・消火方法において重要な技術的概念とされている","燃焼範囲が狭いが燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","少量の蒸気が空気と混合するだけで燃焼しやすく危険性が高い"],answer:3,explanation:"燃焼下限界（LEL）が低い危険物は、空気中に少量の蒸気が存在するだけで燃焼可能な混合気体になります。例えばジエチルエーテル（LEL：1.9vol%）は非常に少量の蒸気で燃焼します。"},
+{id:209,category:"燃焼・消火の理論",question:"「消火器の適応火災」のマークで「油火災」を示す色として正しいものはどれか。",choices:["赤として危険物の燃焼性・消火適応性において重要な特性として認識される","黄（燃焼・消火の基準）","青として危険物の燃焼性・消火適応性において重要な特性として認識される","緑が燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念"],answer:1,explanation:"消火器の適応火災マークは、A火災（普通）=白、B火災（油）=黄、C火災（電気）=青で表示されます。"},
+{id:210,category:"燃焼・消火の理論",question:"第4類危険物の火災に二酸化炭素消火器を使用する主な消火効果はどれか。",choices:["冷却効果のみが燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","除去効果のみとして燃焼の三要素・消火方法において重要な技術的概念とされている","負触媒効果のみが燃焼理論・消火原理において正しく理解すべき重要な物理化学的概念","酸素の希薄化（窒息効果）と若干の冷却効果（燃焼・消火の基準）"],answer:3,explanation:"二酸化炭素（CO₂）消火器の主な消火効果は、空気中の酸素濃度を希薄化して燃焼を不可能にする「窒息効果」で、一部冷却効果もあります。有毒ガスや汚損が少なく、精密機器・電気設備に適します。"},
+{id:211,category:"第4類危険物の性状（総論）",question:"第4類危険物に共通する性状として正しいものはどれか。",choices:["引火性の液体であり、引火点を有する（乙4の重要特性）","水より重い液体が多いとして第4類危険物（引火性液体）の共通的な性状として重要な特性","水に溶けるものが多いが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","常温で固体のものもあるとして第4類危険物の危険性評価において重要な測定値・特性値"],answer:0,explanation:"第4類危険物の共通性状は「引火性の液体」であることです。引火点を有し、引火点が低いほど引火の危険が高くなります。多くは水より軽く（比重<1）、水に溶けないものが多いです。"},
+{id:212,category:"第4類危険物の性状（総論）",question:"第4類危険物の蒸気の性状として正しいものはどれか。",choices:["空気より軽く、天井付近に滞留する","水分と結合して液体になりやすいとして第4類危険物の危険性評価において重要な測定値・特性値","空気と同程度の重さで均一に分散する","空気より重く（蒸気比重>1）、低所に滞留する"],answer:3,explanation:"第4類危険物の蒸気はほぼすべて蒸気比重が1以上（空気より重い）で、低所・床面・ピット等に滞留します。この滞留した蒸気が点火源に接触すると引火します。"},
+{id:213,category:"第4類危険物の性状（総論）",question:"第4類危険物の分類において「特殊引火物」の引火点の基準として正しいものはどれか。",choices:["引火点が-40℃以下または発火点が100℃以下","引火点が-40℃以下のみ","引火点が0℃以下として第4類危険物（引火性液体）の共通的な性状として重要な特性","引火点が-20℃以下（乙4の重要特性）"],answer:3,explanation:"特殊引火物は「引火点が-20℃以下のものまたは発火点が100℃以下のもの」と定義されます。ジエチルエーテル・二硫化炭素・アセトアルデヒド等が該当します。"},
+{id:214,category:"第4類危険物の性状（総論）",question:"「第1石油類」の引火点の範囲として正しいものはどれか。",choices:["引火点が-40℃未満として第4類危険物（引火性液体）の共通的な性状として重要な特性","引火点が-20℃以上21℃未満","引火点が21℃以上70℃未満","引火点が70℃以上200℃未満"],answer:1,explanation:"第1石油類は「引火点が21℃未満（かつ特殊引火物に該当しないもの）」と定義されます。ガソリン・ベンゼン・トルエン・アセトン・MEK等が含まれます。"},
+{id:215,category:"第4類危険物の性状（総論）",question:"「第2石油類」の引火点の範囲として正しいものはどれか。",choices:["引火点が21℃未満として第4類危険物の危険性評価において重要な測定値・特性値","引火点が21℃以上70℃未満","引火点が70℃以上200℃未満","引火点が200℃以上"],answer:1,explanation:"第2石油類は引火点が21℃以上70℃未満の引火性液体です。灯油（引火点40℃以上）・軽油（45℃以上）・キシレン・クロロベンゼン等が含まれます。"},
+{id:216,category:"第4類危険物の性状（総論）",question:"「第3石油類」の引火点の範囲として正しいものはどれか。",choices:["引火点が21℃以上70℃未満","引火点が70℃以上200℃未満","引火点が200℃以上250℃未満","引火点が250℃以上として第4類危険物（引火性液体）の共通的な性状として重要な特性"],answer:1,explanation:"第3石油類は引火点が70℃以上200℃未満の引火性液体です。重油（引火点60℃以上）・グリセリン・エチレングリコール・クレオソート油等が含まれます。"},
+{id:217,category:"第4類危険物の性状（総論）",question:"「第4石油類」の引火点の範囲として正しいものはどれか。",choices:["引火点が100℃以上200℃未満","引火点が150℃以上が引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","引火点が250℃以上として第4類危険物の危険性評価において重要な測定値・特性値","引火点が200℃以上250℃未満（乙4の重要特性）"],answer:3,explanation:"第4石油類は引火点が200℃以上250℃未満の引火性液体です。ギヤ油・シリンダ油・タービン油・マシン油（機械油）等の潤滑油類が含まれます。"},
+{id:218,category:"第4類危険物の性状（総論）",question:"「動植物油類」の引火点として正しいものはどれか。",choices:["引火点が100℃以上","引火点が200℃以上（250℃未満）","引火点が250℃以上（乙4の重要特性）","引火点が70℃以上として第4類危険物（引火性液体）の共通的な性状として重要な特性"],answer:2,explanation:"動植物油類は引火点が250℃以上の引火性液体です。ヤシ油・アマニ油・椿油・ひまし油等の動植物性油脂が含まれます。"},
+{id:219,category:"第4類危険物の性状（総論）",question:"「アルコール類」の消防法上の定義として正しいものはどれか。",choices:["アルコール基(-OH)を含むすべての化合物","炭素数1～3の飽和一価アルコールで、濃度60%以上のもの","エタノール・メタノールのみ","炭素数1～3の飽和一価アルコール"],answer:3,explanation:"消防法上のアルコール類は「炭素数1～3の飽和一価アルコール（メタノール・エタノール・プロパノール等）」を指します。ただし変性アルコールや、含有量が60%未満の水溶液は別の品名に分類されます。"},
+{id:220,category:"第4類危険物の性状（総論）",question:"第4類危険物の指定数量について、特殊引火物の指定数量として正しいものはどれか。",choices:["50L（乙4の重要特性）","200Lが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","400Lとして第4類危険物（引火性液体）の共通的な性状として重要な特性","1,000Lとして第4類危険物（引火性液体）の共通的な性状として重要な特性"],answer:0,explanation:"特殊引火物の指定数量は50Lです。第4類危険物の中で最も危険性が高く、指定数量が最も少ない（規制が厳しい）品名です。"},
+{id:221,category:"第4類危険物の性状（総論）",question:"第4類危険物の火災消火において「耐アルコール型の泡消火剤」を使用する必要がある物質はどれか。",choices:["ガソリンが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","灯油が引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","アセトン（水溶性）（乙4の重要特性）","軽油として第4類危険物（引火性液体）の共通的な性状として重要な特性"],answer:2,explanation:"アセトン・アルコール類等の水溶性危険物には、通常の泡消火剤では泡が崩壊してしまうため、耐アルコール型（水溶性液体用）泡消火剤を使用します。非水溶性のガソリン・灯油・軽油には通常の泡が使用できます。"},
+{id:222,category:"第4類危険物の性状（総論）",question:"第4類危険物の保管に際して重要な点として誤っているものはどれか。",choices:["火気・高温を避け、冷暗所に貯蔵する","容器は密栓して蒸気の漏れを防ぐ","静電気の発生に注意するが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","第4類危険物はすべて水で希釈して貯蔵できる"],answer:3,explanation:"第4類危険物を水で希釈して保管することは適切ではありません。水溶性のものは希釈で引火点が上がる場合もありますが、非水溶性物質との混合等の問題もあり、適切な容器で密栓保管が基本です。"},
+{id:223,category:"第4類危険物の性状（総論）",question:"第4類危険物の「非水溶性」と「水溶性」の指定数量の違いとして正しいものはどれか。",choices:["どちらも同じ指定数量","水溶性のほうが指定数量が多い","非水溶性のほうが指定数量が多い","水溶性のほうが指定数量が少ない"],answer:1,explanation:"第4類危険物（第1石油類・アルコール類等）において、水溶性のものは指定数量が非水溶性の2倍に設定されています（例：第1石油類非水溶性200L、水溶性400L）。これは水溶性のほうが消火が容易との考えによります。"},
+{id:224,category:"第4類危険物の性状（総論）",question:"第4類危険物の取扱いにおいて静電気による引火を防ぐための措置として誤っているものはどれか。",choices:["配管・タンク等を接地（アース）するとして第4類危険物の危険性評価において重要な測定値・特性値","危険物の流速を遅くするとして第4類危険物の危険性評価において重要な測定値・特性値","ゴム手袋・ゴム製品を多用して静電気を蓄積しやすくする","帯電防止作業服を着用するが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される"],answer:2,explanation:"ゴム・プラスチック等の不導電性素材は静電気を蓄積しやすく危険です。接地（アース）・流速制限・帯電防止服着用・加湿等が静電気防止対策として正しい措置です。"},
+{id:225,category:"第4類危険物の性状（総論）",question:"第4類危険物の多くが「水に浮く」ことが危険物取扱い上問題となる理由として正しいものはどれか。",choices:["水と反応して毒ガスを発生するためとして第4類危険物の危険性評価において重要な測定値・特性値","水面上に浮いて燃焼が続き、水系消火では燃焼面が拡大するため","水中で自然発火するためとして第4類危険物の危険性評価において重要な測定値・特性値","水の中でより危険な成分を生成するためとして第4類危険物の危険性評価において重要な測定値・特性値"],answer:1,explanation:"第4類危険物（比重<1）は水面に浮き、水をかけると燃焼面が広がるため水系消火が適しません。泡で液面を覆い酸素を遮断する消火（泡消火）が有効です。"},
+{id:226,category:"第4類危険物の性状（総論）",question:"危険物乙4が取り扱える第4類危険物の「品名」として含まれないものはどれか。",choices:["ガソリンとして第4類危険物（引火性液体）の共通的な性状として重要な特性","灯油として第4類危険物の危険性評価において重要な測定値・特性値","ニトログリセリン（乙4の重要特性）","アルコール類として第4類危険物の危険性評価において重要な測定値・特性値"],answer:2,explanation:"ニトログリセリンは第5類危険物（自己反応性物質）です。乙種4類で取り扱えるのは第4類危険物（特殊引火物・第1石油類・アルコール類・第2石油類・第3石油類・第4石油類・動植物油類）のみです。"},
+{id:227,category:"第4類危険物の性状（総論）",question:"第4類危険物の危険等級Ⅱに分類されるものはどれか。",choices:["特殊引火物が引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","第1石油類・アルコール類（乙4の重要特性）","第2石油類として第4類危険物の危険性評価において重要な測定値・特性値","第3石油類・第4石油類・動植物油類"],answer:1,explanation:"危険等級Ⅱには第1石油類・アルコール類が分類されます。特殊引火物は危険等級Ⅰ、第2石油類・第3石油類・第4石油類・動植物油類は危険等級Ⅲです。"},
+{id:228,category:"第4類危険物の性状（総論）",question:"第4類危険物の「引火点」と「危険性の大小」の関係として正しいものはどれか。",choices:["引火点が低いほど低温で引火しやすく危険性が高い（乙4の重要特性）","引火点が高いほど危険性が高いとして第4類危険物（引火性液体）の共通的な性状として重要な特性","引火点と危険性は無関係として第4類危険物（引火性液体）の共通的な性状として重要な特性","引火点が高いほど燃焼速度が速いが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される"],answer:0,explanation:"引火点が低いほど、低温でも可燃性蒸気が発生して引火しやすくなります。特殊引火物（引火点-20℃以下）は最も危険性が高く、指定数量も最小（50L）です。"},
+{id:229,category:"第4類危険物の性状（総論）",question:"「第1石油類（非水溶性）」の指定数量として正しいものはどれか。",choices:["50Lとして第4類危険物（引火性液体）の共通的な性状として重要な特性","200L（乙4の重要特性）","400Lとして第4類危険物（引火性液体）の共通的な性状として重要な特性","1,000Lとして第4類危険物の危険性評価において重要な測定値・特性値"],answer:1,explanation:"第1石油類（非水溶性：ガソリン等）の指定数量は200Lです。水溶性（アセトン・ピリジン等）は400Lです。"},
+{id:230,category:"第4類危険物の性状（総論）",question:"第4類危険物の保管・取扱いに関して「換気」が重要である理由として正しいものはどれか。",choices:["危険物が分解して酸素を消費するため","引火性蒸気が低所に滞留し、引火","換気しないと危険物が固まってしまうため","換気しないと危険物が腐敗するため"],answer:1,explanation:"第4類危険物の蒸気は空気より重く低所に滞留します。換気が不十分だと可燃性蒸気が燃焼範囲（LEL〜UEL）の濃度に達し、点火源との接触で引火・爆発の危険があります。"},
+{id:231,category:"第4類危険物の性状（総論）",question:"第4類危険物の一般的な消火方法として正しいものはどれか。",choices:["大量の水による冷却消火として第4類危険物の危険性評価において重要な測定値・特性値","消火は不可能で、燃え尽きるのを待つ","砂をかけて消火（窒息）のみとして第4類危険物（引火性液体）の共通的な性状として重要な特性","泡・粉末・CO₂・ハロゲン化物消火剤による窒息"],answer:3,explanation:"第4類危険物の火災には泡消火剤（窒息・冷却）・粉末消火剤（抑制・窒息）・CO₂消火剤（窒息）・ハロゲン化物消火剤（抑制）等が有効です。棒状注水は禁止です。"},
+{id:232,category:"第4類危険物の性状（総論）",question:"第4類危険物の「沸点」と「引火点」の一般的な関係として正しいものはどれか。",choices:["沸点が低いほど蒸発しやすく引火点も低い傾向がある（乙4の重要特性）","沸点が低いほど引火点は高いが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","沸点と引火点は無関係が引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","沸点と引火点は常に同じ温度として第4類危険物の危険性評価において重要な測定値・特性値"],answer:0,explanation:"一般に沸点が低い物質ほど常温で蒸発しやすく、引火点も低い傾向があります。特殊引火物（沸点40℃以下等）は引火点も非常に低く、危険性が高いです。"},
+{id:233,category:"第4類危険物の性状（総論）",question:"第4類危険物に接触すると溶解・変質する可能性があるものはどれか。",choices:["金属製容器として第4類危険物（引火性液体）の共通的な性状として重要な特性","ガラス製容器として第4類危険物の危険性評価において重要な測定値・特性値","一部のゴム・プラスチック製品（乙4の重要特性）","セラミック容器が引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される"],answer:2,explanation:"有機溶剤（第4類危険物）は有機系のゴム・プラスチック・塗料等を溶解・膨潤させることがあります。危険物の容器・配管の材質選定では、溶解性（耐薬品性）を確認する必要があります。"},
+{id:234,category:"第4類危険物の性状（総論）",question:"第4類危険物を容器に収納する際の注意点として正しいものはどれか。",choices:["容器を満杯にして蒸気の発生を抑える","温度変化による膨張を考慮し、満杯にしない","容器は必ず透明のものを使用する","容器の大きさに制限はないとして第4類危険物（引火性液体）の共通的な性状として重要な特性"],answer:1,explanation:"液体危険物は温度上昇によって膨張します。容器を満杯にすると膨張でふたが開いたり容器が変形・破損する危険があります。内容積の98%以下（上部に2%以上の空間）を残します。"},
+{id:235,category:"第4類危険物の性状（総論）",question:"第4類危険物の中で「水溶性」のものとして正しいものはどれか。",choices:["ガソリンとして第4類危険物の危険性評価において重要な測定値・特性値","軽油として第4類危険物の危険性評価において重要な測定値・特性値","アセトン（乙4の重要特性）","ベンゼンが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される"],answer:2,explanation:"アセトン（CH₃COCH₃）は水と任意の割合で混ざる水溶性の危険物（第1石油類水溶性）です。ガソリン・軽油・ベンゼンは水に溶けない非水溶性の危険物です。"},
+{id:236,category:"第4類危険物の性状（総論）",question:"第4類危険物の「発火点」に関して正しいものはどれか。",choices:["発火点は引火点より常に低い","発火点は引火点より通常高い","発火点と引火点は同じ温度","発火点は沸点と同じとして第4類危険物の危険性評価において重要な測定値・特性値"],answer:1,explanation:"発火点は引火点より通常高い温度です（二硫化炭素は例外で発火点90℃と非常に低い）。発火点より引火点のほうが低く、引火点を超えれば外部点火源で着火できます。"},
+{id:237,category:"第4類危険物の性状（総論）",question:"第4類危険物で「毒性」に注意が必要なものとして正しいものはどれか。",choices:["ガソリンは無毒が引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","メタノール（メチルアルコール）は視神経を侵す毒性がある（乙4の重要特性）","すべての第4類危険物は毒性がないが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","灯油は強い毒性があるとして第4類危険物（引火性液体）の共通的な性状として重要な特性"],answer:1,explanation:"メタノール（メチルアルコール）は飲用すると視神経障害・失明・死亡に至る強い毒性があります。エタノールと混同しないよう注意が必要です。ガソリン・灯油も吸入・皮膚接触で健康被害を生じますが、メタノールは特に毒性が強い。"},
+{id:238,category:"第4類危険物の性状（総論）",question:"第4類危険物の「比重」について正しいものはどれか。",choices:["すべての第4類危険物の比重は1.0未満（水より軽い）","すべて水より重いとして第4類危険物（引火性液体）の共通的な性状として重要な特性","多くは水より軽いが、一部は水より重い（乙4の重要特性）","比重は引火点と同じ意味として第4類危険物の危険性評価において重要な測定値・特性値"],answer:2,explanation:"第4類危険物の多くは比重が1.0未満（水より軽い）ですが、二硫化炭素（比重1.26）・クロロベンゼン（1.11）・四塩化炭素等は水より重い例外もあります。"},
+{id:239,category:"第4類危険物の性状（総論）",question:"「アルコール類の指定数量」として正しいものはどれか。",choices:["200Lが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","2,000Lとして第4類危険物（引火性液体）の共通的な性状として重要な特性","1,000Lが引火性液体の取扱い・貯蔵において重要な物理化学的特性として認識される","400L（乙4の重要特性）"],answer:3,explanation:"アルコール類（消防法上の炭素数1～3の飽和一価アルコール）の指定数量は400Lです。"},
+{id:240,category:"第4類危険物の性状（総論）",question:"第4類危険物の中で指定数量が最も多い品名はどれか。",choices:["特殊引火物（50L）","第4石油類（6,000L）","動植物油類（10,000L）","第3石油類（非水溶性：2,000L）"],answer:2,explanation:"動植物油類の指定数量は10,000Lで、第4類危険物の中で最も多く（危険性が相対的に低い）です。特殊引火物の50Lが最も少なく（最も危険性が高い）です。"},
+{id:241,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"ジエチルエーテルの性状として誤っているものはどれか。",choices:["引火点は-45℃で非常に低い","蒸気比重は約2.6で空気より重い","水によく溶ける（水溶性）（乙4の重要特性）","発火点は約160℃で低く、高温面等に触れると発火する危険がある"],answer:2,explanation:"ジエチルエーテル（エーテル）は水にほとんど溶けない非水溶性の液体です（水への溶解度は約7g/100mL）。他の選択肢は正しい性状です。引火点-45℃、沸点34.6℃、蒸気比重2.6です。"},
+{id:242,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"二硫化炭素（CS₂）の性状として正しいものはどれか。",choices:["引火点が-30℃で非常に低く、発火点も100（乙4の重要特性）","水より軽く、水に浮くとして特殊引火物・アルコール類の個別の性状として重要な特性値","無臭の液体が特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","発火点は約250℃として特殊引火物・アルコール類の個別の性状として重要な特性値"],answer:0,explanation:"二硫化炭素の引火点は-30℃（非常に低い）、発火点は約90℃（非常に低い）で、特殊引火物に分類されます。比重1.26で水より重く、特有の不快臭があります。発火点の低さが特に危険な特徴です。"},
+{id:243,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"アセトアルデヒドの性状として正しいものはどれか。",choices:["引火点が約-39℃で非常に低い","水に溶けない非水溶性の液体","常温で固体として第4類各品目の危険性判断において重要な物性値・特徴","沸点が約200℃の高沸点液体"],answer:0,explanation:"アセトアルデヒド（CH₃CHO）は引火点-39℃、沸点20.2℃の特殊引火物です。水に任意の割合で混ざる水溶性で、刺激臭があります。燃焼範囲も広く（4～60vol%）危険性が高い。"},
+{id:244,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"メタノール（メチルアルコール、CH₃OH）の性状として誤っているものはどれか。",choices:["引火点は約11℃が特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","水と任意の割合で混ざる水溶性として特殊引火物・アルコール類の個別の性状として重要な特性値","毒性があり、失明・死亡の原因となるとして第4類各品目の危険性判断において重要な物性値・特徴","エタノールと同じ安全性であるため、飲料として使用できる"],answer:3,explanation:"メタノールはエタノールと似た性状ですが、毒性が強く飲用は絶対禁止です。視神経障害・失明・致死の危険があります。引火点約11℃、水溶性、燃焼すると青い炎を出します。"},
+{id:245,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"エタノール（エチルアルコール、C₂H₅OH）の性状として正しいものはどれか。",choices:["引火点は約13℃、水溶性、燃焼すると淡青色の炎を出す","引火点は約40℃で第2石油類に分類される","水に溶けない非水溶性の液体が特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","発火点は20℃以下で非常に低いとして第4類各品目の危険性判断において重要な物性値・特徴"],answer:0,explanation:"エタノールは引火点約13℃（アルコール類に分類）、水と任意の割合で混ざる水溶性、燃焼時に淡青色の炎を出します。指定数量400L（アルコール類）。"},
+{id:246,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"ガソリンの性状として正しいものはどれか。",choices:["引火点は約40℃以上として第4類各品目の危険性判断において重要な物性値・特徴","蒸気比重が約3～4で空気より重く、低所に滞留する","水に溶けやすいが特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","常温で固体に近い粘度の高い液体として第4類各品目の危険性判断において重要な物性値・特徴"],answer:1,explanation:"ガソリンの引火点は-40℃以下（非常に低い）、蒸気比重3～4（空気より重い）、水に溶けない非水溶性の液体です。常温で揮発しやすい（沸点範囲40～220℃）引火性液体です。"},
+{id:247,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"ガソリンの引火点として正しいものはどれか。",choices:["約-40℃以下（乙4の重要特性）","約0℃として特殊引火物・アルコール類の個別の性状として重要な特性値","約20℃として特殊引火物・アルコール類の個別の性状として重要な特性値","約40℃として特殊引火物・アルコール類の個別の性状として重要な特性値"],answer:0,explanation:"ガソリンの引火点は-40℃以下です（第1石油類非水溶性に分類）。この低い引火点が厳しい規制の根拠です。指定数量は200Lです。"},
+{id:248,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"ベンゼン（C₆H₆）の性状として誤っているものはどれか。",choices:["引火点は約-11℃として第4類各品目の危険性判断において重要な物性値・特徴","発がん性がある有害物質","水に溶けやすい水溶性の液体","蒸気比重は約2.7で空気より重い"],answer:2,explanation:"ベンゼンは水に溶けない非水溶性の液体です。引火点-11℃（第1石油類非水溶性）、蒸気比重2.7、発がん性があります。独特の芳香族臭があります。"},
+{id:249,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"トルエン（C₆H₅CH₃）の性状として正しいものはどれか。",choices:["引火点が約4℃の第1石油類","水に溶けやすい水溶性液体","常温で固体として特殊引火物・アルコール類の個別の性状として重要な特性値","引火点が70℃以上の第3石油類"],answer:0,explanation:"トルエンの引火点は約4℃で第1石油類（非水溶性）に分類されます。水に溶けない非水溶性、蒸気比重3.1、特有の芳香があります。溶剤・塗料等に使用されます。"},
+{id:250,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"アセトン（CH₃COCH₃）の性状として正しいものはどれか。",choices:["引火点が約-20℃、水溶性、第1石油類","引火点が約-20℃、非水溶性、第1石油類","引火点が約40℃、水溶性、第2石油類","引火点が約-20℃、非水溶性、アルコール類"],answer:0,explanation:"アセトンは引火点約-20℃、水と任意の割合で混ざる水溶性の第1石油類（水溶性：指定数量400L）です。沸点56.3℃、燃焼範囲2.15～13vol%、溶剤として広く使用されます。"},
+{id:251,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"酸化プロピレン（プロピレンオキシド）の性状として正しいものはどれか。",choices:["引火点が約-37℃で特殊引火物に分類される","水に溶けない非水溶性の液体として第4類各品目の危険性判断において重要な物性値・特徴","沸点が200℃以上の高沸点液体","発火点が500℃以上と高いとして特殊引火物・アルコール類の個別の性状として重要な特性値"],answer:0,explanation:"酸化プロピレンは引火点-37℃、沸点34.5℃の特殊引火物です。水に溶ける水溶性で、燃焼範囲2.1～38.5vol%と広く危険性が高い。"},
+{id:252,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"メタノールとエタノールを比較した場合の違いとして正しいものはどれか。",choices:["メタノールのほうが毒性が強く、エタノールは飲料用途もある","メタノールは毒性が低く安全、エタノールは毒性が高い","どちらも同じ毒性が特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","どちらも飲料として使用できるとして第4類各品目の危険性判断において重要な物性値・特徴"],answer:0,explanation:"メタノール（CH₃OH）は強い毒性があり、飲用・吸入・皮膚吸収で失明・死亡の危険があります。エタノール（C₂H₅OH）は飲料・消毒等に使用されますが、メタノールとの混同は絶対禁止です。"},
+{id:253,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"n-プロピルアルコール（1-プロパノール）の分類として正しいものはどれか。",choices:["第1石油類（水溶性）として第4類各品目の危険性判断において重要な物性値・特徴","アルコール類（炭素数3の飽和一価アルコール）（乙4の重要特性）","第2石油類（水溶性）として特殊引火物・アルコール類の個別の性状として重要な特性値","特殊引火物が特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される"],answer:1,explanation:"1-プロパノール（n-プロピルアルコール、C₃H₇OH）は炭素数3の飽和一価アルコールであり、消防法上の「アルコール類」（指定数量400L）に分類されます。"},
+{id:254,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"ガソリンスタンドで取り扱うガソリンについて正しいものはどれか。",choices:["引火点が高いため安全性が高いとして特殊引火物・アルコール類の個別の性状として重要な特性値","蒸気は空気より軽く上に拡散するとして特殊引火物・アルコール類の個別の性状として重要な特性値","引火点が-40℃以下で非常に引火しやすく、蒸（乙4の重要特性）","水に溶けやすいが特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される"],answer:2,explanation:"ガソリンは引火点-40℃以下（非常に低い）、蒸気比重3～4（空気より重く低所に滞留）、水に溶けない非水溶性の危険物です。静電気・火花が引火の原因となります。"},
+{id:255,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"エタノール（エチルアルコール）が燃焼したときの炎の色として正しいものはどれか。",choices:["赤橙色の炎が特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","黒煙を伴う濃い橙色の炎","黄色の炎として特殊引火物・アルコール類の個別の性状として重要な特性値","淡青色（青白い）の炎（乙4の重要特性）"],answer:3,explanation:"エタノールは燃焼すると淡青色（青白い）の炎を出します。輝炎（橙・黄色の炎）を出す炭化水素系燃料と比べ視認しにくいため、エタノール火災は炎が見えにくい場合があり注意が必要です。"},
+{id:256,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"「特殊引火物」に分類されない物質はどれか。",choices:["ジエチルエーテルが特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","二硫化炭素として特殊引火物・アルコール類の個別の性状として重要な特性値","アセトアルデヒドとして第4類各品目の危険性判断において重要な物性値・特徴","アセトン（乙4の重要特性）"],answer:3,explanation:"アセトン（引火点-20℃）は第1石油類（水溶性）に分類されます。ジエチルエーテル（引火点-45℃）・二硫化炭素（引火点-30℃、発火点90℃）・アセトアルデヒド（引火点-39℃）は特殊引火物です。"},
+{id:257,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"ジエチルエーテルの保管上の注意点として正しいものはどれか。",choices:["光が当たらない容器（遮光容器）で保管し、長期（乙4の重要特性）","水と混合して保管すると安全として特殊引火物・アルコール類の個別の性状として重要な特性値","熱を加えて保管すると安定するとして第4類各品目の危険性判断において重要な物性値・特徴","金属容器への保管は禁止として特殊引火物・アルコール類の個別の性状として重要な特性値"],answer:0,explanation:"ジエチルエーテルは光・空気に長期さらされると過酸化物（爆発性）が生成します。遮光・密栓・冷暗所保存が必要で、長期保管したものは過酸化物テストをしてから使用します。"},
+{id:258,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"二硫化炭素（CS₂）が危険物の中でも特に危険とされる理由として正しいものはどれか。",choices:["引火点が-30℃と低く、かつ発火点が約90℃","毒性が非常に強く、少量で致死する","水と激しく反応するが特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","爆発性の固体を生成するとして第4類各品目の危険性判断において重要な物性値・特徴"],answer:0,explanation:"二硫化炭素は引火点-30℃（低い）に加え、発火点が約90℃と第4類危険物の中で最も低いため、蒸気管・電球・エンジン等の温かい面（100℃以下）に触れるだけで発火する可能性があります。"},
+{id:259,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"アセトアルデヒドの保管上の注意事項として正しいものはどれか。",choices:["重合反応が起きることがあるため低温","酸化剤と混合保管できるが特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","水と激しく反応するため水分を避ける","金属に全く反応しないとして第4類各品目の危険性判断において重要な物性値・特徴"],answer:0,explanation:"アセトアルデヒドは重合しやすく（特に酸の存在下）、また引火点-39℃・沸点20.2℃と非常に蒸発しやすいため、低温・密栓・遮光保存が必要です。"},
+{id:260,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"イソプロピルアルコール（2-プロパノール）の消防法上の分類として正しいものはどれか。",choices:["特殊引火物として第4類各品目の危険性判断において重要な物性値・特徴","第1石油類（水溶性）として特殊引火物・アルコール類の個別の性状として重要な特性値","アルコール類（炭素数3の飽和一価アルコール）","第2石油類（水溶性）として特殊引火物・アルコール類の個別の性状として重要な特性値"],answer:2,explanation:"イソプロピルアルコール（2-プロパノール、C₃H₇OH）は炭素数3の飽和一価アルコールであり、消防法上の「アルコール類」（指定数量400L）に分類されます。引火点約12℃。"},
+{id:261,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"ガソリンの「静電気対策」として正しいものはどれか。",choices:["給油ノズルを素早く動かして摩擦を避ける","静電気はガソリンの引火とは無関係","ゴム手袋を着用して作業する","給油前に必ず静電気除去設備"],answer:3,explanation:"ガソリン給油時に静電気が蓄積していると放電で引火する危険があります。給油前に静電気除去設備（アース接触板等）に触れて帯電を逃がすことが重要です。給油取扱所にはこの設備が設置されています。"},
+{id:262,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"「エチルエーテル（ジエチルエーテル）」の燃焼範囲として正しいものはどれか。",choices:["0.5～3.5vol%","1.9～36.5vol%","4～60vol%として特殊引火物・アルコール類の個別の性状として重要な特性値","5～15vol%として特殊引火物・アルコール類の個別の性状として重要な特性値"],answer:1,explanation:"ジエチルエーテルの燃焼範囲は1.9～36.5vol%（空気中）と広く、危険性が高い。アセトアルデヒドはさらに広く4～60vol%、ガソリンは1.4～7.6vol%程度です。"},
+{id:263,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"アルコール類を消火する場合に、通常の化学泡消火剤ではなく耐アルコール型泡が必要な理由として正しいものはどれか。",choices:["アルコールが泡に溶け込んで泡が崩壊するため","アルコールが泡の中で爆発するため","アルコールは泡消火剤に引火するため","アルコールは水と反応するためが特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される"],answer:0,explanation:"アルコール類は水溶性のため、通常の化学泡をかけるとアルコールが泡の水分に溶け込んで泡が崩壊し消火効果が失われます。耐アルコール型（水溶性液体用）泡消火剤はこの崩壊を防ぐ特殊な泡です。"},
+{id:264,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"ガソリンの主成分として正しいものはどれか。",choices:["ベンゼン単体として特殊引火物・アルコール類の個別の性状として重要な特性値","炭素数4～10の炭化水素の混合物（乙4の重要特性）","エタノールとして特殊引火物・アルコール類の個別の性状として重要な特性値","プロパンとして第4類各品目の危険性判断において重要な物性値・特徴"],answer:1,explanation:"ガソリンは炭素数4～10程度の脂肪族・芳香族炭化水素の混合物です。単一の化合物ではなく、ブタン・ペンタン・ヘキサン・ヘプタン・オクタン・ベンゼン・トルエン等を含みます。"},
+{id:265,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"メタノールの蒸気を吸入・皮膚吸収した場合の毒性として正しいものはどれか。",choices:["軽度の頭痛程度で問題ないが特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","視神経障害・失明、致死的な中毒症状を起こす（乙4の重要特性）","アルコール中毒と全く同じ症状が特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","消化器障害のみとして第4類各品目の危険性判断において重要な物性値・特徴"],answer:1,explanation:"メタノール（メチルアルコール）は体内でホルムアルデヒドおよびギ酸に代謝され、視神経を侵して失明を起こしたり、代謝性アシドーシスを引き起こして致死に至ることがあります。"},
+{id:266,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"ガソリンの「オクタン価」とは何か。",choices:["ガソリンの引火点を表す数値として第4類各品目の危険性判断において重要な物性値・特徴","ガソリンの蒸気圧を示す指標が特殊引火物・アルコール類の安全取扱いにおいて重要な特性として認識される","ガソリンの比重を表す数値として特殊引火物・アルコール類の個別の性状として重要な特性値","ガソリンのノック（自己着火）耐性を示す指標（乙4の重要特性）"],answer:3,explanation:"オクタン価はガソリンのアンチノック性（エンジン内での自己着火＝ノック現象への耐性）を示す指標で、値が高いほどノックが起こりにくい高品質なガソリンです。危険物の危険性の指標ではありません。"},
+{id:267,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"二硫化炭素の発火点として正しいものはどれか。",choices:["約90℃（乙4の重要特性）","約160℃として特殊引火物・アルコール類の個別の性状として重要な特性値","約250℃として第4類各品目の危険性判断において重要な物性値・特徴","約350℃として特殊引火物・アルコール類の個別の性状として重要な特性値"],answer:0,explanation:"二硫化炭素の発火点は約90℃と非常に低く、第4類危険物の中で最低クラスです。蒸気管・電球等の温かい表面でも発火する可能性があり、特別な注意が必要です。"},
+{id:268,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"「アセトアルデヒド」の特徴として誤っているものはどれか。",choices:["引火点が-39℃で非常に低い","燃焼範囲が4～60vol%と非常に広い","沸点が約20℃で常温でほぼ沸騰する","水に全く溶けない（乙4の重要特性）"],answer:3,explanation:"アセトアルデヒドは水に任意の割合で混ざる水溶性（親水性）の物質です。他の選択肢（引火点-39℃・燃焼範囲4～60%・沸点20.2℃）はすべて正しい性状です。"},
+{id:269,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"エタノールの指定数量として正しいものはどれか。",choices:["200L（第1石油類非水溶性）","2,000L（第3石油類）","1,000L（第2石油類）","400L（アルコール類）"],answer:3,explanation:"エタノールは消防法上のアルコール類（炭素数1～3の飽和一価アルコール）に該当し、指定数量は400Lです。"},
+{id:270,category:"第4類危険物の性状（各論・特殊引火物・アルコール類等）",question:"第1石油類の「水溶性」と「非水溶性」の具体例の組み合わせとして正しいものはどれか。",choices:["ガソリン（水溶性）・アセトン（非水溶性）","エタノール（非水溶性）・トルエン（水溶性）","灯油（水溶性）・ベンゼン（非水溶性）","ガソリン（非水溶性）・アセトン"],answer:3,explanation:"ガソリン・ベンゼン・トルエンは非水溶性の第1石油類（指定数量200L）、アセトン・ピリジン等は水溶性の第1石油類（指定数量400L）です。"},
+{id:271,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"灯油の性状として正しいものはどれか。",choices:["引火点は40℃以上（第2石油類非水溶性）","引火点は-40℃以下で非常に低い","水に溶けやすい水溶性液体が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","蒸気比重は1.0以下（空気より軽い）"],answer:0,explanation:"灯油の引火点は40℃以上（第2石油類非水溶性、指定数量1,000L）です。水に溶けない非水溶性で、蒸気比重は約4.5と空気より重い。常温での引火の危険は低いですが、霧状に噴霧・加熱すると危険性が増します。"},
+{id:272,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"軽油の引火点として正しいものはどれか。",choices:["約-40℃以下として石油類・動植物油類の個別の性状として重要な特性値","約0℃が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","約45℃以上（第2石油類非水溶性）（乙4の重要特性）","約100℃以上として石油類・動植物油類の個別の性状として重要な特性値"],answer:2,explanation:"軽油の引火点は45℃以上で第2石油類（非水溶性、指定数量1,000L）に分類されます。ディーゼルエンジン燃料として使用されます。灯油の引火点40℃以上より若干高い傾向があります。"},
+{id:273,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"重油の性状として正しいものはどれか。",choices:["引火点が約-40℃以下で第1石油類に分類される","蒸気比重が1.0以下で空気より軽い","水に溶けやすいとして石油類・動植物油類の個別の性状として重要な特性値","引火点が60℃以上（第3石油類非水溶性、指定"],answer:3,explanation:"重油の引火点は60℃以上（第3石油類非水溶性、指定数量2,000L）です。高粘度の液体で、水に溶けず、比重は0.9～1.0程度（種類による）です。"},
+{id:274,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"灯油と軽油の違いとして正しいものはどれか。",choices:["どちらも同じ物質が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","灯油のほうが沸点範囲が高く、引火点も高い","軽油のほうが引火点が若干高い傾向（乙4の重要特性）","灯油は第1石油類、軽油は第2石油類"],answer:2,explanation:"灯油の引火点40℃以上、軽油の引火点45℃以上で、どちらも第2石油類非水溶性（指定数量1,000L）ですが、引火点に若干の差があります。沸点範囲も灯油（150～300℃程度）・軽油（200～350℃程度）で異なります。"},
+{id:275,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"重油の種類（1号・2号・3号）について正しいものはどれか。",choices:["番号が大きいほど引火点が低くなる","番号が大きいほど粘度が高くなる","番号は品質ランクを示すものではない","どの種類も同じ引火点・粘度"],answer:1,explanation:"重油はJIS規格で1種（1号）・2種（2号）・3種（3号）に区分され、番号が大きいほど粘度が高く、硫黄分も多い傾向があります。引火点は1種・2種は60℃以上、3種は70℃以上です。"},
+{id:276,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"クレオソート油の性状として正しいものはどれか。",choices:["引火点が約0℃で第1石油類に分類される","引火点が約74℃で第3石油類（乙4の重要特性）","水に溶けやすいが石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","無臭の透明な液体が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される"],answer:1,explanation:"クレオソート油（木材防腐剤・枕木の防腐処理等に使用）の引火点は74℃以上で第3石油類（非水溶性、指定数量2,000L）に分類されます。特有の刺激臭があり、暗褐色の液体です。"},
+{id:277,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"グリセリン（グリセロール）の性状として正しいものはどれか。",choices:["引火点が約70℃以上の第3石油類","引火点が約0℃で特殊引火物","水に溶けない非水溶性として石油類・動植物油類の個別の性状として重要な特性値","強い毒性があるとして石油類・動植物油類の個別の性状として重要な特性値"],answer:0,explanation:"グリセリン（C₃H₅(OH)₃）は引火点160℃以上（一般値）で第3石油類（水溶性、指定数量4,000L）です。無色無臭・甘みがある粘性液体で、水によく溶けます。"},
+{id:278,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"エチレングリコールの性状として正しいものはどれか。",choices:["引火点が約111℃で第3石油類","引火点が約0℃以下の特殊引火物","水に溶けないとして石油類・動植物油類の個別の性状として重要な特性値","揮発性が高く常温で蒸発しやすい"],answer:0,explanation:"エチレングリコール（C₂H₄(OH)₂）は引火点111℃（第3石油類水溶性、指定数量4,000L）です。自動車の不凍液・冷却液に使用され、水によく溶ける水溶性液体です。"},
+{id:279,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"動植物油類の「乾性油」が自然発火しやすい理由として正しいものはどれか。",choices:["乾性油は不飽和脂肪酸を多く含み、酸化","乾性油は水分を吸収して発熱するため","乾性油は揮発性が高いためとして第4類石油類の危険性判断において重要な引火点・沸点等の特性","乾性油は引火点が低いためとして石油類・動植物油類の個別の性状として重要な特性値"],answer:0,explanation:"アマニ油・キリ油等の乾性油は空気中の酸素と酸化（重合）しやすい不飽和脂肪酸を多く含み、油が染み込んだウエス（布切れ）等では蓄熱しやすく自然発火の危険があります。"},
+{id:280,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"「半乾性油」の例として正しいものはどれか。",choices:["アマニ油（乾性油）が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","大豆油・ナタネ油（半乾性油）","ヤシ油・オリーブ油（不乾性油）","ひまわり油（乾性油）"],answer:1,explanation:"乾性油（ヨウ素価130以上）はアマニ油・キリ油等、半乾性油（100～130）は大豆油・ナタネ油・ゴマ油等、不乾性油（100以下）はヤシ油・オリーブ油・ひまし油等です。"},
+{id:281,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"動植物油類の指定数量として正しいものはどれか。",choices:["2,000Lが石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","6,000Lが石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","10,000L（乙4の重要特性）","20,000Lとして石油類・動植物油類の個別の性状として重要な特性値"],answer:2,explanation:"動植物油類の指定数量は10,000Lです（第4類危険物の中で最大）。引火点が250℃以上と高く、常温での引火危険は低いため指定数量が多く設定されています。"},
+{id:282,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"第4石油類（ギヤ油・シリンダ油等）の引火点として正しいものはどれか。",choices:["引火点が0℃以下が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","引火点が21℃未満が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","引火点が200℃以上250℃未満（乙4の重要特性）","引火点が250℃以上として第4類石油類の危険性判断において重要な引火点・沸点等の特性"],answer:2,explanation:"第4石油類は引火点が200℃以上250℃未満の引火性液体です。機械の潤滑油として使用されるギヤ油・シリンダ油・タービン油等が該当します。指定数量は6,000Lです。"},
+{id:283,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"キシレン（ジメチルベンゼン、C₆H₄(CH₃)₂）の性状として正しいものはどれか。",choices:["引火点が約25℃で第2石油類","引火点が約-20℃で特殊引火物","水に溶けやすい水溶性液体","第3石油類に分類される"],answer:0,explanation:"キシレン（o・m・p-キシレンの混合物が多い）の引火点は約25～32℃で第2石油類（非水溶性、指定数量1,000L）に分類されます。塗料・接着剤の溶剤として使用されます。"},
+{id:284,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"酢酸（氷酢酸、CH₃COOH）の消防法上の分類として正しいものはどれか。",choices:["第1石油類（水溶性）","アルコール類が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","特殊引火物として第4類石油類の危険性判断において重要な引火点・沸点等の特性","第2石油類（水溶性）（乙4の重要特性）"],answer:3,explanation:"酢酸（氷酢酸）の引火点は約39℃で第2石油類（水溶性、指定数量2,000L）に分類されます。強い酢酸臭があり、水に溶ける水溶性液体です。"},
+{id:285,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"「ヨウ素価」とは動植物油類のどのような性質を示す指標か。",choices:["油脂の不飽和度（二重結合の多さ）を示す指標","引火点の高さとして第4類石油類の危険性判断において重要な引火点・沸点等の特性","油の粘度として第4類石油類の危険性判断において重要な引火点・沸点等の特性","油の酸度が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される"],answer:0,explanation:"ヨウ素価は油脂100gに吸収されるヨウ素のgで表した値で、油脂中の不飽和脂肪酸（二重結合）の量を示します。ヨウ素価が高いほど乾性油に近く、自然発火しやすい傾向があります。"},
+{id:286,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"灯油の火災に対する消火方法として正しいものはどれか。",choices:["大量の水（棒状放水）で冷却消火する","泡消火剤・粉末消火剤を使用する","灯油の火災は消化不可能","砂をかけてしまうと危険"],answer:1,explanation:"灯油火災（油火災：B火災）には泡消火剤・粉末消火剤・CO₂消火剤・ハロゲン化物消火剤が有効です。棒状放水は液体を飛散させ危険なため不可です。"},
+{id:287,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"重油の火災で、タンク底部の水が沸騰する危険現象として正しいものはどれか。",choices:["ボイルオーバー（乙4の重要特性）","バックドラフトとして石油類・動植物油類の個別の性状として重要な特性値","フラッシュオーバーとして石油類・動植物油類の個別の性状として重要な特性値","ブローオフが石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される"],answer:0,explanation:"ボイルオーバーは、重質油タンクの火災において熱波がタンク底部の水層に達した際に水が急激に沸騰・蒸発し、燃焼中の油を外部に大量噴出させる現象です。消防活動上非常に危険です。"},
+{id:288,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"第2石油類の「非水溶性」の指定数量として正しいものはどれか。",choices:["200Lとして石油類・動植物油類の個別の性状として重要な特性値","400Lとして第4類石油類の危険性判断において重要な引火点・沸点等の特性","1,000L（乙4の重要特性）","2,000Lが石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される"],answer:2,explanation:"第2石油類（非水溶性）の指定数量は1,000Lです。灯油・軽油・キシレン・クロロベンゼン等が該当します。水溶性は2,000Lです。"},
+{id:289,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"「アマニ油（亜麻仁油）」の危険性として特に注意すべき事項として正しいものはどれか。",choices:["不飽和脂肪酸を多く含み、乾性油であるため油が","引火点が非常に低く常温で引火しやすい","水と激しく反応するとして石油類・動植物油類の個別の性状として重要な特性値","常温で固体として存在するとして石油類・動植物油類の個別の性状として重要な特性値"],answer:0,explanation:"アマニ油は乾性油（ヨウ素価170以上）であり、空気中の酸素と酸化反応して発熱します。油が染み込んだウエス（布）等を積み重ねておくと蓄熱して自然発火することがあります。"},
+{id:290,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"「クロロベンゼン（C₆H₅Cl）」の性状として正しいものはどれか。",choices:["水より軽く（比重<1）、水に溶けやすいとして第4類石油類の危険性判断において重要な引火点・沸点等の特性","水より重く（比重1.11）、水に溶けない非水溶性の第2石油類","引火点が-40℃以下の特殊引火物が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","アルコール類に分類されるが石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される"],answer:1,explanation:"クロロベンゼンは比重1.11（水より重い）・水に溶けない非水溶性の第2石油類（引火点約28℃、指定数量1,000L）です。第4類危険物で水より重い例外的な物質の一つです。"},
+{id:291,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"第3石油類の「水溶性」の代表例として正しいものはどれか。",choices:["重油として第4類石油類の危険性判断において重要な引火点・沸点等の特性","クレオソート油が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","グリセリン・エチレングリコール（乙4の重要特性）","ニトロベンゼンが石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される"],answer:2,explanation:"第3石油類（水溶性）にはグリセリン（引火点160℃以上）・エチレングリコール（引火点111℃）等が含まれます（指定数量4,000L）。重油・クレオソート・ニトロベンゼンは非水溶性です。"},
+{id:292,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"「ニトロベンゼン（C₆H₅NO₂）」の分類として正しいものはどれか。",choices:["第3石油類（非水溶性）（乙4の重要特性）","第1石油類（非水溶性）","特殊引火物として第4類石油類の危険性判断において重要な引火点・沸点等の特性","第5類危険物として第4類石油類の危険性判断において重要な引火点・沸点等の特性"],answer:0,explanation:"ニトロベンゼンの引火点は88℃で第3石油類（非水溶性、指定数量2,000L）に分類されます。比重1.2で水より重く、アーモンドに似た甘い臭いがあります。毒性があります。"},
+{id:293,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"第4類危険物の「ギヤ油（ギヤーオイル）」の分類として正しいものはどれか。",choices:["第3石油類（非水溶性）として石油類・動植物油類の個別の性状として重要な特性値","動植物油類として第4類石油類の危険性判断において重要な引火点・沸点等の特性","第2石油類（非水溶性）が石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","第4石油類（非水溶性：指定数量6,000L）（乙4の重要特性）"],answer:3,explanation:"ギヤ油は引火点200℃以上250℃未満（多くは200～250℃程度）で第4石油類（非水溶性、指定数量6,000L）に分類されます。変速機・減速機の潤滑に使用されます。"},
+{id:294,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"「灯油」に誤ってガソリンが混入した場合の危険性として正しいものはどれか。",choices:["引火点が上がり安全性が増すとして石油類・動植物油類の個別の性状として重要な特性値","色が変化するが引火点に影響はない","引火点が下がり（ガソリンと同様に低くなり）、","混入しても問題ないが石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される"],answer:2,explanation:"灯油にガソリンが混入すると引火点が大幅に低下します。灯油の引火点（40℃以上）に対してガソリンは-40℃以下であり、わずかな混入でも引火点が下がって危険性が急増します。"},
+{id:295,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"「松根油」は消防法上どの品名に分類されるか。",choices:["特殊引火物として石油類・動植物油類の個別の性状として重要な特性値","動植物油類として第4類石油類の危険性判断において重要な引火点・沸点等の特性","第3石油類（非水溶性）","第2石油類（非水溶性）"],answer:3,explanation:"松根油（松から採れるテルペン系の精油）は引火点が一般に21℃以上70℃未満の範囲にあり、第2石油類（非水溶性）に分類されます。"},
+{id:296,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"「シリンダ油（シリンダーオイル）」の主な用途と分類として正しいものはどれか。",choices:["エンジンの燃料・第1石油類","蒸気機関・シリンダの潤滑油","水の冷却剤・第3石油類","化粧品原料・動植物油類"],answer:1,explanation:"シリンダ油は蒸気機関・圧縮機のシリンダ部分の潤滑に使用する高粘度の潤滑油で、引火点200℃以上250℃未満の第4石油類（指定数量6,000L）に分類されます。"},
+{id:297,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"動植物油類の「自然発火」を防止するための措置として正しいものはどれか。",choices:["油を含んだウエスは密閉容器にまとめて保管する","油を含んだウエスは乾燥した状態で積み重ねる","油を含んだウエスは蓋付きの金属容器に入れて保","油を含んだウエスを水中に保管する"],answer:2,explanation:"乾性油が染み込んだウエス等は自然発火の危険があるため、蓋付きの金属容器に収容し、密閉・保冷状態で管理するか速やかに廃棄します。積み重ねや密閉プラスチック袋に入れると蓄熱しやすく危険です。"},
+{id:298,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"「不乾性油」の特徴として正しいものはどれか。",choices:["空気中でほとんど酸化・固化しない","空気中で急速に酸化して固化する","水と反応して発熱するが石油類・動植物油類の安全取扱いにおいて重要な物性値として認識される","引火点が非常に低いとして石油類・動植物油類の個別の性状として重要な特性値"],answer:0,explanation:"不乾性油（ヤシ油・オリーブ油・ひまし油等）はヨウ素価100以下で、空気中での酸化・固化がほとんど起こりません。乾性油・半乾性油に比べて自然発火の危険は低いです。"},
+{id:299,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"「重油」を燃料として使用するときの前処理として一般的に行われることはどれか。",choices:["冷却して粘度を高めるとして第4類石油類の危険性判断において重要な引火点・沸点等の特性","酸で処理して引火点を下げるとして第4類石油類の危険性判断において重要な引火点・沸点等の特性","水と混合して希釈するとして第4類石油類の危険性判断において重要な引火点・沸点等の特性","加熱して粘度を下げ、霧状に噴霧しやすくする（乙4の重要特性）"],answer:3,explanation:"重油は常温では高粘度のため、燃焼機器（バーナー等）で使用する際は加熱して粘度を低下させ、バーナーから霧状（微粒化）に噴霧しやすくします。加熱した重油は引火点温度を超える場合があり注意が必要です。"},
+{id:300,category:"第4類危険物の性状（各論・石油類・動植物油類）",question:"第4類危険物である「軽油」を給油している最中に霧状になって広がった場合の危険性として正しいものはどれか。",choices:["霧状になると引火点が上がり安全になる","霧状の軽油は自然に消えるため問題ない","霧状になると液体表面積が増加し、引火点以下の","軽油は霧状でも引火しないとして第4類石油類の危険性判断において重要な引火点・沸点等の特性"],answer:2,explanation:"液体危険物が霧状（ミスト）になると表面積が飛躍的に増加し、引火点以下の温度でも可燃性蒸気が大量に発生して燃焼しやすくなります。霧化した危険物への点火源の接触は特に危険です。"}
+];
+const CAT_META={
+"危険物に関する法令（基礎）":{"color":"#C62828","icon":"📋","bg":"#FFEBEE"},
+"危険物に関する法令（製造所等の基準）":{"color":"#E53935","icon":"🏭","bg":"#FFEBEE"},
+"危険物に関する法令（貯蔵・取扱・運搬）":{"color":"#F4511E","icon":"🚛","bg":"#FFF3E0"},
+"危険物に関する法令（保安）":{"color":"#FF6F00","icon":"🔒","bg":"#FFF8E1"},
+"基礎的な物理学":{"color":"#0969A2","icon":"⚛️","bg":"#E3F2FD"},
+"基礎的な化学":{"color":"#1565C0","icon":"⚗️","bg":"#E8EAF6"},
+"燃焼・消火の理論":{"color":"#6A1B9A","icon":"🔥","bg":"#F3E5F5"},
+"第4類危険物の性状（総論）":{"color":"#2E7D32","icon":"🧪","bg":"#E8F5E9"},
+"第4類危険物の性状（各論・特殊引火物・アルコール類等）":{"color":"#33691E","icon":"🍶","bg":"#F1F8E9"},
+"第4類危険物の性状（各論・石油類・動植物油類）":{"color":"#558B2F","icon":"🛢️","bg":"#F9FBE7"}
+};
+
+const SUBCAT_DEF={
+  "危険物に関する法令（基礎）":[{key:"l1",label:"📋 危険物の定義・分類・類別",ids:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]},{key:"l2",label:"⚡ 製造所等の種類・許可手続",ids:[16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]}],
+  "危険物に関する法令（製造所等の基準）":[{key:"l3",label:"🏭 製造所・一般取扱所の基準",ids:[31,32,33,34,35,36,37,38,39,40,41,42,43,44,45]},{key:"l4",label:"🏗️ 屋内外貯蔵所・タンク基準",ids:[46,47,48,49,50,51,52,53,54,55,56,57,58,59,60]}],
+  "危険物に関する法令（貯蔵・取扱・運搬）":[{key:"l5",label:"📦 貯蔵・取扱の基準",ids:[61,62,63,64,65,66,67,68,69,70,71,72,73,74,75]},{key:"l6",label:"🚛 運搬・移送の基準",ids:[76,77,78,79,80,81,82,83,84,85,86,87,88,89,90]}],
+  "危険物に関する法令（保安）":[{key:"l7",label:"🔒 保安監督者・予防規程",ids:[91,92,93,94,95,96,97,98,99,100,101,102,103,104,105]},{key:"l8",label:"🔍 定期点検・保安検査",ids:[106,107,108,109,110,111,112,113,114,115,116,117,118,119,120]}],
+  "基礎的な物理学":[{key:"p1",label:"⚛️ 熱・温度・密度・圧力",ids:[121,122,123,124,125,126,127,128,129,130,131,132,133,134,135]},{key:"p2",label:"🌡️ 引火点・発火点・沸点",ids:[136,137,138,139,140,141,142,143,144,145,146,147,148,149,150]}],
+  "基礎的な化学":[{key:"c1",label:"⚗️ 物質・混合物・化学反応",ids:[151,152,153,154,155,156,157,158,159,160,161,162,163,164,165]},{key:"c2",label:"🧲 酸化還元・有機化合物基礎",ids:[166,167,168,169,170,171,172,173,174,175,176,177,178,179,180]}],
+  "燃焼・消火の理論":[{key:"b1",label:"🔥 燃焼の三要素・種類",ids:[181,182,183,184,185,186,187,188,189,190,191,192,193,194,195]},{key:"b2",label:"🧯 消火方法・消火剤の適否",ids:[196,197,198,199,200,201,202,203,204,205,206,207,208,209,210]}],
+  "第4類危険物の性状（総論）":[{key:"s1",label:"🧪 第4類の共通性状",ids:[211,212,213,214,215,216,217,218,219,220,221,222,223,224,225]},{key:"s2",label:"📊 引火性・水溶性・比重",ids:[226,227,228,229,230,231,232,233,234,235,236,237,238,239,240]}],
+  "第4類危険物の性状（各論・特殊引火物・アルコール類等）":[{key:"s3",label:"🍶 特殊引火物・第1石油類",ids:[241,242,243,244,245,246,247,248,249,250,251,252,253,254,255]},{key:"s4",label:"🍺 アルコール類・第2石油類",ids:[256,257,258,259,260,261,262,263,264,265,266,267,268,269,270]}],
+  "第4類危険物の性状（各論・石油類・動植物油類）":[{key:"s5",label:"🛢️ 第3・4石油類",ids:[271,272,273,274,275,276,277,278,279,280,281,282,283,284,285]},{key:"s6",label:"🌻 動植物油類・まとめ",ids:[286,287,288,289,290,291,292,293,294,295,296,297,298,299,300]}]
+};
+// カテゴリ正規化
+(function normalizeCats(){
+const MAP={"危険物に関する法令（基礎）":"危険物に関する法令（基礎）","危険物に関する法令（製造所等の基準）":"危険物に関する法令（製造所等の基準）","危険物に関する法令（貯蔵・取扱・運搬）":"危険物に関する法令（貯蔵・取扱・運搬）","危険物に関する法令（保安）":"危険物に関する法令（保安）","基礎的な物理学":"基礎的な物理学","基礎的な化学":"基礎的な化学","燃焼・消火の理論":"燃焼・消火の理論","第4類危険物の性状（総論）":"第4類危険物の性状（総論）","第4類危険物の性状（各論・特殊引火物・アルコール類等）":"第4類危険物の性状（各論・特殊引火物・アルコール類等）","第4類危険物の性状（各論・石油類・動植物油類）":"第4類危険物の性状（各論・石油類・動植物油類）"};
+ALL_QUESTIONS.forEach(q=>{if(MAP[q.category])q.category=MAP[q.category];});
+})();
+const RANKS=[{min:0,label:"入門",kanji:"入",color:"#999"},{min:10,label:"初段",kanji:"初",color:"#9b7a4a"},{min:30,label:"二段",kanji:"二",color:"#7a9b4a"},{min:60,label:"三段",kanji:"三",color:"#4a7a9b"},{min:100,label:"四段",kanji:"四",color:"#7a4a9b"},{min:150,label:"名人",kanji:"名",color:"#D4941A"}];
+const KEY="dojo_kikenbutsu";
+function getRank(n){return[...RANKS].reverse().find(r=>n>=r.min)||RANKS[0];}
+function getNext(n){return RANKS.find(r=>r.min>n);}
+function sc(p){if(p==null)return"#999";return p>=80?"#0F6E56":p>=60?"#D4941A":"#E8572A";}
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r);}catch{}return{wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};}
+function save(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch{}}
+let S={screen:"home",ud:load(),mode:"ALL",fc:"全て",fsc:null,subcatOpen:false,ts:0,shuffle:false,deck:[],idx:0,sel:null,showExp:false,sess:[],tl:null,tout:false,tiv:null};
+function setUd(fn){S.ud=typeof fn==="function"?fn(S.ud):fn;save(S.ud);}
+// ① 前回の続きセーブ/ロード
+function saveProgress(){setUd(p=>({...p,lastProgress:{mode:S.mode,fc:S.fc,shuffle:S.shuffle,ts:S.ts,deckIds:S.deck.map(q=>q.id),idx:S.idx,ts_:Date.now()}}));}
+function hasProgress(){const p=S.ud.lastProgress;return p&&p.deckIds&&p.deckIds.length>0&&p.idx<p.deckIds.length-1;}
+function retryQ(){clearInterval(S.tiv);S.sel=null;S.tout=false;S.tl=null;S.showExp=false;render();startTimer();}
+function pauseQ(){clearInterval(S.tiv);saveProgress();S.screen="home";render();}
+function resumeSession(){
+  const p=S.ud.lastProgress;if(!p)return;
+  S.mode=p.mode;S.fc=p.fc;S.shuffle=p.shuffle||false;S.ts=p.ts||0;
+  S.deck=p.deckIds.map(id=>ALL_QUESTIONS.find(q=>q.id===id)).filter(Boolean);
+  S.idx=p.idx;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  S.screen="quiz";render();startTimer();
+}
+function cv(){
+  const ud=S.ud,ta=ud.totalAnswered||0,rank=getRank(ta),nr=getNext(ta);
+  const rp=nr?Math.round(((ta-rank.min)/(nr.min-rank.min))*100):100;
+  const rh=(ud.history||[]).slice(-200);
+  const or=rh.length?Math.round(rh.filter(h=>h.correct).length/rh.length*100):null;
+  const wq=ALL_QUESTIONS.filter(q=>(ud.wrongCounts||{})[q.id]>0).sort((a,b)=>((ud.wrongCounts[b.id]||0)-(ud.wrongCounts[a.id]||0)));
+  const sq=ALL_QUESTIONS.filter(q=>(ud.starIds||[]).includes(q.id));
+  const cur=S.deck[S.idx];
+  const ia=S.sel!==null||S.tout;
+  const ic=S.sel===cur?.answer;
+  const sc2=S.sess.filter(a=>a.correct).length;
+  const sr=S.sess.length?Math.round(sc2/S.sess.length*100):0;
+  const tp=S.ts>0&&S.tl!==null?Math.round(S.tl/S.ts*100):100;
+  const tc=tp>50?"#0F6E56":tp>25?"#D4941A":"#E8572A";
+  return{ta,rank,rp,or,wq,sq,cur,ia,ic,sc2,sr,tp,tc};
+}
+function startTimer(){clearInterval(S.tiv);if(S.ts===0||S.sel!==null||S.tout)return;S.tl=S.ts;S.tiv=setInterval(()=>{S.tl--;if(S.tl<=0){clearInterval(S.tiv);S.tout=true;S.showExp=true;}render();},1000);}
+function go(om){
+  clearInterval(S.tiv);const m=om||S.mode;
+  let pool=[...ALL_QUESTIONS];
+  if(m==="WEAK")pool=ALL_QUESTIONS.filter(q=>(S.ud.wrongCounts||{})[q.id]>0);
+  else if(m==="STAR")pool=ALL_QUESTIONS.filter(q=>(S.ud.starIds||[]).includes(q.id));
+  else if(S.fc!=="全て")pool=pool.filter(q=>q.category===S.fc);
+  if(S.fsc&&S.fc!=="全て"){const sub=(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc);if(sub)pool=pool.filter(q=>sub.ids.includes(q.id));}
+  if(!pool.length)return;if(om)S.mode=om;
+  S.deck=S.shuffle?shuf(pool):pool;S.idx=0;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  // ① 進捗クリアして新規スタート
+  setUd(p=>{const np={...p};delete np.lastProgress;return np;});
+  S.screen="quiz";render();startTimer();
+}
+function pick(i){
+  if(S.sel!==null||S.tout)return;
+  clearInterval(S.tiv);S.sel=i;S.showExp=true;
+  const q=S.deck[S.idx];const ok=i===q.answer;
+  setUd(p=>{
+    const wc={...p.wrongCounts};
+    if(ok){
+      // ④ 弱点モードで正解したらwrongCountsから削除（クリア）
+      if(S.mode==="WEAK") delete wc[q.id];
+      else wc[q.id]=Math.max(0,(wc[q.id]||0));
+    } else {
+      wc[q.id]=(wc[q.id]||0)+1;
+    }
+    return{...p,wrongCounts:wc,history:[...(p.history||[]).slice(-499),{id:q.id,correct:ok,ts:Date.now()}],totalAnswered:(p.totalAnswered||0)+1};
+  });
+  // ① 進捗保存
+  saveProgress();
+  render();
+  const el=document.getElementById("app");
+  if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+}
+function next(){
+  const q=S.deck[S.idx];const ok=S.sel===q.answer;
+  S.sess=[...S.sess,{q,correct:ok,sel:S.sel}];
+  if(S.idx+1>=S.deck.length){
+    // ① セッション完了: 進捗クリア
+    setUd(p=>{const np={...p,totalSessions:(p.totalSessions||0)+1};delete np.lastProgress;return np;});
+    S.screen="result";render();
+  } else {
+    S.idx++;S.sel=null;S.showExp=false;S.tout=false;S.tl=null;
+    saveProgress();
+    render();startTimer();
+  }
+}
+function star(id){setUd(p=>({...p,starIds:(p.starIds||[]).includes(id)?(p.starIds||[]).filter(s=>s!==id):[...(p.starIds||[]),id]}));render();}
+function clrWrong(id){setUd(p=>{const wc={...p.wrongCounts};delete wc[id];return{...p,wrongCounts:wc};});render();}
+function reset(){if(confirm("学習データをすべてリセットしますか？")){const d={wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};save(d);S.ud=d;render();}}
+function render(){
+  document.getElementById("app").innerHTML=build();
+  if(S.screen==="notebook"||S.screen==="quiz"){
+    const el=document.getElementById("app");
+    if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+  }
+  if(S.screen==="result"||S.screen==="home"){
+    // ⑥ resultとhomeは常にページ最上部
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+}
+const arr=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+const bk=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+const bksvg=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`;
+
+function catStats(){
+  return Object.keys(CAT_META).map(cat=>{
+    const h=(S.ud.history||[]).filter(h=>{const q=ALL_QUESTIONS.find(q=>q.id===h.id);return q&&q.category===cat;});
+    if(!h.length)return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"></div><span class="side-cat-pct" style="color:#999">—</span></div>`;
+    const r=Math.round(h.filter(x=>x.correct).length/h.length*100);
+    return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"><div class="side-cat-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="side-cat-pct" style="color:${sc(r)}">${r}%</span></div>`;
+  }).join("");
+}
+
+function build(){
+  const C=cv();
+  if(S.screen==="home")return home(C);
+  if(S.screen==="quiz")return quiz(C);
+  if(S.screen==="result")return result(C);
+  if(S.screen==="notebook")return notebook(C);
+  return"";
+}
+
+function home(C){
+  const{ta,rank,rp,or,wq,sq}=C;
+  const startOff=(S.mode==="WEAK"&&!wq.length)||(S.mode==="STAR"&&!sq.length);
+  const cats=["全て",...Object.keys(CAT_META)];
+  const isFiltered=S.mode==="ALL"&&(S.fc!=="全て"||S.fsc);
+  const filterLabel=S.fsc?(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc)?.label.replace(/^[^\s]+\s/,""):S.fc!=="全て"?S.fc:"";
+  const left=`
+    <div class="card">
+      <div class="cat-card-hd">
+        <span class="cat-card-title">カテゴリ・絞り込み</span>
+        ${isFiltered?`<span class="cat-filter-badge active">🎯 ${filterLabel}</span>`:`<span class="cat-filter-badge none">全問題</span>`}
+      </div>
+      <div class="cat-row ${S.mode!=="ALL"?"hidden":""}">
+        ${cats.map(c=>{
+          const a=S.fc===c;
+          const m=CAT_META[c];
+          const cnt=c==="全て"?ALL_QUESTIONS.length:ALL_QUESTIONS.filter(q=>q.category===c).length;
+          const wc=c==="全て"?wq.length:ALL_QUESTIONS.filter(q=>q.category===c&&(S.ud.wrongCounts||{})[q.id]>0).length;
+          const badge=wc>0?`<span style="background:#E8572A;color:#fff;font-size:9px;font-weight:700;border-radius:4px;padding:0 4px;">${wc}</span>`:"";
+          return`<button class="cat-chip ${a?"active":""}" onclick="S.fc='${c}';S.fsc=null;render()">${c!=="全て"&&m?m.icon+" ":""}${c}<span style="opacity:.55;font-size:10px;margin-left:3px;">${cnt}</span>${badge}</button>`;
+        }).join("")}
+      </div>
+      ${S.mode==="ALL"&&S.fc!=="全て"&&SUBCAT_DEF[S.fc]?(()=>{
+        const subs=SUBCAT_DEF[S.fc];
+        return`<div class="subcat-section">
+          <div class="subcat-label">章で絞り込む</div>
+          <div class="subcat-grid">
+            <button class="subcat-chip ${!S.fsc?"active":""}" onclick="S.fsc=null;render()">全章</button>
+            ${subs.map(s=>{
+              const cnt2=ALL_QUESTIONS.filter(q=>q.category===S.fc&&s.ids.includes(q.id)).length;
+              return`<button class="subcat-chip ${S.fsc===s.key?"active":""}" onclick="S.fsc='${s.key}';render()">${s.label}<span style="opacity:.6;font-size:10px;margin-left:3px;">${cnt2}</span></button>`;
+            }).join("")}
+          </div>
+        </div>`;
+      })():""}
+      ${S.mode!=="ALL"?`<p style="font-size:11px;color:var(--text3);margin-top:4px;">弱点・スターモード時はカテゴリ絞り込み不可</p>`:""}
+      <div class="opts-compact">
+        <span class="opt-label-ic">⏱</span>
+        ${[0,30,60].map(t=>`<button class="opt-pill ${S.ts===t?"on":""}" onclick="S.ts=${t};render()">${t===0?"なし":t+"s"}</button>`).join("")}
+        <div class="opts-compact-sep"></div>
+        <button class="opt-pill opt-shuffle ${S.shuffle?"on":""}" onclick="S.shuffle=!S.shuffle;render()">🔀 ${S.shuffle?"ランダム":"順番通り"}</button>
+      </div>
+    </div>
+    ${(()=>{
+      const p=S.ud.lastProgress;
+      const hasP=hasProgress();
+      if(hasP){
+        const resumeQ=p.deckIds&&ALL_QUESTIONS.find(q=>q.id===p.deckIds[p.idx]);
+        const cat=resumeQ?(CAT_META[resumeQ.category]||{icon:"📄"}):{icon:"📄"};
+        const catLabel=resumeQ?resumeQ.category:"";
+        const qNum=p.idx+1;
+        return`<div class="start-row">
+          <button class="start-btn ${startOff?"off":""}" onclick="go()">修行開始 ${arr()}</button>
+          <button class="resume-btn" onclick="resumeSession()">
+            <span class="resume-btn-label">▶ 続きから学習</span>
+            <span class="resume-btn-sub">${qNum}問目 ${cat.icon}${catLabel}</span>
+          </button>
+        </div>`;
+      } else {
+        return`<button class="start-btn start-btn-solo ${startOff?"off":""}" onclick="go()">学習スタート ${arr()}</button>`;
+      }
+    })()}
+    <button class="text-link" onclick="reset()">データをリセット</button>`;
+  const right=`
+    <div class="side-panel">
+      <div class="side-title">学習統計</div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算解答数</span><span class="side-stat-val">${ta}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算正答率</span><span class="side-stat-val" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">要復習問題</span><span class="side-stat-val" style="color:${wq.length?"#E8572A":"#0F6E56"}">${wq.length}問</span></div>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">カテゴリ別正答率</div>${catStats()}
+    </div>
+    <button class="side-panel" style="cursor:pointer;text-align:left;width:100%;" onclick="S.screen='notebook';render()">
+      <div class="side-title">間違いノート</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:14px;color:var(--text2);">間違えた問題を確認</span><span style="font-size:18px;font-weight:700;color:${wq.length?"#E8572A":"var(--text3)"};">${wq.length}</span></div>
+    </button>`;
+  const modeTabs=[
+    {k:"ALL",ic:"📚",lbl:"全問",cnt:ALL_QUESTIONS.length,dis:false},
+    {k:"WEAK",ic:"🔥",lbl:"弱点",cnt:wq.length,dis:!wq.length},
+    {k:"STAR",ic:"⭐",lbl:"★登録",cnt:sq.length,dis:!sq.length}
+  ].map(m=>{const on=S.mode===m.k?"hm-on":"";const dis=m.dis?"hm-dis":"";const click=m.dis?"":"S.mode=\'"+m.k+"\';S.fsc=null;render()";return`<button class="hm-tab ${on} ${dis}" onclick="${click}"><span class="hm-ic">${m.ic}</span><span class="hm-lbl">${m.lbl}</span><span class="hm-cnt">${m.cnt}問</span></button>`;}).join("");
+  return`<div class="home-inner">
+    <div class="home-hero">
+      <div class="hero-top">
+        <div class="hero-left">
+          <div class="hero-exam-type">危険物・化学</div>
+          <div class="hero-exam-name">危険物取扱者（乙4）</div>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hs-num" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span><span class="hs-lbl">正答率</span></div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat"><span class="hs-num">${ta}</span><span class="hs-lbl">解答数</span></div>
+            ${wq.length?`<div class="hero-stat-div"></div><div class="hero-stat"><span class="hs-num" style="color:#E8572A">${wq.length}</span><span class="hs-lbl">要復習</span></div>`:""}
+          </div>
+        </div>
+        <div class="hero-rank" style="border-color:${rank.color}66;background:${rank.color}18">
+          <span class="rank-k" style="color:${rank.color}">${rank.kanji}</span>
+          <span class="rank-l" style="color:${rank.color}">${rank.label}</span>
+          <div class="rank-bar"><div class="rank-fill" style="width:${rp}%;background:${rank.color}"></div></div>
+        </div>
+      </div>
+      <div class="hero-mode-bar">${modeTabs}</div>
+    </div>
+    <div class="pc-cols">
+      <div class="pc-col-main">${left}</div>
+      <div class="pc-col-side">${right}</div>
+    </div>
+  </div>`;
+}
+
+function quiz(C){
+  const{cur,ia,ic,sc2,tp,tc}=C;
+  if(!cur)return"";
+  const sw=S.sess.filter(a=>!a.correct).length;
+  const isStar=(S.ud.starIds||[]).includes(cur.id);
+  const pp=Math.round(((S.idx+1)/S.deck.length)*100);
+  const al=["A","B","C","D"];
+  const catMeta=CAT_META[cur.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+  const catLabel=cur.category||"";
+  const dots=()=>{let h=S.sess.map(a=>`<div class="sb-dot ${a.correct?"sd-ok":"sd-ng"}"></div>`).join("");h+=`<div class="sb-dot sd-cur"></div>`;const f=Math.min(3,S.deck.length-S.idx-1);for(let i=0;i<f;i++)h+=`<div class="sb-dot sd-future"></div>`;const m=S.deck.length-S.idx-f-1;if(m>0)h+=`<span class="sb-more">+${m}</span>`;return h;};
+  const mc=(S.ud.wrongCounts||{})[cur.id]||0;
+  const tim=S.ts>0?`<div class="timer-wrap"><svg width="44" height="44" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="#e5e3dc" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="${tc}" stroke-width="4" stroke-linecap="round" stroke-dasharray="${tp*1.257} 125.7" transform="rotate(-90 24 24)" style="transition:stroke-dasharray .9s linear"/></svg><span class="timer-num" style="color:${tc}">${S.tout?"✕":(S.tl||"")}</span></div>`:"";
+
+  // ── 未回答：問題文＋4択を表示 ──────────────────────
+  if(!ia){
+    const ch=cur.choices.map((c,i)=>`<button class="choice" onclick="pick(${i})"><span class="ch-alpha">${al[i]}</span><span class="ch-body">${c}</span></button>`).join("");
+    return`<div class="quiz-inner">
+      <div class="pc-quiz-main">
+        <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+        <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+        ${tim}
+        <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+        <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+        <div class="choices">${ch}</div>
+      </div>
+      <div class="pc-quiz-side">
+        <div class="side-panel"><div class="side-title">解説</div><div class="side-exp-placeholder">選択肢を選ぶと解説が表示されます</div></div>
+        <div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>
+      </div>
+    </div>`;
+  }
+
+  // ── 回答済み：選択肢を非表示にして解説カードのみ表示 ──
+  const cls=ic&&!S.tout?"exp-ok":S.tout?"exp-time":"exp-ng";
+  const v=S.tout?"⏰ 時間切れ":ic?"✓ 正解！":"✗ 不正解";
+  const vc=ic&&!S.tout?"var(--green-d)":S.tout?"var(--gold)":"var(--accent)";
+
+  const correctRow=`<div class="exp-correct-bar ok">
+    <span class="exp-correct-label">正解</span>
+    <span class="exp-correct-text">${al[cur.answer]}. ${cur.choices[cur.answer]}</span>
+  </div>`;
+  const myRow=(!ic&&!S.tout&&S.sel!==null)?`<div class="exp-correct-bar ng">
+    <span class="exp-correct-label">あなた</span>
+    <span class="exp-correct-text">${al[S.sel]}. ${cur.choices[S.sel]}</span>
+  </div>`:"";
+
+  // PC側解説パネル
+  const expPC=`<div class="side-panel">
+    <div class="side-title">解説</div>
+    <div style="font-size:13px;font-weight:700;color:${vc};margin-bottom:8px;">${v}</div>
+    <div style="background:rgba(29,158,117,.1);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#0F6E56;"><strong>正解：</strong>${al[cur.answer]}. ${cur.choices[cur.answer]}</div>
+    ${(!ic&&!S.tout&&S.sel!==null)?`<div style="background:rgba(230,81,0,.08);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#8B2A0E;"><strong>あなた：</strong>${al[S.sel]}. ${cur.choices[S.sel]}</div>`:""}
+    <div class="side-exp-body">${cur.explanation}</div>
+  </div>`;
+  const stPC=`<div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>`;
+
+  return`<div class="quiz-inner">
+    <div class="pc-quiz-main">
+      <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+      <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+      <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+      <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+      <div class="exp-card exp-sp ${cls}">
+        <div class="exp-head"><span class="exp-verdict">${v}</span></div>
+        ${correctRow}${myRow}
+        <p class="exp-body">${cur.explanation}</p>
+      </div>
+      <div class="next-wrap"><div class="next-3">
+        <button class="btn-retry" onclick="retryQ()">🔁<span class="btn-sub-lbl">もう一度</span></button>
+        <button class="btn-pause" onclick="pauseQ()">⏸<span class="btn-sub-lbl">中断</span></button>
+        <button class="btn-next-main" onclick="next()">${S.idx+1>=S.deck.length?"🏁 結果を見る":"次の問題 →"}</button>
+      </div></div>
+    </div>
+    <div class="pc-quiz-side">${expPC}${stPC}</div>
+  </div>`;
+}
+
+function result(C){
+  const{sc2,sr}=C;
+  const v=sr>=80?"🏆 優秀！":sr>=60?"✅ 合格ライン達成！":"📚 もう一度復習しよう";
+  const vc=sc(sr);
+  const cats=Object.keys(CAT_META).map(cat=>{const qs=S.sess.filter(a=>a.q.category===cat);if(!qs.length)return"";const r=Math.round(qs.filter(a=>a.correct).length/qs.length*100);return`<div class="rc-row"><span class="rc-icon">${CAT_META[cat].icon}</span><span class="rc-name">${cat}</span><div class="rc-track"><div class="rc-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="rc-pct">${r}%</span></div>`;}).join("");
+  // ⑤ undefinedを除去: questionが存在するか確認
+  const log=S.sess.map((a,i)=>{
+    if(!a.q||!a.q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[a.q.id]||0;
+    const cat=CAT_META[a.q.category];
+    const icon=cat?cat.icon:"";
+    const qText=a.q.question.slice(0,28)+"…";
+    return`<div class="ans-row ${a.correct?"ar-ok":"ar-ng"}"><span class="ar-n">Q${i+1}</span><span class="ar-cat">${icon}</span><span class="ar-q">${qText}</span><span class="ar-mark">${a.correct?"✓":"✗"}</span>${!a.correct?`<span class="ar-cnt">×${wc}</span>`:""}</div>`;
+  }).join("");
+  return`<div class="result-inner">
+    <div class="result-hero">
+      <p class="result-eyebrow">修行完了</p>
+      <div class="result-score-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/><circle cx="50" cy="50" r="42" fill="none" stroke="${vc}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${sr*2.639} 263.9" transform="rotate(-90 50 50)" style="transition:stroke-dasharray 1s ease .3s"/></svg><div class="result-score-inner"><span class="result-pct" style="color:${vc}">${sr}<small>%</small></span><span class="result-sub">${sc2}/${S.sess.length}</span></div></div>
+      <div class="result-verdict" style="color:${vc};border-color:${vc}66;background:${vc}22">${v}</div>
+      <div class="result-cats">${cats}</div>
+    </div>
+    <div class="section-hd">問題別レビュー</div>
+    <div class="ans-log">${log}</div>
+    <button class="cta-btn" onclick="go()">もう一度</button>
+    <button class="ghost-btn" onclick="go('WEAK')">弱点だけ特訓</button>
+    <button class="ghost-btn" onclick="S.screen='home';render()">ホームへ戻る</button>
+  </div>`;
+}
+
+function notebook(C){
+  const{wq}=C;const al=["A","B","C","D"];
+  const cards=wq.map(q=>{
+    if(!q||!q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[q.id]||0;
+    const is=(S.ud.starIds||[]).includes(q.id);
+    const cat=CAT_META[q.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+    return`<div class="nb-card"><div class="nb-card-top"><span class="nb-cat" style="color:${cat.color};background:${cat.bg};border-color:${cat.color}55">${cat.icon} ${q.category||""}</span><div class="nb-actions"><span class="nb-wc">✗ ${wc}回</span><button class="nb-star ${is?"on":""}" onclick="star(${q.id})">${is?"★":"☆"}</button><button class="nb-resolve" onclick="clrWrong(${q.id})">解決</button></div></div><p class="nb-q">${q.question}</p><div class="nb-ans-box"><span class="nb-ans-lbl">正解</span><span class="nb-ans-val">${al[q.answer]}. ${q.choices[q.answer]}</span></div><details class="nb-details"><summary class="nb-summary">解説を見る ▾</summary><p class="nb-exp">${q.explanation}</p></details></div>`;
+  }).join("");
+  return`<div class="nb-inner"><div class="nb-nav"><button class="nav-back" onclick="S.screen='home';render()">${bk()}</button><span class="nb-title">間違いノート</span><span class="nb-count">${wq.length}問</span></div>${wq.length===0?`<div class="empty-wrap"><div class="empty-icon">🎉</div><p class="empty-msg">まだ間違えた問題はありません</p><p class="empty-sub">どんどん問題に挑戦しよう！</p></div>`:`<div>${cards}</div>`}</div>`;
+}
+render();
+
+// ── ページ内ナビ スクロール処理 ──
+function scrollToApp(e){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById("app");
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab("app");
+}
+function scrollTo_(e, id){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById(id);
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab(id);
+}
+function setActiveTab(id){
+  document.querySelectorAll(".pn-tab").forEach(t => t.classList.remove("active"));
+  const map = {app:0, apply:1, books:2, courses:3, overview:4, syllabus:5, roadmap:6, faq:7};
+  const tabs = document.querySelectorAll(".pn-tab");
+  const idx = map[id];
+  if(idx !== undefined && tabs[idx]) tabs[idx].classList.add("active");
+}
+const _navIds = ["faq","roadmap","syllabus","overview","courses","books","apply"];
+window.addEventListener("scroll", ()=>{
+  const offset = 120;
+  for(const id of _navIds){
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= offset){
+      setActiveTab(id); return;
+    }
+  }
+  setActiveTab("app");
+}, {passive:true});
+</script>
+
+<section class="aff-section" id="apply">
+  <div class="aff-inner">
+    <h2 class="aff-h2">試験に申し込む・学習を始める</h2>
+    <p class="aff-sub">公式サイトで最新の試験日程・申込方法を確認してください</p>
+
+    <a class="official-btn" href="https://www.shoubo-shiken.or.jp/kikenbutsu/" target="_blank" rel="noopener">
+      <div class="official-ico">🏛️</div>
+      <div class="official-info">
+        <div class="official-name">消防試験研究センター（危険物取扱者試験）（公式）</div>
+        <div class="official-note">各都道府県の試験日程・願書受付期間はこちらから確認できます</div>
+      </div>
+      <div class="official-arr">→</div>
+    </a>
+
+    <div class="aff-h3">おすすめ参考書</div>
+    <div class="book-list">
+      <div class="book-card">
+        <div class="book-title">📖 わかりやすい！乙種第4類危険物取扱者試験（公論出版）</div>
+        <div class="book-memo">受験者数No.1の定番テキスト。図解多めで初学者に最適</div>
+        <div class="book-links">
+          <a class="book-link book-link-amz" href="https://www.amazon.co.jp/dp/XXXXXXXXXX/?tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon で見る</a>
+          <a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/乙4+危険物+テキスト/" target="_blank" rel="noopener">楽天 で見る</a>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="book-title">📖 乙種4類危険物取扱者 問題集（オーム社）</div>
+        <div class="book-memo">過去問ベースの問題集。本試験形式に慣れるために必須</div>
+        <div class="book-links">
+          <a class="book-link book-link-amz" href="https://www.amazon.co.jp/dp/XXXXXXXXXX/?tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon で見る</a>
+          <a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/乙4+危険物+問題集/" target="_blank" rel="noopener">楽天 で見る</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="aff-h3">おすすめ通信講座</div>
+    <div class="course-list">
+      <a class="course-card" href="https://studying.jp/kikenbutsu/" target="_blank" rel="noopener">
+        <div class="course-ico">🎓</div>
+        <div class="course-info">
+          <div class="course-name">スタディング 危険物取扱者講座</div>
+          <div class="course-price">約4,000円〜</div>
+          <div class="course-feat">スマホ完結・スキマ時間に最適</div>
+        </div>
+        <div class="course-arr">›</div>
+      </a>
+      <a class="course-card" href="https://www.u-can.co.jp/" target="_blank" rel="noopener">
+        <div class="course-ico">🎓</div>
+        <div class="course-info">
+          <div class="course-name">ユーキャン 危険物取扱者乙4講座</div>
+          <div class="course-price">約24,000円〜</div>
+          <div class="course-feat">テキスト・添削指導つきの安心感</div>
+        </div>
+        <div class="course-arr">›</div>
+      </a>
+    </div>
+
+    <p class="aff-note">
+      ※ 参考書・通信講座のリンクはアフィリエイトリンクです。<br>
+      ※ 価格は変動する場合があります。最新情報は各サービスの公式サイトでご確認ください。
+    </p>
+  </div>
+</section>
+<section class="seo-section" id="info">
+  <div class="seo-inner">
+    <h2 class="seo-h2">危険物取扱者 乙4とは</h2>
+    <p class="seo-lead">危険物取扱者乙種第4類（乙4）は、ガソリン・灯油・軽油など引火性液体を取り扱うための国家資格です。年間約30万人が受験する、日本で最も受験者数の多い危険物試験です。</p>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">合格率</div>
+        <div class="info-val">約35〜40%</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">勉強時間</div>
+        <div class="info-val">50〜100時間</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">受験料</div>
+        <div class="info-val">4,600円</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">試験形式</div>
+        <div class="info-val">4択マークシート</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">試験回数</div>
+        <div class="info-val">年複数回（県により異なる）</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">難易度</div>
+        <div class="info-val">★☆☆☆☆（易しい）</div>
+      </div>
+    </div>
+
+    <h3 class="seo-h3">試験科目と出題数</h3>
+    <table class="seo-table">
+      <thead><tr><th>科目</th><th>問題数</th><th>合格ライン</th></tr></thead>
+      <tbody>
+        <tr><td>危険物に関する法令</td><td>15問</td><td>9問以上（60%）</td></tr>
+        <tr><td>基礎的な物理学・化学</td><td>10問</td><td>6問以上（60%）</td></tr>
+        <tr><td>危険物の性質・消火方法</td><td>10問</td><td>6問以上（60%）</td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="seo-h3">学習ロードマップ</h3>
+    <div class="roadmap">
+      <div class="rm-step">
+        <div class="rm-num">1</div>
+        <div class="rm-body">
+          <div class="rm-title">試験概要・出題傾向を把握（1週目）</div>
+          <div class="rm-desc">3科目の構成と各科目の出題パターンを理解する</div>
+        </div>
+      </div>
+      <div class="rm-step">
+        <div class="rm-num">2</div>
+        <div class="rm-body">
+          <div class="rm-title">法令を徹底インプット（2〜3週目）</div>
+          <div class="rm-desc">出題数が最多の法令科目から着手。許可・届出・標識などの暗記項目を固める</div>
+        </div>
+      </div>
+      <div class="rm-step">
+        <div class="rm-num">3</div>
+        <div class="rm-body">
+          <div class="rm-title">物理化学・性質消火を学習（3〜4週目）</div>
+          <div class="rm-desc">引火点・発火点・燃焼範囲など頻出の数値と概念を理解する</div>
+        </div>
+      </div>
+      <div class="rm-step">
+        <div class="rm-num">4</div>
+        <div class="rm-body">
+          <div class="rm-title">問題演習で弱点を潰す（4〜6週目）</div>
+          <div class="rm-desc">本サイトの問題集で繰り返し演習。間違いノートで弱点を重点的に復習</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="seo-h3">この資格を取ったら次は？</h3>
+    <div class="next-shikaku">
+      <a class="next-card" href="index.html#all">
+        <div class="next-ico" style="background:#FFF3E0">🔥</div>
+        <div><div class="next-name">危険物 乙種 全類制覇</div><div class="next-desc">乙4取得後に他の類を追加取得してスキルアップ</div></div>
+      </a>
+      <a class="next-card" href="kansei.html">
+        <div class="next-ico" style="background:#FFF3E0">🏥</div>
+        <div><div class="next-name">衛生管理者</div><div class="next-desc">50人以上の職場で必置。同じ安全・衛生系の資格</div></div>
+      </a>
+    </div>
+
+    <h3 class="seo-h3">よくある質問</h3>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">危険物取扱者乙4の合格率はどのくらいですか？</summary>
+        <p class="faq-a">危険物取扱者乙種第4類の合格率は約35〜40%です。しっかり対策すれば十分合格できる難易度です。</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">勉強時間はどのくらい必要ですか？</summary>
+        <p class="faq-a">初学者で50〜100時間が目安です。1日1〜2時間の学習で1〜2ヶ月で合格を目指せます。理系の方や化学の知識がある方はより短期間での合格も可能です。</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">試験科目は何ですか？</summary>
+        <p class="faq-a">「危険物に関する法令（15問）」「基礎的な物理学及び基礎的な化学（10問）」「危険物の性質並びにその火災予防及び消火の方法（10問）」の3科目です。各科目60%以上の正答率が必要です。</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">どんな仕事に役立ちますか？</summary>
+        <p class="faq-a">ガソリンスタンド・化学工場・倉庫業・タンクローリー運転手など、引火性液体を扱う業種で活かせます。就職・転職時の有利なアピールポイントになります。</p>
+      </details>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div class="sf-logo">
+      <span class="sf-lmark">問</span>
+      資格<span>ドリル</span>
+    </div>
+    <div class="sf-links">
+      <a href="index.html">資格一覧トップ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+    <div class="sf-copy">© 2026 資格ドリル</div>
+  </div>
+</footer>
+</body>
+</html>
